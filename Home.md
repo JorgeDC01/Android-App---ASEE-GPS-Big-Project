@@ -168,9 +168,6 @@ En este proceso, los <b>casos de uso</b> se crean e implementan a través de <b>
 3. <b>Construcción</b>: El requisito se implementa en código software para ser utilizado en el programa.
 4. <b>Transición</b>: Se prueba la versión final del requisito para saber si el código software es correcto, y en caso afirmativo se integra este junto con el resto en el programa. 
 
-![Cactus](https://www.google.com/imgres?imgurl=https%3A%2F%2Fhips.hearstapps.com%2Fhmg-prod.s3.amazonaws.com%2Fimages%2Fcactus-mammillaria-1633078950.jpg&imgrefurl=https%3A%2F%2Fwww.micasarevista.com%2Fplantas-flores%2Fg21149762%2Fcactus-cuidados-consejos-tipos%2F&tbnid=Sh-CtCNNQlWosM&vet=12ahUKEwjT9tiX4sb6AhWm34UKHUYcD1EQMygAegUIARCaAg..i&docid=v3dX5ogPbEAN3M&w=1600&h=1592&q=cactus&ved=2ahUKEwjT9tiX4sb6AhWm34UKHUYcD1EQMygAegUIARCaAg)
-
-
 ### Planificación del proyecto <a name="planificaciondelproyecto"></a>
 
 #### Proceso de planificación <a name="procesodeplanificacion"></a>
