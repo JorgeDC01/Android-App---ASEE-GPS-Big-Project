@@ -200,9 +200,15 @@ De esta forma, cada rol realiza las siguientes disciplinas:
 * Arquitecto del software: Realiza las disciplinas de Modelado del negocio (BM), Requisitos (R), Análisis y Diseño (A&D) e Implementación (Imp).
 * Desarrollador de Software Junior: Realiza las disciplinas de Implementación (Imp), Test e integración (T&I) y Despliegue (D).
 * Desarrollador de Software Senior: Realiza las disciplinas de Requisitos (R), Análisis y Diseño (A&D), Implementación (Imp), Test e integración (T&I) y Despliegue (D).
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/sadsad.png" width="350"/>
+
+<p>Para resumir y poder visualizar mejor esto, realizamos la siguiente tabla:</p>
+&emsp;<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/sadsad.png" width="450"/>
 
 #### Análisis de la distribución <a name="analisisdeladistribucion"></a>
+
+<p>
+&emsp;Para calcular el tiempo total que tendrá disponible cada rol y cada caso de uso en número de horas se tendrá en cuenta una jornada laboral de 8 horas. Trabajando 5 días a la semana y teniendo en cuenta las 7 iteraciones (semanas), con lo que se obtiene la siguiente cantidad de tiempo:
+</p>
 
 #### Planificación del proyecto <a name="planificaciondelproyecto2"></a>
 
