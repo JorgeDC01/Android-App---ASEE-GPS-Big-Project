@@ -135,6 +135,25 @@
 
 ### Conjuntos de casos de uso <a name="conjuntosdecasosdeuso"></a>
 
+| ID | Nombre | Descripción | 
+|----|---|---|
+|CU-01|Añadir Evento de Municipio.|El usuario podrá añadir un nuevo evento de municipio en una fecha determinada, estando asignado a una condición meteorológica en tiempo real de la ubicación del municipio.|
+|CU-02|Añadir Evento de Ruta Montaña.|El usuario podrá añadir un nuevo evento de montaña en una fecha determinada, estando asignado a una condición meteorológica en tiempo real de la ubicación de la montaña.|
+|CU-03|Añadir Usuario.|El sistema permite al usuario registrarse con unas credenciales.|
+|CU-04|Añadir una barra de búsqueda y filtrado de ubicaciones.|El sistema deberá incorporar una barra de búsqueda para buscar una ubicación con su tiempo meteorológico asignado.|
+|CU-05|Añadir preferencias desde el menú de AppBar (ajustes …)|El sistema deberá incorporar un apartado de configuración que permite al usuario personalizar su experiencia con la aplicación, así como el modo oscuro, preferencias, etc.|
+|CU-06|Consultar el tiempo detallado de una ubicación.|El usuario podrá visualizar el tiempo meteorológico de una ubicación específica en tiempo real.|
+|CU-07|Modificar un evento.|El usuario podrá modificar los datos de un evento, así como su nombre, descripción, fecha y ubicación.|
+|CU-08|Eliminar un evento.|El usuario podrá borrar un evento creado y configurado previamente en la lista de eventos.|
+|CU-09|Consultar el tiempo meteorológico en la ubicación actual.|El usuario podrá consultar los detalles del tiempo asociado a la localización/municipio más cercano.|
+|CU-10|Modificar idioma y tema a modo oscuro.|El usuario podrá realizar una serie de modificaciones en la aplicación para configurar esta a su gusto como cambiar el idioma, el tema a modo oscuro, etc.|
+|CU-11|Consultar lista de eventos.|El usuario podrá visualizar el listado completo de eventos de municipios y montañas creados por su parte.|
+|CU-12|Consultar un evento.|El usuario podrá visualizar en detalle los datos pertinentes de un evento de municipio o montaña.|
+|CU-13|Iniciar sesión.|El sistema permite iniciar sesión con las credenciales asociadas a su cuenta de usuario.|
+|CU-14|Cerrar sesión.|El sistema permite cerrar sesión a un usuario.|
+|CU-15|Modificar usuario.|El usuario podrá modificar su nombre de usuario, contraseña asociadas a su cuenta en un apartado “perfil”.| 
+|CU-16|Eliminar usuario.|En el apartado “perfil”, el usuario podrá eliminar su cuenta de la aplicación y cerrar sesión.|
+
 <p>&nbsp;</p>
 
 ## Metodologías de desarrollo <a name="metodologiasdedesarrollo"></a>
