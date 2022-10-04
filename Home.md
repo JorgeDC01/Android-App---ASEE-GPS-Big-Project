@@ -160,7 +160,7 @@
 
 ### Proceso de desarrollo <a name="procesodedesarrollo"></a>
 
-Para llevar a cabo la realización del proyecto se ha utilizado el método denominado como <b>Proceso Unificado</b> (SCRUM), que consiste en una metodología ágil gracias a la cual se pueden desarrollar proyectos pudiendo realizar modificaciones en este fácilmente.
+&emsp;Para llevar a cabo la realización del proyecto se ha utilizado el método denominado como <b>Proceso Unificado</b> (SCRUM), que consiste en una metodología ágil gracias a la cual se pueden desarrollar proyectos pudiendo realizar modificaciones en este fácilmente.
 Así mismo, este proceso divide su desarrollo en <b>fases</b> utilizando el concepto de Casos de Uso para representar a los requisitos. Las fases se desarrollarán de forma incremental mediante una serie de <b>iteraciones</b>.
 En este proceso, los <b>casos de uso</b> se crean e implementan a través de <b>cuatro fases</b>:
 1. <b>Inicio</b>: Se especifica o declara el requisito en concreto, madurando dicha idea hasta un concepto más sólido.
@@ -172,7 +172,7 @@ En este proceso, los <b>casos de uso</b> se crean e implementan a través de <b>
 
 #### Proceso de planificación <a name="procesodeplanificacion"></a>
 
-En la planificación de este proyecto, existirán **cuatro roles ** que influyen de forma distinta la creación de casos de uso. Estos roles son:
+&emsp;En la planificación de este proyecto, existirán **cuatro roles ** que influyen de forma distinta la creación de casos de uso. Estos roles son:
 1. <b>Jefe de proyecto</b>: Es el encargado principal de gestionar el desarrollo del proyecto.
 2. <b>Desarrollador de software Senior</b>: Es un programador de Software relativamente experimentado.
 3. <b>Desarrollador de software Junior</b>: Es un programador de software que cuenta con poca experiencia.
@@ -180,6 +180,27 @@ En la planificación de este proyecto, existirán **cuatro roles ** que influyen
 Cada uno de estos roles tendrá que realizar una serie de tareas que les serán asignadas al comienzo del proyecto, las cuales ocupan cierta cantidad de tiempo designada durante la planificación.      
 
 #### Distribución de casos de uso <a name="distribuciondecasosdeuso"></a>
+<p>
+&emsp;Para seguir este proceso, los casos de uso especificados se desarrollan e implementan a lo largo de una serie de iteraciones, cuya duración es de una semana, en las que los cuatro roles distinguidos llevarán a cabo una las distintas disciplinas de desarrollo de los casos de uso.
+</p>
+
+<p>
+&emsp;Estas disciplinas permitirán marcar la vida de desarrollo de los casos de uso, y estarán relacionados con las cuatro fases existentes en el método de Proceso Unificado. Las disciplinas son las siguientes:
+</p>
+
+* Modelado del negocio (Previa al inicio)
+* Requisitos (Relacionada con la fase de inicio)
+* Análisis y Diseño (Relacionada con la fase de elaboración)
+* Implementación (Relacionada con la fase de construcción)
+* Test e Integración (Relacionada con la fase de transición)
+* Despliegue (Posterior a la transición)
+
+De esta forma, cada rol realiza las siguientes disciplinas:
+* Jefe del proyecto: Realiza la disciplina de Modelado del negocio (BM) y también tareas de gestión del proyecto.
+* Arquitecto del software: Realiza las disciplinas de Modelado del negocio (BM), Requisitos (R), Análisis y Diseño (A&D) e Implementación (Imp).
+* Desarrollador de Software Junior: Realiza las disciplinas de Implementación (Imp), Test e integración (T&I) y Despliegue (D).
+* Desarrollador de Software Senior: Realiza las disciplinas de Requisitos (R), Análisis y Diseño (A&D), Implementación (Imp), Test e integración (T&I) y Despliegue (D).
+
 
 #### Análisis de la distribución <a name="analisisdeladistribucion"></a>
 
