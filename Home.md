@@ -17,11 +17,9 @@
       - [Planificación del proyecto <a name="planificaciondelproyecto2"></a>](#planificación-del-proyecto--1)
       - [Análisis de la planificación <a name="analisisdelaplanificacion"></a>](#análisis-de-la-planificación-)
 
-<div style="text-align: justify">
 ## Introduccion <a name="introduction"></a>
 
 ### Motivación
-
 <p>
 
 &emsp;En los últimos años, la plataforma Android ha gobernado notablemente el mercado móvil, de tal manera que iOS nunca ha sido capaz de recuperar el status con el que se inició en el “mundillo” tecnológico. Además, junto con el crecimiento exponencial del “Big Data”, apareció un nuevo formato de aplicaciones móviles que accedían a grandes cantidades de datos. Como consecuencia,  los servicios que proporcionaban grandes fuentes de datos debían incorporar la forma de brindar datos con un acceso libre y seguro, conocido como “Open Data”. 
@@ -90,5 +88,3 @@
 #### Planificación del proyecto <a name="planificaciondelproyecto2"></a>
 
 #### Análisis de la planificación <a name="analisisdelaplanificacion"></a>
-
-</div>
