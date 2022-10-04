@@ -160,6 +160,14 @@
 
 ### Proceso de desarrollo <a name="procesodedesarrollo"></a>
 
+Para llevar a cabo la realización del proyecto se ha utilizado el método denominado como <b>Proceso Unificado</b> (SCRUM), que consiste en una metodología ágil gracias a la cual se pueden desarrollar proyectos pudiendo realizar modificaciones en este fácilmente.
+Así mismo, este proceso divide su desarrollo en <b>fases</b> utilizando el concepto de Casos de Uso para representar a los requisitos. Las fases se desarrollarán de forma incremental mediante una serie de <b>iteraciones</b>.
+En este proceso, los <b>casos de uso</b> se crean e implementan a través de <b>cuatro fases</b>:
+1. <b>Inicio</b>: Se especifica o declara el requisito en concreto, madurando dicha idea hasta un concepto más sólido.
+2. <b>Elaboración</b>: El requisito pasa por un proceso de análisis y diseño, que amplían el concepto y cómo se debería implementar.
+3. <b>Construcción</b>: El requisito se implementa en código software para ser utilizado en el programa.
+4. <b>Transición</b>: Se prueba la versión final del requisito para saber si el código software es correcto, y en caso afirmativo se integra este junto con el resto en el programa. 
+
 ### Planificación del proyecto <a name="planificaciondelproyecto"></a>
 
 #### Proceso de planificación <a name="procesodeplanificacion"></a>
