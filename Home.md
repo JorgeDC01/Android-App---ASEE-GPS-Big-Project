@@ -17,6 +17,7 @@
       - [Planificación del proyecto <a name="planificaciondelproyecto2"></a>](#planificación-del-proyecto--1)
       - [Análisis de la planificación <a name="analisisdelaplanificacion"></a>](#análisis-de-la-planificación-)
 
+<div style="text-align: justify">
 ## Introduccion <a name="introduction"></a>
 
 ### Motivación
@@ -89,3 +90,5 @@
 #### Planificación del proyecto <a name="planificaciondelproyecto2"></a>
 
 #### Análisis de la planificación <a name="analisisdelaplanificacion"></a>
+
+</div>
