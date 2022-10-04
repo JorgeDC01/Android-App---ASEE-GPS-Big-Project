@@ -172,6 +172,13 @@ En este proceso, los <b>casos de uso</b> se crean e implementan a través de <b>
 
 #### Proceso de planificación <a name="procesodeplanificacion"></a>
 
+En la planificación de este proyecto, existirán **cuatro roles ** que influyen de forma distinta la creación de casos de uso. Estos roles son:
+1. <b>Jefe de proyecto</b>: Es el encargado principal de gestionar el desarrollo del proyecto.
+2. <b>Desarrollador de software Senior</b>: Es un programador de Software relativamente experimentado.
+3. <b>Desarrollador de software Junior</b>: Es un programador de software que cuenta con poca experiencia.
+4. <b>Arquitecto de software</b>: Es un experto en la Arquitectura de Software.
+Cada uno de estos roles tendrá que realizar una serie de tareas que les serán asignadas al comienzo del proyecto, las cuales ocupan cierta cantidad de tiempo designada durante la planificación.      
+
 #### Distribución de casos de uso <a name="distribuciondecasosdeuso"></a>
 
 #### Análisis de la distribución <a name="analisisdeladistribucion"></a>
