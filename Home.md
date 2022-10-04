@@ -17,9 +17,11 @@
       - [Planificación del proyecto <a name="planificaciondelproyecto2"></a>](#planificación-del-proyecto--1)
       - [Análisis de la planificación <a name="analisisdelaplanificacion"></a>](#análisis-de-la-planificación-)
 
+
 ## Introduccion <a name="introduction"></a>
 
 ### Motivación
+
 <p>
 
 &emsp;En los últimos años, la plataforma Android ha gobernado notablemente el mercado móvil, de tal manera que iOS nunca ha sido capaz de recuperar el status con el que se inició en el “mundillo” tecnológico. Además, junto con el crecimiento exponencial del “Big Data”, apareció un nuevo formato de aplicaciones móviles que accedían a grandes cantidades de datos. Como consecuencia,  los servicios que proporcionaban grandes fuentes de datos debían incorporar la forma de brindar datos con un acceso libre y seguro, conocido como “Open Data”. 
@@ -33,12 +35,14 @@
 &emsp;Hoy en día, las aplicaciones móviles no se centran únicamente en una tarea, sino que aglutinan diversas funcionalidades relacionadas entre sí. Por otro lado, el hardware móvil ha evolucionado hasta tal punto en que los desarrolladores tienen un gran abanico de opciones para desarrollar una IU con una alta usabilidad y accesibilidad.
 </p>
 
+
 ### Objetivos
 
 <p>
 
 &emsp;El propósito del equipo de desarrollo es afianzar conocimientos: cómo utilizar Android Studio, cómo tratar el gran flujo de información devuelto por la API y la forma en la que se presentan los datos al usuario.  Asimismo, se va a focalizar en el diseño de la interfaz de usuario, haciéndola atractiva, novedosa y cumpliendo los requisitos de usabilidad y accesibilidad. Se pretende aportar al mercado un servicio de buena calidad a primera vista.
 </p>
+
 
 ### Resumen
 <p>
@@ -48,7 +52,9 @@
 
 <p>&nbsp;</p>
 
+
 ## Propuesta inicial <a name="propuestaInicial"></a>
+
 
 ### Descripción de la idea <a name="descripcionDeLaIdea"></a>
 <p>
@@ -59,15 +65,73 @@
 
 <p>&nbsp;</p>
 
+
 ## Funcionalidades principales <a name="funcionalidadesprincipales"></a>
 
-<p>&nbsp;</p>
+
+<p>
+&emsp;Para poder utilizar las diferentes funcionalidades de la aplicación, un usuario debe registrarse con unas credenciales. Una vez se registre e inicie sesión, podrá :
+
+<ul>
+    <li>Visualizar el tiempo meteorológico de la ubicación actual del dispositivo.
+    </li>
+    <li>Visualizar el listado de eventos en municipios o montañas  creados por el usuario.
+    </li>
+    <li>Gestionar un evento, así como su creación, edición y borrado, mediante las preferencias (fecha, nombre, descripción, color, ubicación, etc).
+    </li>
+    <li>Consultar en detalle el tiempo meteorológico de una ubicación específica.
+    </li>
+    <li>Borrar la cuenta de usuario.
+    </li>
+</ul>
+</p>
+
 
 ## Análisis <a name="analisis"></a>
 
+
 ### Casos de uso estructurales <a name="casosdeusoestructurales"></a>
 
+<ul>
+    <li>CU-01: Añadir Evento de Municipio.
+    </li>
+    <li>CU-02: Añadir Evento de Ruta Montaña.
+    </li>
+    <li>CU-03: Añadir Usuario.
+    </li>
+    <li>CU-04: Añadir una barra de búsqueda y filtrado de ubicaciones.
+    </li>
+    <li>CU-05: Añadir preferencias desde el menú de AppBar (ajustes …)
+    </li>
+</ul>
+
+
 ### Casos de uso no estructurales <a name="casosdeusonoestructurales"></a>
+
+<ul>
+    <li>CU-06: Consultar el tiempo detallado de una ubicación.
+    </li>
+    <li>CU-07: Modificar un evento.
+    </li>
+    <li>CU-08: Eliminar un evento.
+    </li>
+    <li>CU-09: Consultar tiempo meteorológico en la ubicación actual
+    </li>
+    <li>CU-10: Modificar idioma y tema a modo oscuro
+    </li>
+    <li>CU-11: Consultar lista de eventos.
+    </li>
+    <li>CU-12: Consultar un evento.
+    </li>
+    <li>CU-13: Iniciar sesión.
+    </li>
+    <li>CU-14: Cerrar sesión.
+    </li>
+    <li>CU-15: Modificar usuario..
+    </li>
+    <li>CU-16: Eliminar usuario.
+    </li>
+</ul>
 
 ### Conjuntos de casos de uso <a name="conjuntosdecasosdeuso"></a>
 
