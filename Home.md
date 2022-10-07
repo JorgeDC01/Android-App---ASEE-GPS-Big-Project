@@ -73,7 +73,7 @@
 &emsp;Para poder utilizar las diferentes funcionalidades de la aplicación, un usuario debe registrarse con unas credenciales. Una vez se registre e inicie sesión, podrá :
 
 <ul>
-    <li>Visualizar el tiempo meteorológico de la ubicación actual del dispositivo.
+    <li>En la pantalla principal, visualizar el tiempo meteorológico de la ubicación actual del dispositivo.
     </li>
     <li>Visualizar el listado de eventos en municipios o montañas  creados por el usuario.
     </li>
@@ -81,7 +81,7 @@
     </li>
     <li>Consultar en detalle el tiempo meteorológico de una ubicación específica.
     </li>
-    <li>Borrar la cuenta de usuario.
+    <li>Editar los datos personales y borrar la cuenta de usuario.
     </li>
 </ul>
 </p>
