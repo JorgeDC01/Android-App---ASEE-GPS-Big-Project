@@ -211,5 +211,30 @@ De esta forma, cada rol realiza las siguientes disciplinas:
 </p>
 
 #### Planificación del proyecto <a name="planificaciondelproyecto2"></a>
+<p>
+&emsp;El proyecto se desarrollará a lo largo de <b>7 iteraciones</b>, cada una de una semana de duración, las cuales se organizará de la siguiente manera:
+</p>
+
+<p>
+&emsp;De esta forma, cada una de las iteraciones se han planificado en función de las distintas <b>fases</b> que pueden realizar cada uno de los <b>roles</b>.
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p1.png" width="1200"/>
+
+Con lo cual la planificación por iteración quedaría de la siguiente manera:
+</p>
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p2.png"/>
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p3.png"/>
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p4.png"/>
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p5.png"/>
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p6.png"/>
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p7.png"/>
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p8.png"/>
 
 #### Análisis de la planificación <a name="analisisdelaplanificacion"></a>
