@@ -210,6 +210,55 @@ De esta forma, cada rol realiza las siguientes disciplinas:
 &emsp;Para calcular el tiempo total que tendrá disponible cada rol y cada caso de uso en número de horas se tendrá en cuenta una jornada laboral de 8 horas. Trabajando 5 días a la semana y teniendo en cuenta las 7 iteraciones (semanas), con lo que se obtiene la siguiente cantidad de tiempo:
 </p>
 
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/a1.png"/>
+
+<p>
+&emsp;Esto nos da que la jornada laboral tiene 280 horas por semana, de las cuales, según la implicación de cada rol en el proyecto se obtiene el tiempo que emplean:
+
+* Jefe del proyecto: **20%**
+* Arquitecto del Software: **100%** 
+* Desarrollador de software Senior: **100%** 
+* Desarrollador de software Junior: **50%** 
+
+Con esto, el tiempo total empleado en el proyecto es de **756 horas**.
+</p>
+
+<p>&emsp;Dado que en España se estima un nivel de productividad general del 93% del tiempo trabajado, podemos deducir el tiempo productivo del proyecto: 
+</p>
+<p>
+<strong>Tiempo productivo en el proyecto: 93% de 756 h ≈ 703,08 horas</strong>
+</p>
+<p>&emsp;Con lo cual contamos con 703,08 horas de trabajo real, de las cuales el <b>15%</b> se dedica a <b>tareas de gestión del proyecto (Tareas de Project)</b>, y el resto del tiempo <b>(85%)</b> a la creación de los casos de uso, por lo que tenemos <b>597,618 horas</b> para realizar todos los casos de uso.
+</p>
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/a2.png"/>
+
+<p>&emsp;En esta tabla se pueden observar los <b>porcentajes de tiempo</b> que se van a dedicar a cada uno de los <b>casos de uso</b>.
+
+* Definición de requisitos: 10%
+* Análisis y Diseño: 20%
+* Implementación: 45%
+* Test e Integración: 20%
+* Despliegue: 5%
+</p>
+
+<p>
+El tiempo que tenemos para cada caso de uso es calculado con: <b>Tiempo bruto total / Número de casos de uso</b>
+</p>
+<p>
+&emsp;De este tiempo, tanto el <b>Jefe del proyecto</b> como el <b>Arquitecto del software</b> emplearán tiempo para las <b>tareas de Modelado de Negocio</b>, lo cual se ha estimado que ocupará un <b>5%</b> del tiempo.
+
+Por lo cual las <b>Tareas de Gestión + Modelado de negocio</b> ocupan un total de:
+
+*105,46 + 29,89 = 135,35 horas.*
+
+Con lo que nos quedan <b>47,31 horas</b> para realizar el resto de fases de los CU.
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/a3.png"/>
+
+&emsp;En la tabla anterior podemos ver que los trabajadores disponen de <b>93 horas semanales</b> para realizar los casos de uso, así como las distintas cantidades de tiempo que dedicará cada rol en el proyecto.
+</p>
+
 #### Planificación del proyecto <a name="planificaciondelproyecto2"></a>
 <p>
 &emsp;El proyecto se desarrollará a lo largo de <b>7 iteraciones</b>, cada una de una semana de duración, las cuales se organizará de la siguiente manera:
