@@ -207,7 +207,7 @@ De esta forma, cada rol realiza las siguientes disciplinas:
 * Desarrollador de Software Senior: Realiza las disciplinas de Requisitos (R), Análisis y Diseño (A&D), Implementación (Imp), Test e integración (T&I) y Despliegue (D).
 
 <p>Para resumir y poder visualizar mejor esto, realizamos la siguiente tabla:</p>
-&emsp;<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/sadsad.png" width="450"/>
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/sadsad.png" width="450"/>
 
 #### Análisis de la distribución <a name="analisisdeladistribucion"></a>
 
@@ -271,10 +271,10 @@ Con lo que nos quedan <b>47,31 horas</b> para realizar el resto de fases de los 
 
 <p>
 &emsp;De esta forma, cada una de las iteraciones se han planificado en función de las distintas <b>fases</b> que pueden realizar cada uno de los <b>roles</b>.
-
+</p>
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p1.png" width="1200"/>
 
-Con lo cual la planificación por iteración quedaría de la siguiente manera:
+<p>Con lo cual la planificación por iteración quedaría de la siguiente manera:
 </p>
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p2.png"/>
@@ -295,9 +295,9 @@ Con lo cual la planificación por iteración quedaría de la siguiente manera:
 
 <p>
 &emsp;Una vez finalizados todos los cálculos y cuadradadas las horas del proyecto, se procede a migrar el mismo a Microsoft Project, una herramienta que nos permite detallar más información acerca de fechas, horas laborales, planificación, diagramas, tareas... etc.
-
+</p>
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/a1.png"/>
-
+<p>
 Este proceso comienza con la obtención de la jornada laboral de cada uno de los roles basándose en su implicación en el desarollo. Esta es la siguiente:
 
 * Jornada diaria del <b>Jefe de Proyecto</b>: 8 horas semanales / 5 días = 1.6h
