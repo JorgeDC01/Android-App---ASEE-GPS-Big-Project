@@ -287,3 +287,36 @@ Con lo cual la planificación por iteración quedaría de la siguiente manera:
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p8.png"/>
 
 #### Análisis de la planificación <a name="analisisdelaplanificacion"></a>
+
+<p>
+&emsp;Una vez finalizados todos los cálculos y cuadradadas las horas del proyecto, se procede a migrar el mismo a Microsoft Project, una herramienta que nos permite detallar más información acerca de fechas, horas laborales, planificación, diagramas, tareas... etc.
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/a1.png"/>
+
+Este proceso comienza con la obtención de la jornada laboral de cada uno de los roles basándose en su implicación en el desarollo. Esta es la siguiente:
+
+* Jornada diaria del <b>Jefe de Proyecto</b>: 8 horas semanales / 5 días = 1.6h
+* Jornada diaria del <b>Arquitecto Software</b>: 40 horas semanales / 5 días = 8h
+* Jornada diaria del <b>Desarrollador Software Senior</b>: 40 horas semanales / 5 días = 8h
+* Jornada diaria del <b>Desarrollador Software Junior</b>: 20 horas semanales / 5 días = 4h
+
+A estas horas les aplicamos el porcentaje de productividad <b>93%</b> para calcular el tiempo que realmente le dedican al proyecto:
+
+* <b>Jefe de Proyecto</b>: 1,488h
+* <b>Arquitecto Software</b>: 7,44h
+* <b>Desarrollador Software Senior</b>: 7,44h
+* <b>Desarrollador Software Junior</b>: 3,72
+
+Teniendo en cuenta esto, la **planificación por iteraciones** realizada es la siguiente:
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p9.png"/>
+</p>
+
+<p>&emsp;Como se puede observar se ha planificado el proyecto basándose en la intervención de los roles en cada iteración.
+
+Por ello, en cada iteración se encuentran <b>3 secciones</b> dedicadas a:
+
+* La <b>gestión del proyecto</b>,  que muestra las intervenciones del Arquitecto del Software o del jefe del proyecto.
+* El **modelado del negocio**, que muestra las intervenciones del jefe del proyecto.
+* Las disciplinas de cada caso de uso realizadas por los roles correspondientes.
+</p>
