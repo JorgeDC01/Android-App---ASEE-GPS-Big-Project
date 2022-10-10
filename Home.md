@@ -215,7 +215,7 @@ De esta forma, cada rol realiza las siguientes disciplinas:
 &emsp;Para calcular el tiempo total que tendrá disponible cada rol y cada caso de uso en número de horas se tendrá en cuenta una jornada laboral de 8 horas. Trabajando 5 días a la semana y teniendo en cuenta las 7 iteraciones (semanas), con lo que se obtiene la siguiente cantidad de tiempo:
 </p>
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/a1.png" width="1300"/>
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/a1.png"/>
 
 <p>
 &emsp;Esto nos da que la jornada laboral tiene 280 horas por semana, de las cuales, según la implicación de cada rol en el proyecto se obtiene el tiempo que emplean:
@@ -236,7 +236,7 @@ Con esto, el tiempo total empleado en el proyecto es de **756 horas**.
 <p>&emsp;Con lo cual contamos con 703,08 horas de trabajo real, de las cuales el <b>15%</b> se dedica a <b>tareas de gestión del proyecto (Tareas de Project)</b>, y el resto del tiempo <b>(85%)</b> a la creación de los casos de uso, por lo que tenemos <b>597,618 horas</b> para realizar todos los casos de uso.
 </p>
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/a2.png" width="1300"/>
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/a2.png"/>
 
 <p>&emsp;En esta tabla se pueden observar los <b>porcentajes de tiempo</b> que se van a dedicar a cada uno de los <b>casos de uso</b>.
 
@@ -259,7 +259,7 @@ Por lo cual las <b>Tareas de Gestión + Modelado de negocio</b> ocupan un total 
 
 Con lo que nos quedan <b>47,31 horas</b> para realizar el resto de fases de los CU.
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/a3.png" width="1300"/>
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/a3.png"/>
 
 &emsp;En la tabla anterior podemos ver que los trabajadores disponen de <b>93 horas semanales</b> para realizar los casos de uso, así como las distintas cantidades de tiempo que dedicará cada rol en el proyecto.
 </p>
@@ -296,7 +296,7 @@ Con lo cual la planificación por iteración quedaría de la siguiente manera:
 <p>
 &emsp;Una vez finalizados todos los cálculos y cuadradadas las horas del proyecto, se procede a migrar el mismo a Microsoft Project, una herramienta que nos permite detallar más información acerca de fechas, horas laborales, planificación, diagramas, tareas... etc.
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/a1.png" width="1300"/>
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/a1.png"/>
 
 Este proceso comienza con la obtención de la jornada laboral de cada uno de los roles basándose en su implicación en el desarollo. Esta es la siguiente:
 
