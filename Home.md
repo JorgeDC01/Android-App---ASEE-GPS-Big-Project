@@ -326,11 +326,11 @@ Por ello, en cada iteración se encuentran <b>3 secciones</b> dedicadas a:
 * Las disciplinas de cada caso de uso realizadas por los roles correspondientes.
 </p>
 
-<p>&emsp;En cuanto a la planificación por <b>casos de uso</b>, queda de la siguiente forma:
+<p>&emsp;En cuanto a la planificación por <b>casos de uso</b>, queda de la siguiente forma:</p>
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p10.png"/>
 
-Para realizarla, se ha tenido en cuenta la planificación previa por iteraciones y se han agrupado todas las intervenciones de los roles en esta por caso de uso.
+<p>Para realizarla, se ha tenido en cuenta la planificación previa por iteraciones y se han agrupado todas las intervenciones de los roles en esta por caso de uso.
 
 En concreto, se compone de <b>3 secciones</b>:
 
