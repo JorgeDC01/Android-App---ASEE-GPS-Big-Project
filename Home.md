@@ -277,7 +277,7 @@ Con lo que nos quedan <b>47,31 horas</b> para realizar el resto de fases de los 
 Con lo cual la planificación por iteración quedaría de la siguiente manera:
 </p>
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p2.png" width="700"/>
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p2.png"/>
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p3.png" width="700"/>
 
