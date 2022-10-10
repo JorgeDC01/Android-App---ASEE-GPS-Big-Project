@@ -286,7 +286,7 @@ Con lo cual la planificación por iteración quedaría de la siguiente manera:
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p8.png"/>
 
-#### Análisis de la planificación <a name="analisisdelaplanificacion"></a>
+
 
 <p>
 &emsp;Una vez finalizados todos los cálculos y cuadradadas las horas del proyecto, se procede a migrar el mismo a Microsoft Project, una herramienta que nos permite detallar más información acerca de fechas, horas laborales, planificación, diagramas, tareas... etc.
@@ -320,3 +320,18 @@ Por ello, en cada iteración se encuentran <b>3 secciones</b> dedicadas a:
 * El **modelado del negocio**, que muestra las intervenciones del jefe del proyecto.
 * Las disciplinas de cada caso de uso realizadas por los roles correspondientes.
 </p>
+
+<p>&emsp;En cuanto a la planificación por <b>casos de uso</b>, queda de la siguiente forma:
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p10.png"/>
+
+Para realizarla, se ha tenido en cuenta la planificación previa por iteraciones y se han agrupado todas las intervenciones de los roles en esta por caso de uso.
+
+En concreto, se compone de <b>3 secciones</b>:
+
+* Una sección dedicada a la **gestión del proyecto** y el **modelado de negocio**, con las intervenciones del jefe del proyecto y el Arquitecto del Software
+* Otra sección que contiene las **disciplinas realizadas** de los casos de uso, en la fecha y hora que se realizaron y los roles que intervinieron.
+* Por último una sección que contiene los **despliegues** de cada caso de uso, con la fecha y hora de su realización
+</p>
+
+#### Análisis de la planificación <a name="analisisdelaplanificacion"></a>
