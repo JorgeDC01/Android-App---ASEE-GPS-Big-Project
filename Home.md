@@ -281,8 +281,10 @@ Con lo que nos quedan <b>47,31 horas</b> para realizar el resto de fases de los 
 ###  Fase de Inicio:
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p2.png"/>
 
+###  Fase de Elaboración:
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p3.png"/>
 
+###  Fase de Construcción:
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p4.png"/>
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p5.png"/>
@@ -291,6 +293,7 @@ Con lo que nos quedan <b>47,31 horas</b> para realizar el resto de fases de los 
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p7.png"/>
 
+###  Fase de Construcción:
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p8.png"/>
 
 
