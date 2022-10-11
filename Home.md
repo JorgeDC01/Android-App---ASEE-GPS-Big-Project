@@ -187,7 +187,7 @@ Cada uno de estos roles tendrá que realizar una serie de tareas que les serán 
 
 #### Distribución de casos de uso <a name="distribuciondecasosdeuso"></a>
 <p>
-&emsp;Para seguir este proceso, los casos de uso especificados se desarrollan e implementan a lo largo de una serie de iteraciones, cuya duración es de una semana, en las que los cuatro roles distinguidos llevarán a cabo una las distintas disciplinas de desarrollo de los casos de uso.
+&emsp;Para seguir este proceso, los casos de uso especificados se desarrollan e implementan a lo largo de una serie de iteraciones, las cuales duran una semana, en las que los cuatro roles distinguidos llevarán a cabo una las distintas disciplinas de desarrollo de los casos de uso, además de tareas de gestión del proyecto.
 </p>
 
 <p>
@@ -278,6 +278,7 @@ Con lo que nos quedan <b>47,31 horas</b> para realizar el resto de fases de los 
 <p>Con lo cual la planificación por iteración quedaría de la siguiente manera:
 </p>
 
+## Fase de Inicio:
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p2.png"/>
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p3.png"/>
