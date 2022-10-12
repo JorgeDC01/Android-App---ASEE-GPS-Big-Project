@@ -412,7 +412,7 @@ Datos:
 | Iteración 9 | 0,00                 | 0,00              | 0,00           | 12,37              | 18,43      | 30,80         |
 | Total       | 29,96                | 41,17             | 112,89         | 74,75              | 18,43      | 277,20        |
 
-|             | Desarrollador Junior                                                   |
+|             | Desarrollador Junior |                    |            |               |
 |-------------|----------------------|--------------------|------------|---------------|
 | Iteraciones | Implementación       | Test e Integración | Despliegue | Horas totales |
 | Iteración 1 | 0,00                 | 0,00               | 0,00       | 0,00          |
