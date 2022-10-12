@@ -229,8 +229,8 @@ Esto nos da que la jornada laboral tiene 280 horas por semana, de las cuales, se
 Con esto, el tiempo total empleado en el proyecto es de **756 horas**.
 </p>
 
-<p>Según las investigaciones proporcionadas por el periódico diarioSevilla, en España, existe una estimación de productividad general de un 93% del tiempo trabajado.
-</p>
+Según las investigaciones proporcionadas por el periódico [diarioSevilla](https://www.diariodesevilla.es/canalempleo/espanoles-productivos-jornada-laboral_0_1615338736.html) , en España, existe una estimación de productividad general de un 93% del tiempo trabajado.
+
 <p>
 <strong>Tiempo productivo en el proyecto: 93% de 756 h ≈ 703,08 horas</strong>
 </p>
@@ -310,7 +310,7 @@ De esta forma, la planificación por iteración después de realizar las modific
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/12.1.png"/>
 
-Debido a que las cuatro primeras iteraciones tienen la misma planificación que en la [inicial](https://docs.google.com/document/d/15MAbGp-y2Dv0iQTNwV9q1wjejY8h0Thr/edit#heading=h.vjimrnjjoclx), son las iteraciones de la IT5 a la IT9 las que deben ser realizadas de nuevo, dejando la planificación modificada como la siguiente:
+Debido a que las cuatro primeras iteraciones tienen la misma planificación que en la inicial, son las iteraciones de la IT5 a la IT9 las que deben ser realizadas de nuevo, dejando la planificación modificada como la siguiente:
 
 ####  Fase de Construcción:
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/13.png"/>
@@ -412,6 +412,7 @@ Datos:
 <p>&nbsp;</p>
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/25.png"/>
 <p>&nbsp;</p>
+
 
 Gráficos:
 
