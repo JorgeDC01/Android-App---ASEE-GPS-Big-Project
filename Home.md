@@ -440,6 +440,7 @@ A continuación, se muestra una gráfica de coste de los recursos de la planific
 Por último, dentro del análisis de la planificación nos encontramos ante el camino crítico. Este nos informará si hay algún punto crítico dentro del proyecto  ya sea por culpa de horas mal planificadas o sobrecarga de trabajo.
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/33.png"/>
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/33.2.png"/>
 
 Como se puede ver en estas dos fotos anteriores, hay zonas críticas debido a las horas, algunas acciones empiezan y acaban el mismo día (Business Modeling) la cual es predecesora de las disciplinas de los casos de usos.
 
