@@ -29,15 +29,15 @@
 
 <p>
 
-&emsp;En los últimos años, la plataforma Android ha gobernado notablemente el mercado móvil, de tal manera que iOS nunca ha sido capaz de recuperar el status con el que se inició en el “mundillo” tecnológico. Además, junto con el crecimiento exponencial del “Big Data”, apareció un nuevo formato de aplicaciones móviles que accedían a grandes cantidades de datos. Como consecuencia,  los servicios que proporcionaban grandes fuentes de datos debían incorporar la forma de brindar datos con un acceso libre y seguro, conocido como “Open Data”. 
+En los últimos años, la plataforma Android ha gobernado notablemente el mercado móvil, de tal manera que iOS nunca ha sido capaz de recuperar el status con el que se inició en el “mundillo” tecnológico. Además, junto con el crecimiento exponencial del “Big Data”, apareció un nuevo formato de aplicaciones móviles que accedían a grandes cantidades de datos. Como consecuencia,  los servicios que proporcionaban grandes fuentes de datos debían incorporar la forma de brindar datos con un acceso libre y seguro, conocido como “Open Data”. 
 </p>
 
 <p>
-&emsp;En cuanto al nicho de mercado, apenas existen propuestas novedosas de aplicaciones meteorológicas, puesto que la mayoría de dispositivos Android incorporan estas aplicaciones de fábrica. Del mismo modo, los usuarios no parecen ser tan exigentes con este tipo de aplicaciones al ser conformistas con lo que disponen. 
+En cuanto al nicho de mercado, apenas existen propuestas novedosas de aplicaciones meteorológicas, puesto que la mayoría de dispositivos Android incorporan estas aplicaciones de fábrica. Del mismo modo, los usuarios no parecen ser tan exigentes con este tipo de aplicaciones al ser conformistas con lo que disponen. 
 </p>
 
 <p>
-&emsp;Hoy en día, las aplicaciones móviles no se centran únicamente en una tarea, sino que aglutinan diversas funcionalidades relacionadas entre sí. Por otro lado, el hardware móvil ha evolucionado hasta tal punto en que los desarrolladores tienen un gran abanico de opciones para desarrollar una IU con una alta usabilidad y accesibilidad.
+Hoy en día, las aplicaciones móviles no se centran únicamente en una tarea, sino que aglutinan diversas funcionalidades relacionadas entre sí. Por otro lado, el hardware móvil ha evolucionado hasta tal punto en que los desarrolladores tienen un gran abanico de opciones para desarrollar una IU con una alta usabilidad y accesibilidad.
 </p>
 
 
@@ -45,14 +45,14 @@
 
 <p>
 
-&emsp;El propósito del equipo de desarrollo es afianzar conocimientos: cómo utilizar Android Studio, cómo tratar el gran flujo de información devuelto por la API y la forma en la que se presentan los datos al usuario.  Asimismo, se va a focalizar en el diseño de la interfaz de usuario, haciéndola atractiva, novedosa y cumpliendo los requisitos de usabilidad y accesibilidad. Se pretende aportar al mercado un servicio de buena calidad a primera vista.
+El propósito del equipo de desarrollo es afianzar conocimientos: cómo utilizar Android Studio, cómo tratar el gran flujo de información devuelto por la API y la forma en la que se presentan los datos al usuario.  Asimismo, se va a focalizar en el diseño de la interfaz de usuario, haciéndola atractiva, novedosa y cumpliendo los requisitos de usabilidad y accesibilidad. Se pretende aportar al mercado un servicio de buena calidad a primera vista.
 </p>
 
 
 ### Resumen
 <p>
 
-&emsp;En los siguientes apartados, hablaremos de la propuesta inicial del proyecto con una descripción y su funcionalidad inicial. A continuación, se detalla el marco de desarrollo, en otras palabras, la planificación y el proceso seguido para cumplir con los objetivos propuestos. La metodología empleada por el equipo es el “Proceso Unificado”, un marco de desarrollo iterativo e incremental basado en casos de uso y centrado en la arquitectura del sistema.  Por último, se presentará el funcionamiento interno de la aplicación, así como los mockup (interfaz de usuario primigenia) y la navegación entre las diferentes pantallas.
+En los siguientes apartados, hablaremos de la propuesta inicial del proyecto con una descripción y su funcionalidad inicial. A continuación, se detalla el marco de desarrollo, en otras palabras, la planificación y el proceso seguido para cumplir con los objetivos propuestos. La metodología empleada por el equipo es el “Proceso Unificado”, un marco de desarrollo iterativo e incremental basado en casos de uso y centrado en la arquitectura del sistema.  Por último, se presentará el funcionamiento interno de la aplicación, así como los mockup (interfaz de usuario primigenia) y la navegación entre las diferentes pantallas.
 </p>
 
 <p>&nbsp;</p>
@@ -63,9 +63,9 @@
 
 ### Descripción de la idea <a name="descripcionDeLaIdea"></a>
 <p>
-&emsp; El objetivo principal de este trabajo es el desarrollo de una aplicación móvil Android llamada <b>ClimApp</b> centrada en la visualización del tiempo meteorológico de una localización en España, dicha información proporcionada por la API de AEMET. 
+El objetivo principal de este trabajo es el desarrollo de una aplicación móvil Android llamada <b>ClimApp</b> centrada en la visualización del tiempo meteorológico de una localización en España, dicha información proporcionada por la API de AEMET. 
 </p>
-</p>&emsp;El usuario puede crear eventos personalizados ligados a una ubicación, los cuales tendrán asignado las condiciones meteorológicas a tiempo real en dicha localización. De igual importancia, se favorece la interacción de los usuarios con el medio ambiente, permitiéndoles crear eventos tanto en municipios como en montañas.
+</p>El usuario puede crear eventos personalizados ligados a una ubicación, los cuales tendrán asignado las condiciones meteorológicas a tiempo real en dicha localización. De igual importancia, se favorece la interacción de los usuarios con el medio ambiente, permitiéndoles crear eventos tanto en municipios como en montañas.
 <p>
 
 <p>&nbsp;</p>
@@ -75,7 +75,7 @@
 
 
 <p>
-&emsp;Para poder utilizar las diferentes funcionalidades de la aplicación, un usuario debe registrarse con unas credenciales. Una vez se registre e inicie sesión, podrá :
+Para poder utilizar las diferentes funcionalidades de la aplicación, un usuario debe registrarse con unas credenciales. Una vez se registre e inicie sesión, podrá :
 
 <ul>
     <li>En la pantalla principal, visualizar el tiempo meteorológico de la ubicación actual del dispositivo.
@@ -165,7 +165,7 @@
 
 ### Proceso de desarrollo <a name="procesodedesarrollo"></a>
 
-&emsp;Para llevar a cabo la realización del proyecto se ha utilizado el método denominado como <b>Proceso Unificado</b> (SCRUM), que consiste en una metodología ágil gracias a la cual se pueden desarrollar proyectos pudiendo realizar modificaciones en este fácilmente.
+Para llevar a cabo la realización del proyecto se ha utilizado el método denominado como <b>Proceso Unificado</b> (SCRUM), que consiste en una metodología ágil gracias a la cual se pueden desarrollar proyectos pudiendo realizar modificaciones en este fácilmente.
 Así mismo, este proceso divide su desarrollo en <b>fases</b> utilizando el concepto de Casos de Uso para representar a los requisitos. Las fases se desarrollarán de forma incremental mediante una serie de <b>iteraciones</b>.
 En este proceso, los <b>casos de uso</b> se crean e implementan a través de <b>cuatro fases</b>:
 1. <b>Inicio</b>: Se especifica o declara el requisito en concreto, madurando dicha idea hasta un concepto más sólido.
@@ -177,7 +177,7 @@ En este proceso, los <b>casos de uso</b> se crean e implementan a través de <b>
 
 #### Proceso de planificación <a name="procesodeplanificacion"></a>
 
-&emsp;En la planificación de este proyecto, existirán <b>cuatro roles</b> que influyen de forma distinta la creación de casos de uso. Estos roles son:
+En la planificación de este proyecto, existirán <b>cuatro roles</b> que influyen de forma distinta la creación de casos de uso. Estos roles son:
 1. <b>Jefe de proyecto</b>: Es el encargado principal de gestionar el desarrollo del proyecto.
 2. <b>Desarrollador de software Senior</b>: Es un programador de Software relativamente experimentado.
 3. <b>Desarrollador de software Junior</b>: Es un programador de software que cuenta con poca experiencia.
@@ -187,11 +187,11 @@ Cada uno de estos roles tendrá que realizar una serie de tareas que les serán 
 
 #### Distribución de casos de uso <a name="distribuciondecasosdeuso"></a>
 <p>
-&emsp;Para seguir este proceso, los casos de uso especificados se desarrollan e implementan a lo largo de una serie de iteraciones, las cuales duran una semana, en las que los cuatro roles distinguidos llevarán a cabo una las distintas disciplinas de desarrollo de los casos de uso, además de tareas de gestión del proyecto.
+Para seguir este proceso, los casos de uso especificados se desarrollan e implementan a lo largo de una serie de iteraciones, las cuales duran una semana, en las que los cuatro roles distinguidos llevarán a cabo una las distintas disciplinas de desarrollo de los casos de uso, además de tareas de gestión del proyecto.
 </p>
 
 <p>
-&emsp;Estas disciplinas permitirán marcar la vida de desarrollo de los casos de uso, y estarán relacionados con las cuatro fases existentes en el método de Proceso Unificado. Las disciplinas son las siguientes:
+Estas disciplinas permitirán marcar la vida de desarrollo de los casos de uso, y estarán relacionados con las cuatro fases existentes en el método de Proceso Unificado. Las disciplinas son las siguientes:
 </p>
 
 * Modelado del negocio (Previa al inicio)
@@ -213,13 +213,13 @@ De esta forma, cada rol realiza las siguientes disciplinas:
 #### Análisis de la distribución <a name="analisisdeladistribucion"></a>
 
 <p>
-&emsp;Para calcular el tiempo total que tendrá disponible cada rol y cada caso de uso en número de horas se tendrá en cuenta una jornada laboral de 8 horas. Trabajando 5 días a la semana y teniendo en cuenta las 7 iteraciones (semanas), con lo que se obtiene la siguiente cantidad de tiempo:
+Para calcular el tiempo total que tendrá disponible cada rol y cada caso de uso en número de horas se tendrá en cuenta una jornada laboral de 8 horas. Trabajando 5 días a la semana y teniendo en cuenta las 7 iteraciones (semanas), con lo que se obtiene la siguiente cantidad de tiempo:
 </p>
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/a1.png"/>
 
 <p>
-&emsp;Esto nos da que la jornada laboral tiene 280 horas por semana, de las cuales, según la implicación de cada rol en el proyecto se obtiene el tiempo que emplean:
+Esto nos da que la jornada laboral tiene 280 horas por semana, de las cuales, según la implicación de cada rol en el proyecto se obtiene el tiempo que emplean:
 
 * Jefe del proyecto: **20%**
 * Arquitecto del Software: **100%** 
@@ -229,17 +229,17 @@ De esta forma, cada rol realiza las siguientes disciplinas:
 Con esto, el tiempo total empleado en el proyecto es de **756 horas**.
 </p>
 
-<p>&emsp;Según las investigaciones proporcionadas por el periódico [diariodeSevilla](https://www.diariodesevilla.es/canalempleo/espanoles-productivos-jornada-laboral_0_1615338736.html) , en España, existe una estimación de productividad general de un 93% del tiempo trabajado.
+<p>Según las investigaciones proporcionadas por el periódico [diariodeSevilla](https://www.diariodesevilla.es/canalempleo/espanoles-productivos-jornada-laboral_0_1615338736.html) , en España, existe una estimación de productividad general de un 93% del tiempo trabajado.
 </p>
 <p>
 <strong>Tiempo productivo en el proyecto: 93% de 756 h ≈ 703,08 horas</strong>
 </p>
-<p>&emsp;Con lo cual contamos con 703,08 horas de trabajo real, de las cuales el <b>15%</b> se dedica a <b>tareas de gestión del proyecto (Tareas de Project)</b>, y el resto del tiempo <b>(85%)</b> a la creación de los casos de uso, por lo que tenemos <b>597,618 horas</b> para realizar todos los casos de uso.
+<p>Con lo cual contamos con 703,08 horas de trabajo real, de las cuales el <b>15%</b> se dedica a <b>tareas de gestión del proyecto (Tareas de Project)</b>, y el resto del tiempo <b>(85%)</b> a la creación de los casos de uso, por lo que tenemos <b>597,618 horas</b> para realizar todos los casos de uso.
 </p>
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/a2.png"/>
 
-<p>&emsp;En esta tabla se pueden observar los <b>porcentajes de tiempo</b> que se van a dedicar a cada uno de los <b>casos de uso</b>.
+<p>En esta tabla se pueden observar los <b>porcentajes de tiempo</b> que se van a dedicar a cada uno de los <b>casos de uso</b>.
 
 * Definición de requisitos: 10%
 * Análisis y Diseño: 20%
@@ -252,7 +252,7 @@ Con esto, el tiempo total empleado en el proyecto es de **756 horas**.
 El tiempo que tenemos para cada caso de uso es calculado con: <b>Tiempo bruto total / Número de casos de uso</b>
 </p>
 <p>
-&emsp;De este tiempo, tanto el <b>Jefe del proyecto</b> como el <b>Arquitecto del software</b> emplearán tiempo para las <b>tareas de Modelado de Negocio</b>, lo cual se ha estimado que ocupará un <b>5%</b> del tiempo.
+De este tiempo, tanto el <b>Jefe del proyecto</b> como el <b>Arquitecto del software</b> emplearán tiempo para las <b>tareas de Modelado de Negocio</b>, lo cual se ha estimado que ocupará un <b>5%</b> del tiempo.
 
 Por lo cual las <b>Tareas de Gestión + Modelado de negocio</b> ocupan un total de:
 
@@ -262,30 +262,30 @@ Con lo que nos quedan <b>47,31 horas</b> para realizar el resto de fases de los 
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/a3.png"/>
 
-&emsp;En la tabla anterior podemos ver que los trabajadores disponen de <b>93 horas semanales</b> para realizar los casos de uso, así como las distintas cantidades de tiempo que dedicará cada rol en el proyecto.
+En la tabla anterior podemos ver que los trabajadores disponen de <b>93 horas semanales</b> para realizar los casos de uso, así como las distintas cantidades de tiempo que dedicará cada rol en el proyecto.
 </p>
 
 #### Planificación inicial <a name="planificaciondelproyecto2"></a>
 <p>
-&emsp;Se ha priorizado que sea el arquitecto de software el que tenga tiempo restante, como se puede ver en cada una de las siguientes tablas, para así dedicárselo a la gestión del proyecto.
+Se ha priorizado que sea el arquitecto de software el que tenga tiempo restante, como se puede ver en cada una de las siguientes tablas, para así dedicárselo a la gestión del proyecto.
 
-&emsp;El proyecto se desarrollará a lo largo de <b>7 iteraciones</b>, cada una de una semana de duración, las cuales se organizará de la siguiente manera:
+El proyecto se desarrollará a lo largo de <b>7 iteraciones</b>, cada una de una semana de duración, las cuales se organizará de la siguiente manera:
 </p>
 
 <p>
-&emsp;De esta forma, cada una de las iteraciones se han planificado en función de las distintas <b>fases</b> que pueden realizar cada uno de los <b>roles</b>.
+De esta forma, cada una de las iteraciones se han planificado en función de las distintas <b>fases</b> que pueden realizar cada uno de los <b>roles</b>.
 </p>
 
 <p>Con lo cual la planificación por iteración quedaría de la siguiente manera:
 </p>
 
-##  Fase de Inicio:
+####  Fase de Inicio:
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p2.png"/>
 
-##  Fase de Elaboración:
+####  Fase de Elaboración:
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p3.png"/>
 
-##  Fase de Construcción:
+####  Fase de Construcción:
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p4.png"/>
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p5.png"/>
@@ -294,7 +294,7 @@ Con lo que nos quedan <b>47,31 horas</b> para realizar el resto de fases de los 
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p7.png"/>
 
-##  Fase de Transición:
+####  Fase de Transición:
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p8.png"/>
 
 #### Planificación modificada <a name="planificaciondelproyecto3"></a>
@@ -303,20 +303,19 @@ Posteriormente, el **cliente** añadió cuatro casos de uso más para un total d
 Esto da lugar a una planificación compuesta por:
 * Una iteración en la fase de Inicio.
 * Una iteración en la fase de Elaboración.
-* Cinco iteracoines en la fase de Construcción.
+* Cinco iteraciones en la fase de Construcción.
 * Dos iteraciones en la fase de Transición.
 
 De esta forma, la planificación por iteración después de realizar las modificaciones sería:
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/12.png"/>
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/12.1.png"/>
 
 Debido a que las cuatro primeras iteraciones tienen la misma planificación que en la [inicial](https://docs.google.com/document/d/15MAbGp-y2Dv0iQTNwV9q1wjejY8h0Thr/edit#heading=h.vjimrnjjoclx), son las iteraciones de la IT5 a la IT9 las que deben ser realizadas de nuevo, dejando la planificación modificada como la siguiente:
 
-##  Fase de Inicio:
-##  Fase de Elaboración:
-##  Fase de Construcción:
-##  Fase de Transición:
+####  Fase de Inicio:
+####  Fase de Elaboración:
+####  Fase de Construcción:
+####  Fase de Transición:
 
 Como podemos ver, en esta **última iteración** ha sido necesario que el **arquitecto** ayude a los dos roles de desarrolladores a realizar ciertas tareas de **test e integración.**
 
@@ -370,7 +369,7 @@ En primer lugar, la planificación ha requerido <b>más horas</b> de las que rea
 Se ha decidido que el <b>Arquitecto del Software</b> se encargará de aquellas tareas que no debía realizar por su cualificación, pero que no se disponía del tiempo requerido para llevarlas a cabo. En este caso se trata de la disciplina de <b>Test e Integración</b>, pues a lo largo de las <b>últimas iteraciones</b> era necesario completarla para llevar a cabo el despliegue.
 
 Considerando la falta de horas para realizar todo el trabajo, el <b>arquitecto software</b> priorizará trabajar en las disciplinas dedicadas a los <b>casos de uso</b>, y tras su realización, dedicará el tiempo sobrante de cada iteración en realizar <b>horas de gestión</b>. En la siguiente tabla se observan las <b>13,16</b> horas de gestión que realizará el arquitecto tras finalizar tu contribución en las tareas dedicadas a los casos de uso.
-
+<p>&nbsp;</p>
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/22.png"/>
 
 
@@ -389,8 +388,10 @@ Datos:
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/23.png"/>
 
+<p>&nbsp;</p>
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/24.png"/>
 
+<p>&nbsp;</p>
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/25.png"/>
 
 Gráficos:
@@ -399,7 +400,7 @@ Gráficos:
 De esta forma, las <b>horas máximas</b> que se han dedicado al proyecto respecto de las que se <b>disponen</b> en primer lugar son las siguientes:
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/31.png"/>
-
+<p>&nbsp;</p>
 Con estos datos, se puede comprobar el **rendimiento** que se ha tenido por cada iteración:
 Se puede apreciar que existe un descenso en el trabajo realizado en la octava y novena iteración, esto es debido a que estas iteraciones corresponden a las tareas de Test e Integración y despliegue, que no puede realizar el Arquitecto del Software.
 A continuación, se muestra una gráfica de coste de los recursos de la planificación:
