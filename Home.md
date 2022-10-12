@@ -309,6 +309,27 @@ Esto da lugar a una planificación compuesta por:
 De esta forma, la planificación por iteración después de realizar las modificaciones sería:
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/12.png"/>
 
+| Planificación |         |             |              |      |         |      |      |            |         |
+|---------------|---------|-------------|--------------|------|---------|------|------|------------|---------|
+| CU1           | R + A&D | Imp         |              | T&I  |         |      |      | D          |         |
+| CU2           | R + A&D | Imp         |              | T&I  |         |      |      | D          |         |
+| CU3           | R + A&D | Imp         |              | T&I  |         |      |      | D          |         |
+| CU5           | R + A&D |             | Imp          |      |         |      | T&I  |            | D       |
+| CU6           | R       | A&D         |              | Imp  |         |      | T&I  |            | D       |
+| CU7           | R       | A&D         |              | Imp  |         |      |      | T&I        | D       |
+| CU8           | R       | A&D         |              | Imp  |         |      |      | T&I        | D       |
+| CU9           |         |             | R + A&D      |      | Imp     |      |      | T&I        | D       |
+| CU10          |         |             | R + A&D      |      | Imp     |      |      | T&I        | D       |
+| CU11          |         |             | R + A&D      |      | Imp     |      |      | T&I        | D       |
+| CU12          |         |             | R + A&D      |      |         | Imp  |      |            | T&I + D |
+| CU13          |         |             | R + A&D      |      |         | Imp  |      |            | T&I + D |
+| CU4           |         |             |              |      | R + A&D | Imp  | T&I  |            | D       |
+| CU14          |         |             |              |      | R       | A&D  | Imp  |            | T&I + D |
+| CU15          |         |             |              |      | R       | A&D  | Imp  |            | T&I + D |
+| CU16          |         |             |              |      | R       | A&D  | Imp  |            | T&I + D |
+| Iteraciones   | IT 1    | IT 2        | IT3          | IT 4 | IT 5    | IT 6 | IT 7 | IT 8       | IT 9    |
+| Fases         | INICIO  | ELABORACIÓN | CONSTRUCCIÓN |      |         |      |      | TRANSICIÓN |         |
+
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/12.1.png"/>
 
 Debido a que las cuatro primeras iteraciones tienen la misma planificación que en la [inicial](https://docs.google.com/document/d/15MAbGp-y2Dv0iQTNwV9q1wjejY8h0Thr/edit#heading=h.vjimrnjjoclx), son las iteraciones de la IT5 a la IT9 las que deben ser realizadas de nuevo, dejando la planificación modificada como la siguiente:
