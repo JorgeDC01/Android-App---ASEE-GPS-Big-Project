@@ -343,14 +343,14 @@ Como se puede observar se ha planificado el proyecto basándose en la intervenci
 Por ello, en cada iteración se encuentran **2 secciones** dedicadas a:
 
 * <b>Management disciplines</b>: Esta sección está dedicada para las tareas de gestión del proyecto, en ella trabajan tanto el jefe de proyecto como el arquitecto software, y se divide en 3 subsecciones, Project Management, Environment y Configuration & Change Management.
-* Use Cases Disciplines: Esta sección está utilizada para las distintas fases de los casos de uso, en ella trabaja todo el equipo y sus posibles subsecciones son las siguientes:
-Business Modeling: Esta sección se encarga por completo del jefe del proyecto, entrando dentro de lo que conocemos como el modelado del negocio.
-Requirements: Esta sección corresponde con los requerimientos de cada caso de uso.
-Analysis and Design: Esta sección corresponde con el análisis y el diseño de cada caso de uso del proyecto.
-Implementation: Esta subsección corresponde con la implementación de cada caso de uso
-Test y Integration: En estas dos subsecciones corresponden con la fase de test e integración del Excel
-Deployment: Esta subsección corresponde con el despliegue, y es la última que se realiza antes de que el caso de uso esté completamente desarrollado en la aplicación.
-
+* <b>Use Cases Disciplines</b>: Esta sección está utilizada para las distintas fases de los casos de uso, en ella trabaja todo el equipo y sus posibles subsecciones son las siguientes:
+** <b>Business Modeling</b>: Esta sección se encarga por completo del jefe del proyecto, entrando dentro de lo que conocemos como el modelado del negocio.
+** <b>Requirements</b>: Esta sección corresponde con los requerimientos de cada caso de uso.
+** <b>Analysis and Design</b>: Esta sección corresponde con el análisis y el diseño de cada caso de uso del proyecto.
+** <b>Implementation</b>: Esta subsección corresponde con la implementación de cada caso de uso
+** <b>Test y Integration</b>: En estas dos subsecciones corresponden con la fase de test e integración del Excel
+** <b>Deployment</b>: Esta subsección corresponde con el despliegue, y es la última que se realiza antes de que el caso de uso esté completamente desarrollado en la aplicación.
+      Cada iteración corresponde con una semana, por lo que en esta planificación se han ido repartiendo las horas de cada trabajador en cada una de las tareas que había que realizar para dicha integración, de tal forma que la repartición de horas, en función de los siguientes días y respetando su jornada laboral, se puede ver en la siguiente imagen:
 
 
 #### Análisis de la planificación <a name="analisisdelaplanificacion"></a>
