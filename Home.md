@@ -372,3 +372,14 @@ Considerando la falta de horas para realizar todo el trabajo, el <b>arquitecto s
 |Jefe|37,08|
 |Arquitecto|55,22|
 |Tiempo Restante| 13,16|
+
+Respecto a la distribución de horas de los distintos roles en las distintas disciplinas,  el <b>Jefe de proyecto</b> es el que se encarga de todo el tiempo de <b>Business Modeling</b>, tras ello, dedica sus horas restantes a la <b>gestión</b>.
+
+El <b>arquitecto de software</b> por tanto se dedica a las disciplinas de Requisitos, Análisis y Diseño, Implementación y extraordinariamente en la última iteración realizará Tests e Integración. Como se comentó previamente, invertirá las horas restantes que tenga en cada iteración en tareas de <b>gestión</b>.
+
+El <b>desarrollador senior</b>, dedica todas sus horas a las siguientes disciplinas de los casos de uso: Requisitos, Análisis y Diseño, Implementación, Test e Integración y Despliegue. 
+
+Finalmente el <b>desarrollador junior</b>, dedica sus horas a las siguientes disciplinas de los casos de uso: Implementación, Test e Integración y Despliegue.
+
+A continuación se muestra la distribución de horas que se ha seguido en las disciplinas de los casos de uso para cada uno de los <b>roles</b>, exceptuando el jefe de proyecto:
+Datos:
