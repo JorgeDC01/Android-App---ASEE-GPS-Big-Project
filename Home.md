@@ -21,6 +21,7 @@
       - [Análisis de la distribución <a name="analisisdeladistribucion"></a>](#análisis-de-la-distribución-)
       - [Planificación del proyecto <a name="planificaciondelproyecto2"></a>](#planificación-del-proyecto--1)
       - [Análisis de la planificación <a name="analisisdelaplanificacion"></a>](#análisis-de-la-planificación-)
+        - [Camino Crítico <a name="caminocritico"></a>](#camino-crítico-)
 
 
 ## Introduccion <a name="introduction"></a>
@@ -453,7 +454,7 @@ Con estos datos, se puede comprobar el **rendimiento** que se ha tenido por cada
 Se puede apreciar que existe un descenso en el trabajo realizado en la octava y novena iteración, esto es debido a que estas iteraciones corresponden a las tareas de Test e Integración y despliegue, que no puede realizar el Arquitecto del Software.
 A continuación, se muestra una gráfica de coste de los recursos de la planificación:
 
-####  Camino Crítico
+####  Camino Crítico <a name="caminocritico"></a>
 Por último, dentro del análisis de la planificación nos encontramos ante el camino crítico. Este nos informará si hay algún punto crítico dentro del proyecto  ya sea por culpa de horas mal planificadas o sobrecarga de trabajo.
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/33.png"/>
