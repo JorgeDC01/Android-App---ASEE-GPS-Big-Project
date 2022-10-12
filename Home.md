@@ -425,3 +425,27 @@ Datos:
 | Iteración 8 | 0,00                 | 8,35               | 5,88       | 14,23         |
 | Iteración 9 | 0,00                 | 8,35               | 7,05       | 15,40         |
 | Total       | 77,00                | 32,10              | 12,93      | 122,03        |
+
+
+Gráficos:
+
+
+De esta forma, las <b>horas máximas</b> que se han dedicado al proyecto respecto de las que se <b>disponen</b> en primer lugar son las siguientes:
+|             | Total         |                 |
+|-------------|---------------|-----------------|
+| Iteraciones | Horas máximas | Horas dedicadas |
+| Iteración 1 | 77            | 58,76           |
+| Iteración 2 | 77            | 76,38           |
+| Iteración 3 | 77            | 76,38           |
+| Iteración 4 | 77            | 76,38           |
+| Iteración 5 | 77            | 76,40           |
+| Iteración 6 | 77            | 76,38           |
+| Iteración 7 | 77            | 76,38           |
+| Iteración 8 | 77            | 45,03           |
+| Iteración 9 | 77            | 64,63           |
+| Total       | 693           | 626,72          |
+
+Con estos datos, se puede comprobar el **rendimiento** que se ha tenido por cada iteración:
+Se puede apreciar que existe un descenso en el trabajo realizado en la octava y novena iteración, esto es debido a que estas iteraciones corresponden a las tareas de Test e Integración y despliegue, que no puede realizar el Arquitecto del Software.
+A continuación, se muestra una gráfica de coste de los recursos de la planificación:
+
