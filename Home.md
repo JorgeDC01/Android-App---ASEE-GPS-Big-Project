@@ -383,3 +383,16 @@ Finalmente el <b>desarrollador junior</b>, dedica sus horas a las siguientes dis
 
 A continuación se muestra la distribución de horas que se ha seguido en las disciplinas de los casos de uso para cada uno de los <b>roles</b>, exceptuando el jefe de proyecto:
 Datos:
+| Arquitecto Software |                   |                |                    |               |
+|---------------------|-------------------|----------------|--------------------|---------------|
+| Requisitos          | Análisis y Diseño | Implementación | Test e Integración | Horas totales |
+| 9,24                | 18,72             | 0,00           | 0                  | 27,96         |
+| 0,00                | 23,49             | 6,69           | 0                  | 30,18         |
+| 19,60               | 10,58             | 0,00           | 0                  | 30,18         |
+| 0,00                | 0,00              | 30,18          | 0                  | 30,18         |
+| 3,92                | 7,83              | 18,45          | 0                  | 30,20         |
+| 0,00                | 23,49             | 6,69           | 0                  | 30,18         |
+| 0,00                | 0,00              | 30,18          | 0                  | 30,18         |
+| 0,00                | 0,00              | 0,00           | 0                  | 0,00          |
+| 0,00                | 0,00              | 0,00           | 18,43              | 18,43         |
+| 32,76               | 84,11             | 92,19          | 18,43              | 227,49        |
