@@ -208,7 +208,7 @@ De esta forma, cada rol realiza las siguientes disciplinas:
 * Desarrollador de Software Senior: Realiza las disciplinas de Requisitos (R), Análisis y Diseño (A&D), Implementación (Imp), Test e integración (T&I) y Despliegue (D).
 
 <p>Para resumir y poder visualizar mejor esto, realizamos la siguiente tabla:</p>
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/sadsad.png" width="450"/>
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/sadsad.png"/>
 
 #### Análisis de la distribución <a name="analisisdeladistribucion"></a>
 
