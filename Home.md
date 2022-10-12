@@ -315,11 +315,11 @@ Debido a que las cuatro primeras iteraciones tienen la misma planificación que 
 ##  Fase de Construcción:
 ##  Fase de Transición:
 
-Como podemos ver, en esta **última iteración** ha sido necesario que el **arquitecto **ayude a los dos roles de desarrolladores a realizar ciertas tareas de **test e integración.**
+Como podemos ver, en esta **última iteración** ha sido necesario que el **arquitecto** ayude a los dos roles de desarrolladores a realizar ciertas tareas de **test e integración.**
 
 También hay que tener en cuenta que todo el **tiempo que le sobra** al arquitecto es tiempo que dedica a **tareas de gestión Project** en conjunto con el jefe de proyecto.
 
-Una vez finalizados todos los cálculos y cuadradadas las horas del proyecto, se procede a **migrar el mismo a Microsoft Project**, una herramienta que nos permite detallar más información acerca de fechas, horas laborales, planificación, diagramas, tareas... etc.
+Una vez finalizados todos los cálculos y cuadradas las horas del proyecto, se procede a **migrar el mismo a Microsoft Project**, una herramienta que nos permite detallar más información acerca de fechas, horas laborales, planificación, diagramas, tareas... etc.
 
 Para ello, primero es necesario obtener la jornada laboral de cada uno de los roles basándose en su implicación en el desarrollo. Esta es la siguiente:
 
@@ -341,5 +341,16 @@ En Microsoft Project  se han realizado **2 tipos de planificaciones**, una plani
 Como se puede observar se ha planificado el proyecto basándose en la intervención de los roles en cada iteración.
 
 Por ello, en cada iteración se encuentran **2 secciones** dedicadas a:
+
+* <b>Management disciplines</b>: Esta sección está dedicada para las tareas de gestión del proyecto, en ella trabajan tanto el jefe de proyecto como el arquitecto software, y se divide en 3 subsecciones, Project Management, Environment y Configuration & Change Management.
+* Use Cases Disciplines: Esta sección está utilizada para las distintas fases de los casos de uso, en ella trabaja todo el equipo y sus posibles subsecciones son las siguientes:
+Business Modeling: Esta sección se encarga por completo del jefe del proyecto, entrando dentro de lo que conocemos como el modelado del negocio.
+Requirements: Esta sección corresponde con los requerimientos de cada caso de uso.
+Analysis and Design: Esta sección corresponde con el análisis y el diseño de cada caso de uso del proyecto.
+Implementation: Esta subsección corresponde con la implementación de cada caso de uso
+Test y Integration: En estas dos subsecciones corresponden con la fase de test e integración del Excel
+Deployment: Esta subsección corresponde con el despliegue, y es la última que se realiza antes de que el caso de uso esté completamente desarrollado en la aplicación.
+
+
 
 #### Análisis de la planificación <a name="analisisdelaplanificacion"></a>
