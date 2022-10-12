@@ -367,3 +367,8 @@ En primer lugar, la planificación ha requerido <b>más horas</b> de las que rea
 Se ha decidido que el <b>Arquitecto del Software</b> se encargará de aquellas tareas que no debía realizar por su cualificación, pero que no se disponía del tiempo requerido para llevarlas a cabo. En este caso se trata de la disciplina de <b>Test e Integración</b>, pues a lo largo de las <b>últimas iteraciones</b> era necesario completarla para llevar a cabo el despliegue.
 
 Considerando la falta de horas para realizar todo el trabajo, el <b>arquitecto software</b> priorizará trabajar en las disciplinas dedicadas a los <b>casos de uso</b>, y tras su realización, dedicará el tiempo sobrante de cada iteración en realizar <b>horas de gestión</b>. En la siguiente tabla se observan las <b>13,16</b> horas de gestión que realizará el arquitecto tras finalizar tu contribución en las tareas dedicadas a los casos de uso.
+|Trabajador|Horas Gestión|
+|---|---|
+|Jefe|37,08|
+|Arquitecto|55,22|
+|Tiempo Restante| 13,16|
