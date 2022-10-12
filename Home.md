@@ -229,7 +229,8 @@ Esto nos da que la jornada laboral tiene 280 horas por semana, de las cuales, se
 Con esto, el tiempo total empleado en el proyecto es de **756 horas**.
 </p>
 
-Según las investigaciones proporcionadas por el periódico [diarioSevilla](https://www.diariodesevilla.es/canalempleo/espanoles-productivos-jornada-laboral_0_1615338736.html) , en España, existe una estimación de productividad general de un 93% del tiempo trabajado.
+Según las investigaciones proporcionadas por el periódico 
+[diarioSevilla](https://www.diariodesevilla.es/canalempleo/espanoles-productivos-jornada-laboral_0_1615338736.html) , en España, existe una estimación de productividad general de un 93% del tiempo trabajado.
 
 <p>
 <strong>Tiempo productivo en el proyecto: 93% de 756 h ≈ 703,08 horas</strong>
