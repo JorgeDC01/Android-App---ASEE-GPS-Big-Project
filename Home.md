@@ -382,6 +382,13 @@ El <b>desarrollador senior</b>, dedica todas sus horas a las siguientes discipli
 Finalmente el <b>desarrollador junior</b>, dedica sus horas a las siguientes disciplinas de los casos de uso: Implementación, Test e Integración y Despliegue.
 
 A continuación se muestra la distribución de horas que se ha seguido en las disciplinas de los casos de uso para cada uno de los <b>roles</b>, exceptuando el jefe de proyecto:
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/23.png"/>
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/24.png"/>
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/25.png"/>
+
+
 Datos:
 |             | Arquitecto Software |                   |                |                    |               |
 |-------------|---------------------|-------------------|----------------|--------------------|---------------|
