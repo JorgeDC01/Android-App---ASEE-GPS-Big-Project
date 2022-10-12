@@ -350,7 +350,18 @@ Por ello, en cada iteración se encuentran **2 secciones** dedicadas a:
    - <b>Implementation</b>: Esta subsección corresponde con la implementación de cada caso de uso
    - <b>Test y Integration</b>: En estas dos subsecciones corresponden con la fase de test e integración del Excel
    - <b>Deployment</b>: Esta subsección corresponde con el despliegue, y es la última que se realiza antes de que el caso de uso esté completamente desarrollado en la aplicación.
-     Cada iteración corresponde con una semana, por lo que en esta planificación se han ido repartiendo las horas de cada trabajador en cada una de las tareas que había que realizar para dicha integración, de tal forma que la repartición de horas, en función de los siguientes días y respetando su jornada laboral, se puede ver en la siguiente imagen:
 
+Cada iteración corresponde con una semana, por lo que en esta planificación se han ido repartiendo las horas de cada trabajador en cada una de las tareas que había que realizar para dicha integración, de tal forma que la repartición de horas, en función de los siguientes días y respetando su jornada laboral, se puede ver en la siguiente imagen:
+
+Planificación por casos de uso:
+    Para realizarla, se ha tenido en cuenta la planificación previa por iteraciones y se han agrupado todas las intervenciones de los roles en esta por caso de uso.
+En concreto, se compone de <b>3 secciones</b>:
+
+* <b>Management</b>: Dedicada a la gestión del proyecto y el modelado de negocio, con las intervenciones del jefe del proyecto y el Arquitecto del Software
+* <b>Use Cases</b>: Contiene las disciplinas realizadas de los casos de uso, en la fecha y hora que se realizaron y los roles que intervinieron.
+* <b>Despliegues</b>: Contiene los despliegues de cada caso de uso, con la fecha y hora de su realización
 
 #### Análisis de la planificación <a name="analisisdelaplanificacion"></a>
+     En primer lugar, la planificación ha requerido <b>más horas</b> de las que realmente se disponen para completarse, esto es debido a que en la planificación inicial, los cálculos se realizaron en torno a <b>7 semanas y 12 casos de uso</b>, obteniendo un total de <b>41,23 horas</b> por cada caso de uso. Sin embargo, fue necesario modificar la planificación del proyecto expandiendo 2 semanas su duracion. 
+     Se ha decidido que el <b>Arquitecto del Software</b> se encargará de aquellas tareas que no debía realizar por su cualificación, pero que no se disponía del tiempo requerido para llevarlas a cabo. En este caso se trata de la disciplina de <b>Test e Integración</b>, pues a lo largo de las <b>últimas iteraciones</b> era necesario completarla para llevar a cabo el despliegue.
+     Considerando la falta de horas para realizar todo el trabajo, el <b>arquitecto software</b> priorizará trabajar en las disciplinas dedicadas a los <b>casos de uso</b>, y tras su realización, dedicará el tiempo sobrante de cada iteración en realizar <b>horas de gestión</b>. En la siguiente tabla se observan las <b>13,16</b> horas de gestión que realizará el arquitecto tras finalizar tu contribución en las tareas dedicadas a los casos de uso.
