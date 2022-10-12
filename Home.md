@@ -383,16 +383,45 @@ Finalmente el <b>desarrollador junior</b>, dedica sus horas a las siguientes dis
 
 A continuación se muestra la distribución de horas que se ha seguido en las disciplinas de los casos de uso para cada uno de los <b>roles</b>, exceptuando el jefe de proyecto:
 Datos:
-| Arquitecto Software |                   |                |                    |               |
-|---------------------|-------------------|----------------|--------------------|---------------|
-| Requisitos          | Análisis y Diseño | Implementación | Test e Integración | Horas totales |
-| 9,24                | 18,72             | 0,00           | 0                  | 27,96         |
-| 0,00                | 23,49             | 6,69           | 0                  | 30,18         |
-| 19,60               | 10,58             | 0,00           | 0                  | 30,18         |
-| 0,00                | 0,00              | 30,18          | 0                  | 30,18         |
-| 3,92                | 7,83              | 18,45          | 0                  | 30,20         |
-| 0,00                | 23,49             | 6,69           | 0                  | 30,18         |
-| 0,00                | 0,00              | 30,18          | 0                  | 30,18         |
-| 0,00                | 0,00              | 0,00           | 0                  | 0,00          |
-| 0,00                | 0,00              | 0,00           | 18,43              | 18,43         |
-| 32,76               | 84,11             | 92,19          | 18,43              | 227,49        |
+|             | Arquitecto Software |                   |                |                    |               |
+|-------------|---------------------|-------------------|----------------|--------------------|---------------|
+| Iteraciones | Requisitos          | Análisis y Diseño | Implementación | Test e Integración | Horas totales |
+| Iteración 1 | 9,24                | 18,72             | 0,00           | 0                  | 27,96         |
+| Iteración 2 | 0,00                | 23,49             | 6,69           | 0                  | 30,18         |
+| Iteración 3 | 19,60               | 10,58             | 0,00           | 0                  | 30,18         |
+| Iteración 4 | 0,00                | 0,00              | 30,18          | 0                  | 30,18         |
+| Iteración 5 | 3,92                | 7,83              | 18,45          | 0                  | 30,20         |
+| Iteración 6 | 0,00                | 23,49             | 6,69           | 0                  | 30,18         |
+| Iteración 7 | 0,00                | 0,00              | 30,18          | 0                  | 30,18         |
+| Iteración 8 | 0,00                | 0,00              | 0,00           | 0                  | 0,00          |
+| Iteración 9 | 0,00                | 0,00              | 0,00           | 18,43              | 18,43         |
+| Total       | 32,76               | 84,11             | 92,19          | 18,43              | 227,49        |
+
+
+|             | Desarrollador Senior |                   |                |                    |            |               |
+|-------------|----------------------|-------------------|----------------|--------------------|------------|---------------|
+| Iteraciones | Requisitos           | Análisis y Diseño | Implementación | Test e Integración | Despliegue | Horas totales |
+| Iteración 1 | 18,20                | 12,60             | 0,00           | 0,00               | 0,00       | 30,80         |
+| Iteración 2 | 0,00                 | 0,00              | 30,80          | 0,00               | 0,00       | 30,80         |
+| Iteración 3 | 0,00                 | 28,57             | 2,23           | 0,00               | 0,00       | 30,80         |
+| Iteración 4 | 0,00                 | 0,00              | 7,31           | 23,49              | 0,00       | 30,80         |
+| Iteración 5 | 11,76                | 0,00              | 19,04          | 0,00               | 0,00       | 30,80         |
+| Iteración 6 | 0,00                 | 0,00              | 30,80          | 0,00               | 0,00       | 30,80         |
+| Iteración 7 | 0,00                 | 0,00              | 22,71          | 8,09               | 0,00       | 30,80         |
+| Iteración 8 | 0,00                 | 0,00              | 0,00           | 30,80              | 0,00       | 30,80         |
+| Iteración 9 | 0,00                 | 0,00              | 0,00           | 12,37              | 18,43      | 30,80         |
+| Total       | 29,96                | 41,17             | 112,89         | 74,75              | 18,43      | 277,20        |
+
+|             | Desarrollador Junior |                    |            |               |
+|-------------|----------------------|--------------------|------------|---------------|
+| Iteraciones | Implementación       | Test e Integración | Despliegue | Horas totales |
+| Iteración 1 | 0,00                 | 0,00               | 0,00       | 0,00          |
+| Iteración 2 | 15,40                | 0,00               | 0,00       | 15,40         |
+| Iteración 3 | 15,40                | 0,00               | 0,00       | 15,40         |
+| Iteración 4 | 15,40                | 0,00               | 0,00       | 15,40         |
+| Iteración 5 | 15,40                | 0,00               | 0,00       | 15,40         |
+| Iteración 6 | 15,40                | 0,00               | 0,00       | 15,40         |
+| Iteración 7 | 0,00                 | 15,40              | 0,00       | 15,40         |
+| Iteración 8 | 0,00                 | 8,35               | 5,88       | 14,23         |
+| Iteración 9 | 0,00                 | 8,35               | 7,05       | 15,40         |
+| Total       | 77,00                | 32,10              | 12,93      | 122,03        |
