@@ -334,6 +334,7 @@ Para ello, primero es necesario obtener la jornada laboral de cada uno de los ro
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/18.png"/>
 <p>&nbsp;</p>
+
 * Jornada diaria del <b>Jefe de Proyecto</b>: 8 horas semanales / 5 días = 1.6h
 * Jornada diaria del <b>Arquitecto Software</b>: 40 horas semanales / 5 días = 8h
 * Jornada diaria del <b>Desarrollador Software Senior</b>: 40 horas semanales / 5 días = 8h
@@ -385,7 +386,7 @@ En primer lugar, la planificación ha requerido <b>más horas</b> de las que rea
 Se ha decidido que el <b>Arquitecto del Software</b> se encargará de aquellas tareas que no debía realizar por su cualificación, pero que no se disponía del tiempo requerido para llevarlas a cabo. En este caso se trata de la disciplina de <b>Test e Integración</b>, pues a lo largo de las <b>últimas iteraciones</b> era necesario completarla para llevar a cabo el despliegue.
 
 Considerando la falta de horas para realizar todo el trabajo, el <b>arquitecto software</b> priorizará trabajar en las disciplinas dedicadas a los <b>casos de uso</b>, y tras su realización, dedicará el tiempo sobrante de cada iteración en realizar <b>horas de gestión</b>. En la siguiente tabla se observan las <b>13,16</b> horas de gestión que realizará el arquitecto tras finalizar tu contribución en las tareas dedicadas a los casos de uso.
-<p>&nbsp;</p>
+
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/22.png"/>
 
 
@@ -409,20 +410,36 @@ Datos:
 
 <p>&nbsp;</p>
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/25.png"/>
+<p>&nbsp;</p>
 
 Gráficos:
 
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/26.png"/>
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/27.png"/>
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/28.png"/>
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/29.png"/>
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/30.png"/>
 
 De esta forma, las <b>horas máximas</b> que se han dedicado al proyecto respecto de las que se <b>disponen</b> en primer lugar son las siguientes:
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/31.png"/>
 <p>&nbsp;</p>
+
 Con estos datos, se puede comprobar el **rendimiento** que se ha tenido por cada iteración:
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/32.png"/>
+
 Se puede apreciar que existe un descenso en el trabajo realizado en la octava y novena iteración, esto es debido a que estas iteraciones corresponden a las tareas de Test e Integración y despliegue, que no puede realizar el Arquitecto del Software.
 A continuación, se muestra una gráfica de coste de los recursos de la planificación:
 
 ####  Camino Crítico
 Por último, dentro del análisis de la planificación nos encontramos ante el camino crítico. Este nos informará si hay algún punto crítico dentro del proyecto  ya sea por culpa de horas mal planificadas o sobrecarga de trabajo.
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/33.png"/>
 
 Como se puede ver en estas dos fotos anteriores, hay zonas críticas debido a las horas, algunas acciones empiezan y acaban el mismo día (Business Modeling) la cual es predecesora de las disciplinas de los casos de usos.
 
