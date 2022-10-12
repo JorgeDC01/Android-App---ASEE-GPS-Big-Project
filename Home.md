@@ -312,11 +312,18 @@ De esta forma, la planificación por iteración después de realizar las modific
 
 Debido a que las cuatro primeras iteraciones tienen la misma planificación que en la [inicial](https://docs.google.com/document/d/15MAbGp-y2Dv0iQTNwV9q1wjejY8h0Thr/edit#heading=h.vjimrnjjoclx), son las iteraciones de la IT5 a la IT9 las que deben ser realizadas de nuevo, dejando la planificación modificada como la siguiente:
 
-####  Fase de Inicio:
-####  Fase de Elaboración:
 ####  Fase de Construcción:
-####  Fase de Transición:
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/13.png"/>
 
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/14.png"/>
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/15.png"/>
+
+####  Fase de Transición:
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/16.png"/>
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/17.png"/>
+<p>&nbsp;</p>
 Como podemos ver, en esta **última iteración** ha sido necesario que el **arquitecto** ayude a los dos roles de desarrolladores a realizar ciertas tareas de **test e integración.**
 
 También hay que tener en cuenta que todo el **tiempo que le sobra** al arquitecto es tiempo que dedica a **tareas de gestión Project** en conjunto con el jefe de proyecto.
@@ -325,7 +332,8 @@ Una vez finalizados todos los cálculos y cuadradas las horas del proyecto, se p
 
 Para ello, primero es necesario obtener la jornada laboral de cada uno de los roles basándose en su implicación en el desarrollo. Esta es la siguiente:
 
-
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/18.png"/>
+<p>&nbsp;</p>
 * Jornada diaria del <b>Jefe de Proyecto</b>: 8 horas semanales / 5 días = 1.6h
 * Jornada diaria del <b>Arquitecto Software</b>: 40 horas semanales / 5 días = 8h
 * Jornada diaria del <b>Desarrollador Software Senior</b>: 40 horas semanales / 5 días = 8h
@@ -340,6 +348,8 @@ A estas horas les aplicamos el porcentaje de productividad <b>93%</b> para calcu
 
 En Microsoft Project  se han realizado **2 tipos de planificaciones**, una planificación por **iteraciones **y una posterior planificación por **casos de uso**.
 
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/19.png"/>
+<p>&nbsp;</p>
 Como se puede observar se ha planificado el proyecto basándose en la intervención de los roles en cada iteración.
 
 Por ello, en cada iteración se encuentran **2 secciones** dedicadas a:
@@ -355,8 +365,14 @@ Por ello, en cada iteración se encuentran **2 secciones** dedicadas a:
 
 Cada iteración corresponde con una semana, por lo que en esta planificación se han ido repartiendo las horas de cada trabajador en cada una de las tareas que había que realizar para dicha integración, de tal forma que la repartición de horas, en función de los siguientes días y respetando su jornada laboral, se puede ver en la siguiente imagen:
 
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/20.png"/>
+
+
 Planificación por casos de uso:
-    Para realizarla, se ha tenido en cuenta la planificación previa por iteraciones y se han agrupado todas las intervenciones de los roles en esta por caso de uso.
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/21.png"/>
+<p>&nbsp;</p>
+Para realizarla, se ha tenido en cuenta la planificación previa por iteraciones y se han agrupado todas las intervenciones de los roles en esta por caso de uso.
 En concreto, se compone de <b>3 secciones</b>:
 
 * <b>Management</b>: Dedicada a la gestión del proyecto y el modelado de negocio, con las intervenciones del jefe del proyecto y el Arquitecto del Software
