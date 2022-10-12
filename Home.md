@@ -186,6 +186,8 @@ En la planificación de este proyecto, existirán <b>cuatro roles</b> que influy
 Cada uno de estos roles tendrá que realizar una serie de tareas que les serán asignadas al comienzo del proyecto, las cuales ocupan cierta cantidad de tiempo designada durante la planificación.      
 
 #### Distribución de casos de uso <a name="distribuciondecasosdeuso"></a>
+
+[Excel Utilizado para la organización de los CASOS DE USO](https://docs.google.com/spreadsheets/d/1bhTUTApi7z-_fucTtovXuDvmLPavcS8W/edit?usp=sharing&ouid=101170322248995906530&rtpof=true&sd=true)
 <p>
 Para seguir este proceso, los casos de uso especificados se desarrollan e implementan a lo largo de una serie de iteraciones, las cuales duran una semana, en las que los cuatro roles distinguidos llevarán a cabo una las distintas disciplinas de desarrollo de los casos de uso, además de tareas de gestión del proyecto.
 </p>
