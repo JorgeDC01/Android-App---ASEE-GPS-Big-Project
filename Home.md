@@ -347,7 +347,7 @@ A estas horas les aplicamos el porcentaje de productividad <b>93%</b> para calcu
 * <b>Desarrollador Software Senior</b>: 7,44h
 * <b>Desarrollador Software Junior</b>: 3,72
 
-En Microsoft Project  se han realizado **2 tipos de planificaciones**, una planificación por **iteraciones **y una posterior planificación por **casos de uso**.
+En Microsoft Project  se han realizado **2 tipos de planificaciones**, una planificación por **iteraciones** y una posterior planificación por **casos de uso**.
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/19.png"/>
 <p>&nbsp;</p>
