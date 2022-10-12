@@ -278,14 +278,20 @@ De esta forma, cada una de las iteraciones se han planificado en función de las
 
 <p>Con lo cual la planificación por iteración quedaría de la siguiente manera:
 </p>
+<p>&nbsp;</p>
 
-####  Fase de Inicio:
+🔸 **Fase de Inicio**
+<p>&nbsp;</p>
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p2.png"/>
+<p>&nbsp;</p>
 
-####  Fase de Elaboración:
+🔸 **Fase de Elaboración**
+<p>&nbsp;</p>
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p3.png"/>
+<p>&nbsp;</p>
 
-####  Fase de Construcción:
+🔸 **Fase de Construcción**
+<p>&nbsp;</p>
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p4.png"/>
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p5.png"/>
@@ -293,8 +299,10 @@ De esta forma, cada una de las iteraciones se han planificado en función de las
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p6.png"/>
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p7.png"/>
+<p>&nbsp;</p>
 
-####  Fase de Transición:
+🔸 **Fase de Transición**
+<p>&nbsp;</p>
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p8.png"/>
 
 #### Planificación modificada <a name="planificaciondelproyecto3"></a>
@@ -311,15 +319,19 @@ De esta forma, la planificación por iteración después de realizar las modific
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/12.1.png"/>
 
 Debido a que las cuatro primeras iteraciones tienen la misma planificación que en la inicial, son las iteraciones de la IT5 a la IT9 las que deben ser realizadas de nuevo, dejando la planificación modificada como la siguiente:
+<p>&nbsp;</p>
 
-####  Fase de Construcción:
+🔸 **Fase de Construcción**
+<p>&nbsp;</p>
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/13.png"/>
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/14.png"/>
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/15.png"/>
+<p>&nbsp;</p>
 
-####  Fase de Transición:
+🔸 **Fase de Transición**
+<p>&nbsp;</p>
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/16.png"/>
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/17.png"/>
