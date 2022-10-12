@@ -310,14 +310,19 @@ De esta forma, la planificación por iteración después de realizar las modific
 
 Debido a que las cuatro primeras iteraciones tienen la misma planificación que en la [inicial](https://docs.google.com/document/d/15MAbGp-y2Dv0iQTNwV9q1wjejY8h0Thr/edit#heading=h.vjimrnjjoclx), son las iteraciones de la IT5 a la IT9 las que deben ser realizadas de nuevo, dejando la planificación modificada como la siguiente:
 
+##  Fase de Inicio:
+##  Fase de Elaboración:
+##  Fase de Construcción:
 ##  Fase de Transición:
 
-<p>
-&emsp;Una vez finalizados todos los cálculos y cuadradadas las horas del proyecto, se procede a migrar el mismo a Microsoft Project, una herramienta que nos permite detallar más información acerca de fechas, horas laborales, planificación, diagramas, tareas... etc.
-</p>
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/a1.png"/>
-<p>
-Este proceso comienza con la obtención de la jornada laboral de cada uno de los roles basándose en su implicación en el desarollo. Esta es la siguiente:
+Como podemos ver, en esta **última iteración** ha sido necesario que el **arquitecto **ayude a los dos roles de desarrolladores a realizar ciertas tareas de **test e integración.**
+
+También hay que tener en cuenta que todo el **tiempo que le sobra** al arquitecto es tiempo que dedica a **tareas de gestión Project** en conjunto con el jefe de proyecto.
+
+Una vez finalizados todos los cálculos y cuadradadas las horas del proyecto, se procede a **migrar el mismo a Microsoft Project**, una herramienta que nos permite detallar más información acerca de fechas, horas laborales, planificación, diagramas, tareas... etc.
+
+Para ello, primero es necesario obtener la jornada laboral de cada uno de los roles basándose en su implicación en el desarrollo. Esta es la siguiente:
+
 
 * Jornada diaria del <b>Jefe de Proyecto</b>: 8 horas semanales / 5 días = 1.6h
 * Jornada diaria del <b>Arquitecto Software</b>: 40 horas semanales / 5 días = 8h
@@ -331,31 +336,10 @@ A estas horas les aplicamos el porcentaje de productividad <b>93%</b> para calcu
 * <b>Desarrollador Software Senior</b>: 7,44h
 * <b>Desarrollador Software Junior</b>: 3,72
 
-Teniendo en cuenta esto, la **planificación por iteraciones** realizada es la siguiente:
+En Microsoft Project  se han realizado **2 tipos de planificaciones**, una planificación por **iteraciones **y una posterior planificación por **casos de uso**.
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p9.png"/>
-</p>
+Como se puede observar se ha planificado el proyecto basándose en la intervención de los roles en cada iteración.
 
-<p>&emsp;Como se puede observar se ha planificado el proyecto basándose en la intervención de los roles en cada iteración.
-
-Por ello, en cada iteración se encuentran <b>3 secciones</b> dedicadas a:
-
-* La <b>gestión del proyecto</b>,  que muestra las intervenciones del Arquitecto del Software o del jefe del proyecto.
-* El **modelado del negocio**, que muestra las intervenciones del jefe del proyecto.
-* Las disciplinas de cada caso de uso realizadas por los roles correspondientes.
-</p>
-
-<p>&emsp;En cuanto a la planificación por <b>casos de uso</b>, queda de la siguiente forma:</p>
-
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p10.png"/>
-
-<p>Para realizarla, se ha tenido en cuenta la planificación previa por iteraciones y se han agrupado todas las intervenciones de los roles en esta por caso de uso.
-
-En concreto, se compone de <b>3 secciones</b>:
-
-* Una sección dedicada a la **gestión del proyecto** y el **modelado de negocio**, con las intervenciones del jefe del proyecto y el Arquitecto del Software
-* Otra sección que contiene las **disciplinas realizadas** de los casos de uso, en la fecha y hora que se realizaron y los roles que intervinieron.
-* Por último una sección que contiene los **despliegues** de cada caso de uso, con la fecha y hora de su realización
-</p>
+Por ello, en cada iteración se encuentran **2 secciones** dedicadas a:
 
 #### Análisis de la planificación <a name="analisisdelaplanificacion"></a>
