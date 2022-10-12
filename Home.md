@@ -370,11 +370,9 @@ En primer lugar, la planificación ha requerido <b>más horas</b> de las que rea
 Se ha decidido que el <b>Arquitecto del Software</b> se encargará de aquellas tareas que no debía realizar por su cualificación, pero que no se disponía del tiempo requerido para llevarlas a cabo. En este caso se trata de la disciplina de <b>Test e Integración</b>, pues a lo largo de las <b>últimas iteraciones</b> era necesario completarla para llevar a cabo el despliegue.
 
 Considerando la falta de horas para realizar todo el trabajo, el <b>arquitecto software</b> priorizará trabajar en las disciplinas dedicadas a los <b>casos de uso</b>, y tras su realización, dedicará el tiempo sobrante de cada iteración en realizar <b>horas de gestión</b>. En la siguiente tabla se observan las <b>13,16</b> horas de gestión que realizará el arquitecto tras finalizar tu contribución en las tareas dedicadas a los casos de uso.
-|Trabajador|Horas Gestión|
-|---|---|
-|Jefe|37,08|
-|Arquitecto|55,22|
-|Tiempo Restante| 13,16|
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/22.png"/>
+
 
 Respecto a la distribución de horas de los distintos roles en las distintas disciplinas,  el <b>Jefe de proyecto</b> es el que se encarga de todo el tiempo de <b>Business Modeling</b>, tras ello, dedica sus horas restantes a la <b>gestión</b>.
 
@@ -385,75 +383,22 @@ El <b>desarrollador senior</b>, dedica todas sus horas a las siguientes discipli
 Finalmente el <b>desarrollador junior</b>, dedica sus horas a las siguientes disciplinas de los casos de uso: Implementación, Test e Integración y Despliegue.
 
 A continuación se muestra la distribución de horas que se ha seguido en las disciplinas de los casos de uso para cada uno de los <b>roles</b>, exceptuando el jefe de proyecto:
+
+
+Datos:
+
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/23.png"/>
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/24.png"/>
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/25.png"/>
 
-
-Datos:
-|             | Arquitecto Software |                   |                |                    |               |
-|-------------|---------------------|-------------------|----------------|--------------------|---------------|
-| Iteraciones | Requisitos          | Análisis y Diseño | Implementación | Test e Integración | Horas totales |
-| Iteración 1 | 9,24                | 18,72             | 0,00           | 0                  | 27,96         |
-| Iteración 2 | 0,00                | 23,49             | 6,69           | 0                  | 30,18         |
-| Iteración 3 | 19,60               | 10,58             | 0,00           | 0                  | 30,18         |
-| Iteración 4 | 0,00                | 0,00              | 30,18          | 0                  | 30,18         |
-| Iteración 5 | 3,92                | 7,83              | 18,45          | 0                  | 30,20         |
-| Iteración 6 | 0,00                | 23,49             | 6,69           | 0                  | 30,18         |
-| Iteración 7 | 0,00                | 0,00              | 30,18          | 0                  | 30,18         |
-| Iteración 8 | 0,00                | 0,00              | 0,00           | 0                  | 0,00          |
-| Iteración 9 | 0,00                | 0,00              | 0,00           | 18,43              | 18,43         |
-| Total       | 32,76               | 84,11             | 92,19          | 18,43              | 227,49        |
-
-
-|             | Desarrollador Senior |                   |                |                    |            |               |
-|-------------|----------------------|-------------------|----------------|--------------------|------------|---------------|
-| Iteraciones | Requisitos           | Análisis y Diseño | Implementación | Test e Integración | Despliegue | Horas totales |
-| Iteración 1 | 18,20                | 12,60             | 0,00           | 0,00               | 0,00       | 30,80         |
-| Iteración 2 | 0,00                 | 0,00              | 30,80          | 0,00               | 0,00       | 30,80         |
-| Iteración 3 | 0,00                 | 28,57             | 2,23           | 0,00               | 0,00       | 30,80         |
-| Iteración 4 | 0,00                 | 0,00              | 7,31           | 23,49              | 0,00       | 30,80         |
-| Iteración 5 | 11,76                | 0,00              | 19,04          | 0,00               | 0,00       | 30,80         |
-| Iteración 6 | 0,00                 | 0,00              | 30,80          | 0,00               | 0,00       | 30,80         |
-| Iteración 7 | 0,00                 | 0,00              | 22,71          | 8,09               | 0,00       | 30,80         |
-| Iteración 8 | 0,00                 | 0,00              | 0,00           | 30,80              | 0,00       | 30,80         |
-| Iteración 9 | 0,00                 | 0,00              | 0,00           | 12,37              | 18,43      | 30,80         |
-| Total       | 29,96                | 41,17             | 112,89         | 74,75              | 18,43      | 277,20        |
-
-|             | Desarrollador Junior |                    |            |               |
-|-------------|----------------------|--------------------|------------|---------------|
-| Iteraciones | Implementación       | Test e Integración | Despliegue | Horas totales |
-| Iteración 1 | 0,00                 | 0,00               | 0,00       | 0,00          |
-| Iteración 2 | 15,40                | 0,00               | 0,00       | 15,40         |
-| Iteración 3 | 15,40                | 0,00               | 0,00       | 15,40         |
-| Iteración 4 | 15,40                | 0,00               | 0,00       | 15,40         |
-| Iteración 5 | 15,40                | 0,00               | 0,00       | 15,40         |
-| Iteración 6 | 15,40                | 0,00               | 0,00       | 15,40         |
-| Iteración 7 | 0,00                 | 15,40              | 0,00       | 15,40         |
-| Iteración 8 | 0,00                 | 8,35               | 5,88       | 14,23         |
-| Iteración 9 | 0,00                 | 8,35               | 7,05       | 15,40         |
-| Total       | 77,00                | 32,10              | 12,93      | 122,03        |
-
-
 Gráficos:
 
 
 De esta forma, las <b>horas máximas</b> que se han dedicado al proyecto respecto de las que se <b>disponen</b> en primer lugar son las siguientes:
-|             | Total         |                 |
-|-------------|---------------|-----------------|
-| Iteraciones | Horas máximas | Horas dedicadas |
-| Iteración 1 | 77            | 58,76           |
-| Iteración 2 | 77            | 76,38           |
-| Iteración 3 | 77            | 76,38           |
-| Iteración 4 | 77            | 76,38           |
-| Iteración 5 | 77            | 76,40           |
-| Iteración 6 | 77            | 76,38           |
-| Iteración 7 | 77            | 76,38           |
-| Iteración 8 | 77            | 45,03           |
-| Iteración 9 | 77            | 64,63           |
-| Total       | 693           | 626,72          |
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/31.png"/>
 
 Con estos datos, se puede comprobar el **rendimiento** que se ha tenido por cada iteración:
 Se puede apreciar que existe un descenso en el trabajo realizado en la octava y novena iteración, esto es debido a que estas iteraciones corresponden a las tareas de Test e Integración y despliegue, que no puede realizar el Arquitecto del Software.
