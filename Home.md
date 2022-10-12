@@ -324,6 +324,7 @@ Debido a que las cuatro primeras iteraciones tienen la misma planificación que 
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/17.png"/>
 <p>&nbsp;</p>
+
 Como podemos ver, en esta **última iteración** ha sido necesario que el **arquitecto** ayude a los dos roles de desarrolladores a realizar ciertas tareas de **test e integración.**
 
 También hay que tener en cuenta que todo el **tiempo que le sobra** al arquitecto es tiempo que dedica a **tareas de gestión Project** en conjunto con el jefe de proyecto.
