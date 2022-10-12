@@ -203,7 +203,7 @@ Cada uno de estos roles tendrá que realizar una serie de tareas que les serán 
 
 De esta forma, cada rol realiza las siguientes disciplinas:
 * Jefe del proyecto: Realiza la disciplina de Modelado del negocio (BM) y también tareas de gestión del proyecto.
-* Arquitecto del software: Realiza las disciplinas de Modelado del negocio (BM), Requisitos (R), Análisis y Diseño (A&D) e Implementación (Imp).
+* Arquitecto del software: Realiza las disciplinas Requisitos (R), Análisis y Diseño (A&D) e Implementación (Imp). También colaborará en situaciones extraordinarias en la disciplina de Test e Integración (T&I).
 * Desarrollador de Software Junior: Realiza las disciplinas de Implementación (Imp), Test e integración (T&I) y Despliegue (D).
 * Desarrollador de Software Senior: Realiza las disciplinas de Requisitos (R), Análisis y Diseño (A&D), Implementación (Imp), Test e integración (T&I) y Despliegue (D).
 
@@ -229,7 +229,7 @@ De esta forma, cada rol realiza las siguientes disciplinas:
 Con esto, el tiempo total empleado en el proyecto es de **756 horas**.
 </p>
 
-<p>&emsp;Dado que en España se estima un nivel de productividad general del 93% del tiempo trabajado, podemos deducir el tiempo productivo del proyecto: 
+<p>&emsp;Según las investigaciones proporcionadas por el periódico [diariodeSevilla](https://www.diariodesevilla.es/canalempleo/espanoles-productivos-jornada-laboral_0_1615338736.html) , en España, existe una estimación de productividad general de un 93% del tiempo trabajado.
 </p>
 <p>
 <strong>Tiempo productivo en el proyecto: 93% de 756 h ≈ 703,08 horas</strong>
@@ -265,26 +265,27 @@ Con lo que nos quedan <b>47,31 horas</b> para realizar el resto de fases de los 
 &emsp;En la tabla anterior podemos ver que los trabajadores disponen de <b>93 horas semanales</b> para realizar los casos de uso, así como las distintas cantidades de tiempo que dedicará cada rol en el proyecto.
 </p>
 
-#### Planificación del proyecto <a name="planificaciondelproyecto2"></a>
+#### Planificación inicial <a name="planificaciondelproyecto2"></a>
 <p>
+&emsp;Se ha priorizado que sea el arquitecto de software el que tenga tiempo restante, como se puede ver en cada una de las siguientes tablas, para así dedicárselo a la gestión del proyecto.
+
 &emsp;El proyecto se desarrollará a lo largo de <b>7 iteraciones</b>, cada una de una semana de duración, las cuales se organizará de la siguiente manera:
 </p>
 
 <p>
 &emsp;De esta forma, cada una de las iteraciones se han planificado en función de las distintas <b>fases</b> que pueden realizar cada uno de los <b>roles</b>.
 </p>
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p1.png" width="1200"/>
 
 <p>Con lo cual la planificación por iteración quedaría de la siguiente manera:
 </p>
 
-###  Fase de Inicio:
+##  Fase de Inicio:
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p2.png"/>
 
-###  Fase de Elaboración:
+##  Fase de Elaboración:
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p3.png"/>
 
-###  Fase de Construcción:
+##  Fase de Construcción:
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p4.png"/>
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p5.png"/>
@@ -293,10 +294,23 @@ Con lo que nos quedan <b>47,31 horas</b> para realizar el resto de fases de los 
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p7.png"/>
 
-###  Fase de Construcción:
+##  Fase de Transición:
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p8.png"/>
 
+#### Planificación modificada <a name="planificaciondelproyecto3"></a>
+Posteriormente, el **cliente** añadió cuatro casos de uso más para un total de **dieciséis** , **uno** de ellos **estructural** (CU-05), y los otros **tres no estructurales** (CU-14, CU-15 y CU-16). Puesto que no hay suficiente tiempo para realizar estas nuevas funcionalidades con la actual planificación del proyecto,  se han añadido **2 iteraciones** más en la fase de **transición**, las cuales han permitido solucionar esta falta de tiempo.
 
+Esto da lugar a una planificación compuesta por:
+* Una iteración en la fase de Inicio.
+* Una iteración en la fase de Elaboración.
+* Cinco iteracoines en la fase de Construcción.
+* Dos iteraciones en la fase de Transición.
+
+De esta forma, la planificación por iteración después de realizar las modificaciones sería:
+
+Debido a que las cuatro primeras iteraciones tienen la misma planificación que en la [inicial](https://docs.google.com/document/d/15MAbGp-y2Dv0iQTNwV9q1wjejY8h0Thr/edit#heading=h.vjimrnjjoclx), son las iteraciones de la IT5 a la IT9 las que deben ser realizadas de nuevo, dejando la planificación modificada como la siguiente:
+
+##  Fase de Transición:
 
 <p>
 &emsp;Una vez finalizados todos los cálculos y cuadradadas las horas del proyecto, se procede a migrar el mismo a Microsoft Project, una herramienta que nos permite detallar más información acerca de fechas, horas laborales, planificación, diagramas, tareas... etc.
