@@ -22,7 +22,9 @@
       - [Planificación del proyecto <a name="planificaciondelproyecto2"></a>](#planificación-del-proyecto--1)
       - [Análisis de la planificación <a name="analisisdelaplanificacion"></a>](#análisis-de-la-planificación-)
         - [Camino Crítico <a name="caminocritico"></a>](#camino-crítico-)
-
+    - [Configuración del seguimiento de la planificación <a name="configSeguimientoPlan"></a>](#Configuración-del-seguimiento-de-la-planificación-)
+      - [Proceso seguido <a name="procesoSeguido"></a>](#proceso-seguido-)
+      - [Análisis del progreso <a name="analisisProgreso"></a>](#análisis-progreso-)
 
 ## Introduccion <a name="introduction"></a>
 
@@ -475,3 +477,8 @@ Por último, dentro del análisis de la planificación nos encontramos ante el c
 
 Como se puede ver en estas dos fotos anteriores, hay zonas críticas debido a las horas, algunas acciones empiezan y acaban el mismo día (Business Modeling) la cual es predecesora de las disciplinas de los casos de usos.
 
+## Configuración del seguimiento de la planificación <a name="configSeguimientoPlan"></a>
+
+### Proceso seguido <a name="procesoSeguido"></a>
+
+### Análisis del progreso <a name="analisisProgreso"></a>
