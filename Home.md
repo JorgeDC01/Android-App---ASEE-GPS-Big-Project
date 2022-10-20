@@ -23,8 +23,18 @@
       - [Análisis de la planificación <a name="analisisdelaplanificacion"></a>](#análisis-de-la-planificación-)
         - [Camino Crítico <a name="caminocritico"></a>](#camino-crítico-)
     - [Configuración del seguimiento de la planificación <a name="configSeguimientoPlan"></a>](#Configuración-del-seguimiento-de-la-planificación-)
-      - [Proceso seguido <a name="procesoSeguido"></a>](#proceso-seguido-)
-      - [Análisis del progreso <a name="analisisProgreso"></a>](#análisis-progreso-)
+      - [Señor Blanco (Equipo 1) <a name="señorBlanco"></a>](#señor-blanco-equipo-1-)
+        - [Proceso seguido <a name="procesoSeguidoBlanco"></a>](#proceso-seguido-)
+        - [Análisis del progreso <a name="analisisProgresoBlanco"></a>](#análisis-progreso-)
+      - [Señor Marrón (Equipo 2) <a name="señorMarron"></a>](#señor-marron-equipo-2-)
+        - [Proceso seguido <a name="procesoSeguidoMarron"></a>](#proceso-seguido-)
+        - [Análisis del progreso <a name="analisisProgresoMarron"></a>](#análisis-progreso-)
+      - [Señor Naranja (Equipo 3) <a name="señorNaranja"></a>](#señor-naranja-equipo-3-)
+        - [Proceso seguido <a name="procesoSeguidoNaranja"></a>](#proceso-seguido-)
+        - [Análisis del progreso <a name="analisisProgresoNaranja"></a>](#análisis-progreso-)
+      - [Señor Azul (Equipo 4) <a name="señorAzul"></a>](#señor-azul-equipo-4-)
+        - [Proceso seguido <a name="procesoSeguidoAzul"></a>](#proceso-seguido-)
+        - [Análisis del progreso <a name="analisisProgresoAzul"></a>](#análisis-progreso-)
 
 ## Introduccion <a name="introduction"></a>
 
@@ -479,6 +489,29 @@ Como se puede ver en estas dos fotos anteriores, hay zonas críticas debido a la
 
 ## Configuración del seguimiento de la planificación <a name="configSeguimientoPlan"></a>
 
-### Proceso seguido <a name="procesoSeguido"></a>
+### Señor Blanco (Equipo 1) <a name="señorBlanco"></a>
 
-### Análisis del progreso <a name="analisisProgreso"></a>
+#### Proceso seguido <a name="procesoSeguidoBlanco"></a>
+
+#### Análisis del progreso <a name="analisisProgresoBlanco"></a>
+
+
+### Señor Marrón (Equipo 2) <a name="señorMarron"></a>
+
+#### Proceso seguido <a name="procesoSeguidoMarron"></a>
+
+#### Análisis del progreso <a name="analisisProgresoMarron"></a>
+
+
+### Señor Naranja (Equipo 3) <a name="señorNaranja"></a>
+
+#### Proceso seguido <a name="procesoSeguidoNaranja"></a>
+
+#### Análisis del progreso <a name="analisisProgresoNaranja"></a>
+
+
+### Señor Azul (Equipo 4) <a name="señorAzul"></a>
+
+#### Proceso seguido <a name="procesoSeguidoAzul"></a>
+
+#### Análisis del progreso <a name="analisisProgresoAzul"></a>
