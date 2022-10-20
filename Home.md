@@ -449,10 +449,23 @@ De esta forma, las <b>horas máximas</b> que se han dedicado al proyecto respect
 
 Con estos datos, se puede comprobar el **rendimiento** que se ha tenido por cada iteración:
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/32.png"/>
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/34.png"/>
 
-Se puede apreciar que existe un descenso en el trabajo realizado en la octava y novena iteración, esto es debido a que estas iteraciones corresponden a las tareas de Test e Integración y despliegue, que no puede realizar el Arquitecto del Software.
+Se puede apreciar una bajada de trabajo en horas en la primera semana (semana 36), debido a que el desarrollador senior no puede trabajar en sus disciplinas por las dependencias de tareas. Respecto a las semanas posteriores, las horas de trabajo se mantienen constantes (100 horas).
+
 A continuación, se muestra una gráfica de coste de los recursos de la planificación:
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/35.png"/>
+
+El coste total del proyecto se acerca a los 28.000 €, presupuesto que se desglosa según los recursos humanos. El jefe del proyecto cobra 3.300 € durante 9 semanas desde el inicio del proyecto; El desarrollador junior gana en torno 3.300 €, menos de la mitad del costo del desarrollador senior, el cual se encuentra cercano a los 10.000€. Por último, el presupuesto para cubrir el costo del arquitecto software es el más alto, 11.000 €.
+
+Seguidamente, se muestra una descripción gráfica de las horas trabajadas por los roles en total durante toda la planificación del proyecto. 
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/36.png"/>
+
+En este informe se puede observar el trabajo restante que les queda por hacer a cada uno de los trabajadores desde la fecha de comienzo 31/08/20  hasta el 30/10/20 como esta es una fecha pasada, el trabajo previsto está a 0, pero aun así, nos podemos hacer una idea de la carga de trabajo que soportará cada uno de los roles.
+
+
 
 ####  Camino Crítico <a name="caminocritico"></a>
 Por último, dentro del análisis de la planificación nos encontramos ante el camino crítico. Este nos informará si hay algún punto crítico dentro del proyecto  ya sea por culpa de horas mal planificadas o sobrecarga de trabajo.
