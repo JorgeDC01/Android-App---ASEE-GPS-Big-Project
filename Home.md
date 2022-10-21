@@ -642,6 +642,7 @@ En este apartado se muestran todos los patrones de navegación que se han utiliz
 A continuación se detallarán cada uno de los patrones implementados.
 
 **Patrón de lista y detalle**
+
 Para desplazarse por la aplicación se ha utilizado un patrón de lista y detalle referente a la pantalla de inicio, que mostrará los elementos de más interés para el usuario, en este caso una lista con todos los eventos que ha creado.
 
 De la misma forma, en la pantalla de lista de eventos también se ha aplicado este patrón para buscar una lista de eventos concretos a través de la pantalla de filtrado de eventos.
@@ -651,9 +652,11 @@ Así mismo, a través de estas listas, se puede acceder a una pantalla que permi
 <img>
 
 **Patrón de cajón de navegación**
+
 En lo referente a cada una de las funcionalidades, se utilizará un **patrón de cajón de navegación**, creando un menú lateral desplegable desde el que se puede navegar entre funcionalidad y funcionalidad, pudiendo cambiar rápidamente de pantalla a través de dicho menú lateral.
 
-** Patrón de botones y objetos sencillos**
+**Patrón de botones y objetos sencillos**
+
 Finalmente, se ha aplicado el patrón de botones y objetivos sencillos mostrando mediante botones con iconos intuitivos en ciertas funcionalidades, de manera que permitan a los usuarios acceder más fácilmente a dichas funcionalidades.
 
 <img>
