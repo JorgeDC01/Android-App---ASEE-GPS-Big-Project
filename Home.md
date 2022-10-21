@@ -650,6 +650,18 @@ Por tanto, dentro de Jira se ha seguido el siguiente procedimiento:
    
 ### Señor Blanco (Equipo 1) <a name="señorBlanco"></a>
 
+El señor blanco ha liderado al equipo 1, donde cada rol es interpretado por los siguientes miembros:
+
+* Jefe del proyecto (JP): Sr. Blanco
+* Arquitecto Software (AS): Sr. Marrón
+* Desarrollador Senior (DS): Sr. Naranja
+* Desarrollador Junior (DJ): Sr.  Azul
+
+El *Sr. Blanco* (JP) se encargará de las tareas de modelado de negocio (BM) y gestión del proyecto software, en otras palabras, se ocupará de asignar las tareas a realizar a cada rol. 
+
+El *Sr. Marrón* (AS) se ocupará de las disciplinas de Requisitos, análisis y Diseño e Implementación. El *Sr. Naranja* (DS) se centra en todas las disciplinas que abarcan el desarrollo completo de cada caso de uso; desde la Definición de Requisitos, Análisis y Diseño, Implementación, Integración y Test y Despliegue. Por último, el *Sr. Azul* (DJ) ejecuta las disciplinas de Implementación, Test e Integración y Despliegue.
+
+
 #### Proceso seguido <a name="procesoSeguidoBlanco"></a>
 
 #### Análisis del progreso <a name="analisisProgresoBlanco"></a>
