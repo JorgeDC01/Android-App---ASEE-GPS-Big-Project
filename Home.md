@@ -593,11 +593,67 @@ Como se puede ver en estas dos fotos anteriores, hay zonas críticas debido a la
 ### Mapa de Navegación: pantallas, patrones y diagrama <a name="mapaNavegacion"></a>
 
 #### Diagrama de casos de uso <a name="diagramaCasosdeUso"></a>
+A continuación se muestra el diagrama de casos de uso de la aplicación, todos referentes a las acciones que puede realizar el usuario y el sistema.
+
+<img>
 
 #### Diagrama de navegación <a name="diagramadeNavegacion"></a>
+A continuación se muestra un posible diagrama de navegación que podría seguir la aplicación:
+
+<img>
 
 #### Mockup  <a name="Mockup"></a>
+A continuación se muestra un Mockup que contiene un conjunto de posibles pantallas del proyecto, a modo de prototipo que muestre las funcionalidades de la aplicación:
+
+<img>
+
+Como se puede observar, para poder utilizar la aplicación en primer lugar es necesario iniciar sesión contando con pantallas para iniciar sesión con una cuenta y otra para registrarse, pudiendo crear una cuenta nueva en caso de que esta no exista.
+
+Una vez se ha iniciado sesión, la aplicación consta principalmente de 4 pantallas, siendo estas las siguientes:
+
+* Una **pantalla principal**, que muestra el tiempo que hace (temperatura, clima…) en la ubicación actual del usuario, así como una lista con los eventos que ha creado, a través de la cual se pueden consultar los detalles (tiempo, entre otros) de este.
+
+* Una pantalla destinada al **filtrado de eventos**, pudiendo buscar entre los distintos eventos creados por el usuario a través de una serie de filtros, como el tiempo actual que hace, lugar en el que se desarrolla el evento, etc.
+
+* Una pantalla con el **perfil del usuario**, que muestra todos sus datos, pudiendo consultar o modificar estos, así como incluso borrar el usuario.
+
+* Una pantalla de **ajustes**, que contiene los principales ajustes que se pueden aplicar a la app, como el tema claro/oscuro, notificaciones, etc.
+
+Cabe destacar que tanto en la lista de todos los eventos ubicada en la pantalla principal como en las listas proporcionadas por la pantalla de filtrado de eventos, se pueden acceder a los datos de un evento tocando sobre estos, que mostrará una pantalla desde la que se pueden consultar sus datos (lugar, temperatura, clima, fecha, etc..) o incluso modificar algunos de ellos, pudiendo también borrar dicho evento de la app.
+
+Así mismo, posee un panel lateral desplegable en la pantalla principal desde el que se pueden acceder a las principales funcionales de la aplicación, siendo estas:
+
+* **Inicio**: Un acceso a la propia pantalla principal.
+* **Eventos**: Un acceso a la lista de eventos que ha creado el usuario para poder filtrarlos.
+* **Perfil**: Un acceso al perfil del usuario.
+* **Ajustes**: Un acceso a la pantalla con los principales ajustes de la aplicación.
 
 #### Grafo de navegación <a name="grafodeNavegacion"></a>
 
+<img>
+
 #### Patrones de navegación aplicados <a name="patronesNavegacion"></a>     
+En este apartado se muestran todos los patrones de navegación que se han utilizado para la realización de la aplicación, siendo estos los siguientes:
+
+* Patrón de lista y detalle.
+* Patrón de cajón de navegación.
+* Patrón de botones y objetivos sencillos.
+
+A continuación se detallarán cada uno de los patrones implementados.
+
+**Patrón de lista y detalle**
+Para desplazarse por la aplicación se ha utilizado un patrón de lista y detalle referente a la pantalla de inicio, que mostrará los elementos de más interés para el usuario, en este caso una lista con todos los eventos que ha creado.
+
+De la misma forma, en la pantalla de lista de eventos también se ha aplicado este patrón para buscar una lista de eventos concretos a través de la pantalla de filtrado de eventos.
+
+Así mismo, a través de estas listas, se puede acceder a una pantalla que permite consultar los detalles de un evento concreto tocando sobre dicho evento de la lista, que llevará a una pantalla que muestra sus datos.
+
+<img>
+
+**Patrón de cajón de navegación**
+En lo referente a cada una de las funcionalidades, se utilizará un **patrón de cajón de navegación**, creando un menú lateral desplegable desde el que se puede navegar entre funcionalidad y funcionalidad, pudiendo cambiar rápidamente de pantalla a través de dicho menú lateral.
+
+** Patrón de botones y objetos sencillos**
+Finalmente, se ha aplicado el patrón de botones y objetivos sencillos mostrando mediante botones con iconos intuitivos en ciertas funcionalidades, de manera que permitan a los usuarios acceder más fácilmente a dichas funcionalidades.
+
+<img>
