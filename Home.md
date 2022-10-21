@@ -595,18 +595,22 @@ Como se puede ver en estas dos fotos anteriores, hay zonas críticas debido a la
 #### Diagrama de casos de uso <a name="diagramaCasosdeUso"></a>
 A continuación se muestra el diagrama de casos de uso de la aplicación, todos referentes a las acciones que puede realizar el usuario y el sistema.
 
-<img>
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/diagramaCasosUso.png"/>
 
 #### Diagrama de navegación <a name="diagramadeNavegacion"></a>
 A continuación se muestra un posible diagrama de navegación que podría seguir la aplicación:
 
-<img>
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/diagramaNavegacion.png"/>
 
 #### Mockup  <a name="Mockup"></a>
 A continuación se muestra un Mockup que contiene un conjunto de posibles pantallas del proyecto, a modo de prototipo que muestre las funcionalidades de la aplicación:
 
-<img>
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/mockupPantallas1_6.png"/>
 
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/mockupPantallas7_14.png"/>
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/mockupPantallas15_16.png"/>
+<p>&nbsp;</p>
 Como se puede observar, para poder utilizar la aplicación en primer lugar es necesario iniciar sesión contando con pantallas para iniciar sesión con una cuenta y otra para registrarse, pudiendo crear una cuenta nueva en caso de que esta no exista.
 
 Una vez se ha iniciado sesión, la aplicación consta principalmente de 4 pantallas, siendo estas las siguientes:
@@ -630,9 +634,10 @@ Así mismo, posee un panel lateral desplegable en la pantalla principal desde el
 
 #### Grafo de navegación <a name="grafodeNavegacion"></a>
 
-<img>
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/grafoNavegacion.png"/>
 
-#### Patrones de navegación aplicados <a name="patronesNavegacion"></a>     
+#### Patrones de navegación aplicados <a name="patronesNavegacion"></a>  
+   
 En este apartado se muestran todos los patrones de navegación que se han utilizado para la realización de la aplicación, siendo estos los siguientes:
 
 * Patrón de lista y detalle.
@@ -641,7 +646,7 @@ En este apartado se muestran todos los patrones de navegación que se han utiliz
 
 A continuación se detallarán cada uno de los patrones implementados.
 
-**Patrón de lista y detalle**
+🔹 Patrón de lista y detalle
 
 Para desplazarse por la aplicación se ha utilizado un patrón de lista y detalle referente a la pantalla de inicio, que mostrará los elementos de más interés para el usuario, en este caso una lista con todos los eventos que ha creado.
 
@@ -649,14 +654,15 @@ De la misma forma, en la pantalla de lista de eventos también se ha aplicado es
 
 Así mismo, a través de estas listas, se puede acceder a una pantalla que permite consultar los detalles de un evento concreto tocando sobre dicho evento de la lista, que llevará a una pantalla que muestra sus datos.
 
-<img>
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/ejemploLista.png"/>
+<p>&nbsp;</p>
 
-**Patrón de cajón de navegación**
+🔹 Patrón de cajón de navegación
 
 En lo referente a cada una de las funcionalidades, se utilizará un **patrón de cajón de navegación**, creando un menú lateral desplegable desde el que se puede navegar entre funcionalidad y funcionalidad, pudiendo cambiar rápidamente de pantalla a través de dicho menú lateral.
 
-**Patrón de botones y objetos sencillos**
+🔹 Patrón de botones y objetos sencillos
 
 Finalmente, se ha aplicado el patrón de botones y objetivos sencillos mostrando mediante botones con iconos intuitivos en ciertas funcionalidades, de manera que permitan a los usuarios acceder más fácilmente a dichas funcionalidades.
 
-<img>
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/ejemploBotones.png"/>
