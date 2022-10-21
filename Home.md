@@ -197,13 +197,36 @@ En este apartado, se profundiza sobre aspectos esenciales de la propuesta inicia
 ### Requisitos no funcionales <a name="requisitosNoFuncionales"></a>
 Los requisitos no funcionales son aquellos que no hacen referencia a las funciones específicas del sistema, sino a las propiedades que este debe satisfacer. Suponen restricciones en su implementación. Para su definición vamos a agruparlos en varias categorías:
 
-1. Usabilidad: Característica relacionada con el modo de interacción entre el usuario y la aplicación. 
-> * RNF 1: La aplicación debe estar diseñada de manera que se adapte a la resolución al tamaño de pantalla de cualquier dispositivo móvil.
-> * 
-> * 
-> * 
-> * 
-> * 
+1. **Usabilidad**: Característica relacionada con el modo de interacción entre el usuario y la aplicación. 
+> * **RNF 1**: La aplicación debe estar diseñada de manera que se adapte a la resolución al tamaño de pantalla de cualquier dispositivo móvil.
+> * **RNF 2**: Los usuarios habituados a las aplicaciones meteorológicas deben entender al instante el funcionamiento de la aplicación. El tiempo para una persona no habituada no debe ser superior a 5 minutos. 
+> * **RNF 3**: La aplicación debe seguir los patrones establecidos por Google Material Design. 
+> * **RNF 4**: El sistema proporcionará feedback constante al usuario durante el uso de la aplicación, bien informando de un error o confirmando una acción realizada. 
+> * **RNF 5**: Para aquellas tareas que no finalicen inmediatamente se deberá mostrar una barra de progreso que informe de su estado actual. 
+> * **RNF 6**: La aplicación debe ser apta para usuarios de habla inglesa o español, y permitir una fácil adaptación a cualquier otro idioma.
+
+2. **Eficiencia**: Capacidad para realizar adecuadamente una función. 
+> * **RNF 7**: La aplicación no debe tardar más de 3 segundos en iniciarse. 
+> * **RNF 8**: No demorar más de 6 segundos en la carga de información con las predicciones meteorológicas tras haber seleccionado una localidad, para que el usuario no se desespere. 
+
+3. **Consistencia**: Característica que define a algo sólido y estable. 
+> * **RNF 9**: La aplicación no debe bloquearse en ningún momento mientras se esté utilizando.
+
+4. **Integridad**: Capacidad para mostrar algo sin ser distorsionado.
+> * **RNF 10**: La información mostrada debe ser auténtica y coherente con los datos que la Agencia Española de Meteorología nos proporciona a través de su API.
+
+5. **Mantenibilidad**: Facilidad para ser modificado. 
+> * **RNF 11**: El código de la aplicación debe estar bien estructurado, utilizando patrones arquitectónicos, de modo que si hay que añadir o corregir alguna funcionalidad tardemos el menor tiempo posible en solucionarlo.
+
+6. **Compatibilidad**: Cualidad de un elemento que le permite poder trabajar con otro correctamente. 
+> * **RNF 12**: Se espera que la aplicación sea compatible con el 85% de los dispositivos móviles existentes que utilicen Android, para ello usará la versión de Android 6.0.
+
+7. **Disponibilidad**: Probabilidad de que la aplicación falle.
+> * **RNF 13**: Se espera que la aplicación se encuentre disponible al menos el 99,95% de las veces que sean utilizadas por los usuarios, teniendo una probabilidad de fallo de como máximo un 0,05%.
+
+8. **Seguridad**: Capacidad que tiene la aplicación de proteger a sus usuarios.
+> * **RNF 14**: Se espera que la aplicación garantice la privacidad de los datos del usuario frente a amenazas externas de robo de datos o pérdida de estos gracias a mecanismos como el respaldo de estos mediante una copia de seguridad periódica y la restricción a su acceso a únicamente el administrador.
+
 <p>&nbsp;</p>
 
 ## Metodologías de desarrollo <a name="metodologiasdedesarrollo"></a>
