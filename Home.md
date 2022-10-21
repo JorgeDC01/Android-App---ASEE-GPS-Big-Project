@@ -8,11 +8,13 @@
   - [Introduccion <a name="introduction"></a>](#introduccion-)
   - [Propuesta inicial <a name="propuestaInicial"></a>](#propuesta-inicial-)
     - [Descripción de la idea <a name="descripcionDeLaIdea"></a>](#descripción-de-la-idea-)
+      - [Público objetivo <a name="publicoObjetivo"></a>](#Público-objetivo-)
   - [Funcionalidades principales <a name="funcionalidadesprincipales"></a>](#funcionalidades-principales-)
   - [Análisis <a name="analisis"></a>](#análisis-)
     - [Casos de uso estructurales <a name="casosdeusoestructurales"></a>](#casos-de-uso-estructurales-)
     - [Casos de uso no estructurales <a name="casosdeusonoestructurales"></a>](#casos-de-uso-no-estructurales-)
     - [Conjuntos de casos de uso <a name="conjuntosdecasosdeuso"></a>](#conjuntos-de-casos-de-uso-)
+    - [Requisitos no funcionales <a name="requisitosNoFuncionales"></a>](#Requisitos-no-funcionales-)
   - [Metodologías de desarrollo <a name="metodologiasdedesarrollo"></a>](#metodologías-de-desarrollo-)
     - [Proceso de desarrollo <a name="procesodedesarrollo"></a>](#proceso-de-desarrollo-)
     - [Planificación del proyecto <a name="planificaciondelproyecto"></a>](#planificación-del-proyecto-)
@@ -81,8 +83,26 @@ El objetivo principal de este trabajo es el desarrollo de una aplicación móvil
 </p>El usuario puede crear eventos personalizados ligados a una ubicación, los cuales tendrán asignado las condiciones meteorológicas a tiempo real en dicha localización. De igual importancia, se favorece la interacción de los usuarios con el medio ambiente, permitiéndoles crear eventos tanto en municipios como en montañas.
 <p>
 
-<p>&nbsp;</p>
 
+#### Público objetivo <a name="publicoObjetivo"></a>
+En este apartado, se especifica a qué público va dirigida nuestra aplicación mediante estudios y gráficas. Antes de adentrarnos en el “quid” de la cuestión, cabe destacar el motivo por el que se ha elegido Android como plataforma sobre la que se implementa la aplicación. Según [StatCounter](https://statcounter.com/), Android ha dominado el 70% de la cuota de mercado por delante de iOS en creces, como se muestra en la siguiente gráfica:
+
+<img>
+
+Asimismo, no es una sorpresa que Android gobierne el mercado de dispositivos móviles. Según Google, el número de usuarios con dispositivos Android ha aumentado notablemente. En la siguiente tabla, se especifica la evolución de los usuarios activos durante los últimos años en billones como unidad.
+
+<img>
+
+**¿A quién va dirigido?**
+
+La  categoría  de  apps  del tiempo  son  el  0,4%  del  total, con más de 11.500 disponibles y  un  promedio  de  valoración de 4,0 (frente al 4,1 del resto de categorías  contando  solo  las apps  con  más  de  100  valoraciones). El 12% de las apps del tiempo se han descargado más de 50.000 veces (9,5% de media  para  el  resto  de  apps).
+
+Además dentro de la tienda Play Store de Google, la aplicaciones del tiempo estando dentro de las categorías más usadas, es la que atrae al menor número de usuarios, como se puede ver en el siguiente enlace,  el 32% de los usuarios se descarga una aplicación climatológica:
+[Estadísticas para este 2022 en la tienda de Google Play](https://appsrentables.com/estadisticas-tienda-google-play/)
+
+Esto es debido a que la totalidad de los dispositivos android ya vienen instalados con una aplicación climatológica, esto deriva en que solo los usuarios que quieren una experiencia mejor que a la que les dan sus dispositivos buscan una alternativa a la aplicación preinstalada, estos usuarios no buscan una aplicación que les diga el tiempo sin más, sino que además buscan funcionalidades extras y podríamos decir que son un tipo de usuarios que buscan una aplicación climatológica más específica.
+
+Es por esto que el **prototipo de usuario** al que ya he dirigido nuestra aplicación será fundamentalmente una persona mayor de edad, entre los 18 y 50 años, la cual realice actividades o eventos de una manera regular, y que sea importante para dichos eventos conocer la situación meteorológica de la ubicación en la que se producen, como por ejemplo eventos deportivos, bodas y banquetes al aire libre, etc.
 
 ## Funcionalidades principales <a name="funcionalidadesprincipales"></a>
 
@@ -106,6 +126,7 @@ Para poder utilizar las diferentes funcionalidades de la aplicación, un usuario
 <p>&nbsp;</p>
 
 ## Análisis <a name="analisis"></a>
+En este apartado, se profundiza sobre aspectos esenciales de la propuesta inicial del proyecto, así como los requisitos funcionales y no funcionales. 
 
 
 ### Casos de uso estructurales <a name="casosdeusoestructurales"></a>
@@ -172,6 +193,17 @@ Para poder utilizar las diferentes funcionalidades de la aplicación, un usuario
 |CU-15|Modificar usuario.|El usuario podrá modificar su nombre de usuario, contraseña asociadas a su cuenta en un apartado “perfil”.| 
 |CU-16|Eliminar usuario.|En el apartado “perfil”, el usuario podrá eliminar su cuenta de la aplicación y cerrar sesión.|
 
+
+### Requisitos no funcionales <a name="requisitosNoFuncionales"></a>
+Los requisitos no funcionales son aquellos que no hacen referencia a las funciones específicas del sistema, sino a las propiedades que este debe satisfacer. Suponen restricciones en su implementación. Para su definición vamos a agruparlos en varias categorías:
+
+1. Usabilidad: Característica relacionada con el modo de interacción entre el usuario y la aplicación. 
+> * RNF 1: La aplicación debe estar diseñada de manera que se adapte a la resolución al tamaño de pantalla de cualquier dispositivo móvil.
+> * 
+> * 
+> * 
+> * 
+> * 
 <p>&nbsp;</p>
 
 ## Metodologías de desarrollo <a name="metodologiasdedesarrollo"></a>
