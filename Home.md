@@ -37,10 +37,17 @@
       - [Señor Azul (Equipo 4) <a name="señorAzul"></a>](#señor-azul-equipo-4-)
         - [Proceso seguido <a name="procesoSeguidoAzul"></a>](#proceso-seguido-)
         - [Análisis del progreso <a name="analisisProgresoAzul"></a>](#análisis-progreso-)
+  - [Diseño de la interfaz de usuario <a name="diseñoInterfazUsuario"></a>](#Diseño-de-la-interfaz-de-usuario-)
+    - [Mapa de Navegación: pantallas, patrones y diagrama <a name="mapaNavegacion"></a>](#Mapa-de-Navegación-pantallas-patrones-y-diagrama-)
+      - [Diagrama de casos de uso <a name="diagramaCasosdeUso"></a>](#Diagrama-de-casos-de-uso-)
+      - [Diagrama de navegación <a name="diagramadeNavegacion"></a>](#Diagrama-de-navegación-)
+      - [Mockup <a name="mockup"></a>](#Mockup-)
+      - [Grafo de navegación <a name="grafodeNavegacion"></a>](#Grafo-de-navegación-)
+      - [Patrones de navegación aplicados <a name="patronesNavegacion"></a>](#Patrones-de-navegación-aplicados-)
 
 ## Introduccion <a name="introduction"></a>
 
-### Motivación
+**Motivación**
 
 <p>
 
@@ -56,7 +63,7 @@ Hoy en día, las aplicaciones móviles no se centran únicamente en una tarea, s
 </p>
 
 
-### Objetivos
+**Objetivos**
 
 <p>
 
@@ -64,7 +71,7 @@ El propósito del equipo de desarrollo es afianzar conocimientos: cómo utilizar
 </p>
 
 
-### Resumen
+**Resumen**
 <p>
 
 En los siguientes apartados, hablaremos de la propuesta inicial del proyecto con una descripción y su funcionalidad inicial. A continuación, se detalla el marco de desarrollo, en otras palabras, la planificación y el proceso seguido para cumplir con los objetivos propuestos. La metodología empleada por el equipo es el “Proceso Unificado”, un marco de desarrollo iterativo e incremental basado en casos de uso y centrado en la arquitectura del sistema.  Por último, se presentará el funcionamiento interno de la aplicación, así como los mockup (interfaz de usuario primigenia) y la navegación entre las diferentes pantallas.
@@ -87,11 +94,12 @@ El objetivo principal de este trabajo es el desarrollo de una aplicación móvil
 #### Público objetivo <a name="publicoObjetivo"></a>
 En este apartado, se especifica a qué público va dirigida nuestra aplicación mediante estudios y gráficas. Antes de adentrarnos en el “quid” de la cuestión, cabe destacar el motivo por el que se ha elegido Android como plataforma sobre la que se implementa la aplicación. Según [StatCounter](https://statcounter.com/), Android ha dominado el 70% de la cuota de mercado por delante de iOS en creces, como se muestra en la siguiente gráfica:
 
-<img>
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/PublicoObjetivo1.png"/>
 
 Asimismo, no es una sorpresa que Android gobierne el mercado de dispositivos móviles. Según Google, el número de usuarios con dispositivos Android ha aumentado notablemente. En la siguiente tabla, se especifica la evolución de los usuarios activos durante los últimos años en billones como unidad.
 
-<img>
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/PublicoObjetivo2.png"/>
+
 
 **¿A quién va dirigido?**
 
@@ -205,24 +213,31 @@ Los requisitos no funcionales son aquellos que no hacen referencia a las funcion
 > * **RNF 5**: Para aquellas tareas que no finalicen inmediatamente se deberá mostrar una barra de progreso que informe de su estado actual. 
 > * **RNF 6**: La aplicación debe ser apta para usuarios de habla inglesa o español, y permitir una fácil adaptación a cualquier otro idioma.
 
+
 2. **Eficiencia**: Capacidad para realizar adecuadamente una función. 
 > * **RNF 7**: La aplicación no debe tardar más de 3 segundos en iniciarse. 
 > * **RNF 8**: No demorar más de 6 segundos en la carga de información con las predicciones meteorológicas tras haber seleccionado una localidad, para que el usuario no se desespere. 
 
+
 3. **Consistencia**: Característica que define a algo sólido y estable. 
 > * **RNF 9**: La aplicación no debe bloquearse en ningún momento mientras se esté utilizando.
+
 
 4. **Integridad**: Capacidad para mostrar algo sin ser distorsionado.
 > * **RNF 10**: La información mostrada debe ser auténtica y coherente con los datos que la Agencia Española de Meteorología nos proporciona a través de su API.
 
+
 5. **Mantenibilidad**: Facilidad para ser modificado. 
 > * **RNF 11**: El código de la aplicación debe estar bien estructurado, utilizando patrones arquitectónicos, de modo que si hay que añadir o corregir alguna funcionalidad tardemos el menor tiempo posible en solucionarlo.
+
 
 6. **Compatibilidad**: Cualidad de un elemento que le permite poder trabajar con otro correctamente. 
 > * **RNF 12**: Se espera que la aplicación sea compatible con el 85% de los dispositivos móviles existentes que utilicen Android, para ello usará la versión de Android 6.0.
 
+
 7. **Disponibilidad**: Probabilidad de que la aplicación falle.
 > * **RNF 13**: Se espera que la aplicación se encuentre disponible al menos el 99,95% de las veces que sean utilizadas por los usuarios, teniendo una probabilidad de fallo de como máximo un 0,05%.
+
 
 8. **Seguridad**: Capacidad que tiene la aplicación de proteger a sus usuarios.
 > * **RNF 14**: Se espera que la aplicación garantice la privacidad de los datos del usuario frente a amenazas externas de robo de datos o pérdida de estos gracias a mecanismos como el respaldo de estos mediante una copia de seguridad periódica y la restricción a su acceso a únicamente el administrador.
@@ -542,6 +557,7 @@ Por último, dentro del análisis de la planificación nos encontramos ante el c
 
 Como se puede ver en estas dos fotos anteriores, hay zonas críticas debido a las horas, algunas acciones empiezan y acaban el mismo día (Business Modeling) la cual es predecesora de las disciplinas de los casos de usos.
 
+
 ## Configuración del seguimiento de la planificación <a name="configSeguimientoPlan"></a>
 
 ### Señor Blanco (Equipo 1) <a name="señorBlanco"></a>
@@ -570,3 +586,18 @@ Como se puede ver en estas dos fotos anteriores, hay zonas críticas debido a la
 #### Proceso seguido <a name="procesoSeguidoAzul"></a>
 
 #### Análisis del progreso <a name="analisisProgresoAzul"></a>
+
+
+## Diseño de la interfaz de usuario <a name="diseñoInterfazUsuario"></a>
+
+### Mapa de Navegación: pantallas, patrones y diagrama <a name="mapaNavegacion"></a>
+
+#### Diagrama de casos de uso <a name="diagramaCasosdeUso"></a>
+
+#### Diagrama de navegación <a name="diagramadeNavegacion"></a>
+
+#### Mockup  <a name="Mockup"></a>
+
+#### Grafo de navegación <a name="grafodeNavegacion"></a>
+
+#### Patrones de navegación aplicados <a name="patronesNavegacion"></a>     
