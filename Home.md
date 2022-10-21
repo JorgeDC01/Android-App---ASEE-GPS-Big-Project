@@ -572,15 +572,27 @@ Respecto a las iteraciones, estas vendrán definidas como un Sprint que contendr
 
 En la siguiente imagen se puede observar en detalle una tarea épica (caso de uso Añadir Evento Municipio):
 
-<img>
+<p>&nbsp;</p>
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/configPlanificacion1.png"/>
+
+<p>&nbsp;</p>
 
 En la próxima imagen se puede ver una Tarea (**Incidencia**) con atribuciones de los roles (**Subtareas**):
 
-<img>
+<p>&nbsp;</p>
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/configPlanificacion2.png"/>
+
+<p>&nbsp;</p>
 
 En la imagen siguiente se puede ver una Iteración (sprint) en la que se desarrollan tareas:
 
-<img>
+<p>&nbsp;</p>
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/configPlanificacion3.png"/>
+
+<p>&nbsp;</p>
 
 Cada una de las incidencias (épicas o de tipo tarea) tienen asociada una prioridad. Las incidencias de los casos de usos estructurales vendrán definidas con una prioridad **High**, mientras que las incidencias relativas a los casos de uso no estructurales **Medium**.
 
