@@ -650,6 +650,8 @@ Por tanto, dentro de Jira se ha seguido el siguiente procedimiento:
    
 ### Señor Blanco (Equipo 1) <a name="señorBlanco"></a>
 
+#### Proceso seguido <a name="procesoSeguidoBlanco"></a>
+
 El señor blanco ha liderado al equipo 1, donde cada rol es interpretado por los siguientes miembros:
 
 * Jefe del proyecto (JP): Sr. Blanco
@@ -657,16 +659,116 @@ El señor blanco ha liderado al equipo 1, donde cada rol es interpretado por los
 * Desarrollador Senior (DS): Sr. Naranja
 * Desarrollador Junior (DJ): Sr.  Azul
 
-El *Sr. Blanco* (JP) se encargará de las tareas de modelado de negocio (BM) y gestión del proyecto software, en otras palabras, se ocupará de asignar las tareas a realizar a cada rol. 
+El **Sr. Blanco** (JP) se encargará de las tareas de modelado de negocio (BM) y gestión del proyecto software, en otras palabras, se ocupará de asignar las tareas a realizar a cada rol. 
 
-El *Sr. Marrón* (AS) se ocupará de las disciplinas de Requisitos, análisis y Diseño e Implementación. El *Sr. Naranja* (DS) se centra en todas las disciplinas que abarcan el desarrollo completo de cada caso de uso; desde la Definición de Requisitos, Análisis y Diseño, Implementación, Integración y Test y Despliegue. Por último, el *Sr. Azul* (DJ) ejecuta las disciplinas de Implementación, Test e Integración y Despliegue.
+El **Sr. Marrón** (AS) se ocupará de las disciplinas de Requisitos, análisis y Diseño e Implementación. El **Sr. Naranja** (DS) se centra en todas las disciplinas que abarcan el desarrollo completo de cada caso de uso; desde la Definición de Requisitos, Análisis y Diseño, Implementación, Integración y Test y Despliegue. Por último, el **Sr. Azul** (DJ) ejecuta las disciplinas de Implementación, Test e Integración y Despliegue.
 
+* **CU01**: Añadir Evento de Municipio.
+* **CU02**: Añadir Evento de Ruta Montaña.
+* **CU03**: Añadir Usuario.
+* **CU04**: Añadir una barra de búsqueda y filtrado de ubicaciones.
+* **CU05**: Añadir preferencias desde el menú de AppBar (ajustes …)
 
-#### Proceso seguido <a name="procesoSeguidoBlanco"></a>
+Por último, las incidencias relacionadas con los cinco casos de uso estructurales dispondrán de una prioridad alta (**High**). 
 
 #### Análisis del progreso <a name="analisisProgresoBlanco"></a>
 
+En este apartado se detalla la distribución de las tareas realizadas por cada rol a lo largo de las 9 iteraciones, según las disciplinas que puedan realizar cada uno de ellos.
 
+Antes de dar principio, es imprescindible aclarar que el tiempo inicial disponible del arquitecto software es de 37.20 horas semanales. En el caso de que realice sus tareas y quede tiempo sobrante, este se lo dedicará a tareas de gestión.
+
+<p>&nbsp;</p>
+
+⌚ Planificación tareas CU01 - Añadir Evento de Municipio
+
+Es el primer caso de uso estructural del proyecto; el usuario podrá añadir un nuevo evento de municipio en una fecha determinada, estando asignado a una condición meteorológica en tiempo real de la ubicación del municipio. Los roles que participarán en el desarrollo de este caso de uso son todos los miembros del equipo, exceptuando el Sr. Blanco (JP). 
+
+El desarrollo de este caso de uso comienza con su Definición de Requisitos (RE) en la **iteración 1** y finaliza en la **iteración 8**, con el despliegue del paquete de requisitos CU01, CU02 y CU03.
+
+El encargado de realizar las tareas correspondientes a la **Definición de Requisitos** (RE) en la iteración 1 es el Arquitecto software (Sr. Marrón). 
+
+En cuanto al **Análisis y Diseño** (A&D), esta disciplina comienza en la IT1 y es completada por el Desarrollador Senior (Sr. Naranja).
+
+La **Implementación** (Imp), como consecuencia de ser un caso de uso estructural, se realizará en la primera iteración de elaboración IT2. Los roles encargados de completar las tareas de esta disciplina son el Desarrollador Junior y el Desarrollador Senior (Sr. Azul y Sr. Naranja).
+
+* La tarea de implementación “Implementar los componentes” es compartida por los DJ y DS.
+
+El **Test e Integración** (T&I) se realiza en la iteración IT4 por el Desarrollador Senior (Sr. Naranja).
+
+En última instancia, el **Despliegue** (D) se completa en la IT8 por el Desarrollador Junior (Sr. Azul) en el paquete de casos de uso CU01, CU02 y CU03.
+
+En la siguiente tabla se puede ver la distribución de manera resumida:
+
+<img tabla>
+
+<p>&nbsp;</p>
+
+⌚ Planificación tareas CU02 - Añadir Evento de Ruta Montaña
+
+Es el segundo caso de uso estructural del proyecto; El usuario podrá añadir un nuevo evento de montaña en una fecha determinada, estando asignado a una condición meteorológica en tiempo real de la ubicación de la montaña. Los roles que participarán en el desarrollo de este caso de uso son todos los miembros del equipo, exceptuando el Sr. Blanco (JP). 
+
+El desarrollo de este caso de uso comienza con su Definición de Requisitos (RE) en la **iteración 1** y finaliza en la **iteración 8**, con el despliegue del paquete de requisitos CU01, CU02 y CU03.
+
+El encargado de realizar las tareas correspondientes a la **Definición de Requisitos** (RE) en la iteración 1 es el Arquitecto software (Sr. Marrón).
+
+En cuanto al **Análisis y Diseño** (A&D), esta disciplina comienza en la IT1 y es completada por el Desarrollador Senior (Sr. Naranja).
+
+La **Implementación** (Imp), como consecuencia de ser un caso de uso estructural, se realizará en la primera iteración de elaboración IT2. El rol encargado de completar las tareas de esta disciplina es el Desarrollador Senior (Sr. Naranja).
+
+El **Test e Integración** (T&I) se realiza en la iteración IT4 por el Desarrollador Senior (Sr. Naranja).
+
+En última instancia, el **Despliegue** (D) se completa en la IT8 por el Desarrollador Junior (Sr. Azul) en el paquete de casos de uso CU01, CU02 y CU03.
+
+En la siguiente tabla se puede ver la distribución de manera resumida:
+
+<img tabla>
+
+⌚ Planificación tareas CU03 - Añadir Usuario
+
+Es el tercer caso de uso estructural del proyecto; El sistema permite al usuario registrarse con unas credenciales, de forma que en la base de datos se inserta un nuevo objeto con la información relativa al nuevo perfil creado en la aplicación. Con estas credenciales, el usuario podrá utilizar la funcionalidad de la aplicación. Los roles que participarán en el desarrollo de este caso de uso son todos los miembros del equipo, exceptuando el Sr. Blanco (JP). 
+
+El desarrollo de este caso de uso comienza con su Definición de Requisitos (RE) en la **iteración 1** y finaliza en la **iteración 8**, con el despliegue del paquete de requisitos CU01, CU02 y CU03.
+
+El encargado de realizar las tareas correspondientes a la **Definición de Requisitos** (RE) en la iteración 1 es el Arquitecto software (Sr. Marrón).
+
+En cuanto al **Análisis y Diseño** (A&D), esta disciplina comienza en la IT1 y es completada por el Desarrollador Senior (Sr. Naranja), en añadidura del Arquitecto Software (Sr. Marrón) para completar las tareas.
+
+* La tarea de Análisis y Diseño “Analizar el comportamiento y definir una Arquitectura software candidata” es compartida por los AS y DS.
+
+La **Implementación** (Imp), como consecuencia de ser un caso de uso estructural, se realizará en la primera iteración de elaboración IT2. Los encargados de completar las tareas de esta disciplina son el Desarrollador Senior (Sr. Naranja) y el Arquitecto Software (Sr. Marrón).
+
+* La tarea de Implementación “Implementar los componentes” es compartida por los AS y DS.
+
+El **Test e Integración** (T&I) se realiza en la iteración IT4 por el Desarrollador Senior (Sr. Naranja).
+
+En última instancia, el **Despliegue** (D) se completa en la IT8 por el Desarrollador Junior (Sr. Azul) en el paquete de casos de uso CU01, CU02 y CU03.
+
+En la siguiente tabla se puede ver la distribución de manera resumida:
+
+<img tabla>
+
+⌚ Planificación tareas CU04 - Añadir una barra de búsqueda y filtrado de ubicaciones
+
+Es el cuarto caso de uso estructural del proyecto; El sistema deberá incorporar una barra de búsqueda para buscar una ubicación con su tiempo meteorológico asignado. Los roles que participarán en el desarrollo de este caso de uso son todos los miembros del equipo, exceptuando el Sr. Blanco (JP). 
+
+El desarrollo de este caso de uso comienza con su Definición de Requisitos (RE) en la **iteración 1** y finaliza en la **iteración 9**, con el despliegue del paquete de requisitos CU04…CU16.
+
+El encargado de realizar las tareas correspondientes a la **Definición de Requisitos** (RE) en la iteración 1 es el Arquitecto software (Sr. Marrón). 
+
+En cuanto al **Análisis y Diseño** (A&D), esta disciplina comienza en la IT2 y es completada por el Arquitecto Software (Sr. Marrón).
+
+La **Implementación** (Imp), como consecuencia de ser un caso de uso estructural, se realizará en la primera iteración de elaboración IT3. Los encargados de completar las tareas de esta disciplina son el Desarrollador Senior (Sr. Naranja) y el Desarrollador Junior (Sr. Azul).
+
+* La tarea de Implementación “Implementar los componentes” es compartida por los DJ y DS.
+* La tarea de Implementación “Testear esos componentes (comprobar su funcionamiento)” es compartida por los DJ y DS.
+
+El **Test e Integración** (T&I) se realiza en la iteración IT7 por el Desarrollador Junior (Sr. Azul).
+
+En última instancia, el **Despliegue** (D) se completa en la IT9 por el Desarrollador Junior (Sr. Azul) en el paquete de casos de uso CU01, CU02 y CU03.
+
+En la siguiente tabla se puede ver la distribución de manera resumida:
+
+<img tabla>
 ### Señor Marrón (Equipo 2) <a name="señorMarron"></a>
 
 #### Proceso seguido <a name="procesoSeguidoMarron"></a>
