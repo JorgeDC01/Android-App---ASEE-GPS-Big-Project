@@ -699,7 +699,7 @@ En última instancia, el **Despliegue** (D) se completa en la IT8 por el Desarro
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
 
-<img tabla>
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU01.png"/>
 
 <p>&nbsp;</p>
 
@@ -721,7 +721,7 @@ En última instancia, el **Despliegue** (D) se completa en la IT8 por el Desarro
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
 
-<img tabla>
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU02.png"/>
 
 ⌚ Planificación tareas CU03 - Añadir Usuario
 
@@ -745,7 +745,7 @@ En última instancia, el **Despliegue** (D) se completa en la IT8 por el Desarro
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
 
-<img tabla>
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU03.png"/>
 
 ⌚ Planificación tareas CU04 - Añadir una barra de búsqueda y filtrado de ubicaciones
 
@@ -768,7 +768,8 @@ En última instancia, el **Despliegue** (D) se completa en la IT9 por el Desarro
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
 
-<img tabla>
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU04.png"/>
+
 ### Señor Marrón (Equipo 2) <a name="señorMarron"></a>
 
 #### Proceso seguido <a name="procesoSeguidoMarron"></a>
