@@ -560,6 +560,94 @@ Como se puede ver en estas dos fotos anteriores, hay zonas críticas debido a la
 
 ## Configuración del seguimiento de la planificación <a name="configSeguimientoPlan"></a>
 
+La planificación del proyecto se ha trasladado a **Jira**, una herramienta centrada en la **gestión de proyectos**, seguimiento de errores y  del estado de desarrollo, la administración de tareas y la gestión de requisitos.
+
+Así mismo, permite una profunda documentación sobre seguimientos y errores que contendría el proyecto y gestión de workflows ideales para proyectos software ágiles, como SCRUM. Es una herramienta flexible que facilita la gestión de proyectos pequeños, medianos o muy extensos.
+
+Se ha decidido utilizar este software porque aporta un medio para la realización de la planificación de un proyecto de forma compartida y en tiempo real gracias a la plataforma web online . Así como porque presenta una interfaz relativamente sencilla e intuitiva. Además, los informes, las estadísticas y los progresos se muestran en **tiempo real**. De este modo, todos los implicados están siempre al día.
+
+En cuanto a la sintaxis, cada caso de uso se ha creado como una **incidencia épica**, mientras que cada una de las tareas que se corresponden a cada caso de uso se han diseñado como tareas. Sin embargo, aquellas tareas que son compartidas por más de un rol contienen una **subtarea** con la contribución de cada rol.
+
+Respecto a las iteraciones, estas vendrán definidas como un Sprint que contendrá todas las tareas implicadas en el progreso de dicha iteración. Por añadidura, todas las tareas de un caso de uso estarán enlazadas a la tarea épica del caso de uso susodicho y pertenecerán a un sprint concreto, correspondiente a una de las 9 iteraciones o semanas que durará el proyecto.
+
+En la siguiente imagen se puede observar en detalle una tarea épica (caso de uso Añadir Evento Municipio):
+
+<img>
+
+En la próxima imagen se puede ver una Tarea (**Incidencia**) con atribuciones de los roles (**Subtareas**):
+
+<img>
+
+En la imagen siguiente se puede ver una Iteración (sprint) en la que se desarrollan tareas:
+
+<img>
+
+Cada una de las incidencias (épicas o de tipo tarea) tienen asociada una prioridad. Las incidencias de los casos de usos estructurales vendrán definidas con una prioridad **High**, mientras que las incidencias relativas a los casos de uso no estructurales **Medium**.
+
+En lo referente al nombre/título de cada tarea, se especificará en JIRA con la siguiente sintaxis:
+
+> _IT[Nº de Iteración] - UC[Nº de caso de uso] - [fase de disciplina] - [Rol encargado]_
+
+A partir del contexto anterior, es momento de especificar que equipos de desarrollo se han planificado para realizar el proyecto y qué tareas se han repartido en cada equipo. Adicionalmente, se informará en qué consisten dichas tareas y cómo se realizan, estimando el tiempo que tienen el/los miembros del equipo asignados a hacerla a lo largo de las iteraciones.
+
+Para llevar a cabo la planificación de cada disciplina de los casos de uso, estas disciplinas se han descompuesto en tareas de la siguiente manera:
+
+* **Definición de requisitos**:
+    * Análisis del problema tratando de comprender a los Stakeholders.
+    * Definición y redefinición de los requisitos del sistema.
+* **Análisis y Diseño**:
+    * Analizar el comportamiento y definir una arquitectura software candidata.
+    * Diseñar la base de datos y los componentes del sistema.
+* **Implementación**:
+    * Implementar los componentes.
+    * Testear esos componentes (comprobar su funcionamiento).
+* **Integración y testeo**:
+    * Integración:
+      * Integrar cada subsistema al completo.
+      * Integrar todos los subsistemas al sistema.
+    * Testeo:
+      * Testear y evaluar el resultado.
+      * Asegurarse de que el sistema proporcionado cumple con los objetivos establecidos y comprobar que los test son correctos.
+* **Despliegue**:
+    * Producir la Unidad de despliegue.
+    * Gestionar las pruebas de instalación del sistema en el sitio deseado.
+    * Desarrollar material de soporte.
+
+Estas  serán codificadas como **tareas**, en el caso de ser compartidas por más de un rol del equipo, contendrán unas **subtareas** con la contribución de cada rol. Para aquellas tareas que representan de manera uniforme un caso de uso, se definen como **épicas**.
+
+En cuanto a las iteraciones, estas se contabilizarán con los **sprints**, que contendrán las distintas tareas que se realizarán dentro de dicha iteración.
+
+De esta forma, todas las tareas de un caso de uso serán **asignadas a la Incidencia** correspondiente a dicho caso de uso, y pertenecerán a un sprint concreto, correspondiente a **una de las 9 iteraciones** que durará el proyecto.
+
+Por tanto, dentro de Jira se ha seguido el siguiente procedimiento: 
+
+1. Se crea una épica para el caso de uso que se esté realizando
+
+   1.1. Como nombre de épica se utiliza la nomenclatura CUXX.
+
+   1.2. En el resumen se utiliza CUXX - Nombre_del_Caso.
+
+   1.3. Se incluye una pequeña descripción del caso de uso.
+
+   1.4. Se añade una etiqueta idéntica al nombre de la épica. 
+
+2. Dentro de cada épica, se crea una incidencia de tipo tarea por cada tarea de proyect correspondiente al caso de uso
+
+   2.1. Como resumen de la tarea se utiliza la nomenclatura ITXX - UCXX - Fase - Nombre_de_la_Tarea
+
+   2.2. Se asignan las etiquetas correspondientes al caso de uso, la iteración, la persona asignada a la tarea (en caso de que sólo sea una), y la fase
+
+   2.3. Se asigna al responsable de la tarea, en caso de que sólo haya uno, y se añaden la cantidad de horas previstas. En caso de que la tarea no tenga un sólo responsable, se crean las subtareas necesarias para asignar el tiempo y las personas necesarias a dicha tarea, siguiendo el mismo procedimiento que para las tareas.
+
+3. Se revisa que las tareas y las épicas están creadas correctamente
+
+   3.1. Se comprueba que las horas son las adecuadas.
+
+   3.2. Se comprueba que la tarea está asignada a la persona correspondiente.
+
+   3.3. Se revisan las etiquetas y el sprint asignado.
+
+   
 ### Señor Blanco (Equipo 1) <a name="señorBlanco"></a>
 
 #### Proceso seguido <a name="procesoSeguidoBlanco"></a>
