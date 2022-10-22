@@ -679,7 +679,6 @@ El **Sr. Marrón** (AS) se ocupará de las disciplinas de Requisitos, análisis 
 * **CU02**: Añadir Evento de Ruta Montaña.
 * **CU03**: Añadir Usuario.
 * **CU04**: Añadir una barra de búsqueda y filtrado de ubicaciones.
-* **CU05**: Añadir preferencias desde el menú de AppBar (ajustes …)
 
 Por último, las incidencias relacionadas con los cinco casos de uso estructurales dispondrán de una prioridad alta (**High**). 
 
@@ -767,7 +766,7 @@ El desarrollo de este caso de uso comienza con su Definición de Requisitos (RE)
 
 El encargado de realizar las tareas correspondientes a la **Definición de Requisitos** (RE) en la iteración 1 es el Arquitecto software (Sr. Marrón). 
 
-En cuanto al **Análisis y Diseño** (A&D), esta disciplina comienza en la IT2 y es completada por el Arquitecto Software (Sr. Marrón).
+En cuanto al **Análisis y Diseño** (A&D), esta disciplina comienza en la IT1 y es completada por el Arquitecto Software (Sr. Marrón).
 
 La **Implementación** (Imp), como consecuencia de ser un caso de uso estructural, se realizará en la primera iteración de elaboración IT3. Los encargados de completar las tareas de esta disciplina son el Desarrollador Senior (Sr. Naranja) y el Desarrollador Junior (Sr. Azul).
 
