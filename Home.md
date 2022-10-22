@@ -785,11 +785,33 @@ En la siguiente tabla se puede ver la distribución de manera resumida:
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU04.png"/>
 
+#### Contribución de los líderes de equipo <a name="contribucionBlanco"></a>
+
+Por último, sobre la planificación anterior establecida en Jira se crean dos gráficos: 
+en el primero, se puede observar la **contribución de cada usuario** a las tareas asignadas a cada caso de uso.
+
+El siguiente informe de carga de trabajo del usuario muestra el número de incidencias asignadas al **Señor Blanco**, además del tiempo estimado que se espera que tarden dichas tareas en realizarse.
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCargaSeAzul.png"/>
+
+Hay que concretar que dentro de este informe no se tienen en cuenta las **subtareas**, ni el tiempo que estas ocupan en cada usuario, por lo que puede variar entre distintos usuarios.
+
 ### Señor Marrón (Equipo 2) <a name="señorMarron"></a>
 
 #### Proceso seguido <a name="procesoSeguidoMarron"></a>
 
 #### Análisis del progreso <a name="analisisProgresoMarron"></a>
+
+#### Contribución de los líderes de equipo <a name="contribucionMarron"></a>
+
+Por último, sobre la planificación anterior establecida en Jira se crean dos gráficos: 
+en el primero, se puede observar la **contribución de cada usuario** a las tareas asignadas a cada caso de uso.
+
+El siguiente informe de carga de trabajo del usuario muestra el número de incidencias asignadas al **Señor Marron**, además del tiempo estimado que se espera que tarden dichas tareas en realizarse.
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCargaSeAzul.png"/>
+
+Hay que concretar que dentro de este informe no se tienen en cuenta las **subtareas**, ni el tiempo que estas ocupan en cada usuario, por lo que puede variar entre distintos usuarios.
 
 
 ### Señor Naranja (Equipo 3) <a name="señorNaranja"></a>
@@ -798,6 +820,16 @@ En la siguiente tabla se puede ver la distribución de manera resumida:
 
 #### Análisis del progreso <a name="analisisProgresoNaranja"></a>
 
+#### Contribución de los líderes de equipo <a name="contribucionNaranja"></a>
+
+Por último, sobre la planificación anterior establecida en Jira se crean dos gráficos: 
+en el primero, se puede observar la **contribución de cada usuario** a las tareas asignadas a cada caso de uso.
+
+El siguiente informe de carga de trabajo del usuario muestra el número de incidencias asignadas al **Señor Naranja**, además del tiempo estimado que se espera que tarden dichas tareas en realizarse.
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCargaSeAzul.png"/>
+
+Hay que concretar que dentro de este informe no se tienen en cuenta las **subtareas**, ni el tiempo que estas ocupan en cada usuario, por lo que puede variar entre distintos usuarios.
 
 ### Señor Azul (Equipo 4) <a name="señorAzul"></a>
 
