@@ -803,10 +803,6 @@ En la siguiente tabla se puede ver la distribución de manera resumida:
 
 #### Proceso seguido <a name="procesoSeguidoAzul"></a>
 
-### Señor Azul (Equipo 4) <a name="señorAzul"></a>
-
-#### Proceso seguido <a name="procesoSeguidoAzul"></a>
-
 El señor azul ha liderado al equipo 4, donde cada rol es interpretado por los siguientes miembros:
 * Jefe del proyecto (JP): Sr. Azul
 * Arquitecto Software (AS): Sr. Blanco
