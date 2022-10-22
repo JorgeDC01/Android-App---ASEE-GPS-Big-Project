@@ -44,7 +44,7 @@
           - [Planificación tareas CU14 - Cerrar sesión <a name="CU14"></a>](#planificaci%C3%B3n-tareas-cu14---cerrar-sesi%C3%B3n)
           - [Planificación tareas CU15 - Modificar usuario <a name="CU15"></a>](#planificaci%C3%B3n-tareas-cu15---modificar-usuario)
           - [Planificación tareas CU16 - Eliminar usuario <a name="CU16"></a>](#planificaci%C3%B3n-tareas-cu16---eliminar-usuario)
-          - [Contribución de los líderes de equipo <a name="contribucionAzul"></a>](#contribuci%C3%B3n-de-los-l%C3%ADderes-de-equipo--3)
+        - [Contribución de los líderes de equipo <a name="contribucionAzul"></a>](#contribuci%C3%B3n-de-los-l%C3%ADderes-de-equipo--3)
   - [Diseño de la interfaz de usuario <a name="diseñoInterfazUsuario"></a>](#Diseño-de-la-interfaz-de-usuario-)
     - [Mapa de Navegación: pantallas, patrones y diagrama <a name="mapaNavegacion"></a>](#Mapa-de-Navegación-pantallas-patrones-y-diagrama-)
       - [Diagrama de casos de uso <a name="diagramaCasosdeUso"></a>](#Diagrama-de-casos-de-uso-)
