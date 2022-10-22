@@ -910,6 +910,12 @@ Por último, el **Despliegue** (D) se completa en la **iteración 9** por el Des
 En la siguiente tabla se puede ver la distribución de manera resumida:
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU16.png"/>
 
+#### Contribución de los líderes de equipo <a name="contribucionAzul"></a>
+
+Por último, sobre la planificación anterior establecida en Jira se crean dos gráficos: en el primero, se puede observar la contribución de cada usuario a las tareas asignadas a cada caso de uso.
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCargaSeAzul.png"/>
+Hay que concretar que dentro de este informe no se tienen en cuenta las subtareas, ni el tiempo que estas ocupan en cada usuario, por lo que puede variar entre distintos usuarios.
+
 ## Diseño de la interfaz de usuario <a name="diseñoInterfazUsuario"></a>
 
 ### Mapa de Navegación: pantallas, patrones y diagrama <a name="mapaNavegacion"></a>
