@@ -29,7 +29,7 @@
         - [Proceso seguido <a name="procesoSeguidoBlanco"></a>](#proceso-seguido-)
         - [Análisis del progreso <a name="analisisProgresoBlanco"></a>](#análisis-del-progreso-)
         - [Contribución de los líderes de equipo <a name="contribucionBlanco"></a>](#contribuci%C3%B3n-de-los-l%C3%ADderes-de-equipo-)
-      - [Señor Marrón (Equipo 2) <a name="señorMarron"></a>](#señor-marron-equipo-2-)
+      - [Señor Marrón (Equipo 2) <a name="señorMarron"></a>](#señor-marrón-equipo-2-)
         - [Proceso seguido <a name="procesoSeguidoMarron"></a>](#proceso-seguido-)
         - [Análisis del progreso <a name="analisisProgresoMarron"></a>](#análisis-del-progreso-)
         - [Contribución de los líderes de equipo <a name="contribucionMarron"></a>](#contribuci%C3%B3n-de-los-l%C3%ADderes-de-equipo--1)
