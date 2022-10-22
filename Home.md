@@ -803,7 +803,11 @@ En la siguiente tabla se puede ver la distribución de manera resumida:
 
 #### Proceso seguido <a name="procesoSeguidoAzul"></a>
 
-	El señor azul ha liderado al equipo 4, donde cada rol es interpretado por los siguientes miembros:
+### Señor Azul (Equipo 4) <a name="señorAzul"></a>
+
+#### Proceso seguido <a name="procesoSeguidoAzul"></a>
+
+El señor azul ha liderado al equipo 4, donde cada rol es interpretado por los siguientes miembros:
 * Jefe del proyecto (JP): Sr. Azul
 * Arquitecto Software (AS): Sr. Blanco
 * Desarrollador Senior (DS): Sr. Marrón
@@ -848,6 +852,67 @@ El **Test e Integración** (T&I) se realiza en la **iteración 9** y es completa
 Por último, el **Despliegue** (D) se completa en la **iteración 9** por el Desarrollador Senior (Sr. Marrón) en el paquete de casos de uso CU04-16.
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU13.png"/>
+### Planificación tareas CU14 - Cerrar sesión
+<p>
+En este caso de uso el usuario podrá cerrar su sesión dentro de la aplicación, para lo cual deberá haber iniciado previamente su sesión de usuario. 
+Todos los roles participarán de manera conjunta para el desarrollo de este caso de uso. 
+</p>
+
+El desarrollo de este caso de uso comienza con su **Definición de Requisitos** (RE) en la iteración 5 y finaliza en la iteración 9, con el **despliegue** del paquete de requisitos **CU04-16**.
+
+El encargado de la **Definición de Requisitos** (RE) en la **iteración 5** es el Desarrollador Senior (Sr. Marrón). 
+
+En cuanto al **Análisis y Diseño** (A&D), esta disciplina comienza en la **iteración 6** y es completada por el Arquitecto software (Sr. Blanco).
+
+La **Implementación** (Imp) se realizará en la **iteración 7** y es completada por el Desarrollador Senior (Sr. Marrón).
+
+El **Test e Integración** (T&I) se realiza en la **iteración 9** y es completada por el Desarrollador Senior (Sr. Marrón) y el Arquitecto software (Sr. Blanco).
+
+Por último, el **Despliegue** (D) se completa en la **iteración 9** por el Desarrollador Senior (Sr. Marrón) en el paquete de casos de uso CU04-16.
+
+En la siguiente tabla se puede ver la distribución de manera resumida:
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU14.png"/>
+### Planificación tareas CU15 - Modificar usuario
+<p>
+En este caso de uso el usuario podrá modificar su perfil dentro de la aplicación, para lo cual deberá haber iniciado previamente su sesión de usuario. 
+Todos los roles participarán de manera conjunta para el desarrollo de este caso de uso. 
+</p>
+
+El desarrollo de este caso de uso comienza con su **Definición de Requisitos** (RE) en la iteración 5 y finaliza en la iteración 9, con el **despliegue** del paquete de requisitos **CU04-16**.
+
+El encargado de la **Definición de Requisitos** (RE) en la **iteración 5** es el Desarrollador Senior (Sr. Marrón). 
+
+En cuanto al **Análisis y Diseño** (A&D), esta disciplina comienza en la **iteración 6** y es completada por el Arquitecto software (Sr. Blanco).
+
+La **Implementación** (Imp) se realizará en la **iteración 7** y es completada por el Desarrollador Senior (Sr. Marrón) y el Arquitecto software (Sr. Blanco).
+
+El **Test e Integración** (T&I) se realiza en la **iteración 9** y es completada por el Arquitecto software (Sr. Blanco).
+
+Por último, el **Despliegue** (D) se completa en la **iteración 9** por el Desarrollador Senior (Sr. Marrón) en el paquete de casos de uso CU04-16.
+
+En la siguiente tabla se puede ver la distribución de manera resumida:
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU15.png"/>
+### Planificación tareas CU16 - Eliminar usuario
+<p>
+En este caso de uso el usuario podrá eliminar su perfil dentro de la aplicación, para lo cual deberá haber iniciado previamente su sesión de usuario. 
+Todos los roles participarán de manera conjunta para el desarrollo de este caso de uso. 
+</p>
+
+El desarrollo de este caso de uso comienza con su **Definición de Requisitos** (RE) en la iteración 5 y finaliza en la iteración 9, con el **despliegue** del paquete de requisitos **CU04-16**.
+
+El encargado de la **Definición de Requisitos** (RE) en la **iteración 5** es el Desarrollador Senior (Sr. Marrón). 
+
+En cuanto al **Análisis y Diseño** (A&D), esta disciplina comienza en la **iteración 6** y es completada por el Arquitecto software (Sr. Blanco).
+
+La **Implementación** (Imp) se realizará en la **iteración 7** y es completada por el Arquitecto software (Sr. Blanco).
+
+El **Test e Integración** (T&I) se realiza en la **iteración 9** y es completada por el Arquitecto software (Sr. Blanco).
+
+Por último, el **Despliegue** (D) se completa en la **iteración 9** por el Desarrollador Senior (Sr. Marrón) en el paquete de casos de uso CU04-16.
+
+En la siguiente tabla se puede ver la distribución de manera resumida:
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU16.png"/>
 
 ## Diseño de la interfaz de usuario <a name="diseñoInterfazUsuario"></a>
 
