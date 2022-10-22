@@ -174,7 +174,7 @@ En este apartado, se profundiza sobre aspectos esenciales de la propuesta inicia
     </li>
     <li>CU-14: Cerrar sesión.
     </li>
-    <li>CU-15: Modificar usuario..
+    <li>CU-15: Modificar usuario.
     </li>
     <li>CU-16: Eliminar usuario.
     </li>
