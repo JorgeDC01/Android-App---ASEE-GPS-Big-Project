@@ -835,29 +835,6 @@ El Test e Integración (T&I) se realiza en la iteración 9 y es completada por e
 Por último, el Despliegue (D) se completa en la iteración 9 por el Desarrollador Senior (Sr. Marrón) en el paquete de casos de uso CU04-16.
 
 	En la siguiente tabla se puede ver la distribución de manera resumida:
-| Iteración | Disciplina | Tarea                                                                                                                   | Rol | Tiempo |
-|-----------|------------|-------------------------------------------------------------------------------------------------------------------------|-----|--------|
-| IT3       | RE         | Análisis del problema tratando de comprender a los Stakeholders                                                         | AS  | 2h 21m |
-|           |            | Definición y redefinición de los requisitos del sistema                                                                 |     | 2h 22m |
-| IT3       | A&D        | Analizar el comportamiento y definir una Arquitectura software candidata                                                | AS  | 4h 43m |
-|           |            |                                                                                                                         |     |        |
-|           |            | Diseñar la base de datos y los componentes del sistema                                                                  |     | 4h 43m |
-|           |            |                                                                                                                         |     |        |
-| IT6       | Imp        | Implementar los componentes                                                                                             | DS  | 7h 57m |
-|           |            |                                                                                                                         | AS  | 2h 41m |
-|           |            | Testear esos componentes (comprobar su funcionamiento)                                                                  | DS  | 7h 57m |
-|           |            |                                                                                                                         | AS  | 2h 41m |
-| IT9       | INT        | Integrar cada subsistema al completo                                                                                    | DS  | 4m     |
-|           |            |                                                                                                                         | DJ  | 2h 46m |
-|           |            | Integrar todos los subsistemas al sistema                                                                               | DS  | 4m     |
-|           |            |                                                                                                                         | DJ  | 2h 17m |
-| IT9       | TEST       | Testear y evaluar el resultado                                                                                          | DS  | 4m     |
-|           |            |                                                                                                                         | DJ  | 2h 16m |
-|           |            | Asegurarse de que el sistema proporcionado cumple con los objetivos establecidos y comprobar que los test son correctos | DS  | 4m     |
-|           |            |                                                                                                                         | DJ  | 2h 16m |
-| IT9       | D          | Producir la Unidad de despliegue                                                                                        | DS  | 47m    |
-|           |            | Gestionar las pruebas de instalación del sistema en el sitio deseado                                                    |     | 47m    |
-|           |            | Desarrollar material de soporte                                                                                         |     | 47m    |
 
 ## Diseño de la interfaz de usuario <a name="diseñoInterfazUsuario"></a>
 
