@@ -792,7 +792,7 @@ en el primero, se puede observar la **contribución de cada usuario** a las tare
 
 El siguiente informe de carga de trabajo del usuario muestra el número de incidencias asignadas al **Señor Blanco**, además del tiempo estimado que se espera que tarden dichas tareas en realizarse.
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCargaSeAzul.png"/>
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCargaSeBlanco.png"/>
 
 Hay que concretar que dentro de este informe no se tienen en cuenta las **subtareas**, ni el tiempo que estas ocupan en cada usuario, por lo que puede variar entre distintos usuarios.
 
@@ -809,7 +809,7 @@ en el primero, se puede observar la **contribución de cada usuario** a las tare
 
 El siguiente informe de carga de trabajo del usuario muestra el número de incidencias asignadas al **Señor Marron**, además del tiempo estimado que se espera que tarden dichas tareas en realizarse.
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCargaSeAzul.png"/>
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCargaSeMarron.png"/>
 
 Hay que concretar que dentro de este informe no se tienen en cuenta las **subtareas**, ni el tiempo que estas ocupan en cada usuario, por lo que puede variar entre distintos usuarios.
 
@@ -827,7 +827,7 @@ en el primero, se puede observar la **contribución de cada usuario** a las tare
 
 El siguiente informe de carga de trabajo del usuario muestra el número de incidencias asignadas al **Señor Naranja**, además del tiempo estimado que se espera que tarden dichas tareas en realizarse.
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCargaSeAzul.png"/>
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCargaSeNaranja.png"/>
 
 Hay que concretar que dentro de este informe no se tienen en cuenta las **subtareas**, ni el tiempo que estas ocupan en cada usuario, por lo que puede variar entre distintos usuarios.
 
