@@ -27,16 +27,16 @@
     - [Configuración del seguimiento de la planificación <a name="configSeguimientoPlan"></a>](#Configuración-del-seguimiento-de-la-planificación-)
       - [Señor Blanco (Equipo 1) <a name="señorBlanco"></a>](#señor-blanco-equipo-1-)
         - [Proceso seguido <a name="procesoSeguidoBlanco"></a>](#proceso-seguido-)
-        - [Análisis del progreso <a name="analisisProgresoBlanco"></a>](#análisis-progreso-)
+        - [Análisis del progreso <a name="analisisProgresoBlanco"></a>](#análisis-del-progreso-)
       - [Señor Marrón (Equipo 2) <a name="señorMarron"></a>](#señor-marron-equipo-2-)
         - [Proceso seguido <a name="procesoSeguidoMarron"></a>](#proceso-seguido-)
-        - [Análisis del progreso <a name="analisisProgresoMarron"></a>](#análisis-progreso-)
+        - [Análisis del progreso <a name="analisisProgresoMarron"></a>](#análisis-del-progreso-)
       - [Señor Naranja (Equipo 3) <a name="señorNaranja"></a>](#señor-naranja-equipo-3-)
         - [Proceso seguido <a name="procesoSeguidoNaranja"></a>](#proceso-seguido-)
-        - [Análisis del progreso <a name="analisisProgresoNaranja"></a>](#análisis-progreso-)
+        - [Análisis del progreso <a name="analisisProgresoNaranja"></a>](#análisis-del-progreso-)
       - [Señor Azul (Equipo 4) <a name="señorAzul"></a>](#señor-azul-equipo-4-)
         - [Proceso seguido <a name="procesoSeguidoAzul"></a>](#proceso-seguido-)
-        - [Análisis del progreso <a name="analisisProgresoAzul"></a>](#análisis-progreso-)
+        - [Análisis del progreso <a name="analisisProgresoAzul"></a>](#análisis-del-progreso-)
   - [Diseño de la interfaz de usuario <a name="diseñoInterfazUsuario"></a>](#Diseño-de-la-interfaz-de-usuario-)
     - [Mapa de Navegación: pantallas, patrones y diagrama <a name="mapaNavegacion"></a>](#Mapa-de-Navegación-pantallas-patrones-y-diagrama-)
       - [Diagrama de casos de uso <a name="diagramaCasosdeUso"></a>](#Diagrama-de-casos-de-uso-)
@@ -734,6 +734,8 @@ En la siguiente tabla se puede ver la distribución de manera resumida:
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU02.png"/>
 
+<p>&nbsp;</p>
+
 ⌚ Planificación tareas CU03 - Añadir Usuario
 
 Es el tercer caso de uso estructural del proyecto; El sistema permite al usuario registrarse con unas credenciales, de forma que en la base de datos se inserta un nuevo objeto con la información relativa al nuevo perfil creado en la aplicación. Con estas credenciales, el usuario podrá utilizar la funcionalidad de la aplicación. Los roles que participarán en el desarrollo de este caso de uso son todos los miembros del equipo, exceptuando el Sr. Blanco (JP). 
@@ -757,6 +759,8 @@ En última instancia, el **Despliegue** (D) se completa en la IT8 por el Desarro
 En la siguiente tabla se puede ver la distribución de manera resumida:
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU03.png"/>
+
+<p>&nbsp;</p>
 
 ⌚ Planificación tareas CU04 - Añadir una barra de búsqueda y filtrado de ubicaciones
 
