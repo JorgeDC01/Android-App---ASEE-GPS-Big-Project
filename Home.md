@@ -28,7 +28,7 @@
       - [Señor Blanco (Equipo 1) <a name="señorBlanco"></a>](#señor-blanco-equipo-1-)
         - [Proceso seguido <a name="procesoSeguidoBlanco"></a>](#proceso-seguido-)
         - [Análisis del progreso <a name="analisisProgresoBlanco"></a>](#análisis-del-progreso-)
-        - [Contribución de los líderes de equipo <a name="contribucionBlanco"></a>](#análisis-de-contribución-)
+        - [Contribución de los líderes de equipo <a name="contribucionBlanco"></a>]
       - [Señor Marrón (Equipo 2) <a name="señorMarron"></a>](#señor-marron-equipo-2-)
         - [Proceso seguido <a name="procesoSeguidoMarron"></a>](#proceso-seguido-)
         - [Análisis del progreso <a name="analisisProgresoMarron"></a>](#análisis-del-progreso-)
