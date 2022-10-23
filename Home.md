@@ -850,6 +850,8 @@ En última instancia, el **Despliegue** (D) se completa en la IT9 por el Desarro
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
 
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU05.png"/>
+
 ⌚ Planificación tareas CU06 - Consultar el tiempo detallado de una ubicación
 
 Es el primer caso de uso no estructural del proyecto; El usuario podrá visualizar el tiempo meteorológico de una ubicación específica en tiempo real.
@@ -871,6 +873,8 @@ En última instancia, el **Despliegue **(D) se completa en la IT9 por el Desarro
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
 
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU06.png"/>
+
 ⌚ Planificación tareas CU07 - Modificar un evento
 En este caso de uso no estructural del proyecto; El usuario podrá modificar los datos de un evento, así como su nombre, descripción, fecha y ubicación.
 
@@ -887,6 +891,8 @@ El **Test e Integración** (T&I) se realiza en la iteración IT8  por el Desarro
 En última instancia, el **Despliegue **(D) se completa en la IT9 por el Desarrollador Senior (Sr. Azul) en el paquete de casos de uso CU04…CU16.
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU07.png"/>
 
 ⌚ Planificación tareas CU08 - Consultar el tiempo meteorológico en la ubicación actual.
 En este caso de uso no estructural del proyecto; El usuario podrá consultar los detalles del tiempo asociado a la localización/municipio más cercano.
@@ -905,6 +911,8 @@ El **Test e Integración** (T&I) se realiza en la iteración IT8  por el Desarro
 En última instancia, el **Despliegue **(D) se completa en la IT9 por el Desarrollador Senior (Sr. Azul) en el paquete de casos de uso CU04…CU16.
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU08.png"/>
 
 #### Contribución de los líderes de equipo <a name="contribucionMarron"></a>
 
