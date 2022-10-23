@@ -910,6 +910,16 @@ En la siguiente tabla se puede ver la distribución de manera resumida:
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU08.png"/>
 
+#### Proporción de Épicas, Tareas y Subtareas <a name="grafomarron"></a>
+En el siguiente gráfico de tipo tarta se presenta la distribución existente en el proyecto de los distintos tipos de incidencias: épicas ( Casos de Uso), tareas y subtareas.
+
+Se puede apreciar que la mayor parte del gráfico está compuesto por Tareas, seguido de un número alto de Subtareas.
+
+Podemos observar que hay 16 incidencias de tipo Épica, las cuales referencian los casos de uso del proyecto.
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/grafomarron.png"/>
+A continuación se muestra el porcentaje de cada uno de estos tipos de incidencia:
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/tablamarron.png"/>
+
 #### Contribución de los líderes de equipo <a name="contribucionMarron"></a>
 
 Por último, sobre la planificación anterior establecida en Jira se crean dos gráficos: 
