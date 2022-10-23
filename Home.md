@@ -40,6 +40,7 @@
       - [Señor Azul (Equipo 4) <a name="señorAzul"></a>](#señor-azul-equipo-4-)
         - [Proceso seguido <a name="procesoSeguidoAzul"></a>](#proceso-seguido--3)
         - [Análisis del progreso <a name="analisisProgresoAzul"></a>](#análisis-del-progreso--3)
+        - [Proporción de tareas por caso de uso <a name="analisisGraficoAzul"></a>](#proporci%C3%B3n-de-tareas-por-caso-de-uso-)
         - [Contribución de los líderes de equipo <a name="contribucionAzul"></a>](#contribuci%C3%B3n-de-los-l%C3%ADderes-de-equipo--3)
   - [Diseño de la interfaz de usuario <a name="diseñoInterfazUsuario"></a>](#Diseño-de-la-interfaz-de-usuario-)
     - [Mapa de Navegación: pantallas, patrones y diagrama <a name="mapaNavegacion"></a>](#Mapa-de-Navegación-pantallas-patrones-y-diagrama-)
