@@ -956,7 +956,7 @@ En última instancia, el **Despliegue** (D) se completa en la **iteración 9** p
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
 
-<p>&nbsp;</p>
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU09.png"/>
 
  ⌚ **Planificación tareas CU10 - Modificar idioma y tema a modo oscuro**
 <p>
@@ -977,7 +977,7 @@ En última instancia, el **Despliegue** (D) se completa en la **iteración 9** p
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
 
-<p>&nbsp;</p>
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU10.png"/>
 
  ⌚ **Planificación tareas CU11 - Consultar lista de eventos**
 <p>
@@ -998,7 +998,7 @@ En última instancia, el **Despliegue** (D) se completa en la **iteración 9** p
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
 
-<p>&nbsp;</p>
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU11.png"/>
 
  ⌚ **Planificación tareas CU12 - Consultar un evento**
 <p>
@@ -1019,6 +1019,8 @@ El **Test e Integración** (T&I) se realiza en la **iteración 9** por el Desarr
 En última instancia, el **Despliegue** (D) se completa en la **iteración 9** por el Desarrollador Senior (Sr. Blanco) en el paquete de casos de uso CU04 … CU16.
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU12.png"/>
 
 ### Señor Azul (Equipo 4) <a name="señorAzul"></a>
 
