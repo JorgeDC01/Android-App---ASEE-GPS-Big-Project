@@ -700,7 +700,7 @@ Antes de dar principio, es imprescindible aclarar que el tiempo inicial disponib
 
 ⌚ Planificación tareas CU01 - Añadir Evento de Municipio
 
-Es el primer caso de uso estructural del proyecto; el usuario podrá añadir un nuevo evento de municipio en una fecha determinada, estando asignado a una condición meteorológica en tiempo real de la ubicación del municipio. Los roles que participarán en el desarrollo de este caso de uso son todos los miembros del equipo, exceptuando el Sr. Blanco (JP). 
+Es el primer caso de uso estructural del proyecto; el usuario podrá añadir un nuevo evento de municipio en una fecha determinada, estando asignado a una condición meteorológica en tiempo real de la ubicación del municipio. 
 
 El desarrollo de este caso de uso comienza con su Definición de Requisitos (RE) en la **iteración 1** y finaliza en la **iteración 8**, con el despliegue del paquete de requisitos CU01, CU02 y CU03.
 
@@ -724,7 +724,7 @@ En la siguiente tabla se puede ver la distribución de manera resumida:
 
 ⌚ Planificación tareas CU02 - Añadir Evento de Ruta Montaña
 
-Es el segundo caso de uso estructural del proyecto; El usuario podrá añadir un nuevo evento de montaña en una fecha determinada, estando asignado a una condición meteorológica en tiempo real de la ubicación de la montaña. Los roles que participarán en el desarrollo de este caso de uso son todos los miembros del equipo, exceptuando el Sr. Blanco (JP). 
+Es el segundo caso de uso estructural del proyecto; El usuario podrá añadir un nuevo evento de montaña en una fecha determinada, estando asignado a una condición meteorológica en tiempo real de la ubicación de la montaña. 
 
 El desarrollo de este caso de uso comienza con su Definición de Requisitos (RE) en la **iteración 1** y finaliza en la **iteración 8**, con el despliegue del paquete de requisitos CU01, CU02 y CU03.
 
@@ -746,7 +746,7 @@ En la siguiente tabla se puede ver la distribución de manera resumida:
 
 ⌚ Planificación tareas CU03 - Añadir Usuario
 
-Es el tercer caso de uso estructural del proyecto; El sistema permite al usuario registrarse con unas credenciales, de forma que en la base de datos se inserta un nuevo objeto con la información relativa al nuevo perfil creado en la aplicación. Con estas credenciales, el usuario podrá utilizar la funcionalidad de la aplicación. Los roles que participarán en el desarrollo de este caso de uso son todos los miembros del equipo, exceptuando el Sr. Blanco (JP). 
+Es el tercer caso de uso estructural del proyecto; El sistema permite al usuario registrarse con unas credenciales, de forma que en la base de datos se inserta un nuevo objeto con la información relativa al nuevo perfil creado en la aplicación. Con estas credenciales, el usuario podrá utilizar la funcionalidad de la aplicación.
 
 El desarrollo de este caso de uso comienza con su Definición de Requisitos (RE) en la **iteración 1** y finaliza en la **iteración 8**, con el despliegue del paquete de requisitos CU01, CU02 y CU03.
 
@@ -772,7 +772,7 @@ En la siguiente tabla se puede ver la distribución de manera resumida:
 
 ⌚ Planificación tareas CU04 - Añadir una barra de búsqueda y filtrado de ubicaciones
 
-Es el cuarto caso de uso estructural del proyecto; El sistema deberá incorporar una barra de búsqueda para buscar una ubicación con su tiempo meteorológico asignado. Los roles que participarán en el desarrollo de este caso de uso son todos los miembros del equipo, exceptuando el Sr. Blanco (JP). 
+Es el cuarto caso de uso estructural del proyecto; El sistema deberá incorporar una barra de búsqueda para buscar una ubicación con su tiempo meteorológico asignado. 
 
 El desarrollo de este caso de uso comienza con su Definición de Requisitos (RE) en la **iteración 1** y finaliza en la **iteración 9**, con el despliegue del paquete de requisitos CU04…CU16.
 
@@ -833,7 +833,7 @@ Antes de dar principio, es imprescindible aclarar que el tiempo inicial disponib
 
 ⌚ Planificación tareas CU05 - Añadir preferencias desde el menú de AppBar (ajustes…)
 
-Se trata de un caso de uso estructural; el sistema deberá incorporar un apartado de configuración que permite al usuario personalizar su experiencia con la aplicación, así como el modo oscuro, preferencias…etc. Los roles que participarán en el desarrollo de este caso de uso son todos los miembros del equipo, exceptuando el Sr. Marrón(JP).
+Se trata de un caso de uso estructural; el sistema deberá incorporar un apartado de configuración que permite al usuario personalizar su experiencia con la aplicación, así como el modo oscuro, preferencias…etc.
 
 El desarrollo de este caso de uso comienza con su Definición de Requisitos (RE) en la **iteración 5** y finaliza en la **iteración 9**, con el despliegue del paquete de requisitos del CU04 al CU16.
 
@@ -847,6 +847,62 @@ La **Implementación** (Imp), como consecuencia de ser un caso de uso estructura
 El **Test e Integración** (T&I) se realiza en la iteración IT7 por el Desarrollador Senior (Sr. Azul).
 
 En última instancia, el **Despliegue** (D) se completa en la IT9 por el Desarrollador Senior (Sr. Azul) en el paquete de casos de uso CU04 al CU16.
+
+En la siguiente tabla se puede ver la distribución de manera resumida:
+
+⌚ Planificación tareas CU06 - Consultar el tiempo detallado de una ubicación
+
+Es el primer caso de uso no estructural del proyecto; El usuario podrá visualizar el tiempo meteorológico de una ubicación específica en tiempo real.
+
+El desarrollo de este caso de uso comienza con su **Definición de Requisitos** (RE) en la **iteración 1** y finaliza en la **iteración 9**, con el despliegue del paquete de requisitos CU04…CU16.
+
+El encargado de realizar las tareas correspondientes a la **Definición de Requisitos** (RE) en la iteración 1 es el Desarrollador Senior (Sr. Azul). 
+
+En cuanto al **Análisis y Diseño** (A&D), esta disciplina comienza en la IT2 y es completada por el Arquitecto Software (Sr. Naranja).
+
+La **Implementación **(Imp), se realizará en la segunda iteración de construcción IT4. Los encargados de completar las tareas de esta disciplina son el Desarrollador Junior (Sr. Blanco) y el Arquitecto Software (Sr. Naranja).
+
+* La tarea de Implementación “Implementar los componentes” es compartida por los DJ y AS.
+
+El **Test e Integración** (T&I) se realiza en la iteración IT7 por el Desarrollador Senior(Sr. Azul) y el Desarrollador Junior  (Sr. Blanco).
+* Todas las tareas de esta disciplina son compartidas por los DS y DJ.
+
+En última instancia, el **Despliegue **(D) se completa en la IT9 por el Desarrollador Senior (Sr. Azul) en el paquete de casos de uso CU04…CU16.
+
+En la siguiente tabla se puede ver la distribución de manera resumida:
+
+⌚ Planificación tareas CU07 - Modificar un evento
+En este caso de uso no estructural del proyecto; El usuario podrá modificar los datos de un evento, así como su nombre, descripción, fecha y ubicación.
+
+El desarrollo de este caso de uso comienza con su Definición de Requisitos (RE) en la **iteración 1** y finaliza en la **iteración 9**, con el despliegue del paquete de requisitos CU04…CU16.
+
+El encargado de realizar las tareas correspondientes a la **Definición de Requisitos** (RE) en la iteración 1 es el Desarrollador Senior (Sr. Azul). 
+
+En cuanto al **Análisis y Diseño **(A&D), esta disciplina comienza en la IT2 y es completada por el Arquitecto Software (Sr. Naranja).
+
+La **Implementación **(Imp), se realizará en la segunda iteración de construcción IT4. El encargado de completar las tareas de esta disciplina es el Arquitecto Software (Sr. Naranja).
+
+El **Test e Integración** (T&I) se realiza en la iteración IT8  por el Desarrollador Senior(Sr. Azul).
+
+En última instancia, el **Despliegue **(D) se completa en la IT9 por el Desarrollador Senior (Sr. Azul) en el paquete de casos de uso CU04…CU16.
+
+En la siguiente tabla se puede ver la distribución de manera resumida:
+
+⌚ Planificación tareas CU08 - Consultar el tiempo meteorológico en la ubicación actual.
+En este caso de uso no estructural del proyecto; El usuario podrá consultar los detalles del tiempo asociado a la localización/municipio más cercano.
+
+El desarrollo de este caso de uso comienza con su Definición de Requisitos (RE) en la **iteración 1** y finaliza en la **iteración 9**, con el despliegue del paquete de requisitos CU04…CU16.
+
+El encargado de realizar las tareas correspondientes a la **Definición de Requisitos** (RE) en la iteración 1 es el Desarrollador Senior (Sr. Azul). 
+
+En cuanto al **Análisis y Diseño** (A&D), esta disciplina comienza en la IT2 y es completada por el Arquitecto Software (Sr. Naranja).
+
+La **Implementación **(Imp), se realizará en la segunda iteración de construcción IT4. Los encargados de completar las tareas de esta disciplina son el Desarrollador Senior (Sr. Azul) y el Arquitecto Software (Sr. Naranja).
+* Ambas tareas de Implementación son compartidas por los DS y AS.
+
+El **Test e Integración** (T&I) se realiza en la iteración IT8  por el Desarrollador Senior(Sr. Azul).
+
+En última instancia, el **Despliegue **(D) se completa en la IT9 por el Desarrollador Senior (Sr. Azul) en el paquete de casos de uso CU04…CU16.
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
 
