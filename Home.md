@@ -858,14 +858,14 @@ El encargado de realizar las tareas correspondientes a la **Definición de Requi
 
 En cuanto al **Análisis y Diseño** (A&D), esta disciplina comienza en la IT2 y es completada por el Arquitecto Software (Sr. Naranja).
 
-La **Implementación **(Imp), se realizará en la segunda iteración de construcción IT4. Los encargados de completar las tareas de esta disciplina son el Desarrollador Junior (Sr. Blanco) y el Arquitecto Software (Sr. Naranja).
+La **Implementación ** (Imp), se realizará en la segunda iteración de construcción IT4. Los encargados de completar las tareas de esta disciplina son el Desarrollador Junior (Sr. Blanco) y el Arquitecto Software (Sr. Naranja).
 
 * La tarea de Implementación “Implementar los componentes” es compartida por los DJ y AS.
 
 El **Test e Integración** (T&I) se realiza en la iteración IT7 por el Desarrollador Senior(Sr. Azul) y el Desarrollador Junior  (Sr. Blanco).
 * Todas las tareas de esta disciplina son compartidas por los DS y DJ.
 
-En última instancia, el **Despliegue **(D) se completa en la IT9 por el Desarrollador Senior (Sr. Azul) en el paquete de casos de uso CU04…CU16.
+En última instancia, el **Despliegue ** (D) se completa en la IT9 por el Desarrollador Senior (Sr. Azul) en el paquete de casos de uso CU04…CU16.
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
 
@@ -878,13 +878,13 @@ El desarrollo de este caso de uso comienza con su Definición de Requisitos (RE)
 
 El encargado de realizar las tareas correspondientes a la **Definición de Requisitos** (RE) en la iteración 1 es el Desarrollador Senior (Sr. Azul). 
 
-En cuanto al **Análisis y Diseño **(A&D), esta disciplina comienza en la IT2 y es completada por el Arquitecto Software (Sr. Naranja).
+En cuanto al **Análisis y Diseño ** (A&D), esta disciplina comienza en la IT2 y es completada por el Arquitecto Software (Sr. Naranja).
 
-La **Implementación **(Imp), se realizará en la segunda iteración de construcción IT4. El encargado de completar las tareas de esta disciplina es el Arquitecto Software (Sr. Naranja).
+La **Implementación ** (Imp), se realizará en la segunda iteración de construcción IT4. El encargado de completar las tareas de esta disciplina es el Arquitecto Software (Sr. Naranja).
 
 El **Test e Integración** (T&I) se realiza en la iteración IT8  por el Desarrollador Senior(Sr. Azul).
 
-En última instancia, el **Despliegue **(D) se completa en la IT9 por el Desarrollador Senior (Sr. Azul) en el paquete de casos de uso CU04…CU16.
+En última instancia, el **Despliegue ** (D) se completa en la IT9 por el Desarrollador Senior (Sr. Azul) en el paquete de casos de uso CU04…CU16.
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
 
@@ -899,12 +899,12 @@ El encargado de realizar las tareas correspondientes a la **Definición de Requi
 
 En cuanto al **Análisis y Diseño** (A&D), esta disciplina comienza en la IT2 y es completada por el Arquitecto Software (Sr. Naranja).
 
-La **Implementación **(Imp), se realizará en la segunda iteración de construcción IT4. Los encargados de completar las tareas de esta disciplina son el Desarrollador Senior (Sr. Azul) y el Arquitecto Software (Sr. Naranja).
+La **Implementación ** (Imp), se realizará en la segunda iteración de construcción IT4. Los encargados de completar las tareas de esta disciplina son el Desarrollador Senior (Sr. Azul) y el Arquitecto Software (Sr. Naranja).
 * Ambas tareas de Implementación son compartidas por los DS y AS.
 
 El **Test e Integración** (T&I) se realiza en la iteración IT8  por el Desarrollador Senior(Sr. Azul).
 
-En última instancia, el **Despliegue **(D) se completa en la IT9 por el Desarrollador Senior (Sr. Azul) en el paquete de casos de uso CU04…CU16.
+En última instancia, el **Despliegue ** (D) se completa en la IT9 por el Desarrollador Senior (Sr. Azul) en el paquete de casos de uso CU04…CU16.
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
 
@@ -917,7 +917,9 @@ Se puede apreciar que la mayor parte del gráfico está compuesto por Tareas, se
 
 Podemos observar que hay 16 incidencias de tipo Épica, las cuales referencian los casos de uso del proyecto.
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/grafomarron.png"/>
+
 A continuación se muestra el porcentaje de cada uno de estos tipos de incidencia:
+
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/tablamarron.png"/>
 
 #### Contribución de los líderes de equipo <a name="contribucionMarron"></a>
