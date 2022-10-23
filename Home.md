@@ -831,7 +831,7 @@ En este apartado se detalla la distribución de las tareas realizadas por cada r
 
 Antes de dar principio, es imprescindible aclarar que el tiempo inicial disponible del arquitecto software es de 37.20 horas semanales. En el caso de que realice sus tareas y quede tiempo sobrante, este se lo dedicará a tareas de gestión.
 
-⌚ Planificación tareas CU05 - Añadir preferencias desde el menú de AppBar (ajustes…)
+### Planificación tareas CU05 - Añadir preferencias desde el menú de AppBar (ajustes…)
 
 Se trata de un caso de uso estructural; el sistema deberá incorporar un apartado de configuración que permite al usuario personalizar su experiencia con la aplicación, así como el modo oscuro, preferencias…etc.
 
@@ -852,7 +852,7 @@ En la siguiente tabla se puede ver la distribución de manera resumida:
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU05.png"/>
 
-⌚ Planificación tareas CU06 - Consultar el tiempo detallado de una ubicación
+### Planificación tareas CU06 - Consultar el tiempo detallado de una ubicación
 
 Es el primer caso de uso no estructural del proyecto; El usuario podrá visualizar el tiempo meteorológico de una ubicación específica en tiempo real.
 
@@ -875,7 +875,7 @@ En la siguiente tabla se puede ver la distribución de manera resumida:
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU06.png"/>
 
-⌚ Planificación tareas CU07 - Modificar un evento
+### Planificación tareas CU07 - Modificar un evento
 En este caso de uso no estructural del proyecto; El usuario podrá modificar los datos de un evento, así como su nombre, descripción, fecha y ubicación.
 
 El desarrollo de este caso de uso comienza con su Definición de Requisitos (RE) en la **iteración 1** y finaliza en la **iteración 9**, con el despliegue del paquete de requisitos CU04…CU16.
@@ -894,7 +894,7 @@ En la siguiente tabla se puede ver la distribución de manera resumida:
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU07.png"/>
 
-⌚ Planificación tareas CU08 - Consultar el tiempo meteorológico en la ubicación actual.
+### Planificación tareas CU08 - Consultar el tiempo meteorológico en la ubicación actual.
 En este caso de uso no estructural del proyecto; El usuario podrá consultar los detalles del tiempo asociado a la localización/municipio más cercano.
 
 El desarrollo de este caso de uso comienza con su Definición de Requisitos (RE) en la **iteración 1** y finaliza en la **iteración 9**, con el despliegue del paquete de requisitos CU04…CU16.
