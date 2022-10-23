@@ -825,6 +825,23 @@ Hay que concretar que dentro de este informe no se tienen en cuenta las **subtar
 ### Señor Naranja (Equipo 3) <a name="señorNaranja"></a>
 
 #### Proceso seguido <a name="procesoSeguidoNaranja"></a>
+El señor naranja ha liderado al equipo 3, donde cada rol es interpretado por los siguientes miembros:
+* Jefe del proyecto (JP): Sr. Naranja
+* Arquitecto Software (AS): Sr. Azul
+* Desarrollador Senior (DS): Sr. Blanco
+* Desarrollador Junior (DJ): Sr.  Marrón
+
+	El **Sr. Naranja** (JP) se encargará de las tareas de modelado de negocio (BM) y gestión del proyecto software, en otras palabras, se ocupará de asignar las tareas a realizar a cada rol. 
+
+	El **Sr. Azul** (AS) se ocupará de las disciplinas de Requisitos, análisis y Diseño e Implementación. El **Sr. Blanco** (DS) se centra en todas las disciplinas que abarcan el desarrollo completo de cada caso de uso; desde la Definición de Requisitos, Análisis y Diseño, Implementación, Integración y Test y Despliegue. Por último, el **Sr. Marrón** (DJ) ejecuta las disciplinas de Implementación, Test e Integración y Despliegue.
+
+Respecto los casos de uso, el equipo 3 se encarga de la totalidad de disciplinas de los siguientes casos de uso:
+* CU09: Consultar tiempo meteorológico en la ubicación actual
+* CU10: Modificar idioma y tema a modo oscuro
+* CU11: Consultar lista de eventos.
+* CU12: Consultar un evento.
+
+Por último, las incidencias relacionadas con los cinco casos de uso estructurales dispondrán de una prioridad alta (High).
 
 #### Análisis del progreso <a name="analisisProgresoNaranja"></a>
 
