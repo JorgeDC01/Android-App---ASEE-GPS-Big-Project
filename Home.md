@@ -36,6 +36,7 @@
       - [Señor Naranja (Equipo 3) <a name="señorNaranja"></a>](#señor-naranja-equipo-3-)
         - [Proceso seguido <a name="procesoSeguidoNaranja"></a>](#proceso-seguido-)
         - [Análisis del progreso <a name="analisisProgresoNaranja"></a>](#análisis-del-progreso-)
+        - [Proporción de Épicas, Tareas y Subtareas <a name="analisisGraficoNaranja"></a>](#proporci%C3%B3n-de-%C3%A9picas-tareas-y-subtareas--1)
         - [Contribución de los líderes de equipo <a name="contribucionNaranja"></a>](#contribuci%C3%B3n-de-los-l%C3%ADderes-de-equipo--2)
       - [Señor Azul (Equipo 4) <a name="señorAzul"></a>](#señor-azul-equipo-4-)
         - [Proceso seguido <a name="procesoSeguidoAzul"></a>](#proceso-seguido--3)
