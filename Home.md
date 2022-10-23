@@ -1044,7 +1044,10 @@ Se puede apreciar que las iteraciones que más incidencias contienen son las ite
 
 Las tareas que no están asignadas a ninguna iteración corresponden a las 16 tareas Épicas que son los casos de uso.
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/grafoNaranja.png"/>
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/grafonaranja.png"/>
+
+A continuación se muestra una tabla con los porcentajes de cada iteración:
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/tablanaranja.png"/>
 
 
 #### Contribución de los líderes de equipo <a name="contribucionNaranja"></a>
