@@ -1175,7 +1175,7 @@ En la siguiente tabla se puede ver la distribución de manera resumida:
 #### Proporción de tareas por caso de uso <a name="grafoazul"></a>
 En el siguiente informe de tipo tarta se puede observar la distribución por casos de uso de las tareas. Cada caso de uso cuenta con el mismo número de tareas pues todos tienen las mismas fases.
 
-Se puede apreciar un gran número de tareas no asignadas a ningún caso de uso. Corresponden a las subtareas, las cuales heredan el caso de uso al que pertenecen de la tarea padre
+Se puede apreciar un gran número de tareas no asignadas a ningún caso de uso. Corresponden a las subtareas, las cuales heredan el caso de uso al que pertenecen de la tarea padre. Por lo que este grafico nos sirve para saber cuántas tareas tiene cada **Caso de Uso** y el número de subtareas del proyecto.
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/grafoAzul.png"/>
 
