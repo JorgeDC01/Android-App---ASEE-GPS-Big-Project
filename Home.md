@@ -1172,6 +1172,13 @@ Por último, el **Despliegue** (D) se completa en la **iteración 9** por el Des
 En la siguiente tabla se puede ver la distribución de manera resumida:
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU16.png"/>
 
+#### Proporción de tareas por caso de uso <a name="grafoazul"></a>
+En el siguiente informe de tipo tarta se puede observar la distribución por casos de uso de las tareas. Cada caso de uso cuenta con el mismo número de tareas pues todos tienen las mismas fases.
+
+Se puede apreciar un gran número de tareas no asignadas a ningún caso de uso. Corresponden a las subtareas, las cuales heredan el caso de uso al que pertenecen de la tarea padre
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/grafoAzul.png"/>
+
 #### Contribución de los líderes de equipo <a name="contribucionAzul"></a>
 
 Por último, sobre la planificación anterior establecida en Jira se crean dos gráficos: 
