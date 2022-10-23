@@ -844,6 +844,83 @@ Respecto los casos de uso, el equipo 3 se encarga de la totalidad de disciplinas
 Por último, las incidencias relacionadas con los cinco casos de uso estructurales dispondrán de una prioridad alta (High).
 
 #### Análisis del progreso <a name="analisisProgresoNaranja"></a>
+En este apartado se detalla la distribución de las tareas realizadas por cada rol a lo largo de las 9 iteraciones, según las disciplinas que puedan realizar cada uno de ellos.
+
+Antes de dar principio, es imprescindible aclarar que el tiempo inicial disponible del arquitecto software es de 37.20 horas semanales. En el caso de que realice sus tareas y quede tiempo sobrante, este se lo dedicará a tareas de gestión.
+
+#### Planificación tareas CU09 - Consultar tiempo meteorológico en la ubicación actual
+<p>
+Es el noveno caso de uso del proyecto; el usuario podrá consultar los detalles del tiempo asociado a la localización/municipio más cercano. Los roles que participarán en el desarrollo de este caso de uso son todos los miembros del equipo, exceptuando el Sr. Naranja (JP). 
+</p>
+
+El desarrollo de este caso de uso comienza con su Definición de Requisitos (RE) en la iteración 3 y finaliza en la iteración 9, con el despliegue del paquete de requisitos CU04…CU16.
+
+El encargado de realizar las tareas correspondientes a la **Definición de Requisitos** (RE) en la **iteración 3** es el Arquitecto software (Sr. Azul).
+
+En cuanto al **Análisis y Diseño** (A&D), esta disciplina comienza en la **iteración 3** y es completada por el Desarrollador Senior (Sr. Blanco).
+
+La **Implementación** (Imp), comienza en la **iteración 5** y es realizada por el Desarrollador Senior y el Arquitecto Software (Sr. Blanco y Sr. Azul).
+
+El **Test e Integración** (T&I) se realiza en la **iteración 8** por el Desarrollador Senior (Sr. Blanco).
+
+En última instancia, el **Despliegue** (D) se completa en la **iteración 9** por el Desarrollador Senior (Sr. Blanco) en el paquete de casos de uso CU04 … CU16.
+
+En la siguiente tabla se puede ver la distribución de manera resumida:
+
+#### Planificación tareas CU10 - Modificar idioma y tema a modo oscuro
+<p>
+Es el décimo caso de uso del proyecto; el usuario podrá realizar una serie de modificaciones en la aplicación para configurar esta a su gusto como cambiar el idioma, el tema a modo oscuro, etc.
+</p>
+El desarrollo de este caso de uso comienza con su Definición de Requisitos (RE) en la iteración 3 y finaliza en la iteración 9, con el despliegue del paquete de requisitos CU04…CU16.
+
+El encargado de realizar las tareas correspondientes a la **Definición de Requisitos** (RE) en la **iteración 3** es el Arquitecto software (Sr. Azul).
+
+En cuanto al **Análisis y Diseño** (A&D), esta disciplina comienza en la **iteración 3** y es completada por el Desarrollador Senior (Sr. Blanco).
+
+La **Implementación** (Imp), esta disciplina comienza en la **iteración 5** y es realizada por el Arquitecto Software (Sr. Azul).
+
+El **Test e Integración** (T&I) se realiza en la iteración **iteración 8** por el Desarrollador Senior y el Desarrollador Junior (Sr. Blanco y Sr. Marrón).
+
+En última instancia, el **Despliegue** (D) se completa en la **iteración 9** por el Desarrollador Senior (Sr. Blanco) en el paquete de casos de uso CU04 … CU16.
+
+En la siguiente tabla se puede ver la distribución de manera resumida:
+
+#### Planificación tareas CU11 - Consultar lista de eventos
+<p>
+Es el undécimo caso de uso del proyecto; el usuario podrá visualizar el listado completo de eventos de municipios y montañas creados por su parte.
+</p>
+El desarrollo de este caso de uso comienza con su Definición de Requisitos (RE) en la iteración 3 y finaliza en la iteración 9, con el despliegue del paquete de requisitos CU04…CU16.
+
+El encargado de realizar las tareas correspondientes a la **Definición de Requisitos** (RE) en la **iteración 3** es el Arquitecto software (Sr. Azul).
+
+En cuanto al **Análisis y Diseño** (A&D), esta disciplina comienza en la **iteración 3** y es completada por el Desarrollador Senior (Sr. Blanco).
+
+La **Implementación** (Imp), esta disciplina comienza en la **iteración 5** y es realizada por el Desarrollador Senior y el Arquitecto Software (Sr. Blanco y Sr. Azul).
+
+El **Test e Integración** (T&I) se realiza en la **iteración 8** por el Desarrollador Junior (Sr. Marrón).
+
+En última instancia, el **Despliegue** (D) se completa en la **iteración 9** por el Desarrollador Senior (Sr. Blanco) en el paquete de casos de uso CU04 … CU16.
+
+En la siguiente tabla se puede ver la distribución de manera resumida:
+
+#### Planificación tareas CU12 - Consultar un evento
+<p>
+Es el duodécimo caso de uso del proyecto; el usuario podrá visualizar en detalle los datos pertinentes de un evento de municipio o montaña.
+</p>
+El desarrollo de este caso de uso comienza con su Definición de Requisitos (RE) en la iteración 3 y finaliza en la iteración 9, con el despliegue del paquete de requisitos CU04…CU16.
+
+El encargado de realizar las tareas correspondientes a la **Definición de Requisitos** (RE) en la **iteración 3** es el Arquitecto software (Sr. Azul).
+
+En cuanto al **Análisis y Diseño** (A&D), esta disciplina comienza en la **iteración 3** y es realizada por el Desarrollador Senior y el Arquitecto Software (Sr. Blanco y Sr. Azul).
+* La tarea de Análisis y diseño “Analizar el comportamiento y definir una Arquitectura software candidata” es compartida por los DS y AS.
+
+La **Implementación** (Imp), comienza en la **iteración 6** y es realizada por el Desarrollador Senior (Sr. Blanco).
+
+El **Test e Integración** (T&I) se realiza en la **iteración 9** por el Desarrollador Junior (Sr. Marrón).
+
+En última instancia, el **Despliegue** (D) se completa en la **iteración 9** por el Desarrollador Senior (Sr. Blanco) en el paquete de casos de uso CU04 … CU16.
+
+En la siguiente tabla se puede ver la distribución de manera resumida:
 
 #### Contribución de los líderes de equipo <a name="contribucionNaranja"></a>
 
