@@ -698,7 +698,7 @@ Antes de dar principio, es imprescindible aclarar que el tiempo inicial disponib
 
 <p>&nbsp;</p>
 
-⌚ Planificación tareas CU01 - Añadir Evento de Municipio
+### ⌚ Planificación tareas CU01 - Añadir Evento de Municipio
 
 Es el primer caso de uso estructural del proyecto; el usuario podrá añadir un nuevo evento de municipio en una fecha determinada, estando asignado a una condición meteorológica en tiempo real de la ubicación del municipio. 
 
@@ -722,7 +722,7 @@ En la siguiente tabla se puede ver la distribución de manera resumida:
 
 <p>&nbsp;</p>
 
-⌚ Planificación tareas CU02 - Añadir Evento de Ruta Montaña
+### ⌚ Planificación tareas CU02 - Añadir Evento de Ruta Montaña
 
 Es el segundo caso de uso estructural del proyecto; El usuario podrá añadir un nuevo evento de montaña en una fecha determinada, estando asignado a una condición meteorológica en tiempo real de la ubicación de la montaña. 
 
@@ -744,7 +744,7 @@ En la siguiente tabla se puede ver la distribución de manera resumida:
 
 <p>&nbsp;</p>
 
-⌚ Planificación tareas CU03 - Añadir Usuario
+### ⌚ Planificación tareas CU03 - Añadir Usuario
 
 Es el tercer caso de uso estructural del proyecto; El sistema permite al usuario registrarse con unas credenciales, de forma que en la base de datos se inserta un nuevo objeto con la información relativa al nuevo perfil creado en la aplicación. Con estas credenciales, el usuario podrá utilizar la funcionalidad de la aplicación.
 
@@ -770,7 +770,7 @@ En la siguiente tabla se puede ver la distribución de manera resumida:
 
 <p>&nbsp;</p>
 
-⌚ Planificación tareas CU04 - Añadir una barra de búsqueda y filtrado de ubicaciones
+### ⌚ Planificación tareas CU04 - Añadir una barra de búsqueda y filtrado de ubicaciones
 
 Es el cuarto caso de uso estructural del proyecto; El sistema deberá incorporar una barra de búsqueda para buscar una ubicación con su tiempo meteorológico asignado. 
 
@@ -806,7 +806,7 @@ Hay que concretar que dentro de este informe no se tienen en cuenta las **subtar
 
 ### Señor Marrón (Equipo 2) <a name="señorMarron"></a>
 
-#### Proceso seguido <a name="procesoSeguidoMarron"></a>
+### Proceso seguido <a name="procesoSeguidoMarron"></a>
 
 El señor marrón ha liderado al equipo 2, donde cada rol es interpretado por los siguientes miembros:
 * Jefe del proyecto (JP): Sr. Marrón
@@ -826,12 +826,12 @@ Respecto los casos de uso, el **equipo 2** se encarga de la totalidad de discipl
 
 Por último, las incidencias relacionadas con el caso de uso estructural (CU05) dispondrás de una prioridad alta (**High**). 
 
-#### Análisis del progreso <a name="analisisProgresoMarron"></a>
+### Análisis del progreso <a name="analisisProgresoMarron"></a>
 En este apartado se detalla la distribución de las tareas realizadas por cada rol a lo largo de las 9 iteraciones, según las disciplinas que puedan realizar cada uno de ellos.
 
 Antes de dar principio, es imprescindible aclarar que el tiempo inicial disponible del arquitecto software es de 37.20 horas semanales. En el caso de que realice sus tareas y quede tiempo sobrante, este se lo dedicará a tareas de gestión.
 
-### Planificación tareas CU05 - Añadir preferencias desde el menú de AppBar (ajustes…)
+### ⌚ Planificación tareas CU05 - Añadir preferencias desde el menú de AppBar (ajustes…)
 
 Se trata de un caso de uso estructural; el sistema deberá incorporar un apartado de configuración que permite al usuario personalizar su experiencia con la aplicación, así como el modo oscuro, preferencias…etc.
 
@@ -852,7 +852,7 @@ En la siguiente tabla se puede ver la distribución de manera resumida:
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU05.png"/>
 
-### Planificación tareas CU06 - Consultar el tiempo detallado de una ubicación
+### ⌚ Planificación tareas CU06 - Consultar el tiempo detallado de una ubicación
 
 Es el primer caso de uso no estructural del proyecto; El usuario podrá visualizar el tiempo meteorológico de una ubicación específica en tiempo real.
 
@@ -875,7 +875,7 @@ En la siguiente tabla se puede ver la distribución de manera resumida:
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU06.png"/>
 
-### Planificación tareas CU07 - Modificar un evento
+### ⌚ Planificación tareas CU07 - Modificar un evento
 En este caso de uso no estructural del proyecto; El usuario podrá modificar los datos de un evento, así como su nombre, descripción, fecha y ubicación.
 
 El desarrollo de este caso de uso comienza con su Definición de Requisitos (RE) en la **iteración 1** y finaliza en la **iteración 9**, con el despliegue del paquete de requisitos CU04…CU16.
@@ -894,7 +894,7 @@ En la siguiente tabla se puede ver la distribución de manera resumida:
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU07.png"/>
 
-### Planificación tareas CU08 - Consultar el tiempo meteorológico en la ubicación actual.
+### ⌚ Planificación tareas CU08 - Consultar el tiempo meteorológico en la ubicación actual.
 En este caso de uso no estructural del proyecto; El usuario podrá consultar los detalles del tiempo asociado a la localización/municipio más cercano.
 
 El desarrollo de este caso de uso comienza con su Definición de Requisitos (RE) en la **iteración 1** y finaliza en la **iteración 9**, con el despliegue del paquete de requisitos CU04…CU16.
@@ -928,7 +928,7 @@ Hay que concretar que dentro de este informe no se tienen en cuenta las **subtar
 
 ### Señor Naranja (Equipo 3) <a name="señorNaranja"></a>
 
-#### Proceso seguido <a name="procesoSeguidoNaranja"></a>
+### Proceso seguido <a name="procesoSeguidoNaranja"></a>
 El señor naranja ha liderado al equipo 3, donde cada rol es interpretado por los siguientes miembros:
 * Jefe del proyecto (JP): Sr. Naranja
 * Arquitecto Software (AS): Sr. Azul
@@ -947,12 +947,12 @@ Respecto los casos de uso, el equipo 3 se encarga de la totalidad de disciplinas
 
 Por último, las incidencias relacionadas con los cinco casos de uso estructurales dispondrán de una prioridad alta (High).
 
-#### Análisis del progreso <a name="analisisProgresoNaranja"></a>
+### Análisis del progreso <a name="analisisProgresoNaranja"></a>
 En este apartado se detalla la distribución de las tareas realizadas por cada rol a lo largo de las 9 iteraciones, según las disciplinas que puedan realizar cada uno de ellos.
 
 Antes de dar principio, es imprescindible aclarar que el tiempo inicial disponible del arquitecto software es de 37.20 horas semanales. En el caso de que realice sus tareas y quede tiempo sobrante, este se lo dedicará a tareas de gestión.
 
-#### Planificación tareas CU09 - Consultar tiempo meteorológico en la ubicación actual
+### ⌚ Planificación tareas CU09 - Consultar tiempo meteorológico en la ubicación actual
 <p>
 Es el noveno caso de uso del proyecto; el usuario podrá consultar los detalles del tiempo asociado a la localización/municipio más cercano. Los roles que participarán en el desarrollo de este caso de uso son todos los miembros del equipo, exceptuando el Sr. Naranja (JP). 
 </p>
@@ -971,7 +971,7 @@ En última instancia, el **Despliegue** (D) se completa en la **iteración 9** p
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
 
-#### Planificación tareas CU10 - Modificar idioma y tema a modo oscuro
+### ⌚ Planificación tareas CU10 - Modificar idioma y tema a modo oscuro
 <p>
 Es el décimo caso de uso del proyecto; el usuario podrá realizar una serie de modificaciones en la aplicación para configurar esta a su gusto como cambiar el idioma, el tema a modo oscuro, etc.
 </p>
@@ -990,7 +990,7 @@ En última instancia, el **Despliegue** (D) se completa en la **iteración 9** p
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
 
-#### Planificación tareas CU11 - Consultar lista de eventos
+### ⌚ Planificación tareas CU11 - Consultar lista de eventos
 <p>
 Es el undécimo caso de uso del proyecto; el usuario podrá visualizar el listado completo de eventos de municipios y montañas creados por su parte.
 </p>
@@ -1009,7 +1009,7 @@ En última instancia, el **Despliegue** (D) se completa en la **iteración 9** p
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
 
-#### Planificación tareas CU12 - Consultar un evento
+### ⌚ Planificación tareas CU12 - Consultar un evento
 <p>
 Es el duodécimo caso de uso del proyecto; el usuario podrá visualizar en detalle los datos pertinentes de un evento de municipio o montaña.
 </p>
@@ -1090,7 +1090,7 @@ Por último, el **Despliegue** (D) se completa en la **iteración 9** por el Des
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU13.png"/>
-### Planificación tareas CU14 - Cerrar sesión
+### ⌚ Planificación tareas CU14 - Cerrar sesión
 <p>
 En este caso de uso el usuario podrá cerrar su sesión dentro de la aplicación, para lo cual deberá haber iniciado previamente su sesión de usuario. 
 Todos los roles participarán de manera conjunta para el desarrollo de este caso de uso. 
@@ -1110,7 +1110,7 @@ Por último, el **Despliegue** (D) se completa en la **iteración 9** por el Des
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU14.png"/>
-### Planificación tareas CU15 - Modificar usuario
+### ⌚ Planificación tareas CU15 - Modificar usuario
 <p>
 En este caso de uso el usuario podrá modificar su perfil dentro de la aplicación, para lo cual deberá haber iniciado previamente su sesión de usuario. 
 Todos los roles participarán de manera conjunta para el desarrollo de este caso de uso. 
@@ -1130,7 +1130,7 @@ Por último, el **Despliegue** (D) se completa en la **iteración 9** por el Des
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU15.png"/>
-### Planificación tareas CU16 - Eliminar usuario
+### ⌚ Planificación tareas CU16 - Eliminar usuario
 <p>
 En este caso de uso el usuario podrá eliminar su perfil dentro de la aplicación, para lo cual deberá haber iniciado previamente su sesión de usuario. 
 Todos los roles participarán de manera conjunta para el desarrollo de este caso de uso. 
