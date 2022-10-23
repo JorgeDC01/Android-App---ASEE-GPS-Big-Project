@@ -791,16 +791,6 @@ En la siguiente tabla se puede ver la distribución de manera resumida:
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU04.png"/>
 
-#### Contribución de los líderes de equipo <a name="contribucionBlanco"></a>
-
-Por último, sobre la planificación anterior establecida en Jira se crean dos gráficos: 
-en el primero, se puede observar la **contribución de cada usuario** a las tareas asignadas a cada caso de uso.
-
-El siguiente informe de carga de trabajo del usuario muestra el número de incidencias asignadas al **Señor Blanco**, además del tiempo estimado que se espera que tarden dichas tareas en realizarse.
-
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCargaSeBlanco.png"/>
-
-Hay que concretar que dentro de este informe no se tienen en cuenta las **subtareas**, ni el tiempo que estas ocupan en cada usuario, por lo que puede variar entre distintos usuarios.
 
 ### Señor Marrón (Equipo 2) <a name="señorMarron"></a>
 
@@ -912,30 +902,6 @@ En la siguiente tabla se puede ver la distribución de manera resumida:
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU08.png"/>
 
-#### Proporción de Épicas, Tareas y Subtareas <a name="grafomarron"></a>
-En el siguiente gráfico de tipo tarta se presenta la distribución existente en el proyecto de los distintos tipos de incidencias: épicas ( Casos de Uso), tareas y subtareas.
-
-Se puede apreciar que la mayor parte del gráfico está compuesto por Tareas, seguido de un número alto de Subtareas.
-
-Podemos observar que hay 16 incidencias de tipo Épica, las cuales referencian los casos de uso del proyecto.
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/grafomarron.png"/>
-
-A continuación se muestra el porcentaje de cada uno de estos tipos de incidencia:
-
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/tablamarron.png"/>
-
-#### Contribución de los líderes de equipo <a name="contribucionMarron"></a>
-
-Por último, sobre la planificación anterior establecida en Jira se crean dos gráficos: 
-en el primero, se puede observar la **contribución de cada usuario** a las tareas asignadas a cada caso de uso.
-
-El siguiente informe de carga de trabajo del usuario muestra el número de incidencias asignadas al **Señor Marron**, además del tiempo estimado que se espera que tarden dichas tareas en realizarse.
-
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCargaSeMarron.png"/>
-
-Hay que concretar que dentro de este informe no se tienen en cuenta las **subtareas**, ni el tiempo que estas ocupan en cada usuario, por lo que puede variar entre distintos usuarios.
-
-
 ### Señor Naranja (Equipo 3) <a name="señorNaranja"></a>
 
 ### Proceso seguido <a name="procesoSeguidoNaranja"></a>
@@ -1038,30 +1004,6 @@ El **Test e Integración** (T&I) se realiza en la **iteración 9** por el Desarr
 En última instancia, el **Despliegue** (D) se completa en la **iteración 9** por el Desarrollador Senior (Sr. Blanco) en el paquete de casos de uso CU04 … CU16.
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
-
-#### Proporción de Épicas, Tareas y Subtareas <a name="grafonaranja"></a>
-En el siguiente gráfico de tipo tarta, se puede ver la distribución de incidencias a lo largo de cada una de las iteraciones. 
-
-Se puede apreciar que las iteraciones que más incidencias contienen son las iteraciones 8 y 9 puesto que en ellas se realizan las tareas de despliegue de los casos de uso.
-
-Las tareas que no están asignadas a ninguna iteración corresponden a las 16 tareas Épicas que son los casos de uso.
-
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/grafonaranja.png"/>
-
-A continuación se muestra una tabla con los porcentajes de cada iteración:
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/tablanaranja.png"/>
-
-
-#### Contribución de los líderes de equipo <a name="contribucionNaranja"></a>
-
-Por último, sobre la planificación anterior establecida en Jira se crean dos gráficos: 
-en el primero, se puede observar la **contribución de cada usuario** a las tareas asignadas a cada caso de uso.
-
-El siguiente informe de carga de trabajo del usuario muestra el número de incidencias asignadas al **Señor Naranja**, además del tiempo estimado que se espera que tarden dichas tareas en realizarse.
-
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCargaSeNaranja.png"/>
-
-Hay que concretar que dentro de este informe no se tienen en cuenta las **subtareas**, ni el tiempo que estas ocupan en cada usuario, por lo que puede variar entre distintos usuarios.
 
 ### Señor Azul (Equipo 4) <a name="señorAzul"></a>
 
@@ -1174,6 +1116,33 @@ Por último, el **Despliegue** (D) se completa en la **iteración 9** por el Des
 En la siguiente tabla se puede ver la distribución de manera resumida:
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU16.png"/>
 
+
+#### Proporción de Épicas, Tareas y Subtareas <a name="grafomarron"></a>
+En el siguiente gráfico de tipo tarta se presenta la distribución existente en el proyecto de los distintos tipos de incidencias: épicas ( Casos de Uso), tareas y subtareas.
+
+Se puede apreciar que la mayor parte del gráfico está compuesto por Tareas, seguido de un número alto de Subtareas.
+
+Podemos observar que hay 16 incidencias de tipo Épica, las cuales referencian los casos de uso del proyecto.
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/grafomarron.png"/>
+
+A continuación se muestra el porcentaje de cada uno de estos tipos de incidencia:
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/tablamarron.png"/>
+
+
+#### Proporción de Épicas, Tareas y Subtareas <a name="grafonaranja"></a>
+En el siguiente gráfico de tipo tarta, se puede ver la distribución de incidencias a lo largo de cada una de las iteraciones. 
+
+Se puede apreciar que las iteraciones que más incidencias contienen son las iteraciones 8 y 9 puesto que en ellas se realizan las tareas de despliegue de los casos de uso.
+
+Las tareas que no están asignadas a ninguna iteración corresponden a las 16 tareas Épicas que son los casos de uso.
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/grafonaranja.png"/>
+
+A continuación se muestra una tabla con los porcentajes de cada iteración:
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/tablanaranja.png"/>
+
+
 #### Proporción de tareas por caso de uso <a name="grafoazul"></a>
 En el siguiente informe de tipo tarta se puede observar la distribución por casos de uso de las tareas. Cada caso de uso cuenta con el mismo número de tareas pues todos tienen las mismas fases.
 
@@ -1181,16 +1150,29 @@ Se puede apreciar un gran número de tareas no asignadas a ningún caso de uso. 
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/grafoAzul.png"/>
 
-#### Contribución de los líderes de equipo <a name="contribucionAzul"></a>
 
-Por último, sobre la planificación anterior establecida en Jira se crean dos gráficos: 
-en el primero, se puede observar la **contribución de cada usuario** a las tareas asignadas a cada caso de uso.
+#### Contribución de los líderes de equipo <a name="contribucionBlanco"></a>
 
-El siguiente informe de carga de trabajo del usuario muestra el número de incidencias asignadas al **Señor Azul**, además del tiempo estimado que se espera que tarden dichas tareas en realizarse.
+Por último, mediante los informas del Jira se va mostrar la **contribución de cada usuario** a las tareas asignadas a cada caso de uso, además del tiempo estimado que se espera que tarden dichas tareas en realizarse.
+
+* **Señor Blanco**:
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCargaSeBlanco.png"/>
+
+* **Señor Marron**:
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCargaSeMarron.png"/>
+
+* **Señor Naranja**:
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCargaSeNaranja.png"/>
+
+* **Señor Azul**:
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCargaSeAzul.png"/>
 
 Hay que concretar que dentro de este informe no se tienen en cuenta las **subtareas**, ni el tiempo que estas ocupan en cada usuario, por lo que puede variar entre distintos usuarios.
+
 
 ## Diseño de la interfaz de usuario <a name="diseñoInterfazUsuario"></a>
 
