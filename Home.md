@@ -829,11 +829,11 @@ El señor naranja ha liderado al equipo 3, donde cada rol es interpretado por lo
 * Jefe del proyecto (JP): Sr. Naranja
 * Arquitecto Software (AS): Sr. Azul
 * Desarrollador Senior (DS): Sr. Blanco
-* Desarrollador Junior (DJ): Sr.  Marrón
+* Desarrollador Junior (DJ): Sr. Marrón
 
-	El **Sr. Naranja** (JP) se encargará de las tareas de modelado de negocio (BM) y gestión del proyecto software, en otras palabras, se ocupará de asignar las tareas a realizar a cada rol. 
+El **Sr. Naranja** (JP) se encargará de las tareas de modelado de negocio (BM) y gestión del proyecto software, en otras palabras, se ocupará de asignar las tareas a realizar a cada rol. 
 
-	El **Sr. Azul** (AS) se ocupará de las disciplinas de Requisitos, análisis y Diseño e Implementación. El **Sr. Blanco** (DS) se centra en todas las disciplinas que abarcan el desarrollo completo de cada caso de uso; desde la Definición de Requisitos, Análisis y Diseño, Implementación, Integración y Test y Despliegue. Por último, el **Sr. Marrón** (DJ) ejecuta las disciplinas de Implementación, Test e Integración y Despliegue.
+El **Sr. Azul** (AS) se ocupará de las disciplinas de Requisitos, análisis y Diseño e Implementación. El **Sr. Blanco** (DS) se centra en todas las disciplinas que abarcan el desarrollo completo de cada caso de uso; desde la Definición de Requisitos, Análisis y Diseño, Implementación, Integración y Test y Despliegue. Por último, el **Sr. Marrón** (DJ) ejecuta las disciplinas de Implementación, Test e Integración y Despliegue.
 
 Respecto los casos de uso, el equipo 3 se encarga de la totalidad de disciplinas de los siguientes casos de uso:
 * CU09: Consultar tiempo meteorológico en la ubicación actual
@@ -871,7 +871,8 @@ En la siguiente tabla se puede ver la distribución de manera resumida:
 <p>
 Es el décimo caso de uso del proyecto; el usuario podrá realizar una serie de modificaciones en la aplicación para configurar esta a su gusto como cambiar el idioma, el tema a modo oscuro, etc.
 </p>
-El desarrollo de este caso de uso comienza con su Definición de Requisitos (RE) en la iteración 3 y finaliza en la iteración 9, con el despliegue del paquete de requisitos CU04…CU16.
+
+El desarrollo de este caso de uso comienza con su **Definición de Requisitos** (RE) en la iteración 3 y finaliza en la iteración 9, con el **despliegue** del paquete de requisitos CU04-16.
 
 El encargado de realizar las tareas correspondientes a la **Definición de Requisitos** (RE) en la **iteración 3** es el Arquitecto software (Sr. Azul).
 
@@ -889,7 +890,8 @@ En la siguiente tabla se puede ver la distribución de manera resumida:
 <p>
 Es el undécimo caso de uso del proyecto; el usuario podrá visualizar el listado completo de eventos de municipios y montañas creados por su parte.
 </p>
-El desarrollo de este caso de uso comienza con su Definición de Requisitos (RE) en la iteración 3 y finaliza en la iteración 9, con el despliegue del paquete de requisitos CU04…CU16.
+
+El desarrollo de este caso de uso comienza con su **Definición de Requisitos** (RE) en la iteración 3 y finaliza en la iteración 9, con el **despliegue** del paquete de requisitos CU04-16.
 
 El encargado de realizar las tareas correspondientes a la **Definición de Requisitos** (RE) en la **iteración 3** es el Arquitecto software (Sr. Azul).
 
@@ -907,7 +909,8 @@ En la siguiente tabla se puede ver la distribución de manera resumida:
 <p>
 Es el duodécimo caso de uso del proyecto; el usuario podrá visualizar en detalle los datos pertinentes de un evento de municipio o montaña.
 </p>
-El desarrollo de este caso de uso comienza con su Definición de Requisitos (RE) en la iteración 3 y finaliza en la iteración 9, con el despliegue del paquete de requisitos CU04…CU16.
+
+El desarrollo de este caso de uso comienza con su **Definición de Requisitos** (RE) en la iteración 3 y finaliza en la iteración 9, con el **despliegue** del paquete de requisitos CU04-16.
 
 El encargado de realizar las tareas correspondientes a la **Definición de Requisitos** (RE) en la **iteración 3** es el Arquitecto software (Sr. Azul).
 
