@@ -808,7 +808,47 @@ Hay que concretar que dentro de este informe no se tienen en cuenta las **subtar
 
 #### Proceso seguido <a name="procesoSeguidoMarron"></a>
 
+El señor marrón ha liderado al equipo 2, donde cada rol es interpretado por los siguientes miembros:
+* Jefe del proyecto (JP): Sr. Marrón
+* Arquitecto Software (AS): Sr. Naranja
+* Desarrollador Senior (DS): Sr. Azul
+* Desarrollador Junior (DJ): Sr.  Blanco
+
+El **Sr. Marrón(JP)** se encargará de las tareas de modelado de negocio (BM) y gestión del proyecto software, en otras palabras, se ocupará de asignar las tareas a realizar a cada rol. 
+
+El **Sr. Naranja(AS)** se ocupará de las disciplinas de Requisitos, análisis y Diseño e Implementación. El Sr. Azul(DS) se centra en todas las disciplinas que abarcan el desarrollo completo de cada caso de uso; desde la Definición de Requisitos, Análisis y Diseño, Implementación, Integración y Test y Despliegue. Por último, el Sr. Blanco(DJ) ejecuta las disciplinas de Implementación, Test e Integración y Despliegue.
+
+Respecto los casos de uso, el **equipo 2** se encarga de la totalidad de disciplinas de los siguientes casos de uso (en negrita, los estructurales):
+* CU05: Añadir preferencias desde el menú de AppBar (ajustes…)
+* CU06: Consultar el tiempo detallado de una ubicación.
+* CU07: Modificar un evento.
+* CU08: Eliminar un evento..
+
+Por último, las incidencias relacionadas con el caso de uso estructural (CU05) dispondrás de una prioridad alta (**High**). 
+
 #### Análisis del progreso <a name="analisisProgresoMarron"></a>
+En este apartado se detalla la distribución de las tareas realizadas por cada rol a lo largo de las 9 iteraciones, según las disciplinas que puedan realizar cada uno de ellos.
+
+Antes de dar principio, es imprescindible aclarar que el tiempo inicial disponible del arquitecto software es de 37.20 horas semanales. En el caso de que realice sus tareas y quede tiempo sobrante, este se lo dedicará a tareas de gestión.
+
+⌚ Planificación tareas CU05 - Añadir preferencias desde el menú de AppBar (ajustes…)
+
+Se trata de un caso de uso estructural; el sistema deberá incorporar un apartado de configuración que permite al usuario personalizar su experiencia con la aplicación, así como el modo oscuro, preferencias…etc. Los roles que participarán en el desarrollo de este caso de uso son todos los miembros del equipo, exceptuando el Sr. Marrón(JP).
+
+El desarrollo de este caso de uso comienza con su Definición de Requisitos (RE) en la **iteración 5** y finaliza en la **iteración 9**, con el despliegue del paquete de requisitos del CU04 al CU16.
+
+El encargado de realizar las tareas correspondientes a la **Definición de Requisitos (RE)** en la iteración 5 es el Desarrollador Senior (Sr. Azul). 
+
+En cuanto al **Análisis y Diseño (A&D)**, esta disciplina comienza en la IT5 y es completada por el Desarrollador Senior (Sr. Azul).
+
+La **Implementación** (Imp), como consecuencia de ser un caso de uso estructural, se realizará cuanto antes posible, es decir, en la iteración 6. Los roles encargados de completar las tareas de esta disciplina son el Desarrollador Junior y el Arquitecto Software (Sr. Blanco y Sr. Azul).
+* Las tareas de implementación “Implementar los componentes” y “Testear los componentes”  son compartidas por los DJ y AS.
+
+El **Test e Integración** (T&I) se realiza en la iteración IT7 por el Desarrollador Senior (Sr. Azul).
+
+En última instancia, el **Despliegue** (D) se completa en la IT9 por el Desarrollador Senior (Sr. Azul) en el paquete de casos de uso CU04 al CU16.
+
+En la siguiente tabla se puede ver la distribución de manera resumida:
 
 #### Contribución de los líderes de equipo <a name="contribucionMarron"></a>
 
