@@ -1037,6 +1037,16 @@ En última instancia, el **Despliegue** (D) se completa en la **iteración 9** p
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
 
+#### Proporción de Épicas, Tareas y Subtareas <a name="grafonaranja"></a>
+En el siguiente gráfico de tipo tarta, se puede ver la distribución de incidencias a lo largo de cada una de las iteraciones. 
+
+Se puede apreciar que las iteraciones que más incidencias contienen son las iteraciones 8 y 9 puesto que en ellas se realizan las tareas de despliegue de los casos de uso.
+
+Las tareas que no están asignadas a ninguna iteración corresponden a las 16 tareas Épicas que son los casos de uso.
+
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/grafoNaranja.png"/>
+
+
 #### Contribución de los líderes de equipo <a name="contribucionNaranja"></a>
 
 Por último, sobre la planificación anterior establecida en Jira se crean dos gráficos: 
