@@ -46,7 +46,7 @@
     - [Mapa de Navegación: pantallas, patrones y diagrama <a name="mapaNavegacion"></a>](#Mapa-de-Navegación-pantallas-patrones-y-diagrama-)
       - [Diagrama de casos de uso <a name="diagramaCasosdeUso"></a>](#Diagrama-de-casos-de-uso-)
       - [Diagrama de navegación <a name="diagramadeNavegacion"></a>](#Diagrama-de-navegación-)
-      - [Mockup <a name="mockup"></a>](#Mockup-)
+      - [Mockup <a name="Mockup"></a>](#Mockup-)
       - [Grafo de navegación <a name="grafodeNavegacion"></a>](#Grafo-de-navegación-)
       - [Patrones de navegación aplicados <a name="patronesNavegacion"></a>](#Patrones-de-navegación-aplicados-)
 
@@ -1212,7 +1212,7 @@ A continuación se muestra un posible diagrama de navegación que podría seguir
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/diagramaNavegacion.png"/>
 
-#### Mockup  <a name="Mockup"></a>
+#### Mockup <a name="Mockup"></a>
 A continuación se muestra un Mockup que contiene un conjunto de posibles pantallas del proyecto, a modo de prototipo que muestre las funcionalidades de la aplicación:
 
 <img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/mockupPantallas1_6.png"/>
