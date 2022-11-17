@@ -99,7 +99,7 @@ El objetivo principal de este trabajo es el desarrollo de una aplicación móvil
 #### Público objetivo <a name="publicoObjetivo"></a>
 En este apartado, se especifica a qué público va dirigida nuestra aplicación mediante estudios y gráficas. Antes de adentrarnos en el “quid” de la cuestión, cabe destacar el motivo por el que se ha elegido Android como plataforma sobre la que se implementa la aplicación. Según [StatCounter](https://statcounter.com/), Android ha dominado el 70% de la cuota de mercado por delante de iOS en creces, como se muestra en la siguiente gráfica:
 
-<img src="https://drive.google.com/file/d/1qC1YSzSoWgwinagwi6AEfq0czMiQGaDc/view?usp=share_link"/>
+<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/PublicoObjetivo1.png"/>
 
 Asimismo, no es una sorpresa que Android gobierne el mercado de dispositivos móviles. Según Google, el número de usuarios con dispositivos Android ha aumentado notablemente. En la siguiente tabla, se especifica la evolución de los usuarios activos durante los últimos años en billones como unidad.
 
