@@ -298,7 +298,7 @@ De esta forma, cada rol realiza las siguientes disciplinas:
 * Desarrollador de Software Senior: Realiza las disciplinas de Requisitos (R), Análisis y Diseño (A&D), Implementación (Imp), Test e integración (T&I) y Despliegue (D).
 
 <p>Para resumir y poder visualizar mejor esto, realizamos la siguiente tabla:</p>
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/1.png"/>
+<img src="https://i.imgur.com/yItDb6b.png"/>
 
 #### Análisis de la distribución <a name="analisisdeladistribucion"></a>
 
@@ -306,7 +306,7 @@ De esta forma, cada rol realiza las siguientes disciplinas:
 Para calcular el tiempo total que tendrá disponible cada rol y cada caso de uso en número de horas se tendrá en cuenta una jornada laboral de 8 horas. Trabajando 5 días a la semana y teniendo en cuenta las 7 iteraciones (semanas), con lo que se obtiene la siguiente cantidad de tiempo:
 </p>
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/a1.png"/>
+<img src="https://i.imgur.com/nZJrXfF.png"/>
 
 <p>
 Esto nos da que la jornada laboral tiene 280 horas por semana, de las cuales, según la implicación de cada rol en el proyecto se obtiene el tiempo que emplean:
@@ -328,7 +328,7 @@ Según las investigaciones proporcionadas por el periódico
 <p>Con lo cual contamos con 703,08 horas de trabajo real, de las cuales el <b>15%</b> se dedica a <b>tareas de gestión del proyecto (Tareas de Project)</b>, y el resto del tiempo <b>(85%)</b> a la creación de los casos de uso, por lo que tenemos <b>597,618 horas</b> para realizar todos los casos de uso.
 </p>
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/a2.png"/>
+<img src="https://i.imgur.com/nRQOaHS.png"/>
 
 <p>En esta tabla se pueden observar los <b>porcentajes de tiempo</b> que se van a dedicar a cada uno de los <b>casos de uso</b>.
 
@@ -351,7 +351,7 @@ Por lo cual las <b>Tareas de Gestión + Modelado de negocio</b> ocupan un total 
 
 Con lo que nos quedan <b>47,31 horas</b> para realizar el resto de fases de los CU.
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/a3.png"/>
+<img src="https://i.imgur.com/ns2n1ju.png"/>
 
 En la tabla anterior podemos ver que los trabajadores disponen de <b>93 horas semanales</b> para realizar los casos de uso, así como las distintas cantidades de tiempo que dedicará cada rol en el proyecto.
 </p>
@@ -373,28 +373,28 @@ De esta forma, cada una de las iteraciones se han planificado en función de las
 
 🔸 **Fase de Inicio**
 <p>&nbsp;</p>
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p2.png"/>
+<img src="https://i.imgur.com/8yYq7dM.png"/>
 <p>&nbsp;</p>
 
 🔸 **Fase de Elaboración**
 <p>&nbsp;</p>
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p3.png"/>
+<img src="https://i.imgur.com/ETmUXMZ.png"/>
 <p>&nbsp;</p>
 
 🔸 **Fase de Construcción**
 <p>&nbsp;</p>
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p4.png"/>
+<img src="https://i.imgur.com/KlCxGTv.png"/>
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p5.png"/>
+<img src="https://i.imgur.com/I0TNETc.png"/>
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p6.png"/>
+<img src="https://i.imgur.com/a7jpIUU.png"/>
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p7.png"/>
+<img src="https://i.imgur.com/9fi0OCW.png"/>
 <p>&nbsp;</p>
 
 🔸 **Fase de Transición**
 <p>&nbsp;</p>
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/p8.png"/>
+<img src="https://i.imgur.com/bUhDX6l.png"/>
 
 #### Planificación modificada <a name="planificaciondelproyecto3"></a>
 Posteriormente, el **cliente** añadió cuatro casos de uso más para un total de **dieciséis** , **uno** de ellos **estructural** (CU-05), y los otros **tres no estructurales** (CU-14, CU-15 y CU-16). Puesto que no hay suficiente tiempo para realizar estas nuevas funcionalidades con la actual planificación del proyecto,  se han añadido **2 iteraciones** más en la fase de **transición**, las cuales han permitido solucionar esta falta de tiempo.
@@ -407,25 +407,25 @@ Esto da lugar a una planificación compuesta por:
 
 De esta forma, la planificación por iteración después de realizar las modificaciones sería:
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/12.1.png"/>
+<img src="https://i.imgur.com/auJmfHD.png"/>
 
 Debido a que las cuatro primeras iteraciones tienen la misma planificación que en la inicial, son las iteraciones de la IT5 a la IT9 las que deben ser realizadas de nuevo, dejando la planificación modificada como la siguiente:
 <p>&nbsp;</p>
 
 🔸 **Fase de Construcción**
 <p>&nbsp;</p>
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/13.png"/>
+<img src="https://i.imgur.com/7NfxYXq.png"/>
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/14.png"/>
+<img src="https://i.imgur.com/m5JHWdZ.png"/>
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/15.png"/>
+<img src="https://i.imgur.com/y9oYT7m.png"/>
 <p>&nbsp;</p>
 
 🔸 **Fase de Transición**
 <p>&nbsp;</p>
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/16.png"/>
+<img src="https://i.imgur.com/uXOspdK.png"/>
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/17.png"/>
+<img src="https://i.imgur.com/PG2uIXk.png"/>
 <p>&nbsp;</p>
 
 Como podemos ver, en esta **última iteración** ha sido necesario que el **arquitecto** ayude a los dos roles de desarrolladores a realizar ciertas tareas de **test e integración.**
@@ -436,7 +436,7 @@ Una vez finalizados todos los cálculos y cuadradas las horas del proyecto, se p
 
 Para ello, primero es necesario obtener la jornada laboral de cada uno de los roles basándose en su implicación en el desarrollo. Esta es la siguiente:
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/18.png"/>
+<img src="https://i.imgur.com/ijWhNNq.png"/>
 <p>&nbsp;</p>
 
 * Jornada diaria del <b>Jefe de Proyecto</b>: 8 horas semanales / 5 días = 1.6h
@@ -453,7 +453,7 @@ A estas horas les aplicamos el porcentaje de productividad <b>93%</b> para calcu
 
 En Microsoft Project  se han realizado **2 tipos de planificaciones**, una planificación por **iteraciones** y una posterior planificación por **casos de uso**.
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/19.png"/>
+<img src="https://i.imgur.com/bfOr6sr.png"/>
 <p>&nbsp;</p>
 Como se puede observar se ha planificado el proyecto basándose en la intervención de los roles en cada iteración.
 
@@ -470,12 +470,12 @@ Por ello, en cada iteración se encuentran **2 secciones** dedicadas a:
 
 Cada iteración corresponde con una semana, por lo que en esta planificación se han ido repartiendo las horas de cada trabajador en cada una de las tareas que había que realizar para dicha integración, de tal forma que la repartición de horas, en función de los siguientes días y respetando su jornada laboral, se puede ver en la siguiente imagen:
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/20.png"/>
+<img src="https://i.imgur.com/o6TILqp.png"/>
 
 
 Planificación por casos de uso:
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/21.png"/>
+<img src="https://i.imgur.com/NnHGRz1.png"/>
 <p>&nbsp;</p>
 Para realizarla, se ha tenido en cuenta la planificación previa por iteraciones y se han agrupado todas las intervenciones de los roles en esta por caso de uso.
 En concreto, se compone de <b>3 secciones</b>:
@@ -491,7 +491,7 @@ Se ha decidido que el <b>Arquitecto del Software</b> se encargará de aquellas t
 
 Considerando la falta de horas para realizar todo el trabajo, el <b>arquitecto software</b> priorizará trabajar en las disciplinas dedicadas a los <b>casos de uso</b>, y tras su realización, dedicará el tiempo sobrante de cada iteración en realizar <b>horas de gestión</b>. En la siguiente tabla se observan las <b>13,16</b> horas de gestión que realizará el arquitecto tras finalizar tu contribución en las tareas dedicadas a los casos de uso.
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/22.png"/>
+<img src="https://i.imgur.com/sZuqyhH.png"/>
 
 
 Respecto a la distribución de horas de los distintos roles en las distintas disciplinas,  el <b>Jefe de proyecto</b> es el que se encarga de todo el tiempo de <b>Business Modeling</b>, tras ello, dedica sus horas restantes a la <b>gestión</b>.
@@ -507,48 +507,48 @@ A continuación se muestra la distribución de horas que se ha seguido en las di
 
 Datos:
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/23.png"/>
+<img src="https://i.imgur.com/oMGRcTV.png"/>
 
 <p>&nbsp;</p>
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/24.png"/>
+<img src="https://i.imgur.com/4TEkAy6.png"/>
 
 <p>&nbsp;</p>
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/25.png"/>
+<img src="https://i.imgur.com/0DCVgGj.png"/>
 <p>&nbsp;</p>
 
 
 Gráficos:
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/26.png"/>
+<img src="https://i.imgur.com/ZNHT4Gr.png"/>
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/27.png"/>
+<img src="https://i.imgur.com/b7LEifJ.png"/>
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/28.png"/>
+<img src="https://i.imgur.com/7gY8Ekp.png"/>
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/29.png"/>
+<img src="https://i.imgur.com/b29ITu5.png"/>
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/30.png"/>
+<img src="https://i.imgur.com/m0OfGct.png"/>
 
 De esta forma, las <b>horas máximas</b> que se han dedicado al proyecto respecto de las que se <b>disponen</b> en primer lugar son las siguientes:
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/31.png"/>
+<img src="https://i.imgur.com/gikVlbj.png"/>
 <p>&nbsp;</p>
 
 Con estos datos, se puede comprobar el **rendimiento** que se ha tenido por cada iteración:
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/34.png"/>
+<img src="https://i.imgur.com/YXYwKox.png"/>
 
 Se puede apreciar una bajada de trabajo en horas en la primera semana (semana 36), debido a que el desarrollador senior no puede trabajar en sus disciplinas por las dependencias de tareas. Respecto a las semanas posteriores, las horas de trabajo se mantienen constantes (100 horas).
 
 A continuación, se muestra una gráfica de coste de los recursos de la planificación:
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/35.png"/>
+<img src="https://i.imgur.com/ruwHRHc.png"/>
 
 El coste total del proyecto se acerca a los 28.000 €, presupuesto que se desglosa según los recursos humanos. El jefe del proyecto cobra 3.300 € durante 9 semanas desde el inicio del proyecto; El desarrollador junior gana en torno 3.300 €, menos de la mitad del costo del desarrollador senior, el cual se encuentra cercano a los 10.000€. Por último, el presupuesto para cubrir el costo del arquitecto software es el más alto, 11.000 €.
 
 Seguidamente, se muestra una descripción gráfica de las horas trabajadas por los roles en total durante toda la planificación del proyecto. 
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/36.png"/>
+<img src="https://i.imgur.com/fYQTvAX.png"/>
 
 En este informe se puede observar el trabajo restante que les queda por hacer a cada uno de los trabajadores desde la fecha de comienzo 31/08/20  hasta el 30/10/20 como esta es una fecha pasada, el trabajo previsto está a 0, pero aun así, nos podemos hacer una idea de la carga de trabajo que soportará cada uno de los roles.
 
@@ -557,8 +557,8 @@ En este informe se puede observar el trabajo restante que les queda por hacer a 
 ####  Camino Crítico <a name="caminocritico"></a>
 Por último, dentro del análisis de la planificación nos encontramos ante el camino crítico. Este nos informará si hay algún punto crítico dentro del proyecto  ya sea por culpa de horas mal planificadas o sobrecarga de trabajo.
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/33.png"/>
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/33.2.png"/>
+<img src="https://i.imgur.com/eKHPHmv.png"/>
+<img src="https://i.imgur.com/rlrB8G1.png"/>
 
 Como se puede ver en estas dos fotos anteriores, hay zonas críticas debido a las horas, algunas acciones empiezan y acaban el mismo día (Business Modeling) la cual es predecesora de las disciplinas de los casos de usos.
 
@@ -579,7 +579,7 @@ En la siguiente imagen se puede observar en detalle una tarea épica (caso de us
 
 <p>&nbsp;</p>
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/configPlanificacion1.png"/>
+<img src="https://i.imgur.com/6xKmLcR.png"/>
 
 <p>&nbsp;</p>
 
@@ -587,7 +587,7 @@ En la próxima imagen se puede ver una Tarea (**Incidencia**) con atribuciones d
 
 <p>&nbsp;</p>
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/configPlanificacion2.png"/>
+<img src="https://i.imgur.com/fSwBcqe.png"/>
 
 <p>&nbsp;</p>
 
@@ -595,7 +595,7 @@ En la imagen siguiente se puede ver una Iteración (sprint) en la que se desarro
 
 <p>&nbsp;</p>
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/configPlanificacion3.png"/>
+<img src="https://i.imgur.com/ylNYQJG.png"/>
 
 <p>&nbsp;</p>
 
