@@ -715,7 +715,7 @@ En última instancia, el **Despliegue** (D) se completa en la IT8 por el Desarro
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU01.png"/>
+<img src="https://i.imgur.com/gPhoqxf.png"/>
 
 <p>&nbsp;</p>
 
@@ -737,7 +737,7 @@ En última instancia, el **Despliegue** (D) se completa en la IT8 por el Desarro
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU02.png"/>
+<img src="https://i.imgur.com/4HV2Z8U.png"/>
 
 <p>&nbsp;</p>
 
@@ -763,7 +763,7 @@ En última instancia, el **Despliegue** (D) se completa en la IT8 por el Desarro
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU03.png"/>
+<img src="https://i.imgur.com/PA52KSN.png"/>
 
 <p>&nbsp;</p>
 
@@ -788,7 +788,7 @@ En última instancia, el **Despliegue** (D) se completa en la IT9 por el Desarro
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU04.png"/>
+<img src="https://i.imgur.com/DuRwXEK.png"/>
 
 
 ### Señor Marrón (Equipo 2) <a name="señorMarron"></a>
@@ -839,7 +839,7 @@ En última instancia, el **Despliegue** (D) se completa en la IT9 por el Desarro
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU05.png"/>
+<img src="https://i.imgur.com/gLASWeG.png"/>
 
 <p>&nbsp;</p>
 
@@ -864,7 +864,7 @@ En última instancia, el **Despliegue** (D) se completa en la IT9 por el Desarro
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU06.png"/>
+<img src="https://i.imgur.com/vkHZZCL.png"/>
 
 <p>&nbsp;</p>
 
@@ -885,7 +885,7 @@ En última instancia, el **Despliegue** (D) se completa en la IT9 por el Desarro
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU07.png"/>
+<img src="https://i.imgur.com/dprB7NY.png"/>
 
 <p>&nbsp;</p>
 
@@ -907,7 +907,7 @@ En última instancia, el **Despliegue** (D) se completa en la IT9 por el Desarro
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU08.png"/>
+<img src="https://i.imgur.com/uXfwUnr.png"/>
 
 ### Señor Naranja (Equipo 3) <a name="señorNaranja"></a>
 
@@ -956,7 +956,7 @@ En última instancia, el **Despliegue** (D) se completa en la **iteración 9** p
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU09.png"/>
+<img src="https://i.imgur.com/24eBqsa.png"/>
 
  ⌚ **Planificación tareas CU10 - Modificar idioma y tema a modo oscuro**
 <p>
@@ -977,7 +977,7 @@ En última instancia, el **Despliegue** (D) se completa en la **iteración 9** p
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU10.png"/>
+<img src="https://i.imgur.com/PYvgEx1.png"/>
 
  ⌚ **Planificación tareas CU11 - Consultar lista de eventos**
 <p>
@@ -998,7 +998,7 @@ En última instancia, el **Despliegue** (D) se completa en la **iteración 9** p
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU11.png"/>
+<img src="https://i.imgur.com/KHBwNMY.png"/>
 
  ⌚ **Planificación tareas CU12 - Consultar un evento**
 <p>
@@ -1020,7 +1020,7 @@ En última instancia, el **Despliegue** (D) se completa en la **iteración 9** p
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU12.png"/>
+<img src="https://i.imgur.com/Rdmjam4.png"/>
 
 ### Señor Azul (Equipo 4) <a name="señorAzul"></a>
 
@@ -1073,7 +1073,7 @@ El **Test e Integración** (T&I) se realiza en la **iteración 9** y es completa
 Por último, el **Despliegue** (D) se completa en la **iteración 9** por el Desarrollador Senior (Sr. Marrón) en el paquete de casos de uso CU04-16.
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU13.png"/>
+<img src="https://i.imgur.com/S7OGneq.png"/>
 
 <p>&nbsp;</p>
 
@@ -1096,7 +1096,7 @@ El **Test e Integración** (T&I) se realiza en la **iteración 9** y es completa
 Por último, el **Despliegue** (D) se completa en la **iteración 9** por el Desarrollador Senior (Sr. Marrón) en el paquete de casos de uso CU04-16.
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU14.png"/>
+<img src="https://i.imgur.com/DpjKGVs.png"/>
 
  ⌚ **Planificación tareas CU15 - Modificar usuario**
 <p>
@@ -1117,7 +1117,7 @@ El **Test e Integración** (T&I) se realiza en la **iteración 9** y es completa
 Por último, el **Despliegue** (D) se completa en la **iteración 9** por el Desarrollador Senior (Sr. Marrón) en el paquete de casos de uso CU04-16.
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU15.png"/>
+<img src="https://i.imgur.com/ei5FuEx.png"/>
 
  ⌚ **Planificación tareas CU16 - Eliminar usuario**
 <p>
@@ -1138,7 +1138,7 @@ El **Test e Integración** (T&I) se realiza en la **iteración 9** y es completa
 Por último, el **Despliegue** (D) se completa en la **iteración 9** por el Desarrollador Senior (Sr. Marrón) en el paquete de casos de uso CU04-16.
 
 En la siguiente tabla se puede ver la distribución de manera resumida:
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCU16.png"/>
+<img src="https://i.imgur.com/Fg0Egaz.png"/>
 
 
 #### Proporción de Épicas, Tareas y Subtareas <a name="grafomarron"></a>
@@ -1147,11 +1147,11 @@ En el siguiente gráfico de tipo tarta se presenta la distribución existente en
 Se puede apreciar que la mayor parte del gráfico está compuesto por Tareas, seguido de un número alto de Subtareas.
 
 Podemos observar que hay 16 incidencias de tipo Épica, las cuales referencian los casos de uso del proyecto.
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/grafomarron.png"/>
+<img src="https://i.imgur.com/0pmXF6h.png"/>
 
 A continuación se muestra el porcentaje de cada uno de estos tipos de incidencia:
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/tablamarron.png"/>
+<img src="https://i.imgur.com/uDYMGrD.png"/>
 
 
 #### Proporción de Épicas, Tareas y Subtareas <a name="grafonaranja"></a>
@@ -1161,10 +1161,10 @@ Se puede apreciar que las iteraciones que más incidencias contienen son las ite
 
 Las tareas que no están asignadas a ninguna iteración corresponden a las 16 tareas Épicas que son los casos de uso.
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/grafonaranja.png"/>
+<img src="https://i.imgur.com/gWbvTY5.png"/>
 
 A continuación se muestra una tabla con los porcentajes de cada iteración:
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/tablanaranja.png"/>
+<img src="https://i.imgur.com/BZvjK3M.png"/>
 
 
 #### Proporción de tareas por caso de uso <a name="grafoazul"></a>
@@ -1172,7 +1172,7 @@ En el siguiente informe de tipo tarta se puede observar la distribución por cas
 
 Se puede apreciar un gran número de tareas no asignadas a ningún caso de uso. Corresponden a las subtareas, las cuales heredan el caso de uso al que pertenecen de la tarea padre. Por lo que este grafico nos sirve para saber cuántas tareas tiene cada **Caso de Uso** y el número de subtareas del proyecto.
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/grafoAzul.png"/>
+<img src="https://i.imgur.com/I1CbHxH.png"/>
 
 
 #### Contribución de los líderes de equipo <a name="contribucionBlanco"></a>
@@ -1181,19 +1181,19 @@ Por último, mediante los informas del Jira se va mostrar la **contribución de 
 
 * **Señor Blanco**:
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCargaSeBlanco.png"/>
+<img src="https://i.imgur.com/ca0aZZ0.png"/>
 
 * **Señor Marron**:
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCargaSeMarron.png"/>
+<img src="https://i.imgur.com/qzs3Vg7.png"/>
 
 * **Señor Naranja**:
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCargaSeNaranja.png"/>
+<img src="https://i.imgur.com/P01Ugy6.png"/>
 
 * **Señor Azul**:
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/planificacionCargaSeAzul.png"/>
+<img src="https://i.imgur.com/WPeRALn.png"/>
 
 Hay que concretar que dentro de este informe no se tienen en cuenta las **subtareas**, ni el tiempo que estas ocupan en cada usuario, por lo que puede variar entre distintos usuarios.
 
@@ -1205,21 +1205,21 @@ Hay que concretar que dentro de este informe no se tienen en cuenta las **subtar
 #### Diagrama de casos de uso <a name="diagramaCasosdeUso"></a>
 A continuación se muestra el diagrama de casos de uso de la aplicación, todos referentes a las acciones que puede realizar el usuario y el sistema.
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/diagramaCasosUso.png"/>
+<img src="https://i.imgur.com/sHvsqqx.png"/>
 
 #### Diagrama de navegación <a name="diagramadeNavegacion"></a>
 A continuación se muestra un posible diagrama de navegación que podría seguir la aplicación:
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/diagramaNavegacion.png"/>
+<img src="https://i.imgur.com/0QdYEjx.png"/>
 
 #### Mockup <a name="Mockup"></a>
 A continuación se muestra un Mockup que contiene un conjunto de posibles pantallas del proyecto, a modo de prototipo que muestre las funcionalidades de la aplicación:
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/mockupPantallas1_6.png"/>
+<img src="https://i.imgur.com/GZT05qx.png"/>
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/mockupPantallas7_14.png"/>
+<img src="https://i.imgur.com/GeQunZy.png"/>
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/mockupPantallas15_16.png"/>
+<img src="https://i.imgur.com/AKMljDL.png"/>
 <p>&nbsp;</p>
 Como se puede observar, para poder utilizar la aplicación en primer lugar es necesario iniciar sesión contando con pantallas para iniciar sesión con una cuenta y otra para registrarse, pudiendo crear una cuenta nueva en caso de que esta no exista.
 
@@ -1244,7 +1244,7 @@ Así mismo, posee un panel lateral desplegable en la pantalla principal desde el
 
 #### Grafo de navegación <a name="grafodeNavegacion"></a>
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/grafoNavegacion.png"/>
+<img src="https://i.imgur.com/iqgagQc.png"/>
 
 #### Patrones de navegación aplicados <a name="patronesNavegacion"></a>  
    
@@ -1264,7 +1264,7 @@ De la misma forma, en la pantalla de lista de eventos también se ha aplicado es
 
 Así mismo, a través de estas listas, se puede acceder a una pantalla que permite consultar los detalles de un evento concreto tocando sobre dicho evento de la lista, que llevará a una pantalla que muestra sus datos.
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/ejemploLista.png"/>
+<img src="https://i.imgur.com/Q3Fyb60.png"/>
 <p>&nbsp;</p>
 
 🔹 Patrón de cajón de navegación
@@ -1275,4 +1275,4 @@ En lo referente a cada una de las funcionalidades, se utilizará un **patrón de
 
 Finalmente, se ha aplicado el patrón de botones y objetivos sencillos mostrando mediante botones con iconos intuitivos en ciertas funcionalidades, de manera que permitan a los usuarios acceder más fácilmente a dichas funcionalidades.
 
-<img src="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04/blob/main/img/ejemploBotones.png"/>
+<img src="https://i.imgur.com/jPea9kb.png"/>
