@@ -1,0 +1,47 @@
+[
+ {
+  "Latitud": 43.1888023262286,
+  "Longitud": -4.31888023262286,
+  "Nombre": "Picos de Europa"
+ },
+ {
+  "Latitud": 42.976582255027,
+  "Longitud": -1.17824968782755,
+  "Nombre": "Pirineo Navarro"
+ },
+ {
+  "Latitud": 42.678642431656,
+  "Longitud": -0.0197685210185362,
+  "Nombre": "Pirineo Aragones"
+ },
+ {
+  "Latitud": 42.3709916823131,
+  "Longitud": 2.10569680621312,
+  "Nombre": "Pirineo Catalán"
+ },
+ {
+  "Latitud": 42.0056721042448,
+  "Longitud": -2.86429055016057,
+  "Nombre": "Ibérica Riojana"
+ },
+ {
+  "Latitud": 42.6321583374294,
+  "Longitud": 0.638715388258535,
+  "Nombre": "Ibérica Aragonesa"
+ },
+ {
+  "Latitud": 40.8486415787341,
+  "Longitud": -3.95541056609034,
+  "Nombre": "Sierras de Guadarrama y Somosierra"
+ },
+ {
+  "Latitud": 40.2454658964477,
+  "Longitud": -5.29734245059712,
+  "Nombre": "Sierra de Gredos"
+ },
+ {
+  "Latitud": 37.0531453001975,
+  "Longitud": -3.3115560106928,
+  "Nombre": "Sierra Nevada"
+ }
+]
