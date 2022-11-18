@@ -8,6 +8,7 @@ import android.os.Bundle;
 import com.example.proyecto.Json.JsonSingleton;
 import com.example.proyecto.Json.Municipio;
 import com.example.proyecto.databinding.ActivityMainBinding;
+import com.example.proyecto.ui.Eventos.CrearEventoActivity;
 import com.example.proyecto.ui.inicio.InicioFragment;
 import com.google.gson.stream.JsonReader;
 
@@ -62,7 +63,8 @@ public class MainActivity extends AppCompatActivity {
         binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent i = new Intent(getApplicationContext(), CrearEventoActivity.class);
+                startActivity(i);
             }
         });
     }
