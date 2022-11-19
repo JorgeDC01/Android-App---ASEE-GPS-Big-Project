@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        validarConexion();
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -145,5 +146,25 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void validarConexion(){
+        AppDatabase appDatabase = AppDatabase.getInstance(getApplicationContext());
+        final UsuarioDAO usuarioDAO = appDatabase.usuarioDAO();
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                Usuario usuario = usuarioDAO.usuarioConectado(true);
+                // Si no hay ningun usuario con el campo 'conectado' a true, entonces nos dirigimos al iniciar sesion
+                if(usuario == null){
+                    startActivity(new Intent(MainActivity.this, InicioSesion.class));
+                }
+                else{
+                    // Si existe un usuario conectado a la aplicacion, entonces se añade en el Singleton
+                    runOnUiThread(() -> AppDatabase.getInstance(getApplicationContext()).setUsuario(usuario));
+
+                }
+            }
+        }).start();
+    }
 
 }
