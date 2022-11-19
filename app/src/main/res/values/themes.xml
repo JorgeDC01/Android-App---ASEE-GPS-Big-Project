@@ -16,7 +16,7 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Base.AppTheme.LightDark.NoActionBar">
+    <style name="AppTheme.LightDark.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
@@ -26,6 +26,12 @@
     <style name="TAppTheme.LightDark.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <!-- Configuración específica para light-->
-
+    <style name="AppTheme.LightDark" parent="Base.AppTheme.LightDark">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorSurface">@color/teal_200</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
 
 </resources>

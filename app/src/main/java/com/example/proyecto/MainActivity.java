@@ -22,7 +22,6 @@ import com.example.proyecto.Room.Modelo.Usuario;
 import com.example.proyecto.databinding.ActivityMainBinding;
 import com.example.proyecto.ui.Eventos.CrearEventoActivity;
 import com.example.proyecto.ui.Localizaciones.LocalizacionesActivity;
-import com.example.proyecto.ui.inicio.InicioFragment;
 import com.google.gson.stream.JsonReader;
 
 import android.util.Log;
@@ -61,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        validarConexion();
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -79,11 +79,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         DrawerLayout drawer = binding.drawerLayout;
-
-        InicioFragment x = new InicioFragment();
-        getSupportFragmentManager().beginTransaction()
-                .add(R.id.app_bar_main, x)
-                .commit();
+        NavigationView navigationView = binding.navView;
+        // Passing each menu ID as a set of Ids because each
+        // menu should be considered as top level destinations.
+        mAppBarConfiguration = new AppBarConfiguration.Builder(
+                R.id.nav_inicio,R.id.nav_eventos, R.id.nav_perfil, R.id.nav_ajustes)
+                .setOpenableLayout(drawer)
+                .build();
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
+        NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
+        NavigationUI.setupWithNavController(navigationView, navController);
 
         binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -141,5 +146,44 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void validarConexion(){
+        AppDatabase appDatabase = AppDatabase.getInstance(getApplicationContext());
+        final UsuarioDAO usuarioDAO = appDatabase.usuarioDAO();
 
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                Usuario usuario = usuarioDAO.usuarioConectado(true);
+                // Si no hay ningun usuario con el campo 'conectado' a true, entonces nos dirigimos al iniciar sesion
+                if(usuario == null){
+                    startActivity(new Intent(MainActivity.this, InicioSesion.class));
+                }
+                else{
+                    // Si existe un usuario conectado a la aplicacion, entonces se añade en el Singleton
+                    runOnUiThread(() -> AppDatabase.getInstance(getApplicationContext()).setUsuario(usuario));
+
+                }
+            }
+        }).start();
+    }
+
+    public void setDayLight(){
+        // Para obtener la configuracion que el usuario ha introducido previamente en la app, se obtiene el objeto SharedPreferences
+        SharedPreferences sp = getSharedPreferences("preferences", this.MODE_PRIVATE);
+        int tema = sp.getInt("Theme", 1);
+        Log.d("NUMERO MODO", String.valueOf(tema));
+        if(tema == 0){ // Modo claro
+            getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO); // método que da error
+        }
+        else{ // Modo oscuro
+            getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // Se llama al comienzo de la actividad al setDayLight() para saber si el modo claro está activado
+        setDayLight();
+    }
 }
