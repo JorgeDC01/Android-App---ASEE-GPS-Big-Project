@@ -1,3 +1,11 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- configuración específica para dark -->
+    <style name="AppTheme.LightDark" parent="Base.AppTheme.LightDark">
+        <item name="colorPrimary">@color/Azul_osc</item>
+        <item name="colorPrimaryVariant">@color/primaryColor</item>
+        <item name="colorSecondary">@color/secondaryDarkColor</item>
+        <item name="colorSurface">@color/secondaryColor</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:background">@color/Azul_osc</item>
+    </style>
 </resources>
