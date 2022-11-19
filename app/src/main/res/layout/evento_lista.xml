@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iconoEvento"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_weight="1"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textAlignment="textStart"
+        app:srcCompat="@drawable/ic_evento" />
+
+    <TextView
+        android:id="@+id/Nombre"
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:gravity="start"
+        android:hapticFeedbackEnabled="false"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        tools:text="Nombre Evento" />
+
+    <TextView
+        android:id="@+id/Fecha"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|end"
+        android:layout_margin="@dimen/text_margin"
+        android:gravity="end"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="@color/teal_200"
+        android:textColorLink="@color/teal_200"
+        tools:text="11/Nov/2022" />
+</LinearLayout>
