@@ -15,10 +15,24 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Base.AppTheme.LightDark"
+        android:theme="@style/AppTheme.LightDark"
         tools:targetApi="31">
         <activity
             android:name=".Registrarse"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".InicioSesion"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.Localizaciones.DetalleLocalizacionActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -66,7 +80,7 @@
             android:name=".ui.Eventos.DetallesEventoActivity"
             android:exported="false"
             android:screenOrientation="portrait"
-            android:theme="@style/Base.AppTheme.LightDark"
+            android:theme="@style/AppTheme.LightDark"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.app.lib_name"

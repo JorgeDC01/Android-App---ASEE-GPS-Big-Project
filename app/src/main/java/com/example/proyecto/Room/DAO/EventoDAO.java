@@ -30,5 +30,9 @@ public interface EventoDAO {
     @Query("SELECT * FROM evento WHERE titulo = (:tituloEvento)")
     List<Evento> getEvent(String tituloEvento);
 
+    @Update
+    void updateEvent(Evento evento);
 
+    @Delete
+    void deleteEvent(Evento evento);
 }
