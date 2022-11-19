@@ -54,7 +54,7 @@ public class Registrarse extends AppCompatActivity {
                                 @Override
                                 public void run() {
                                     Toast.makeText(Registrarse.this, "Usuario " + usuario.getUsername() + " registrado correctamente", Toast.LENGTH_SHORT).show();
-                                    startActivity(new Intent(Registrarse.this, MainActivity.class));
+                                    startActivity(new Intent(Registrarse.this, InicioSesion.class));
                                 }
                             });
 
