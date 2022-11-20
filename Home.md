@@ -1366,25 +1366,164 @@ Finalmente, se ha aplicado el patrón de botones y objetivos sencillos mostrando
 
 # Implementación <a name="implementacion"></a>
 
-## Modelo de datos <a name="modeloDatos"></a>
+En este apartado se documentará todo el proceso de **implementación** que se ha seguido en el proyecto, desde su planificación hasta las clases implementadas que componen la aplicación, pasando por decisiones de implementación como su sintaxis, patrones de diseño, etc.
+
+Este se puede apreciar en el siguiente diagrama de clases, que contiene los principales componentes del modelo de datos:
+
+<img src="https://i.imgur.com/6q2Uk6u.png"/>
+
+En primera instancia, existe una entidad en la Room llamada **Usuario** que se encarga de almacenar las credenciales procedentes de un usuario durante el registro. Contiene los siguientes campos:
+
+* 'idu' (int). Contiene el identificador de una tupla de Usuario en la base de datos.
+* 'username' (String). Contiene el nombre de usuario introducido durante el registro.
+* 'password' (String). Contiene la contraseña introducida durante el registro.
+* 'conectado' (booleano). Almacena el valor ‘true’ si el usuario se encuentra conectado en la aplicación, ‘false’ en caso de no estar logueado.
+
+El usuario puede crear eventos en la aplicación. Existen dos tipos de eventos: aquellos cuya ubicación se encuentra en un municipio y aquellos cuya ubicación se encuentra en una montaña. Sin embargo, se ha tomado la decisión de no almacenar las condiciones meteorológicas de la ubicación de un evento (atributo de tipo Weather que se detalla posteriormente) en la base de datos, puesto que el tiempo meteorológico es dinámico y cambia respecto pasan las horas o días. Como consecuencia de ello, en la base de datos no se hace diferencia respecto a los dos tipos de eventos, sino que sendos eventos se representan con una **única entidad Evento** en el modelo de la Room.
+
+Esta clase contiene los siguientes atributos:
+
+* 'ide' (int). Contiene el identificador de una de las muchas tuplas de Evento en la base de datos.
+* 'titulo' (String). Contiene el título del evento introducido durante su creación.
+* 'ubicacion' (String). Contiene una cadena relativa a la ubicación del evento. Si es un evento de municipio, contiene el nombre del municipio. En caso de ser un evento de montaña, contiene el nombre de la montaña.
+* 'descripcion' (String). Contiene la descripción del evento introducida por el usuario durante la creación del evento.
+* 'esMunicipio' (boolean). Valor booleano que sirve para diferenciar en la misma entidad si es un evento de municipio o de montaña.
+* 'fecha' (Date). Contiene la fecha en la que se da el evento. Tiene un formato del estilo ‘dd/MM/yy’. No se opta por contener las horas, minutos ni segundos. Este atributo de la entidad es sumamente importante, a partir de él se realizará una llamada a la API del tiempo para obtener las condiciones meteorológicas del evento en ese día.
+
+Se requiere de una clase que almacene las condiciones meteorológicas al hacer una llamada a la API del tiempo, independientemente del tipo de evento (Municipio o Montaña) y de la petición del tiempo de la ubicación actual. Esta clase es la llamada Weather y contiene los siguientes atributos:
+
+* 'ciudad' (String). Contiene el nombre del municipio o montaña de la ubicación sobre la que se obtiene el tiempo.
+* 'gifResource' (int). Contiene un código numérico referente al estado del tiempo (“Lluvia”, “Soleado”, etc). Este código se mapeará dinámicamente en un GIF para personalizar la interfaz relativa al tiempo meteorológico.
+* Los atributos relativos a las condiciones meteorológicas:
+  * 'temperatura' (int)
+  * 'sensTermica' (int)
+  * 'tempMinima' (int)
+  * 'tempMaxima' (int)
+  * 'presion' (int)
+  * 'humedad' (int)
+  * 'velocidadViento' (double)
+  * 'estadoTiempo' (String)
+  * 'descEstadoTiempo' (String)
+
+Se ha mencionado que los eventos tienen asignado una ubicación de montaña o municipio según lo considere el usuario durante su creación, que junto con la búsqueda del tiempo en la ubicación actual del dispositivo, es necesario incluir en la aplicación un archivo JSON que contengan todos los **municipios** de España y otro archivo destinado a las **montañas** de España. 
+
+* El JSON de municipios se ha obtenido de un archivo excel de la página oficial de AEMET. Como el excel incorporaba columnas innecesarias, se ha transformado para incluir el código de municipio: concatenación del código de provincia (3 dígitos)  + código de municipio (2 dígitos), el nombre del municipio y el nombre de la provincia a la que pertenece. Seguidamente, se manejó un conversor online XLS to JSON para obtener el JSON final para poseer todos los municipios listos para usarse en la app.
+
+  [https://beautifytools.com/excel-to-json-converter.php](https://beautifytools.com/excel-to-json-converter.php)
+
+* El JSON de montañas se ha creado manualmente (sólo existen 9 montañas en España) , como consecuencia de la API OpenWeather, la cual solo permite realizar una petición del tiempo de una montaña en base a sus coordenadas (longitud, latitud). Por lo tanto, siguiendo el mismo proceso que en el JSON de municipios, un objeto de montaña del JSON contiene la latitud, longitud y el nombre de la montaña.
+
+Para convertir los objetos del JSON en objetos java y cargarlos en nuestra aplicación, se han diseñado dos clases java con la herramienta jsonSchema2Pojo, obteniendo las clases Montana y Municipio.
+
+[https://www.jsonschema2pojo.org](https://www.jsonschema2pojo.org)
 
 ## Detalles de implementación <a name="detallesImplementacion"></a>
 
+En este apartado se describen aspectos esenciales de la implementación de la aplicación Android, así como patrones de diseños y aspectos novedosos dentro de ámbito de la asignatura ASEE.
+
 ### Patrones de Diseño <a name="patronesDiseño"></a>
+
+A lo largo del proceso de desarrollo de este proyecto se han incluido una serie de Patrones de Diseño en su implementación, que expresan esquemas para definir estructuras de diseño (o sus relaciones) con las que construir sistemas de software. Facilitan la codificación, seguridad y consistencia a la aplicación durante su ejecución.
+Los patrones de diseño utilizados se indican a continuación.
+
+#### Patrón Singleton
+
+El patrón de diseño Singleton es un patrón de diseño creacional que gestiona la creación de objetos de una clase concreta, de manera que solo pueda existir una única instancia en tiempo de ejecución.
+
+<img src="https://i.imgur.com/CY12Ege.png"/>
+
+Esto se consigue gracias a que la clase que implementa este patrón sigue las siguientes condiciones:
+
+* Posee un atributo privado y estático del tipo de la clase, que será la única instancia en tiempo de ejecución.
+* El constructor de la clase es de tipo privado.
+* Posee un método público y estático getInstance que devolverá el atributo de la clase declarado como privado. De forma que si el atributo aún no está inicializado (atributo == null) previamente se creará mediante el constructor privado. Y si ya está inicializado, lo devolverá directamente.
+
+De esta forma, cada vez que se tenga que utilizar un objeto de esta clase, se invocará utilizando llamando al método getInstance() de forma estática desde el nombre de la clase (Clase.getInstance()), que devolverá siempre la misma instancia del objeto que utiliza el patrón.
+
+Se ha utilizado el Patrón singleton en la creación de la clase AppDatabase, que crea y gestiona la base de datos, ya que con este la clase sólo podrá tener una única instancia en tiempo de ejecución para no tener que inicializarla varias veces, y acceder siempre a la misma para modificar la base de datos.
+
+Así mismo, también se ha utilizado en la creación de la clase JsonSingleton, que permite obtener todos los datos relativos al clima de las montañas y municipios cargándose de la API. De, esta forma, se pueda acceder a todos los municipios y montañas existentes junto con la información sobre su clima en cualquier parte del programa, permitiendo más facilmente la consulta de los datos de estos por el usuario o su asignación a eventos.
+
+#### Patrón DAO
+
+El patrón de diseño Data Access Object (DAO) es un patrón de diseño Arquitectónico que permite gestionar el desarrollo de una aplicación que utiliza bases de datos (persistencias de datos) al separar todos los componentes del sistema en 3 tipos bien definidos:
+
+* Componentes relacionados con el **modelo de datos** y la lógica de negocio (clases del diagrama)
+* Componentes destinados a la **transferencia de datos**, encargados de conectarse a la base de datos o modificarla. Implementan el patrón de diseño **Data Transference Object** (DTO).
+* Componentes destinados al **acceso a datos**, conectados con los de transferencia de datos para enviar la información a la lógica de negocio, aislando los detalles de implementación. Se tratan de interfaces que son implementadas por los componentes de transferencia, permitiendo ocultar detalles concretos sobre la implementación de la conexión a la base de datos.
+
+<img src="https://i.imgur.com/DoqeMVr.png"/>
+
+Este patrón permite **separar la lógica de datos** de la forma de acceder a estos con conexiones a la base de datos, pues los componentes de acceso a datos son capaces de implementar varios tipos de componente de transferencia de datos, lo que permite **modificar** el tipo de acceso a la base de datos sin afectar la aplicación, pudiendo incluso **tener varios tipos de acceso a datos** al mismo tiempo.
+
+Este patrón se ha utilizado durante la inclusión del servicio Room en Android Studio, ya que este utiliza las interfaces DAO creadas para implementar los componentes de transferencia de datos, que almacenarán la información en las clases de la lógica de negocio (declaradas como Entity), conectándose a la base de datos a través de la clase AppDatabase.
+
+<img src="https://i.imgur.com/FhC2n0x.png"/>
+
+Esta clase **AppDatabase**, que deberá ser abstracta, se utilizará para recuperar información y modificar la base de datos, pues devolverá las interfaces DAO que contienen la información y pueden manipular la base de datos.
+
+A su vez, **las interfaces DAO** modificarán y accederán los valores de los componentes del modelo de datos a través de los métodos getters y setters definidos de estos. Así mismo, estos componentes DAO contarán con métodos que según como se marquen realizan distintas operaciones en la base de datos, siendo la inserción (Insert), modificación (Update), borrado (Delete) y consulta (Query).
+
+Por otra parte, **los componentes de la lógica de negocio** serán las clases marcadas como Entity, que compondrán la estructura de la base de datos y almacenarán la información recuperada de esta.
+
 
 ### Aspectos novedosos y decisiones tomadas <a name="aspectosNovedosos"></a>
 
 #### Gestión de la API <a name="gestionAPI"></a>
 
+En primer lugar se ha decidido no hacer uso de **Retrofit** para la gestión y configuración de la API.
+
+En su lugar, esta funcionalidad se encuentra en una sola clase **APIManager** que seguirá un patrón de delegación mediante una interfaz **APIManagerDelegate** la cual se añade como atributo de aquel componente que quiera hacer uso de la API y así poder implementar los métodos de esta interfaz cuando las llamadas a la API devuelven un resultado.
+
+De esta forma todo el networking de la aplicación se encuentra en la misma clase, cuando a los métodos que hacen referencia a las distintas llamadas a la API. La llamada a la API se realiza mediante una petición asíncrona haciendo uso de la **librería AsyncHttpClient** ahorrándonos así la creación y gestión de un hilo.
+
 #### Obtención de localización <a name="obtencionLocalizacion"></a>
+
+Uno de los casos de uso de la aplicación, requiere de obtener las coordenadas (longitud y latitud) de la ubicación del dispositivo. Para ello es necesario comprobar que se tienen los permisos de **GPS**, los cuales se comentan en el siguiente apartado. Una vez se tienen los permisos mediante un **LocationManager** se obtienen del proveedor de internet dichas coordenadas.
 
 #### Gestión de Permisos <a name="gestionPermisos"></a>
 
+Este apartado detalla la solicitud de los permisos necesarios para el correcto funcionamiento de la aplicación.
+
+Los permisos (que no se hayan concedido) siempre se piden al iniciar la aplicación mediante la clase **Launch**. En caso de no conceder los de GPS, puesto que forman parte de una funcionalidad básica y esencial de la aplicación, no se podrá acceder a la misma hasta que no se otorguen.
+
+Una vez concedidos los permisos, la aplicación comprueba en todo momento que estos sigan estando concedidos antes de ejecutar alguna operación que los requiera. En caso de no estar otorgados porque el usuario los haya quitado mientras está usando la aplicación, esta gestionaría correctamente la ausencia de permisos sin generar errores.
+
+En el hipotético caso de necesitar nuevos permisos en el desarrollo de la aplicación, el código ha sido modularizado de forma que únicamente habría que añadir el nombre de dichos permisos al vector de permisos de la clase **Launch** (deberían estar presentes en el archivo manifest).
+
 #### Carga de municipios y montañas desde JSON <a name="cargaJSON"></a>
+
+La lista de montañas necesaria para el spinner del caso de uso de Crear Evento de Montaña junto a sus coordenadas se encuentra almacenada en un archivo json. De igual forma para el caso de uso de filtrado de localizaciones se ha hecho uso de una lista de todos los municipios de España la cual también se encuentra almacenada en un archivo json.
+
+Ambos archivos son cargados en un mapa de Java gestionado como una única instancia accesible desde cualquier lugar de la aplicación (Singleton) en la clase **JsonSingleton** al iniciar la aplicación por primera vez. Haciendo uso de la librería Gson obtenemos la información del json en los modelos **Municipio** y **Evento** que posteriormente se almacenarán en los mapas del singleton.
+
 
 #### Menú de Hamburguesa <a name="menuHamburguesa"></a>
 
+Hemos decidido la utilización de un **menú de hamburguesa** como métodos de navegación entre las pantallas principales de nuestra aplicación.
+
+Este menú nos permite que el usuario pueda navegar entre las cuatro pantallas principales de la aplicación sin que esto ocupe espacio de pantalla, este menú contiene las pantallas **inicio**, **eventos**, **perfil** y **ajustes**, dejando para la barra de navegación la búsqueda de ubicaciones y el botón de cerrar sesión.
+
+Para su implementación se ha utilizado la main activity como contenedora del menú de hamburguesa y de los diferentes fragmentos de inicio, eventos, perfil y ajustes.
+
+De esta manera hemos conseguido que de una forma compacta todo lo que tiene relación con la navegación de la app.
+
 #### Filtro de Eventos <a name="filtroEventos"></a>
+
+Dentro de la pantalla de la lista de eventos hemos implementado un filtro que nos permite diferenciar los diferentes eventos que haya guardado el usuario, tanto por tipo de evento como teniendo en cuenta o bien el orden de creación del evento o la fecha de dicho evento.
+
+Para los tipos de evento hemos decidido que la filtración se haga con un Tab, intercambiando entre los eventos de municipio y los eventos de montaña.
+
+Para filtrar por orden de creación o de fecha de evento, hemos decidido crear un spinner que nos permite seleccionar entre las dos opciones.
+
+Con esto conseguimos que se intercalan los dos tipos de filtrados que hacemos pudiendo obtener así cuatro configuraciones distintas:
+
+1. Municipios ordenados por fecha de creación del evento
+2. Municipios ordenados por fecha del evento
+3. Montañas ordenadas por fecha de creación del evento
+4. Montañas ordenadas por fecha del evento
+
+De esta forma podemos darle todas las opciones que el usuario necesita para filtrar sus eventos de una manera cómoda y sencilla.
 
 #### Obtención de localización <a name="obtencionLocalizacion"></a>
 
