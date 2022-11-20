@@ -5,87 +5,87 @@
 * Jorge del Castillo Gómez
 # Índice
 - [Índice](#índice)
-  - [Introduccion <a name="introduction"></a>](#introduccion-)
-  - [Propuesta inicial <a name="propuestaInicial"></a>](#propuesta-inicial-)
-    - [Descripción de la idea <a name="descripcionDeLaIdea"></a>](#descripción-de-la-idea-)
-      - [Público objetivo <a name="publicoObjetivo"></a>](#Público-objetivo-)
-  - [Funcionalidades principales <a name="funcionalidadesprincipales"></a>](#funcionalidades-principales-)
-  - [Análisis <a name="analisis"></a>](#análisis-)
-    - [Casos de uso estructurales <a name="casosdeusoestructurales"></a>](#casos-de-uso-estructurales-)
-    - [Casos de uso no estructurales <a name="casosdeusonoestructurales"></a>](#casos-de-uso-no-estructurales-)
-    - [Conjuntos de casos de uso <a name="conjuntosdecasosdeuso"></a>](#conjuntos-de-casos-de-uso-)
-    - [Requisitos no funcionales <a name="requisitosNoFuncionales"></a>](#Requisitos-no-funcionales-)
-  - [Metodologías de desarrollo <a name="metodologiasdedesarrollo"></a>](#metodologías-de-desarrollo-)
-    - [Proceso de desarrollo <a name="procesodedesarrollo"></a>](#proceso-de-desarrollo-)
-    - [Planificación del proyecto <a name="planificaciondelproyecto"></a>](#planificación-del-proyecto-)
-      - [Proceso de planificación <a name="procesodeplanificacion"></a>](#proceso-de-planificación-)
-      - [Distribución de casos de uso <a name="distribuciondecasosdeuso"></a>](#distribución-de-casos-de-uso-)
-      - [Análisis de la distribución <a name="analisisdeladistribucion"></a>](#análisis-de-la-distribución-)
-      - [Planificación del proyecto <a name="planificaciondelproyecto2"></a>](#planificación-del-proyecto--1)
-      - [Análisis de la planificación <a name="analisisdelaplanificacion"></a>](#análisis-de-la-planificación-)
-        - [Camino Crítico <a name="caminocritico"></a>](#camino-crítico-)
-    - [Configuración del seguimiento de la planificación <a name="configSeguimientoPlan"></a>](#Configuración-del-seguimiento-de-la-planificación-)
-      - [Señor Blanco (Equipo 1) <a name="señorBlanco"></a>](#señor-blanco-equipo-1-)
-        - [Proceso seguido <a name="procesoSeguidoBlanco"></a>](#proceso-seguido-)
-        - [Análisis del progreso <a name="analisisProgresoBlanco"></a>](#análisis-del-progreso-)
-      - [Señor Marrón (Equipo 2) <a name="señorMarron"></a>](#señor-marrón-equipo-2-)
-        - [Proceso seguido <a name="procesoSeguidoMarron"></a>](#proceso-seguido--1)
-        - [Análisis del progreso <a name="analisisProgresoMarron"></a>](#análisis-del-progreso--1)
-      - [Señor Naranja (Equipo 3) <a name="señorNaranja"></a>](#señor-naranja-equipo-3-)
-        - [Proceso seguido <a name="procesoSeguidoNaranja"></a>](#proceso-seguido--2)
-        - [Análisis del progreso <a name="analisisProgresoNaranja"></a>](#análisis-del-progreso--2)
-        - [Proporción de Épicas, Tareas y Subtareas <a name="analisisGraficoNaranja"></a>](#proporci%C3%B3n-de-%C3%A9picas-tareas-y-subtareas--1)
-      - [Señor Azul (Equipo 4) <a name="señorAzul"></a>](#señor-azul-equipo-4-)
-        - [Proceso seguido <a name="procesoSeguidoAzul"></a>](#proceso-seguido--3)
-        - [Análisis del progreso <a name="analisisProgresoAzul"></a>](#análisis-del-progreso--3)
-        - [Proporción de tareas por caso de uso <a name="analisisGraficoAzul"></a>](#proporci%C3%B3n-de-tareas-por-caso-de-uso-)
+- [Introduccion <a name="introduction"></a>](#introduccion-)
+- [Propuesta inicial <a name="propuestaInicial"></a>](#propuesta-inicial-)
+  - [Descripción de la idea <a name="descripcionDeLaIdea"></a>](#descripción-de-la-idea-)
+    - [Público objetivo <a name="publicoObjetivo"></a>](#Público-objetivo-)
+- [Funcionalidades principales <a name="funcionalidadesprincipales"></a>](#funcionalidades-principales-)
+- [Análisis <a name="analisis"></a>](#análisis-)
+  - [Casos de uso estructurales <a name="casosdeusoestructurales"></a>](#casos-de-uso-estructurales-)
+  - [Casos de uso no estructurales <a name="casosdeusonoestructurales"></a>](#casos-de-uso-no-estructurales-)
+  - [Conjuntos de casos de uso <a name="conjuntosdecasosdeuso"></a>](#conjuntos-de-casos-de-uso-)
+  - [Requisitos no funcionales <a name="requisitosNoFuncionales"></a>](#Requisitos-no-funcionales-)
+- [Metodologías de desarrollo <a name="metodologiasdedesarrollo"></a>](#metodologías-de-desarrollo-)
+  - [Proceso de desarrollo <a name="procesodedesarrollo"></a>](#proceso-de-desarrollo-)
+  - [Planificación del proyecto <a name="planificaciondelproyecto"></a>](#planificación-del-proyecto-)
+    - [Proceso de planificación <a name="procesodeplanificacion"></a>](#proceso-de-planificación-)
+    - [Distribución de casos de uso <a name="distribuciondecasosdeuso"></a>](#distribución-de-casos-de-uso-)
+    - [Análisis de la distribución <a name="analisisdeladistribucion"></a>](#análisis-de-la-distribución-)
+    - [Planificación del proyecto <a name="planificaciondelproyecto2"></a>](#planificación-del-proyecto--1)
+    - [Análisis de la planificación <a name="analisisdelaplanificacion"></a>](#análisis-de-la-planificación-)
+      - [Camino Crítico <a name="caminocritico"></a>](#camino-crítico-)
+  - [Configuración del seguimiento de la planificación <a name="configSeguimientoPlan"></a>](#Configuración-del-seguimiento-de-la-planificación-)
+    - [Señor Blanco (Equipo 1) <a name="señorBlanco"></a>](#señor-blanco-equipo-1-)
+      - [Proceso seguido <a name="procesoSeguidoBlanco"></a>](#proceso-seguido-)
+      - [Análisis del progreso <a name="analisisProgresoBlanco"></a>](#análisis-del-progreso-)
+    - [Señor Marrón (Equipo 2) <a name="señorMarron"></a>](#señor-marrón-equipo-2-)
+      - [Proceso seguido <a name="procesoSeguidoMarron"></a>](#proceso-seguido--1)
+      - [Análisis del progreso <a name="analisisProgresoMarron"></a>](#análisis-del-progreso--1)
+    - [Señor Naranja (Equipo 3) <a name="señorNaranja"></a>](#señor-naranja-equipo-3-)
+      - [Proceso seguido <a name="procesoSeguidoNaranja"></a>](#proceso-seguido--2)
+      - [Análisis del progreso <a name="analisisProgresoNaranja"></a>](#análisis-del-progreso--2)
       - [Proporción de Épicas, Tareas y Subtareas <a name="analisisGraficoNaranja"></a>](#proporci%C3%B3n-de-%C3%A9picas-tareas-y-subtareas--1)
+    - [Señor Azul (Equipo 4) <a name="señorAzul"></a>](#señor-azul-equipo-4-)
+      - [Proceso seguido <a name="procesoSeguidoAzul"></a>](#proceso-seguido--3)
+      - [Análisis del progreso <a name="analisisProgresoAzul"></a>](#análisis-del-progreso--3)
       - [Proporción de tareas por caso de uso <a name="analisisGraficoAzul"></a>](#proporci%C3%B3n-de-tareas-por-caso-de-uso-)
-      - [Contribución de los líderes de equipo <a name="contribucionBlanco"></a>](#contribuci%C3%B3n-de-los-l%C3%ADderes-de-equipo-)
-    - [Desarrollo del progreso del proyecto <a name="desarrolloProgreso"></a>](#Desarrollo-del-progreso-del-proyecto-)
-      - [Síntesis de la planificación por roles <a name="sintesisPlanificacion"></a>](#Síntesis-de-la-planificación-por-roles-)
-      - [Desarrollo del Equipo 1 (Sr. Blanco) <a name="desarrolloEquipo1"></a>](#Desarrollo-del-Equipo-1-Sr-Blanco-)
-      - [Desarrollo del Equipo 2 (Sr. Marrón) <a name="desarrolloEquipo2"></a>](#Desarrollo-del-Equipo-2-Sr-Marrón-)
-      - [Desarrollo del Equipo 3 (Sr. Naranja) <a name="desarrolloEquipo3"></a>](#Desarrollo-del-Equipo-3-Sr-Naranja-)
-      - [Desarrollo del Equipo 4 (Sr. Azul) <a name="desarrolloEquipo4"></a>](#Desarrollo-del-Equipo-4-Sr-Azul-)
-  - [Diseño de la interfaz de usuario <a name="diseñoInterfazUsuario"></a>](#Diseño-de-la-interfaz-de-usuario-)
-    - [Mapa de Navegación: pantallas, patrones y diagrama <a name="mapaNavegacion"></a>](#Mapa-de-Navegación-pantallas-patrones-y-diagrama-)
-      - [Diagrama de casos de uso <a name="diagramaCasosdeUso"></a>](#Diagrama-de-casos-de-uso-)
-      - [Diagrama de navegación <a name="diagramadeNavegacion"></a>](#Diagrama-de-navegación-)
-      - [Mockup <a name="Mockup"></a>](#Mockup-)
-      - [Grafo de navegación <a name="grafodeNavegacion"></a>](#Grafo-de-navegación-)
-      - [Patrones de navegación aplicados <a name="patronesNavegacion"></a>](#Patrones-de-navegación-aplicados-)
-  - [Diseño arquitectónico <a name="diseñoArquitectonico"></a>](#Diseño-arquitectónico-)
-    - [Decisiones tomadas <a name="decisionesTomadas"></a>](#Decisiones-tomadas-)
-    - [Diagrama de componentes <a name="diagramaComponentes"></a>](#Diagrama-de-componentes-)
-    - [Patrones arquitectónicos <a name="patronesArquitectonicos"></a>](#Patrones-arquitectónicos-)
-      - [Interacción entre componentes <a name="interaccionComponentes"></a>](#Interacción-de-componentes-)
-  - [Gestión del entorno <a name="gestionEntorno"></a>](#Gestión-del-entorno-)
-    - [Gestión de la configuración <a name="gestionConfiguracion"></a>](#Gestión-de-la-configuración-)
-      - [Entorno utilizado <a name="entornoUtilizado"></a>](#Entorno-utilizado-)
-        - [Herramienta de implementación: Android Studio <a name="androidStudio"></a>](#Herramienta-de-implementación-Android-Studio-)
-        - [Estructura de un proyecto en Android Studio <a name="estructuraProyecto"></a>](#Estructura-de-un-proyecto-en-Android-Studio-)
-        - [Componentes de la interfaz de Android Studio <a name="componentesInterfaz"></a>](#Componentes-de-la-interfaz-de-Android-Studio-)
-        - [Funcionamiento de una App en Android Studio <a name="funcionamientoApp"></a>](#Funcionamiento-de-una-App-en-Android-Studio-)
-        - [Compilación en Gradle <a name="compilacionGradle"></a>](#Compilación-en-Gradle-)
-        - [Ramas utilizadas en el proyecto <a name="ramas"></a>](#Ramas-utilizadas-en-el-proyecto-)
-    - [Integración continua <a name="integracionContinua"></a>](#Integración-continua-)
-  - [Implementación <a name="implementacion"></a>](#Implementación-)
-    - [Modelo de datos <a name="modeloDatos"></a>](#Modelo-de-datos-)
-    - [Detalles de implementación <a name="detallesImplementacion"></a>](#Detalles-de-implementación-)
-      - [Patrones de Diseño <a name="patronesDiseño"></a>](#Patrones-de-Diseño-)
-      - [Aspectos novedosos y decisiones tomadas <a name="aspectosNovedosos"></a>](#Aspectos-novedosos-y-decisiones-tomadas-)
-        - [Gestión de la API <a name="gestionAPI"></a>](#Gestión-de-la-API-)
-        - [Obtención de localización <a name="obtencionLocalizacion"></a>](#Obtención-de-localización-)
-        - [Gestión de Permisos <a name="gestionPermisos"></a>](#Gestión-de-Permisos-)
-        - [Carga de municipios y montañas desde JSON <a name="cargaJSON"></a>](#Carga-de-municipios-y-montañas-desde-JSON-)
-        - [Menú de Hamburguesa <a name="menuHamburguesa"></a>](#Menú-de-Hamburguesa-)
-        - [Filtro de Eventos <a name="filtroEventos"></a>](#Filtro-de-Eventos-)
-        - [Obtención de localización <a name="obtencionLocalizacion"></a>](#Obtención-de-localización-)
-        - [Usuario único <a name="usuarioUnico"></a>](#Usuario-único-)
-        - [Filtrado de localizaciones <a name="filtradoLocalizaciones"></a>](#Filtrado-de-localizaciones-)
+    - [Proporción de Épicas, Tareas y Subtareas <a name="analisisGraficoNaranja"></a>](#proporci%C3%B3n-de-%C3%A9picas-tareas-y-subtareas--1)
+    - [Proporción de tareas por caso de uso <a name="analisisGraficoAzul"></a>](#proporci%C3%B3n-de-tareas-por-caso-de-uso-)
+    - [Contribución de los líderes de equipo <a name="contribucionBlanco"></a>](#contribuci%C3%B3n-de-los-l%C3%ADderes-de-equipo-)
+  - [Desarrollo del progreso del proyecto <a name="desarrolloProgreso"></a>](#Desarrollo-del-progreso-del-proyecto-)
+    - [Síntesis de la planificación por roles <a name="sintesisPlanificacion"></a>](#Síntesis-de-la-planificación-por-roles-)
+    - [Desarrollo del Equipo 1 (Sr. Blanco) <a name="desarrolloEquipo1"></a>](#Desarrollo-del-Equipo-1-Sr-Blanco-)
+    - [Desarrollo del Equipo 2 (Sr. Marrón) <a name="desarrolloEquipo2"></a>](#Desarrollo-del-Equipo-2-Sr-Marrón-)
+    - [Desarrollo del Equipo 3 (Sr. Naranja) <a name="desarrolloEquipo3"></a>](#Desarrollo-del-Equipo-3-Sr-Naranja-)
+    - [Desarrollo del Equipo 4 (Sr. Azul) <a name="desarrolloEquipo4"></a>](#Desarrollo-del-Equipo-4-Sr-Azul-)
+- [Diseño de la interfaz de usuario <a name="diseñoInterfazUsuario"></a>](#Diseño-de-la-interfaz-de-usuario-)
+  - [Mapa de Navegación: pantallas, patrones y diagrama <a name="mapaNavegacion"></a>](#Mapa-de-Navegación-pantallas-patrones-y-diagrama-)
+    - [Diagrama de casos de uso <a name="diagramaCasosdeUso"></a>](#Diagrama-de-casos-de-uso-)
+    - [Diagrama de navegación <a name="diagramadeNavegacion"></a>](#Diagrama-de-navegación-)
+    - [Mockup <a name="Mockup"></a>](#Mockup-)
+    - [Grafo de navegación <a name="grafodeNavegacion"></a>](#Grafo-de-navegación-)
+    - [Patrones de navegación aplicados <a name="patronesNavegacion"></a>](#Patrones-de-navegación-aplicados-)
+- [Diseño arquitectónico <a name="diseñoArquitectonico"></a>](#Diseño-arquitectónico-)
+  - [Decisiones tomadas <a name="decisionesTomadas"></a>](#Decisiones-tomadas-)
+  - [Diagrama de componentes <a name="diagramaComponentes"></a>](#Diagrama-de-componentes-)
+  - [Patrones arquitectónicos <a name="patronesArquitectonicos"></a>](#Patrones-arquitectónicos-)
+    - [Interacción entre componentes <a name="interaccionComponentes"></a>](#Interacción-de-componentes-)
+- [Gestión del entorno <a name="gestionEntorno"></a>](#Gestión-del-entorno-)
+  - [Gestión de la configuración <a name="gestionConfiguracion"></a>](#Gestión-de-la-configuración-)
+    - [Entorno utilizado <a name="entornoUtilizado"></a>](#Entorno-utilizado-)
+      - [Herramienta de implementación: Android Studio <a name="androidStudio"></a>](#Herramienta-de-implementación-Android-Studio-)
+      - [Estructura de un proyecto en Android Studio <a name="estructuraProyecto"></a>](#Estructura-de-un-proyecto-en-Android-Studio-)
+      - [Componentes de la interfaz de Android Studio <a name="componentesInterfaz"></a>](#Componentes-de-la-interfaz-de-Android-Studio-)
+      - [Funcionamiento de una App en Android Studio <a name="funcionamientoApp"></a>](#Funcionamiento-de-una-App-en-Android-Studio-)
+      - [Compilación en Gradle <a name="compilacionGradle"></a>](#Compilación-en-Gradle-)
+      - [Ramas utilizadas en el proyecto <a name="ramas"></a>](#Ramas-utilizadas-en-el-proyecto-)
+  - [Integración continua <a name="integracionContinua"></a>](#Integración-continua-)
+- [Implementación <a name="implementacion"></a>](#Implementación-)
+  - [Modelo de datos <a name="modeloDatos"></a>](#Modelo-de-datos-)
+  - [Detalles de implementación <a name="detallesImplementacion"></a>](#Detalles-de-implementación-)
+    - [Patrones de Diseño <a name="patronesDiseño"></a>](#Patrones-de-Diseño-)
+    - [Aspectos novedosos y decisiones tomadas <a name="aspectosNovedosos"></a>](#Aspectos-novedosos-y-decisiones-tomadas-)
+      - [Gestión de la API <a name="gestionAPI"></a>](#Gestión-de-la-API-)
+      - [Obtención de localización <a name="obtencionLocalizacion"></a>](#Obtención-de-localización-)
+      - [Gestión de Permisos <a name="gestionPermisos"></a>](#Gestión-de-Permisos-)
+      - [Carga de municipios y montañas desde JSON <a name="cargaJSON"></a>](#Carga-de-municipios-y-montañas-desde-JSON-)
+      - [Menú de Hamburguesa <a name="menuHamburguesa"></a>](#Menú-de-Hamburguesa-)
+      - [Filtro de Eventos <a name="filtroEventos"></a>](#Filtro-de-Eventos-)
+      - [Obtención de localización <a name="obtencionLocalizacion"></a>](#Obtención-de-localización-)
+      - [Usuario único <a name="usuarioUnico"></a>](#Usuario-único-)
+      - [Filtrado de localizaciones <a name="filtradoLocalizaciones"></a>](#Filtrado-de-localizaciones-)
 
-## Introduccion <a name="introduction"></a>
+# Introduccion <a name="introduction"></a>
 
 **Motivación**
 
@@ -120,10 +120,10 @@ En los siguientes apartados, hablaremos de la propuesta inicial del proyecto con
 <p>&nbsp;</p>
 
 
-## Propuesta inicial <a name="propuestaInicial"></a>
+# Propuesta inicial <a name="propuestaInicial"></a>
 
 
-### Descripción de la idea <a name="descripcionDeLaIdea"></a>
+## Descripción de la idea <a name="descripcionDeLaIdea"></a>
 <p>
 El objetivo principal de este trabajo es el desarrollo de una aplicación móvil Android llamada <b>ClimApp</b> centrada en la visualización del tiempo meteorológico de una localización en España, dicha información proporcionada por la API de AEMET. 
 </p>
@@ -131,7 +131,7 @@ El objetivo principal de este trabajo es el desarrollo de una aplicación móvil
 <p>
 
 
-#### Público objetivo <a name="publicoObjetivo"></a>
+### Público objetivo <a name="publicoObjetivo"></a>
 En este apartado, se especifica a qué público va dirigida nuestra aplicación mediante estudios y gráficas. Antes de adentrarnos en el “quid” de la cuestión, cabe destacar el motivo por el que se ha elegido Android como plataforma sobre la que se implementa la aplicación. Según [StatCounter](https://statcounter.com/), Android ha dominado el 70% de la cuota de mercado por delante de iOS en creces, como se muestra en la siguiente gráfica:
 
 <img src="https://i.imgur.com/WW9jHmJ.png"/>
@@ -152,7 +152,7 @@ Esto es debido a que la totalidad de los dispositivos android ya vienen instalad
 
 Es por esto que el **prototipo de usuario** al que ya he dirigido nuestra aplicación será fundamentalmente una persona mayor de edad, entre los 18 y 50 años, la cual realice actividades o eventos de una manera regular, y que sea importante para dichos eventos conocer la situación meteorológica de la ubicación en la que se producen, como por ejemplo eventos deportivos, bodas y banquetes al aire libre, etc.
 
-## Funcionalidades principales <a name="funcionalidadesprincipales"></a>
+# Funcionalidades principales <a name="funcionalidadesprincipales"></a>
 
 
 <p>
@@ -173,11 +173,11 @@ Para poder utilizar las diferentes funcionalidades de la aplicación, un usuario
 </p>
 <p>&nbsp;</p>
 
-## Análisis <a name="analisis"></a>
+# Análisis <a name="analisis"></a>
 En este apartado, se profundiza sobre aspectos esenciales de la propuesta inicial del proyecto, así como los requisitos funcionales y no funcionales. 
 
 
-### Casos de uso estructurales <a name="casosdeusoestructurales"></a>
+## Casos de uso estructurales <a name="casosdeusoestructurales"></a>
 
 <ul>
     <li>CU-01: Añadir Evento de Municipio.
@@ -193,7 +193,7 @@ En este apartado, se profundiza sobre aspectos esenciales de la propuesta inicia
 </ul>
 
 
-### Casos de uso no estructurales <a name="casosdeusonoestructurales"></a>
+## Casos de uso no estructurales <a name="casosdeusonoestructurales"></a>
 
 <ul>
     <li>CU-06: Consultar el tiempo detallado de una ubicación.
@@ -220,7 +220,7 @@ En este apartado, se profundiza sobre aspectos esenciales de la propuesta inicia
     </li>
 </ul>
 
-### Conjuntos de casos de uso <a name="conjuntosdecasosdeuso"></a>
+## Conjuntos de casos de uso <a name="conjuntosdecasosdeuso"></a>
 
 | ID | Nombre | Descripción | 
 |----|---|---|
@@ -242,7 +242,7 @@ En este apartado, se profundiza sobre aspectos esenciales de la propuesta inicia
 |CU-16|Eliminar usuario.|En el apartado “perfil”, el usuario podrá eliminar su cuenta de la aplicación y cerrar sesión.|
 
 
-### Requisitos no funcionales <a name="requisitosNoFuncionales"></a>
+## Requisitos no funcionales <a name="requisitosNoFuncionales"></a>
 Los requisitos no funcionales son aquellos que no hacen referencia a las funciones específicas del sistema, sino a las propiedades que este debe satisfacer. Suponen restricciones en su implementación. Para su definición vamos a agruparlos en varias categorías:
 
 1. **Usabilidad**: Característica relacionada con el modo de interacción entre el usuario y la aplicación. 
@@ -284,9 +284,9 @@ Los requisitos no funcionales son aquellos que no hacen referencia a las funcion
 
 <p>&nbsp;</p>
 
-## Metodologías de desarrollo <a name="metodologiasdedesarrollo"></a>
+# Metodologías de desarrollo <a name="metodologiasdedesarrollo"></a>
 
-### Proceso de desarrollo <a name="procesodedesarrollo"></a>
+## Proceso de desarrollo <a name="procesodedesarrollo"></a>
 
 Para llevar a cabo la realización del proyecto se ha utilizado el método denominado como <b>Proceso Unificado</b> (SCRUM), que consiste en una metodología ágil gracias a la cual se pueden desarrollar proyectos pudiendo realizar modificaciones en este fácilmente.
 Así mismo, este proceso divide su desarrollo en <b>fases</b> utilizando el concepto de Casos de Uso para representar a los requisitos. Las fases se desarrollarán de forma incremental mediante una serie de <b>iteraciones</b>.
@@ -296,9 +296,9 @@ En este proceso, los <b>casos de uso</b> se crean e implementan a través de <b>
 3. <b>Construcción</b>: El requisito se implementa en código software para ser utilizado en el programa.
 4. <b>Transición</b>: Se prueba la versión final del requisito para saber si el código software es correcto, y en caso afirmativo se integra este junto con el resto en el programa. 
 
-### Planificación del proyecto <a name="planificaciondelproyecto"></a>
+## Planificación del proyecto <a name="planificaciondelproyecto"></a>
 
-#### Proceso de planificación <a name="procesodeplanificacion"></a>
+### Proceso de planificación <a name="procesodeplanificacion"></a>
 
 En la planificación de este proyecto, existirán <b>cuatro roles</b> que influyen de forma distinta la creación de casos de uso. Estos roles son:
 1. <b>Jefe de proyecto</b>: Es el encargado principal de gestionar el desarrollo del proyecto.
@@ -308,7 +308,7 @@ En la planificación de este proyecto, existirán <b>cuatro roles</b> que influy
 
 Cada uno de estos roles tendrá que realizar una serie de tareas que les serán asignadas al comienzo del proyecto, las cuales ocupan cierta cantidad de tiempo designada durante la planificación.      
 
-#### Distribución de casos de uso <a name="distribuciondecasosdeuso"></a>
+### Distribución de casos de uso <a name="distribuciondecasosdeuso"></a>
 
 [Excel Utilizado para la organización de los CASOS DE USO](https://docs.google.com/spreadsheets/d/1bhTUTApi7z-_fucTtovXuDvmLPavcS8W/edit?usp=sharing&ouid=101170322248995906530&rtpof=true&sd=true)
 <p>
@@ -335,7 +335,7 @@ De esta forma, cada rol realiza las siguientes disciplinas:
 <p>Para resumir y poder visualizar mejor esto, realizamos la siguiente tabla:</p>
 <img src="https://i.imgur.com/yItDb6b.png"/>
 
-#### Análisis de la distribución <a name="analisisdeladistribucion"></a>
+### Análisis de la distribución <a name="analisisdeladistribucion"></a>
 
 <p>
 Para calcular el tiempo total que tendrá disponible cada rol y cada caso de uso en número de horas se tendrá en cuenta una jornada laboral de 8 horas. Trabajando 5 días a la semana y teniendo en cuenta las 7 iteraciones (semanas), con lo que se obtiene la siguiente cantidad de tiempo:
@@ -391,7 +391,7 @@ Con lo que nos quedan <b>47,31 horas</b> para realizar el resto de fases de los 
 En la tabla anterior podemos ver que los trabajadores disponen de <b>93 horas semanales</b> para realizar los casos de uso, así como las distintas cantidades de tiempo que dedicará cada rol en el proyecto.
 </p>
 
-#### Planificación inicial <a name="planificaciondelproyecto2"></a>
+### Planificación inicial <a name="planificaciondelproyecto2"></a>
 <p>
 Se ha priorizado que sea el arquitecto de software el que tenga tiempo restante, como se puede ver en cada una de las siguientes tablas, para así dedicárselo a la gestión del proyecto.
 
@@ -431,7 +431,7 @@ De esta forma, cada una de las iteraciones se han planificado en función de las
 <p>&nbsp;</p>
 <img src="https://i.imgur.com/bUhDX6l.png"/>
 
-#### Planificación modificada <a name="planificaciondelproyecto3"></a>
+### Planificación modificada <a name="planificaciondelproyecto3"></a>
 Posteriormente, el **cliente** añadió cuatro casos de uso más para un total de **dieciséis** , **uno** de ellos **estructural** (CU-05), y los otros **tres no estructurales** (CU-14, CU-15 y CU-16). Puesto que no hay suficiente tiempo para realizar estas nuevas funcionalidades con la actual planificación del proyecto,  se han añadido **2 iteraciones** más en la fase de **transición**, las cuales han permitido solucionar esta falta de tiempo.
 
 Esto da lugar a una planificación compuesta por:
@@ -519,7 +519,7 @@ En concreto, se compone de <b>3 secciones</b>:
 * <b>Use Cases</b>: Contiene las disciplinas realizadas de los casos de uso, en la fecha y hora que se realizaron y los roles que intervinieron.
 * <b>Despliegues</b>: Contiene los despliegues de cada caso de uso, con la fecha y hora de su realización
 
-#### Análisis de la planificación <a name="analisisdelaplanificacion"></a>
+### Análisis de la planificación <a name="analisisdelaplanificacion"></a>
 En primer lugar, la planificación ha requerido <b>más horas</b> de las que realmente se disponen para completarse, esto es debido a que en la planificación inicial, los cálculos se realizaron en torno a <b>7 semanas y 12 casos de uso</b>, obteniendo un total de <b>41,23 horas</b> por cada caso de uso. Sin embargo, fue necesario modificar la planificación del proyecto expandiendo 2 semanas su duracion. 
 
 Se ha decidido que el <b>Arquitecto del Software</b> se encargará de aquellas tareas que no debía realizar por su cualificación, pero que no se disponía del tiempo requerido para llevarlas a cabo. En este caso se trata de la disciplina de <b>Test e Integración</b>, pues a lo largo de las <b>últimas iteraciones</b> era necesario completarla para llevar a cabo el despliegue.
@@ -589,7 +589,7 @@ En este informe se puede observar el trabajo restante que les queda por hacer a 
 
 
 
-####  Camino Crítico <a name="caminocritico"></a>
+###  Camino Crítico <a name="caminocritico"></a>
 Por último, dentro del análisis de la planificación nos encontramos ante el camino crítico. Este nos informará si hay algún punto crítico dentro del proyecto  ya sea por culpa de horas mal planificadas o sobrecarga de trabajo.
 
 <img src="https://i.imgur.com/eKHPHmv.png"/>
@@ -598,7 +598,7 @@ Por último, dentro del análisis de la planificación nos encontramos ante el c
 Como se puede ver en estas dos fotos anteriores, hay zonas críticas debido a las horas, algunas acciones empiezan y acaban el mismo día (Business Modeling) la cual es predecesora de las disciplinas de los casos de usos.
 
 
-## Configuración del seguimiento de la planificación <a name="configSeguimientoPlan"></a>
+# Configuración del seguimiento de la planificación <a name="configSeguimientoPlan"></a>
 
 La planificación del proyecto se ha trasladado a **Jira**, una herramienta centrada en la **gestión de proyectos**, seguimiento de errores y  del estado de desarrollo, la administración de tareas y la gestión de requisitos.
 
@@ -700,9 +700,9 @@ Por tanto, dentro de Jira se ha seguido el siguiente procedimiento:
    3.3. Se revisan las etiquetas y el sprint asignado.
 
    
-### Señor Blanco (Equipo 1) <a name="señorBlanco"></a>
+## Señor Blanco (Equipo 1) <a name="señorBlanco"></a>
 
-#### Proceso seguido <a name="procesoSeguidoBlanco"></a>
+### Proceso seguido <a name="procesoSeguidoBlanco"></a>
 
 El señor blanco ha liderado al equipo 1, donde cada rol es interpretado por los siguientes miembros:
 
@@ -722,7 +722,7 @@ El **Sr. Marrón** (AS) se ocupará de las disciplinas de Requisitos, análisis 
 
 Por último, las incidencias relacionadas con los cinco casos de uso estructurales dispondrán de una prioridad alta (**High**). 
 
-#### Análisis del progreso <a name="analisisProgresoBlanco"></a>
+### Análisis del progreso <a name="analisisProgresoBlanco"></a>
 
 En este apartado se detalla la distribución de las tareas realizadas por cada rol a lo largo de las 9 iteraciones, según las disciplinas que puedan realizar cada uno de ellos.
 
@@ -826,9 +826,9 @@ En la siguiente tabla se puede ver la distribución de manera resumida:
 <img src="https://i.imgur.com/DuRwXEK.png"/>
 
 
-### Señor Marrón (Equipo 2) <a name="señorMarron"></a>
+## Señor Marrón (Equipo 2) <a name="señorMarron"></a>
 
-### Proceso seguido <a name="procesoSeguidoMarron"></a>
+## Proceso seguido <a name="procesoSeguidoMarron"></a>
 
 El señor marrón ha liderado al equipo 2, donde cada rol es interpretado por los siguientes miembros:
 * Jefe del proyecto (JP): Sr. Marrón
@@ -848,7 +848,7 @@ Respecto los casos de uso, el **equipo 2** se encarga de la totalidad de discipl
 
 Por último, las incidencias relacionadas con el caso de uso estructural (CU05) dispondrás de una prioridad alta (**High**). 
 
-### Análisis del progreso <a name="analisisProgresoMarron"></a>
+## Análisis del progreso <a name="analisisProgresoMarron"></a>
 En este apartado se detalla la distribución de las tareas realizadas por cada rol a lo largo de las 9 iteraciones, según las disciplinas que puedan realizar cada uno de ellos.
 
 Antes de dar principio, es imprescindible aclarar que el tiempo inicial disponible del arquitecto software es de 37.20 horas semanales. En el caso de que realice sus tareas y quede tiempo sobrante, este se lo dedicará a tareas de gestión.
@@ -944,9 +944,9 @@ En la siguiente tabla se puede ver la distribución de manera resumida:
 
 <img src="https://i.imgur.com/uXfwUnr.png"/>
 
-### Señor Naranja (Equipo 3) <a name="señorNaranja"></a>
+## Señor Naranja (Equipo 3) <a name="señorNaranja"></a>
 
-### Proceso seguido <a name="procesoSeguidoNaranja"></a>
+## Proceso seguido <a name="procesoSeguidoNaranja"></a>
 El señor naranja ha liderado al equipo 3, donde cada rol es interpretado por los siguientes miembros:
 * Jefe del proyecto (JP): Sr. Naranja
 * Arquitecto Software (AS): Sr. Azul
@@ -965,7 +965,7 @@ Respecto los casos de uso, el equipo 3 se encarga de la totalidad de disciplinas
 
 Por último, las incidencias relacionadas con los cinco casos de uso estructurales dispondrán de una prioridad alta (High).
 
-### Análisis del progreso <a name="analisisProgresoNaranja"></a>
+## Análisis del progreso <a name="analisisProgresoNaranja"></a>
 En este apartado se detalla la distribución de las tareas realizadas por cada rol a lo largo de las 9 iteraciones, según las disciplinas que puedan realizar cada uno de ellos.
 
 Antes de dar principio, es imprescindible aclarar que el tiempo inicial disponible del arquitecto software es de 37.20 horas semanales. En el caso de que realice sus tareas y quede tiempo sobrante, este se lo dedicará a tareas de gestión.
@@ -1057,9 +1057,9 @@ En la siguiente tabla se puede ver la distribución de manera resumida:
 
 <img src="https://i.imgur.com/Rdmjam4.png"/>
 
-### Señor Azul (Equipo 4) <a name="señorAzul"></a>
+## Señor Azul (Equipo 4) <a name="señorAzul"></a>
 
-#### Proceso seguido <a name="procesoSeguidoAzul"></a>
+### Proceso seguido <a name="procesoSeguidoAzul"></a>
 
 El señor azul ha liderado al equipo 4, donde cada rol es interpretado por los siguientes miembros:
 * Jefe del proyecto (JP): Sr. Azul
@@ -1082,7 +1082,7 @@ Respecto los casos de uso, el equipo 4 se encarga de la totalidad de disciplinas
 * CU-16: Eliminar usuario.
 
 
-#### Análisis del progreso <a name="analisisProgresoAzul"></a>
+### Análisis del progreso <a name="analisisProgresoAzul"></a>
 En este apartado se detalla la distribución de las tareas realizadas por cada rol a lo largo de las 9 iteraciones, según las disciplinas que puedan realizar cada uno de ellos.
 
 Antes de empezar, es imprescindible aclarar que el tiempo inicial disponible del arquitecto software es de 37.20 horas semanales. En el caso de que realice sus tareas y quede tiempo sobrante, este se lo dedicará a tareas de gestión.
@@ -1176,7 +1176,7 @@ En la siguiente tabla se puede ver la distribución de manera resumida:
 <img src="https://i.imgur.com/Fg0Egaz.png"/>
 
 
-#### Proporción de Épicas, Tareas y Subtareas <a name="grafomarron"></a>
+### Proporción de Épicas, Tareas y Subtareas <a name="grafomarron"></a>
 En el siguiente gráfico de tipo tarta se presenta la distribución existente en el proyecto de los distintos tipos de incidencias: épicas ( Casos de Uso), tareas y subtareas.
 
 Se puede apreciar que la mayor parte del gráfico está compuesto por Tareas, seguido de un número alto de Subtareas.
@@ -1189,7 +1189,7 @@ A continuación se muestra el porcentaje de cada uno de estos tipos de incidenci
 <img src="https://i.imgur.com/uDYMGrD.png"/>
 
 
-#### Proporción de Épicas, Tareas y Subtareas <a name="grafonaranja"></a>
+### Proporción de Épicas, Tareas y Subtareas <a name="grafonaranja"></a>
 En el siguiente gráfico de tipo tarta, se puede ver la distribución de incidencias a lo largo de cada una de las iteraciones. 
 
 Se puede apreciar que las iteraciones que más incidencias contienen son las iteraciones 8 y 9 puesto que en ellas se realizan las tareas de despliegue de los casos de uso.
@@ -1202,7 +1202,7 @@ A continuación se muestra una tabla con los porcentajes de cada iteración:
 <img src="https://i.imgur.com/BZvjK3M.png"/>
 
 
-#### Proporción de tareas por caso de uso <a name="grafoazul"></a>
+### Proporción de tareas por caso de uso <a name="grafoazul"></a>
 En el siguiente informe de tipo tarta se puede observar la distribución por casos de uso de las tareas. Cada caso de uso cuenta con el mismo número de tareas pues todos tienen las mismas fases.
 
 Se puede apreciar un gran número de tareas no asignadas a ningún caso de uso. Corresponden a las subtareas, las cuales heredan el caso de uso al que pertenecen de la tarea padre. Por lo que este grafico nos sirve para saber cuántas tareas tiene cada **Caso de Uso** y el número de subtareas del proyecto.
@@ -1210,7 +1210,7 @@ Se puede apreciar un gran número de tareas no asignadas a ningún caso de uso. 
 <img src="https://i.imgur.com/I1CbHxH.png"/>
 
 
-#### Contribución de los líderes de equipo <a name="contribucionBlanco"></a>
+### Contribución de los líderes de equipo <a name="contribucionBlanco"></a>
 
 Por último, mediante los informas del Jira se va mostrar la **contribución de cada usuario** a las tareas asignadas a cada caso de uso, además del tiempo estimado que se espera que tarden dichas tareas en realizarse.
 
@@ -1232,38 +1232,38 @@ Por último, mediante los informas del Jira se va mostrar la **contribución de 
 
 Hay que concretar que dentro de este informe no se tienen en cuenta las **subtareas**, ni el tiempo que estas ocupan en cada usuario, por lo que puede variar entre distintos usuarios.
 
-## Desarrollo del progreso del proyecto <a name="desarrolloProgreso"></a>
+# Desarrollo del progreso del proyecto <a name="desarrolloProgreso"></a>
 
-### Síntesis de la planificación por roles <a name="sintesisPlanificacion"></a>
-
-
-### Desarrollo del Equipo 1 (Sr. Blanco) <a name="desarrolloEquipo1"></a>
+## Síntesis de la planificación por roles <a name="sintesisPlanificacion"></a>
 
 
-### Desarrollo del Equipo 2 (Sr. Marrón) <a name="desarrolloEquipo2"></a>
+## Desarrollo del Equipo 1 (Sr. Blanco) <a name="desarrolloEquipo1"></a>
 
 
-### Desarrollo del Equipo 3 (Sr. Naranja) <a name="desarrolloEquipo3"></a>
+## Desarrollo del Equipo 2 (Sr. Marrón) <a name="desarrolloEquipo2"></a>
 
 
-### Desarrollo del Equipo 4 (Sr. Azul) <a name="desarrolloEquipo4"></a>
+## Desarrollo del Equipo 3 (Sr. Naranja) <a name="desarrolloEquipo3"></a>
 
 
-## Diseño de la interfaz de usuario <a name="diseñoInterfazUsuario"></a>
+## Desarrollo del Equipo 4 (Sr. Azul) <a name="desarrolloEquipo4"></a>
 
-### Mapa de Navegación: pantallas, patrones y diagrama <a name="mapaNavegacion"></a>
 
-#### Diagrama de casos de uso <a name="diagramaCasosdeUso"></a>
+# Diseño de la interfaz de usuario <a name="diseñoInterfazUsuario"></a>
+
+## Mapa de Navegación: pantallas, patrones y diagrama <a name="mapaNavegacion"></a>
+
+### Diagrama de casos de uso <a name="diagramaCasosdeUso"></a>
 A continuación se muestra el diagrama de casos de uso de la aplicación, todos referentes a las acciones que puede realizar el usuario y el sistema.
 
 <img src="https://i.imgur.com/sHvsqqx.png"/>
 
-#### Diagrama de navegación <a name="diagramadeNavegacion"></a>
+### Diagrama de navegación <a name="diagramadeNavegacion"></a>
 A continuación se muestra un posible diagrama de navegación que podría seguir la aplicación:
 
 <img src="https://i.imgur.com/0QdYEjx.png"/>
 
-#### Mockup <a name="Mockup"></a>
+### Mockup <a name="Mockup"></a>
 A continuación se muestra un Mockup que contiene un conjunto de posibles pantallas del proyecto, a modo de prototipo que muestre las funcionalidades de la aplicación:
 
 <img src="https://i.imgur.com/GZT05qx.png"/>
@@ -1293,11 +1293,11 @@ Así mismo, posee un panel lateral desplegable en la pantalla principal desde el
 * **Perfil**: Un acceso al perfil del usuario.
 * **Ajustes**: Un acceso a la pantalla con los principales ajustes de la aplicación.
 
-#### Grafo de navegación <a name="grafodeNavegacion"></a>
+### Grafo de navegación <a name="grafodeNavegacion"></a>
 
 <img src="https://i.imgur.com/iqgagQc.png"/>
 
-#### Patrones de navegación aplicados <a name="patronesNavegacion"></a>  
+### Patrones de navegación aplicados <a name="patronesNavegacion"></a>  
    
 En este apartado se muestran todos los patrones de navegación que se han utilizado para la realización de la aplicación, siendo estos los siguientes:
 
@@ -1328,66 +1328,66 @@ Finalmente, se ha aplicado el patrón de botones y objetivos sencillos mostrando
 
 <img src="https://i.imgur.com/jPea9kb.png"/>
 
-## Diseño arquitectónico <a name="diseñoArquitectonico"></a>
+# Diseño arquitectónico <a name="diseñoArquitectonico"></a>
 
-### Decisiones tomadas <a name="decisionesTomadas"></a>
+## Decisiones tomadas <a name="decisionesTomadas"></a>
 
-### Diagrama de componentes <a name="diagramaComponentes"></a>
+## Diagrama de componentes <a name="diagramaComponentes"></a>
 
-### Patrones arquitectónicos <a name="patronesArquitectonicos"></a>
+## Patrones arquitectónicos <a name="patronesArquitectonicos"></a>
 
-#### Interacción entre componentes <a name="interaccionComponentes"></a>
-
-
-
-## Gestión del entorno <a name="gestionEntorno"></a>
-
-### Gestión de la configuración <a name="gestionConfiguracion"></a>
-
-#### Entorno utilizado <a name="entornoUtilizado"></a>
-
-##### Herramienta de implementación: Android Studio <a name="androidStudio"></a>
-
-##### Estructura de un proyecto en Android Studio <a name="estructuraProyecto"></a>
-
-##### Componentes de la interfaz de Android Studio <a name="componentesInterfaz"></a>
-
-##### Funcionamiento de una App en Android Studio <a name="funcionamientoApp"></a>
-
-##### Compilación en Gradle <a name="compilacionGradle"></a>
-
-##### Compilación en Gradle <a name="compilacionGradle"></a>
-
-##### Ramas utilizadas en el proyecto <a name="ramas"></a>
-
-### Integración continua <a name="integracionContinua"></a>
+### Interacción entre componentes <a name="interaccionComponentes"></a>
 
 
 
-## Implementación <a name="implementacion"></a>
+# Gestión del entorno <a name="gestionEntorno"></a>
 
-### Modelo de datos <a name="modeloDatos"></a>
+## Gestión de la configuración <a name="gestionConfiguracion"></a>
 
-### Detalles de implementación <a name="detallesImplementacion"></a>
+### Entorno utilizado <a name="entornoUtilizado"></a>
 
-#### Patrones de Diseño <a name="patronesDiseño"></a>
+#### Herramienta de implementación: Android Studio <a name="androidStudio"></a>
 
-#### Aspectos novedosos y decisiones tomadas <a name="aspectosNovedosos"></a>
+#### Estructura de un proyecto en Android Studio <a name="estructuraProyecto"></a>
 
-##### Gestión de la API <a name="gestionAPI"></a>
+#### Componentes de la interfaz de Android Studio <a name="componentesInterfaz"></a>
 
-##### Obtención de localización <a name="obtencionLocalizacion"></a>
+#### Funcionamiento de una App en Android Studio <a name="funcionamientoApp"></a>
 
-##### Gestión de Permisos <a name="gestionPermisos"></a>
+#### Compilación en Gradle <a name="compilacionGradle"></a>
 
-##### Carga de municipios y montañas desde JSON <a name="cargaJSON"></a>
+#### Compilación en Gradle <a name="compilacionGradle"></a>
 
-##### Menú de Hamburguesa <a name="menuHamburguesa"></a>
+#### Ramas utilizadas en el proyecto <a name="ramas"></a>
 
-##### Filtro de Eventos <a name="filtroEventos"></a>
+## Integración continua <a name="integracionContinua"></a>
 
-##### Obtención de localización <a name="obtencionLocalizacion"></a>
 
-##### Usuario único <a name="usuarioUnico"></a>
 
-##### Filtrado de localizaciones <a name="filtradoLocalizaciones"></a>
+# Implementación <a name="implementacion"></a>
+
+## Modelo de datos <a name="modeloDatos"></a>
+
+## Detalles de implementación <a name="detallesImplementacion"></a>
+
+### Patrones de Diseño <a name="patronesDiseño"></a>
+
+### Aspectos novedosos y decisiones tomadas <a name="aspectosNovedosos"></a>
+
+#### Gestión de la API <a name="gestionAPI"></a>
+
+#### Obtención de localización <a name="obtencionLocalizacion"></a>
+
+#### Gestión de Permisos <a name="gestionPermisos"></a>
+
+#### Carga de municipios y montañas desde JSON <a name="cargaJSON"></a>
+
+#### Menú de Hamburguesa <a name="menuHamburguesa"></a>
+
+#### Filtro de Eventos <a name="filtroEventos"></a>
+
+#### Obtención de localización <a name="obtencionLocalizacion"></a>
+
+#### Usuario único <a name="usuarioUnico"></a>
+
+#### Filtrado de localizaciones <a name="filtradoLocalizaciones"></a>
