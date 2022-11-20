@@ -42,6 +42,12 @@
       - [Proporción de Épicas, Tareas y Subtareas <a name="analisisGraficoNaranja"></a>](#proporci%C3%B3n-de-%C3%A9picas-tareas-y-subtareas--1)
       - [Proporción de tareas por caso de uso <a name="analisisGraficoAzul"></a>](#proporci%C3%B3n-de-tareas-por-caso-de-uso-)
       - [Contribución de los líderes de equipo <a name="contribucionBlanco"></a>](#contribuci%C3%B3n-de-los-l%C3%ADderes-de-equipo-)
+    - [Desarrollo del progreso del proyecto <a name="desarrolloProgreso"></a>](#Desarrollo-del-progreso-del-proyecto-)
+      - [Síntesis de la planificación por roles <a name="sintesisPlanificacion"></a>](#Síntesis-de-la-planificación-por-roles-)
+      - [Desarrollo del Equipo 1 (Sr. Blanco) <a name="desarrolloEquipo1"></a>](#Desarrollo-del-Equipo-1-Sr-Blanco-)
+      - [Desarrollo del Equipo 2 (Sr. Marrón) <a name="desarrolloEquipo2"></a>](#Desarrollo-del-Equipo-2-Sr-Marrón-)
+      - [Desarrollo del Equipo 3 (Sr. Naranja) <a name="desarrolloEquipo3"></a>](#Desarrollo-del-Equipo-3-Sr-Naranja-)
+      - [Desarrollo del Equipo 4 (Sr. Azul) <a name="desarrolloEquipo4"></a>](#Desarrollo-del-Equipo-4-Sr-Azul-)
   - [Diseño de la interfaz de usuario <a name="diseñoInterfazUsuario"></a>](#Diseño-de-la-interfaz-de-usuario-)
     - [Mapa de Navegación: pantallas, patrones y diagrama <a name="mapaNavegacion"></a>](#Mapa-de-Navegación-pantallas-patrones-y-diagrama-)
       - [Diagrama de casos de uso <a name="diagramaCasosdeUso"></a>](#Diagrama-de-casos-de-uso-)
@@ -49,6 +55,37 @@
       - [Mockup <a name="Mockup"></a>](#Mockup-)
       - [Grafo de navegación <a name="grafodeNavegacion"></a>](#Grafo-de-navegación-)
       - [Patrones de navegación aplicados <a name="patronesNavegacion"></a>](#Patrones-de-navegación-aplicados-)
+  - [Diseño arquitectónico <a name="diseñoArquitectonico"></a>](#Diseño-arquitectónico-)
+    - [Decisiones tomadas <a name="decisionesTomadas"></a>](#Decisiones-tomadas-)
+    - [Diagrama de componentes <a name="diagramaComponentes"></a>](#Diagrama-de-componentes-)
+    - [Patrones arquitectónicos <a name="patronesArquitectonicos"></a>](#Patrones-arquitectónicos-)
+      - [Interacción entre componentes <a name="interaccionComponentes"></a>](#Interacción-de-componentes-)
+  - [Gestión del entorno <a name="gestionEntorno"></a>](#Gestión-del-entorno-)
+    - [Gestión de la configuración <a name="gestionConfiguracion"></a>](#Gestión-de-la-configuración-)
+      - [Entorno utilizado <a name="entornoUtilizado"></a>](#Entorno-utilizado-)
+        - [Herramienta de implementación: Android Studio <a name="androidStudio"></a>](#Herramienta-de-implementación-Android-Studio-)
+        - [Estructura de un proyecto en Android Studio <a name="estructuraProyecto"></a>](#Estructura-de-un-proyecto-en-Android-Studio-)
+        - [Componentes de la interfaz de Android Studio <a name="componentesInterfaz"></a>](#Componentes-de-la-interfaz-de-Android-Studio-)
+        - [Funcionamiento de una App en Android Studio <a name="funcionamientoApp"></a>](#Funcionamiento-de-una-App-en-Android-Studio-)
+        - [Compilación en Gradle <a name="compilacionGradle"></a>](#Compilación-en-Gradle-)
+        - [Ramas utilizadas en el proyecto <a name="ramas"></a>](#Ramas-utilizadas-en-el-proyecto-)
+    - [Integración continua <a name="integracionContinua"></a>](#Integración-continua-)
+  - [Implementación <a name="implementacion"></a>](#Implementación-)
+    - [Modelo de datos <a name="modeloDatos"></a>](#Modelo-de-datos-)
+    - [Detalles de implementación <a name="detallesImplementacion"></a>](#Detalles-de-implementación-)
+      - [Patrones de Diseño <a name="patronesDiseño"></a>](#Patrones-de-Diseño-)
+        - [Patrón Singleton <a name="patronSingleton"></a>](#Patrón-Singleton-)
+        - [Patrón DAO <a name="patronDao"></a>](#Patrón-DAO-)
+      - [Aspectos novedosos y decisiones tomadas <a name="aspectosNovedosos"></a>](#Aspectos-novedosos-)
+        - [Gestión de la API <a name="gestionAPI"></a>](#Gestión-de-la-API-)
+        - [Obtención de localización <a name="obtencionLocalizacion"></a>](#Obtención-de-localización-)
+        - [Gestión de Permisos <a name="gestionPermisos"></a>](#Gestión-de-Permisos-)
+        - [Carga de municipios y montañas desde JSON <a name="cargaJSON"></a>](#Carga-de-municipios-y-montañas-desde-JSON-)
+        - [Menú de Hamburguesa <a name="menuHamburguesa"></a>](#Menú-de-Hamburguesa-)
+        - [Filtro de Eventos <a name="filtroEventos"></a>](#Filtro-de-Eventos-)
+        - [Obtención de localización <a name="obtencionLocalizacion"></a>](#Obtención-de-localización-)
+        - [Usuario único <a name="usuarioUnico"></a>](#Usuario-único-)
+        - [Filtrado de localizaciones <a name="filtradoLocalizaciones"></a>](#Filtrado-de-localizaciones-)
 
 ## Introduccion <a name="introduction"></a>
 
@@ -1197,6 +1234,22 @@ Por último, mediante los informas del Jira se va mostrar la **contribución de 
 
 Hay que concretar que dentro de este informe no se tienen en cuenta las **subtareas**, ni el tiempo que estas ocupan en cada usuario, por lo que puede variar entre distintos usuarios.
 
+## Desarrollo del progreso del proyecto <a name="desarrolloProgreso"></a>
+
+### Síntesis de la planificación por roles <a name="sintesisPlanificacion"></a>
+
+
+### Desarrollo del Equipo 1 (Sr. Blanco) <a name="desarrolloEquipo1"></a>
+
+
+### Desarrollo del Equipo 2 (Sr. Marrón) <a name="desarrolloEquipo2"></a>
+
+
+### Desarrollo del Equipo 3 (Sr. Naranja) <a name="desarrolloEquipo3"></a>
+
+
+### Desarrollo del Equipo 4 (Sr. Azul) <a name="desarrolloEquipo4"></a>
+
 
 ## Diseño de la interfaz de usuario <a name="diseñoInterfazUsuario"></a>
 
@@ -1276,3 +1329,35 @@ En lo referente a cada una de las funcionalidades, se utilizará un **patrón de
 Finalmente, se ha aplicado el patrón de botones y objetivos sencillos mostrando mediante botones con iconos intuitivos en ciertas funcionalidades, de manera que permitan a los usuarios acceder más fácilmente a dichas funcionalidades.
 
 <img src="https://i.imgur.com/jPea9kb.png"/>
+
+  - [Diseño arquitectónico <a name="diseñoArquitectonico"></a>](#Diseño-arquitectónico-)
+    - [Decisiones tomadas <a name="decisionesTomadas"></a>](#Decisiones-tomadas-)
+    - [Diagrama de componentes <a name="diagramaComponentes"></a>](#Diagrama-de-componentes-)
+    - [Patrones arquitectónicos <a name="patronesArquitectonicos"></a>](#Patrones-arquitectónicos-)
+      - [Interacción entre componentes <a name="interaccionComponentes"></a>](#Interacción-de-componentes-)
+  - [Gestión del entorno <a name="gestionEntorno"></a>](#Gestión-del-entorno-)
+    - [Gestión de la configuración <a name="gestionConfiguracion"></a>](#Gestión-de-la-configuración-)
+      - [Entorno utilizado <a name="entornoUtilizado"></a>](#Entorno-utilizado-)
+        - [Herramienta de implementación: Android Studio <a name="androidStudio"></a>](#Herramienta-de-implementación-Android-Studio-)
+        - [Estructura de un proyecto en Android Studio <a name="estructuraProyecto"></a>](#Estructura-de-un-proyecto-en-Android-Studio-)
+        - [Componentes de la interfaz de Android Studio <a name="componentesInterfaz"></a>](#Componentes-de-la-interfaz-de-Android-Studio-)
+        - [Funcionamiento de una App en Android Studio <a name="funcionamientoApp"></a>](#Funcionamiento-de-una-App-en-Android-Studio-)
+        - [Compilación en Gradle <a name="compilacionGradle"></a>](#Compilación-en-Gradle-)
+        - [Ramas utilizadas en el proyecto <a name="ramas"></a>](#Ramas-utilizadas-en-el-proyecto-)
+    - [Integración continua <a name="integracionContinua"></a>](#Integración-continua-)
+  - [Implementación <a name="implementacion"></a>](#Implementación-)
+    - [Modelo de datos <a name="modeloDatos"></a>](#Modelo-de-datos-)
+    - [Detalles de implementación <a name="detallesImplementacion"></a>](#Detalles-de-implementación-)
+      - [Patrones de Diseño <a name="patronesDiseño"></a>](#Patrones-de-Diseño-)
+        - [Patrón Singleton <a name="patronSingleton"></a>](#Patrón-Singleton-)
+        - [Patrón DAO <a name="patronDao"></a>](#Patrón-DAO-)
+      - [Aspectos novedosos y decisiones tomadas <a name="aspectosNovedosos"></a>](#Aspectos-novedosos-)
+        - [Gestión de la API <a name="gestionAPI"></a>](#Gestión-de-la-API-)
+        - [Obtención de localización <a name="obtencionLocalizacion"></a>](#Obtención-de-localización-)
+        - [Gestión de Permisos <a name="gestionPermisos"></a>](#Gestión-de-Permisos-)
+        - [Carga de municipios y montañas desde JSON <a name="cargaJSON"></a>](#Carga-de-municipios-y-montañas-desde-JSON-)
+        - [Menú de Hamburguesa <a name="menuHamburguesa"></a>](#Menú-de-Hamburguesa-)
+        - [Filtro de Eventos <a name="filtroEventos"></a>](#Filtro-de-Eventos-)
+        - [Obtención de localización <a name="obtencionLocalizacion"></a>](#Obtención-de-localización-)
+        - [Usuario único <a name="usuarioUnico"></a>](#Usuario-único-)
+        - [Filtrado de localizaciones <a name="filtradoLocalizaciones"></a>](#Filtrado-de-localizaciones-)
