@@ -1343,26 +1343,140 @@ Finalmente, se ha aplicado el patrón de botones y objetivos sencillos mostrando
 
 # Gestión del entorno <a name="gestionEntorno"></a>
 
+En este apartado se abordarán todos los detalles sobre el entorno en el que se ha llevado a cabo el proyecto, comprendiendo desde las características que poseen hasta los pasos que se han seguido para configurar dichos entornos.
+
 ## Gestión de la configuración <a name="gestionConfiguracion"></a>
 
 ### Entorno utilizado <a name="entornoUtilizado"></a>
 
+En concreto, para la realización de este proceso se han utilizado 2 herramientas, una para la **codificar la aplicación** (y posteriormente ejecutar el código implementado) y otra para **almacenar el código creado por los integrantes del equipo**, pudiendo compartirse este y permitiendo integrarlo todo en un repositorio Git. A continuación se explicarán cada una de estas herramientas.
+
 #### Herramienta de implementación: Android Studio <a name="androidStudio"></a>
+
+Android Studio es una herramienta de codificación y ejecución de programas y aplicaciones para dispositivos Android basada en IntelliJ IDEA.
+
+Este consiste en un software que permite programar en lenguajes como Java o Kotlin aplicaciones para posteriormente poder ser ejecutada en dispositivos con versiones de Android superiores a 3.0.
+
+Además de ofrecer las mismas herramientas para desarrolladores de IntelliJ, Android Studio ofrece incluso más funciones, entre otras:
+
+* Un sistema de compilación flexible basado en Gradle
+* Un emulador rápido y cargado de funciones
+* Un entorno unificado donde puedes desarrollar para todos los dispositivos Android
+* Aplicación de cambios para insertar cambios de código y recursos a la app en ejecución sin reiniciarla
+* Integración con GitHub y plantillas de código para ayudarte a compilar funciones de apps comunes y también importar código de muestra
+* Variedad de marcos de trabajo y herramientas de prueba
+* Herramientas de Lint para identificar problemas de rendimiento, usabilidad y compatibilidad de versiones, entre otros
+* Compatibilidad con C++ y NDK
+* Compatibilidad integrada con [Google Cloud Platform](https://cloud.google.com/tools/android-studio/docs/?hl=es-419), que facilita la integración con Google Cloud Messaging y App Engine
+
+Así mismo, ofrece la funcionalidad de acceso y manejo de bases de datos gracias al soporte con Room, así como la posibilidad de ejecutar un programa en un dispositivo con AVD que va desde teléfonos inteligentes de varios modelos y marcas, hasta tablets, televisiones y ordenadores, entre otros.
 
 #### Estructura de un proyecto en Android Studio <a name="estructuraProyecto"></a>
 
+En concreto, un proyecto en android studio se compone de las siguientes partes:
+
+* **manifests**: consiste en un fichero llamado AndroidManifest.xml que contiene información adicional de la aplicación como el nombre de la aplicación, el icono que utilizará el launcher, qué actividad es la principal, los parámetros del intent (intent-filters) por los que se puede filtrar la aplicación, entre otros.
+* **java**: contiene los archivos de código fuente Java, incluido el código de prueba de JUnit, este suele constar en clases y enumeraciones en Java, así como las diferentes actividades y fragmentos de los que se componen las interfaces de usuario.
+* **res**: contiene todos los recursos sin código, como diseños XML, strings de IU e imágenes de mapa de bits, suele ofrecer todas las imágenes y prediseños que utilizarán los proyectos como recursos.
+
+![](https://i.imgur.com/U2pox55.png)
+
+A continuación se muestran las diferentes vistas que componen la interfaz del programa.
+
 #### Componentes de la interfaz de Android Studio <a name="componentesInterfaz"></a>
+
+**Android Studio** ofrece una serie de vistas y componentes en su interfaz que ofrecen información sobre un proyecto. Dentro de una ventana, se encuentran los siguientes componentes:
+
+![](https://i.imgur.com/LX57g2i.png)
+
+* La **barra de herramientas** te permite realizar una gran variedad de acciones, como ejecutar tu app e iniciar las herramientas de Android.
+* La **barra de navegación** te ayuda a explorar tu proyecto y abrir archivos para editar. Proporciona una vista más compacta de la estructura visible en la ventana Project.
+* La **ventana del editor** es el área en la que puedes crear y modificar código. Según el tipo de actividad actual, el editor puede cambiar. Por ejemplo, cuando ves un archivo de diseño, el editor muestra el Editor de diseño.
+* La **barra de la ventana de herramientas** se encuentra afuera de la ventana del IDE y contiene los botones que te permiten expandir o contraer ventanas de herramientas individuales.
+* Las **ventanas de herramientas** te brindan acceso a tareas específicas, como la administración de proyectos, la búsqueda, el control de versiones, entre otras. Puedes expandirlas y contraerlas.
+* En la **barra de estado**, se muestra el estado de tu proyecto y el IDE, además de advertencias o mensajes.
 
 #### Funcionamiento de una App en Android Studio <a name="funcionamientoApp"></a>
 
-#### Compilación en Gradle <a name="compilacionGradle"></a>
+Este software utiliza las llamadas actividades (Activity) para ejecutarlas como pantallas individuales. Estas son archivos en código Java que indican el funcionamiento de todos los eventos que suceden y las acciones que se realizan dentro de una pantalla de la aplicación. 
+
+Estas tienen el diseño indicado en el layout de dicha actividad, que consiste en un fichero xml que se encuentra en la carpeta res > layout, y que codifica cómo se mostrará la pantalla y los elementos que compondrán la interfaz.
+
+Adicionalmente existen los fragmentos (Fragment), que consisten en ficheros java que permiten contener el funcionamiento de una actividad en una pantalla, permitiendo existir varios fragmentos en una misma Activity. Estos se pueden intercambiar por otros en cualquier momento, permitiendo a la aplicación un comportamiento más dinámico.
+
+Una actividad se puede comunicar con otra a través de los llamados Intent, que son clases que permiten a una actividad llamar a otra. Cada instancia de la clase “intent contiene la clase de la actividad que llama a la siguiente, la clase de la actividad llamada, y otros datos adicionales como información que se quiere pasar en la llamada.
+
+Una aplicación puede obtener los recursos como imágenes o iconos a través de la carpeta drawable, dentro de res. Esta contiene los recursos que se utilizan referente a los iconos, imágenes predeterminadas, etc.
+
+Finalmente, cabe destacar el fichero strings.xml, que contiene todas las cadenas que se mostrarán en la aplicación de forma dinámica. Pudiendo cambiarse sin tener que acceder al código. Esto dota de independencia al sistema de asignación de cadenas ya que no necesitan modificar directamente el código para cambiarse, teniendo que modificar únicamente el fichero. Para acceder al archivo strings.xml debe escribirse la cadena @string/ seguido del identificador que se haya puesto en el campo name de la etiqueta <string> que identifica a la cadena que se quiere insertar.
+
+En el siguiente apartado se explicará el funcionamiento del componente Gradle.
 
 #### Compilación en Gradle <a name="compilacionGradle"></a>
+
+Android Studio usa Gradle como base del sistema de compilación, y el [complemento de Android para Gradle](https://developer.android.com/studio/releases/gradle-plugin?hl=es-419) proporciona capacidades específicas de Android. Este sistema de compilación se ejecuta en una herramienta integrada desde el menú de Android Studio, y lo hace independientemente de la línea de comandos. El propósito de las funciones del sistema de compilación es el siguiente:
+
+* Personalizar, configurar y extender el proceso de compilación
+* Crear varios APK para tu app; diferentes funciones usan el mismo proyecto y los mismos módulos
+* Volver a usar códigos y recursos en conjuntos de archivos fuente
+
+Gracias a la flexibilidad de Gradle, se puede lograr sin modificar los archivos fuente de la aplicación. Los archivos de compilación de Android Studio se denominan build.gradle. Son archivos de texto sin formato que usan la sintaxis [Groovy](http://groovy-lang.org/) a fin de configurar la compilación con elementos que proporciona el complemento de Android para Gradle. 
+
+Cada proyecto tiene un archivo de compilación de nivel superior para todo el proyecto y archivos de compilación de nivel de módulo independientes para cada módulo. Cuando se importa un proyecto existente, Android Studio genera automáticamente los archivos de compilación necesarios.
 
 #### Ramas utilizadas en el proyecto <a name="ramas"></a>
 
+En concreto, en este proyecto se utilizará una rama master que contendrá el código final de la aplicación, además de una rama develop, que contendrá una rama por cada caso de uso con el código de la implementación de estos. 
+
+Inicialmente, la estructura de estas ramas era la siguiente:
+
+* master
+  * develop
+    * cu01. (Equipo 1)
+    * cu02
+    * cu03
+    * cu04
+    * cu05. (Equipo 2)
+    * cu06
+    * cu07
+    * cu08
+    * cu09. (Equipo 3)
+    * cu10
+    * cu11
+    * cu12
+    * cu13. (Equipo 4)
+    * cu14
+    * cu15
+    * cu16
+
 ## Integración continua <a name="integracionContinua"></a>
 
+La integración continua en el desarrollo del proyecto es el conjunto de prácticas que consisten en hacer integraciones automáticas de compilación y ejecución de test, para detectar fallos lo antes posible. De acuerdo a las tareas de integración definidas en JIRA, se usa la tecnología GIT sobre la plataforma GitHub para completar la integración continua entre las ramas de los casos de uso CU01-CU16 con la rama develop, y entre la rama develop con la rama master.
+
+La integración continua es una práctica moderna que facilita el trabajo a los desarrolladores sobre el código de un mismo proyecto. Algunas ventajas que presenta son las siguientes:
+
+* Los desarrolladores pueden detectar y solucionar problemas de integración de forma continua, evitando el caos de última hora cuando se acercan las fechas de entrega.
+* Disponibilidad constante de una versión para pruebas, demos o lanzamientos anticipados.
+* Ejecución inmediata de las pruebas unitarias.
+* Monitorización continua de las métricas de calidad del proyecto.
+
+Hay dos tipos de tareas de integración continua: integración de cada subsistema e integración del sistema.
+
+### Integración de cada subsistema
+
+Una vez finalizada la última tarea de implementación de un caso de uso y subido con un push a la rama remota “origin/CUxx”, siendo ‘xx’ el número del caso de uso, se procede a integrar dicho caso de uso con el resto del proyecto que se encuentra en la rama remota “origin/develop”. 
+
+En primer lugar, se debe realizar un merge del estilo <origin/develop into “CUxx”> y resolver los conflictos que aparezcan. De esta forma, se pretende unificar el caso de uso implementado con el nuevo código subido por otro equipo a la rama remota “origin/develop”.
+
+En este instante, se dispone del código de los subsistemas integrados en el último caso de uso implementado junto con el commit resultante del merge. Estas tareas de integración no contienen un commit adicional, por tanto, desde Android Studio se modifica el estado de la tarea de integración de subsistemas a ‘Hecho’ y el autor de la tarea coincide con el usuario logueado en el servidor de JIRA en Android Studio.
+
+###Integración del sistema
+
+Una vez finalizada la integración de cada subsistema, se procede a cometer la siguiente tarea de integración desbloqueada llamada integración del sistema. Primero, se hace un checkout de la rama “develop” para tenerla en local. En ella, se procede a hacer un nuevo merge del estilo  <“CUxx” into “develop”> para mantener en la rama local “develop” la integración del sistema, exenta de errores. Por último, queda hacer un push de la rama local “develop” en la remota “origin/develop” para finalizar la tarea de integración de sistema.
+
+En este instante, si se comete una nueva tarea de integración de cada subsistema de otro caso de uso, el miembro del equipo responsable de dicho caso de uso tendrá que integrar su subsistema al resto de subsistemas, incluido el nuestro.
+
+Por último, cuando todas las ramas de los 16 casos de uso se encuentren implementadas e integradas en la rama remota “develop”, sólo queda integrar la rama “develop” con la rama remota “master”, quedando así finalizado el desarrollo de la aplicación Android, a espera de futuras mejoras y pruebas.
 
 
 # Implementación <a name="implementacion"></a>
