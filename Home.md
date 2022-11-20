@@ -74,9 +74,7 @@
     - [Modelo de datos <a name="modeloDatos"></a>](#Modelo-de-datos-)
     - [Detalles de implementación <a name="detallesImplementacion"></a>](#Detalles-de-implementación-)
       - [Patrones de Diseño <a name="patronesDiseño"></a>](#Patrones-de-Diseño-)
-        - [Patrón Singleton <a name="patronSingleton"></a>](#Patrón-Singleton-)
-        - [Patrón DAO <a name="patronDao"></a>](#Patrón-DAO-)
-      - [Aspectos novedosos y decisiones tomadas <a name="aspectosNovedosos"></a>](#Aspectos-novedosos-)
+      - [Aspectos novedosos y decisiones tomadas <a name="aspectosNovedosos"></a>](#Aspectos-novedosos-y-decisiones-tomadas-)
         - [Gestión de la API <a name="gestionAPI"></a>](#Gestión-de-la-API-)
         - [Obtención de localización <a name="obtencionLocalizacion"></a>](#Obtención-de-localización-)
         - [Gestión de Permisos <a name="gestionPermisos"></a>](#Gestión-de-Permisos-)
@@ -1330,34 +1328,66 @@ Finalmente, se ha aplicado el patrón de botones y objetivos sencillos mostrando
 
 <img src="https://i.imgur.com/jPea9kb.png"/>
 
-  - [Diseño arquitectónico <a name="diseñoArquitectonico"></a>](#Diseño-arquitectónico-)
-    - [Decisiones tomadas <a name="decisionesTomadas"></a>](#Decisiones-tomadas-)
-    - [Diagrama de componentes <a name="diagramaComponentes"></a>](#Diagrama-de-componentes-)
-    - [Patrones arquitectónicos <a name="patronesArquitectonicos"></a>](#Patrones-arquitectónicos-)
-      - [Interacción entre componentes <a name="interaccionComponentes"></a>](#Interacción-de-componentes-)
-  - [Gestión del entorno <a name="gestionEntorno"></a>](#Gestión-del-entorno-)
-    - [Gestión de la configuración <a name="gestionConfiguracion"></a>](#Gestión-de-la-configuración-)
-      - [Entorno utilizado <a name="entornoUtilizado"></a>](#Entorno-utilizado-)
-        - [Herramienta de implementación: Android Studio <a name="androidStudio"></a>](#Herramienta-de-implementación-Android-Studio-)
-        - [Estructura de un proyecto en Android Studio <a name="estructuraProyecto"></a>](#Estructura-de-un-proyecto-en-Android-Studio-)
-        - [Componentes de la interfaz de Android Studio <a name="componentesInterfaz"></a>](#Componentes-de-la-interfaz-de-Android-Studio-)
-        - [Funcionamiento de una App en Android Studio <a name="funcionamientoApp"></a>](#Funcionamiento-de-una-App-en-Android-Studio-)
-        - [Compilación en Gradle <a name="compilacionGradle"></a>](#Compilación-en-Gradle-)
-        - [Ramas utilizadas en el proyecto <a name="ramas"></a>](#Ramas-utilizadas-en-el-proyecto-)
-    - [Integración continua <a name="integracionContinua"></a>](#Integración-continua-)
-  - [Implementación <a name="implementacion"></a>](#Implementación-)
-    - [Modelo de datos <a name="modeloDatos"></a>](#Modelo-de-datos-)
-    - [Detalles de implementación <a name="detallesImplementacion"></a>](#Detalles-de-implementación-)
-      - [Patrones de Diseño <a name="patronesDiseño"></a>](#Patrones-de-Diseño-)
-        - [Patrón Singleton <a name="patronSingleton"></a>](#Patrón-Singleton-)
-        - [Patrón DAO <a name="patronDao"></a>](#Patrón-DAO-)
-      - [Aspectos novedosos y decisiones tomadas <a name="aspectosNovedosos"></a>](#Aspectos-novedosos-)
-        - [Gestión de la API <a name="gestionAPI"></a>](#Gestión-de-la-API-)
-        - [Obtención de localización <a name="obtencionLocalizacion"></a>](#Obtención-de-localización-)
-        - [Gestión de Permisos <a name="gestionPermisos"></a>](#Gestión-de-Permisos-)
-        - [Carga de municipios y montañas desde JSON <a name="cargaJSON"></a>](#Carga-de-municipios-y-montañas-desde-JSON-)
-        - [Menú de Hamburguesa <a name="menuHamburguesa"></a>](#Menú-de-Hamburguesa-)
-        - [Filtro de Eventos <a name="filtroEventos"></a>](#Filtro-de-Eventos-)
-        - [Obtención de localización <a name="obtencionLocalizacion"></a>](#Obtención-de-localización-)
-        - [Usuario único <a name="usuarioUnico"></a>](#Usuario-único-)
-        - [Filtrado de localizaciones <a name="filtradoLocalizaciones"></a>](#Filtrado-de-localizaciones-)
+## Diseño arquitectónico <a name="diseñoArquitectonico"></a>
+
+### Decisiones tomadas <a name="decisionesTomadas"></a>
+
+### Diagrama de componentes <a name="diagramaComponentes"></a>
+
+### Patrones arquitectónicos <a name="patronesArquitectonicos"></a>
+
+#### Interacción entre componentes <a name="interaccionComponentes"></a>
+
+
+
+## Gestión del entorno <a name="gestionEntorno"></a>
+
+### Gestión de la configuración <a name="gestionConfiguracion"></a>
+
+#### Entorno utilizado <a name="entornoUtilizado"></a>
+
+##### Herramienta de implementación: Android Studio <a name="androidStudio"></a>
+
+##### Estructura de un proyecto en Android Studio <a name="estructuraProyecto"></a>
+
+##### Componentes de la interfaz de Android Studio <a name="componentesInterfaz"></a>
+
+##### Funcionamiento de una App en Android Studio <a name="funcionamientoApp"></a>
+
+##### Compilación en Gradle <a name="compilacionGradle"></a>
+
+##### Compilación en Gradle <a name="compilacionGradle"></a>
+
+##### Ramas utilizadas en el proyecto <a name="ramas"></a>
+
+### Integración continua <a name="integracionContinua"></a>
+
+
+
+## Implementación <a name="implementacion"></a>
+
+### Modelo de datos <a name="modeloDatos"></a>
+
+### Detalles de implementación <a name="detallesImplementacion"></a>
+
+#### Patrones de Diseño <a name="patronesDiseño"></a>
+
+#### Aspectos novedosos y decisiones tomadas <a name="aspectosNovedosos"></a>
+
+##### Gestión de la API <a name="gestionAPI"></a>
+
+##### Obtención de localización <a name="obtencionLocalizacion"></a>
+
+##### Gestión de Permisos <a name="gestionPermisos"></a>
+
+##### Carga de municipios y montañas desde JSON <a name="cargaJSON"></a>
+
+##### Menú de Hamburguesa <a name="menuHamburguesa"></a>
+
+##### Filtro de Eventos <a name="filtroEventos"></a>
+
+##### Obtención de localización <a name="obtencionLocalizacion"></a>
+
+##### Usuario único <a name="usuarioUnico"></a>
+
+##### Filtrado de localizaciones <a name="filtradoLocalizaciones"></a>
