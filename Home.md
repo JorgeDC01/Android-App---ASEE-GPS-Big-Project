@@ -81,9 +81,10 @@
       - [Carga de municipios y montañas desde JSON <a name="cargaJSON"></a>](#Carga-de-municipios-y-montañas-desde-JSON-)
       - [Menú de Hamburguesa <a name="menuHamburguesa"></a>](#Menú-de-Hamburguesa-)
       - [Filtro de Eventos <a name="filtroEventos"></a>](#Filtro-de-Eventos-)
-      - [Obtención de localización <a name="obtencionLocalizacion"></a>](#Obtención-de-localización-)
       - [Usuario único <a name="usuarioUnico"></a>](#Usuario-único-)
+      - [Implementación de Spinners en diversos campos <a name="spinners"></a>](#Implementación-de-Spinners-en-diversos-campos-)
       - [Filtrado de localizaciones <a name="filtradoLocalizaciones"></a>](#Filtrado-de-localizaciones-)
+      - [Modo Oscuro <a name="modoOscuro"></a>](#Modo-Oscuro-)
 
 # Introduccion <a name="introduction"></a>
 
@@ -1525,8 +1526,36 @@ Con esto conseguimos que se intercalan los dos tipos de filtrados que hacemos pu
 
 De esta forma podemos darle todas las opciones que el usuario necesita para filtrar sus eventos de una manera cómoda y sencilla.
 
-#### Obtención de localización <a name="obtencionLocalizacion"></a>
-
 #### Usuario único <a name="usuarioUnico"></a>
 
+En esta aplicación hemos implementado el usuario de tal forma que solamente existe un único usuario, esto se ha hecho así debido a que el usuario se guarda de manera local y no en remoto, y también a que no hemos concebido la aplicación para qué se guarden diferentes cuentas dentro de nuestra aplicación, sino como una lista local de eventos.
+
+#### Implementación de Spinners en diversos campos <a name="spinners"></a>
+
+Se han implementado campos con el tipo de Spinners en los **campos de Montaña** de las pantallas destinadas a crear un evento de Montaña (layout del fragmento CrearEventoMontana) y modificar un evento de montaña (layout del fragmento ModificarEventoMontana) con el objetivo de seleccionar una montaña existente del conjunto obtenido del JSON para crear o modificar un evento.
+
+De esta forma, se asegura que tras seleccionar el nombre de la montaña en la creación o modificación de eventos, esta no sea errónea, pues se ha tenido que elegir un nombre existente entre las montañas cargadas.
+
+Así mismo, también se ha implementado un campo de Spinner para especificar **el tipo de Ordenación** que se aplicará al filtrar todos los eventos, en la sección **Eventos**. Dicho campo con el tipo de ordenación permitirá organizar los eventos por orden de creación o por fecha.
+
 #### Filtrado de localizaciones <a name="filtradoLocalizaciones"></a>
+
+Una vez iniciada sesión, desde la pantalla principal se puede acceder a la funcionalidad de filtrado de localizaciones si se pulsa el icono de lupa de la ToolBar.
+
+Se inicia una nueva actividad que se encarga de leer el **listado de municipios** de España desde la colección de tipo mapa instanciada en el SingletonJSON y se utiliza un **Adapter** como intermediario entre la obtención de los municipios con el layout. 
+
+En el layout, se define un nuevo elemento **SearchView**, parecido a un input que permite actualizar en tiempo real la lista de municipios, de acuerdo a la cadena introducida por el usuario. 
+
+En el código de la actividad **LocalizacionesActivity**, se define un listener para el SearchView, sobreescribiendo un método llamado **onQueryTextChange(String text)**. Dentro, se llama a una función filtradora llamada **filter(text)** y se le pasa la cadena del SearchView introducida por el usuario. En la función de filtrado, se inserta en una variable auxiliar (ArrayList) aquellos municipios que coinciden con la cadena introducida, mediante la función findWithPrefix(municipios, cadena). 
+
+Por último, al disponer de la nueva colección de municipios filtrados, queda actualizar la lista de items del Adapter y notificar que se ha modificado para actualizar la interfaz con los nuevos municipios coincidentes.
+
+#### Modo Oscuro <a name="modoOscuro"></a>
+
+El modo oscuro es un ajuste de configuración que se encuentra en la sección “Ajustes” del menú hamburguesa. Se ha implementado con las **Preferencias** que nos ofrece la API de Android. Por defecto, el tema de la aplicación es el modo oscuro. 
+
+Cuando se activa el **checkbox**, desde el fragmento “AjustesFragment” se modifica el valor relativo al nuevo tema de la aplicación en las **SharedPreferences** , gracias a su **editor**. A continuación, se realiza un callback a la actividad “MainActivity” que soporta el fragmento. La función del callback se encarga de leer el archivo SharedPreferences modificado y delega el cambio de tema de la aplicación al **AppCompat**, recreando de nuevo la actividad y sus fragmentos involucrados para que la interfaz se actualice en base al nuevo tema.
+
+Por otro lado, se incluyen dos archivos en la carpeta de recursos de la aplicación llamados theme (uno con la configuración de la interfaz en modo claro y el otro en modo oscuro). En estos archivos theme, se definen unos estilos que serán intercambiados según la configuración de la aplicación.
+
+En el resto de componentes de la aplicación, se realiza el mismo proceso. En el caso de las actividades sin fragmentos, en el **onResume()** se llama al método que se encarga de leer SharedPreferences y delegar el cambio de tema.
