@@ -1699,7 +1699,7 @@ Este caso de uso no estructural permite al usuario modificar su perfil de usuari
 
 #### Implementación de CU16
 
-Para realizar este caso de uso ha sido necesaria la implementación del caso de uso CU15 - Modificar Usuario, el cual incluye la clase PerfilFragment.
+Para realizar este caso de uso ha sido necesaria la implementación del caso de uso CU15, Modificar Usuario, el cual incluye la clase PerfilFragment.
 
 Esta disciplina ha sido realizada por el **Sr. Blanco.**
 
@@ -1709,7 +1709,7 @@ Además, se han creado la siguiente clase:
 
 * El evento de diálogo DeleteEventDialog
 
-### Integración de CU16
+#### Integración de CU16
 
 La integración de este caso de uso ha necesitado la integración previamente del caso de uso CU15, por lo que se ha realizado una primitiva **Merge** para trabajar sobre el código con este caso de uso realizado.
 
