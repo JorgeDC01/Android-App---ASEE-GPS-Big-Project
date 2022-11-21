@@ -2027,7 +2027,7 @@ En primer lugar, se debe realizar un merge del estilo <origin/develop into “CU
 
 En este instante, se dispone del código de los subsistemas integrados en el último caso de uso implementado junto con el commit resultante del merge. Estas tareas de integración no contienen un commit adicional, por tanto, desde Android Studio se modifica el estado de la tarea de integración de subsistemas a ‘Hecho’ y el autor de la tarea coincide con el usuario logueado en el servidor de JIRA en Android Studio.
 
-###Integración del sistema
+### Integración del sistema
 
 Una vez finalizada la integración de cada subsistema, se procede a cometer la siguiente tarea de integración desbloqueada llamada integración del sistema. Primero, se hace un checkout de la rama “develop” para tenerla en local. En ella, se procede a hacer un nuevo merge del estilo  <“CUxx” into “develop”> para mantener en la rama local “develop” la integración del sistema, exenta de errores. Por último, queda hacer un push de la rama local “develop” en la remota “origin/develop” para finalizar la tarea de integración de sistema.
 
