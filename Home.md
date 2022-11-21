@@ -1893,6 +1893,91 @@ Gracias a la flexibilidad de Gradle, se puede lograr sin modificar los archivos 
 
 Cada proyecto tiene un archivo de compilación de nivel superior para todo el proyecto y archivos de compilación de nivel de módulo independientes para cada módulo. Cuando se importa un proyecto existente, Android Studio genera automáticamente los archivos de compilación necesarios.
 
+#### Integración de Jira en Android Studio <a name="integracionJira"></a>
+Con el objetivo de poder informar sobre las tareas de implementación o integración que se realizan en el proyecto se ha optado por la sincronización del programa de **Android Studio** con el software **Jira**, de manera que a lo largo de la realización del proyecto se puedan actualizar el estado de las tareas a través del propio Android Studio.
+ 
+Para llevar a cabo la integración de Jira con el software de Android Studio se pueden seguir dos caminos:
+* Utilizando la herramienta de contexto que viene predefinida dentro de Android Studio.
+* Utilizando un plugin que nos permite interaccionar con Jira a través de Android Studio.
+
+A continuación se explica cada uno de estas opciones.
+
+#### Integración de Jira en Android Studio a través de la herramienta de contexto <a name="integracionJiraHerramienta"></a>
+Lo primero que debemos hacer es configurar el servidor de Jira, para ello deberemos irnos a Tools > Tasks & Contexts > Configure Servers…, que se encuentra en la parte superior izquierda del programa.
+
+<img src="https://i.imgur.com/7eqmC0F.png"/>
+
+Una vez accedido a este apartado debería de aparecer una ventana de diálogo como la siguiente.
+
+<img src="https://i.imgur.com/hCr3Y9N.png"/>
+
+Dentro de esta ventana deberemos seleccionar el botón de “+” y seleccionar el tipo de Server al cual queremos acceder, en nuestro caso será el Server de Jira.
+
+<img src="https://i.imgur.com/Y1PyTWq.png"/>
+
+Una vez seleccionado el servidor aparecerán los registros que deberemos de rellenar para acceder a este.
+
+<img src="https://i.imgur.com/03vfufz.png"/>
+
+Estos atributos son los siguientes:
+* **Server URL**: La url en la que se encuentra el servidor.
+* **Username**: El nombre de usuario de la conexión que se va a realizar.
+* **Password**: La contraseña asociada a dicho nombre de usuario.
+* **Search**: Corresponde a una serie de asignaciones de valores a ciertos parámetros configuración
+
+Esta debe rellenarse con los datos de la conexión a nuestro proyecto de Jira en cuestión, siendo estos la url del servidor de Jira (http://jira.spilab.es:8080/), el nombre de uno de los usuarios del proyecto y su contraseña, como se muestra a continuación:
+
+<img src="https://i.imgur.com/yI2rKD4.png"/>
+
+Una vez dado al botón ‘**ok**’, y si los datos se han puesto de forma correcta se accederá a servidor de Jira.
+
+Ahora podremos empezar a realizar tareas, para ello deberemos de acceder a la lista de tareas a través de Tools > Tasks & Contexts > Open Task…
+
+<img src="https://i.imgur.com/TJmQFz0.png"/>
+
+Una vez hecho esto podremos seleccionar la tarea de gira que queremos empezar a desarrollar buscándola dentro de la lista que nos aparece.
+
+<img src="https://i.imgur.com/Xj1PuEE.png"/>
+
+Al seleccionarla nos aparecerá una ventana similar a la siguiente, en la cual deberemos de elegir en qué rama vamos a realizar dicha tarea.
+
+<img src="https://i.imgur.com/8N8a8C7.png"/>
+
+Una vez acabemos de trabajar, tan solo tendremos que realizar un **commit** en el cual indicamos el id de la tarea, su título y el autor que la realiza. Además de esto se pueden añadir más cosas como un comentario o el tiempo dedicado a dicha tarea utilizando **Smart commits**, pero no es necesario.
+
+#### Integración de Jira en Android Studio a través de un plugin <a name="integracionJiraPlugin"></a>
+Esta opción contempla el uso de un plugin de Android studio que permite gestionar las tareas de un proyecto de Jira, de manera que se podrá actualizar el estado de estas y asociarlas a ramas  de git concretas.
+
+Por ello, se determinará que cada tarea de implementación estará asociada a una rama con el código de un caso de uso.
+
+Para descargar el plugin, se debe acceder a la sección de plugins. Esto se puede realizar haciendo clic en la opción **Settings** de la pestaña **Files** y buscando en este dicha sección plugins.
+
+<img src="https://i.imgur.com/TgFE5s2.png"/>
+
+Esto abrirá una ventana con las opciones de configuración de Android Studio. 
+
+<img src="https://i.imgur.com/I7i3DbC.png"/>
+
+También es posible acceder a esta ventana a través del icono con forma de rueda situado en la parte superior derecha de Android Studio, pulsando posteriormente en la opción **plugins**.
+
+<img src="https://i.imgur.com/cuz6tV3.png"/>
+
+La ventana de plugins posee 2 pestañas, una para buscar un plugin dentro de todos aquellos que están instalados y otra para buscar todos los plugins y poder instalar nuevos.
+
+En la pestaña de instalación de nuevos plugins (**Marketplace**) se debe buscar el plugin llamado **Jira Software**, haciendo clic en el botón **Install** de este y comenzando su instalación.
+
+Una vez instalado, nos aparecerá en la parte inferior, en la cual si presionamos el botón de configuración nos aparecerá una ventana para conectarnos al servidor de Jira, la cual deberemos rellenar con los siguientes datos:
+* **Server URL**: La url en la que se encuentra el servidor.
+* **Username**: El nombre de usuario de la conexión que se va a realizar.
+* **Password**: La contraseña asociada a dicho nombre de usuario.
+
+<img src="https://i.imgur.com/pyzTJep.png"/>
+Con esto ya podemos trabajar con Jira seleccionando la tarea que queramos realizar y mediante el botón de **transit**, seleccionando la tarea como en progreso:
+
+<img src="https://i.imgur.com/wAvATbE.png"/>
+
+Este plugin además nos da todas las opciones que podemos realizar a través de la web dentro de Android Studio, lo que nos permite prescindir del uso del navegador.
+
 #### Ramas utilizadas en el proyecto <a name="ramas"></a>
 
 En concreto, en este proyecto se utilizará una rama master que contendrá el código final de la aplicación, además de una rama develop, que contendrá una rama por cada caso de uso con el código de la implementación de estos. 
