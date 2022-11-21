@@ -1740,11 +1740,9 @@ A continuación se muestra un posible diagrama de navegación que podría seguir
 ### Mockup <a name="Mockup"></a>
 A continuación se muestra un Mockup que contiene un conjunto de posibles pantallas del proyecto, a modo de prototipo que muestre las funcionalidades de la aplicación:
 
-<img src="https://i.imgur.com/GZT05qx.png"/>
+<img src="https://imgur.com/Fulg3ve.png"/>
+<img src="https://imgur.com/BxExdwr.png"/>
 
-<img src="https://i.imgur.com/GeQunZy.png"/>
-
-<img src="https://i.imgur.com/AKMljDL.png"/>
 <p>&nbsp;</p>
 Como se puede observar, para poder utilizar la aplicación en primer lugar es necesario iniciar sesión contando con pantallas para iniciar sesión con una cuenta y otra para registrarse, pudiendo crear una cuenta nueva en caso de que esta no exista.
 
