@@ -1769,7 +1769,7 @@ Así mismo, posee un panel lateral desplegable en la pantalla principal desde el
 
 ### Grafo de navegación <a name="grafodeNavegacion"></a>
 
-<img src="https://i.imgur.com/iqgagQc.png"/>
+<img src="https://imgur.com/9r1yf8r.png"/>
 
 ### Patrones de navegación aplicados <a name="patronesNavegacion"></a>  
    
