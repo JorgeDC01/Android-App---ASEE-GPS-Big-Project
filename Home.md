@@ -1237,9 +1237,149 @@ Hay que concretar que dentro de este informe no se tienen en cuenta las **subtar
 
 ## Síntesis de la planificación por roles <a name="sintesisPlanificacion"></a>
 
+En este apartado se documentará la distribución de los casos de uso, realizados teniendo en cuenta el punto de vista de los roles, que participan en cada uno de los equipos, a modo de síntesis del apartado de configuración del seguimiento de planificación. 
+En concreto, estos roles siguen la siguiente planificación:
+
+<img src="https://imgur.com/dzITlYn.png"/>
+
+Siendo cada uno de los roles el líder de uno de los 4 equipos.
+
+Así mismo, la planificación de los roles respecto de las disciplinas de Implementación e Integración y Testeo es:
+
+<img src="https://imgur.com/koHJTPj.png"/>
+
+Para comprobar que este reparto de tareas es equitativo entre los distintos roles, a continuación se muestra el número de tareas asignadas a cada rol, en la que cada disciplina compartida por 2 roles es ponderada con 0,5 en cada rol:
+
+**Distribución de implementaciones:**
+| Encargado  | Casos de uso                                   | Núm |
+| ---------- | ---------------------------------------------- | --- |
+| Sr Blanco  | CU05, CU06, CU11, CU12, CU13, CU15, CU16       | 4,5 |
+| Sr Marron  | CU03, CU09, CU13, CU14, CU15                   | 3   |
+| Sr Naranja | CU01, CU02, CU03, CU04, CU05, CU06, CU07, CU08 | 5   |
+| Sr Azul    | CU01, CU04, CU08, CU09, CU10, CU11             | 3,5 |
+
+**Distribución de integraciones:**
+| Encargado  | Casos de uso                       | Núm |
+| ---------- | ---------------------------------- | --- |
+| Sr Blanco  | CU06, CU09, CU10, CU14, CU15, CU16 | 4,5 |
+| Sr Marron  | CU10,  CU11, CU12, CU14            | 3   |
+| Sr Naranja | CU01, CU02, CU03, CU13             | 4   |
+| Sr Azul    | CU04, CU05, CU06, CU07, CU08       | 4,5 |
 
 ## Desarrollo del Equipo 1 (Sr. Blanco) <a name="desarrolloEquipo1"></a>
 
+En este apartado se documentará todo el proceso seguido por el Equipo 1 para realizar los casos de uso, desde la implementación hasta la integración final. Se detalla **qué archivos se han modificado** concretamente y **cómo se ha realizado la integración** de estos casos de uso.
+
+El equipo 1 será el encargado de llevar a cabo los casos de uso **CU01, CU02, CU03 y CU04.** A continuación se explicarán las tareas de implementación e integración que se han realizado en cada uno de ellos.
+
+### CU01 - Añadir Evento de Municipio
+
+Este caso de uso estructural permite al usuario añadir un nuevo evento de municipio en una fecha determinada, estando asignado a una condición meteorológica en tiempo real de la ubicación del municipio.
+
+#### Implementación de CU01
+
+Para realizar este caso de uso ha sido necesaria la creación de la clase Evento perteneciente a la lógica de negocio. Esta clase evento, además requirió emplear el servicio de Room para almacenar los eventos en la base de datos, por lo que también ha sido necesaria la realización de una interfaz EventoDao. Así mismo, en este caso de uso también se ha creado la clase **AppDatabase** para conectarse a la base de datos.
+
+Así mismo, se han creado las clases necesarias para obtener todos los municipios existentes de España, que se encuentran en un documento **municipios.json.** Dichas clases son JsonSingleton, que permite obtener los datos del documento, y Municipio, que representa cada municipio obtenido.
+
+Esta disciplina ha sido realizada en conjunto por el **Sr. Naranja** y el **Sr. Azul.**
+
+Por tanto, en la realización de este caso de uso se han creado las siguientes clases:
+* La Activity correspondientes a la pantalla de crear un evento de Municipio (CrearEventoActivity) y sus fragmentos (CrearEvento y CrearEventoMunicipio), junto con los layout correspondiente a dichos componentes software
+* La clase Evento
+* Una Interfaz EventoDao
+* La clase AppDatabase
+* Las clases correspondientes para obtener los municipios de la API (JsonSingleton y Municipio)
+
+#### Integración de CU01
+
+La integración de este caso de uso únicamente ha necesitado **la publicación del código terminado** lanzando una primitiva **Push** en la rama del repositorio correspondiente, pues no necesita la implementación de ningún otro caso de uso.
+
+Esta disciplina ha sido realizada por el **Sr. Naranja.**
+
+Una vez finalizada esta fase, se **integrará este caso de uso en la rama Develop** con todos los cambios de la rama correspondiente mediante un Merge, publicando después los cambios correspondientes en la rama Develop mediante la primitiva Push.
+
+### CU02 - Añadir Evento de Ruta Montaña
+
+Este caso de uso estructural permite al usuario añadir un nuevo evento de montaña en una fecha determinada, estando asignado a una condición meteorológica en tiempo real de la ubicación de la montaña.
+
+#### Implementación de CU02
+Para realizar este caso de uso ha sido necesaria la implementación del CU01 - Crear Evento de Municipio, que contiene las clases Evento y EventoDAO, utilizando también la clase **AppDatabase.**
+
+Esto ha implicado la creación de un nuevo fragmento CrearEventoMontana en la actividad de creación de un evento (CrearEventoActivity), que permite crear un evento de montaña concreto a partir de las montañas existentes.
+
+Esta disciplina ha sido realizada por el **Sr. Naranja.**
+
+Por tanto, la implementación de este caso de uso ha supuesto la creación de la siguiente clase:
+
+* El fragmento CrearEventoMontana y su layout
+
+#### Integración de CU02
+
+La integración de este caso de uso ha necesitado la integración previamente del caso de uso CU01, por lo que se ha realizado una primitiva **Merge** para trabajar sobre el código con este caso de uso realizado.
+
+Posteriormente, una vez que el caso de uso está implementado, **se ha realizado la publicación del código** terminado en la rama del repositorio correspondiente lanzando una primitiva **Push.** Esta tarea la ha realizado el **Sr. Naranja.**
+
+Una vez finalizada esta fase, se **integrará este caso de uso en la rama Develop** con todos los cambios de la rama correspondiente mediante un Merge, publicando después los cambios correspondientes en la rama Develop mediante la primitiva Push.
+
+### CU03 - Añadir Usuario
+
+Este caso de uso estructural permite al usuario registrarse con unas credenciales.
+
+#### Implementación de CU03
+
+Para realizar este caso de uso ha sido necesaria la implementación del CU02 - Añadir Ruta de Montaña, que crea un evento de Montaña en la base de datos.
+
+Este caso de uso contiene las clases Usuario y UsuarioDAO, utilizando también la clase **AppDatabase.** 
+
+Esta disciplina ha sido realizada en conjunto por el **Sr. Naranja** y el **Sr. Marrón.**
+
+Por tanto, la implementación de este caso de uso ha supuesto la modificación de la siguiente clase:
+
+* La Activity Main
+
+Así mismo, ha supuesto la creación de las siguientes clases:
+
+* Las Activity correspondiente a la pantalla de registro (Registrarse) y su layout
+* La clase del modelo de datos Usuario
+* Una Interfaz UsuarioDao
+
+#### Integración de CU03
+
+La integración de este caso de uso ha necesitado la integración previamente del caso de uso CU02 - Añadir Evento de Ruta Montaña.
+
+Posteriormente, una vez que el caso de uso está implementado, **se ha realizado la publicación del código** terminado en la rama del repositorio correspondiente lanzando una primitiva **Push.** Esta tarea la ha realizado el **Sr. Naranja.**
+
+Una vez finalizada esta fase, se **integrará este caso de uso en la rama Develop** con todos los cambios de la rama correspondiente mediante un Merge, publicando después los cambios correspondientes en la rama Develop mediante la primitiva Push.
+
+### CU04 - Añadir una barra de búsqueda y filtrado de ubicaciones
+
+Este caso de uso estructural consiste en la incorporación de una barra de búsqueda para buscar una ubicación con su tiempo meteorológico asignado.
+
+#### Implementación de CU04
+
+Para realizar este caso de uso ha sido necesaria la implementación del CU03 - Añadir Usuario, que contiene las clases Usuario y UsuarioDAO, utilizando también la clase AppDatabase.
+
+Esta disciplina ha sido realizada en conjunto por el **Sr. Naranja** y el **Sr. Azul.**
+
+La implementación de este caso de uso se ha completado, mediante la modificación de las siguientes clases:
+
+* MainActivity. Incluye la incorporación del icono que redirige al listado de ubicaciones
+* AndroidManifest
+* Layout del menú main.xml
+
+Además, se han añadido las siguientes clases:
+
+* La actividad LocalizacionesActivity
+* Clase APIManager y APIManagerDelegate
+
+### Integración de CU04
+
+La integración de este caso de uso ha necesitado la integración previamente del caso de uso CU03, por lo que se ha realizado una primitiva **Merge** para trabajar sobre el código con este caso de uso realizado.
+
+Posteriormente, una vez que el caso de uso está implementado, **se ha realizado la publicación del código** terminado en la rama del repositorio correspondiente lanzando una primitiva **Push.** Esta tarea la ha realizado el **Sr Azul.**
+
+Una vez finalizada esta fase, **se integrará este caso de uso en la rama Develop** con todos los cambios de la rama correspondiente mediante un Merge, publicando después los cambios correspondientes en la rama Develop mediante la primitiva Push.
 
 ## Desarrollo del Equipo 2 (Sr. Marrón) <a name="desarrolloEquipo2"></a>
 
