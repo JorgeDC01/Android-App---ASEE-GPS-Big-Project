@@ -2046,7 +2046,7 @@ Este commit se deberá enlazar con la tarea correspondiente en el jira, guardand
 
 ### Integración y Testeo
 
-### Integración de cada subsistema
+#### Integración de cada subsistema
 
 La tarea **Integrate each subsystem** consistirá en recuperar el código depositado en el repositorio que está ubicado en la rama Develop a la rama correspondiente del caso de uso, permitiendo mediante la realización de un **Pull** trabajar sobre los cambios ya realizados en la rama Develop.
 
@@ -2058,7 +2058,7 @@ En primer lugar, se debe realizar un merge del estilo <origin/develop into “CU
 
 En este instante, se dispone del código de los subsistemas integrados en el último caso de uso implementado junto con el commit resultante del merge. Estas tareas de integración no contienen un commit adicional, por tanto, desde Android Studio se modifica el estado de la tarea de integración de subsistemas a ‘Hecho’ y el autor de la tarea coincide con el usuario logueado en el servidor de JIRA en Android Studio.
 
-### Integración del sistema
+#### Integración del sistema
 
 Por otra parte, la tarea **“Integrate the system”** consistirá subir en el repositorio remoto compartido por todos los integrantes el código del caso de uso ya completamente implementado mediante la realización de un **Push,** que lo publicará en la rama del repositorio correspondiente.
 
