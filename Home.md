@@ -2207,7 +2207,7 @@ Por otra parte, **los componentes de la lógica de negocio** serán las clases m
 #### Reglas de Sintaxis <a name="reglasSintaxis"></a>
 
 Para realizar la implementación del proyecto, previamente se han establecido una serie de reglas de sintaxis que deben seguir los elementos implementados en Android Studio. Estas son las siguientes:
-* En lo referente a los elementos <string> dentro del fichero **strings.xml**, su atributo **name** deberá comenzar por la cadena “n_”. Esto evitará confusión a la hora de acceder a estos valores, así como aportará más consistencia y uniformidad.
+* En lo referente a los identificadores (atributo **id**) de cada pantalla que se encuentra en los grafos de navegación, estos deberán comenzar con la cadena "nav_", representando que se tratan de las pantallas de navegación que conforman el proyecto.
 * Cada actividad que se haya creado, deberá finalizar su nombre con la subcadena “Activity”, mientras que cada fragmento creado, deberá finalizar con la subcadena “Fragment”. Esto aporta más consistencia al proyecto.
 * Dado que el nombre de cada layout debe ser en minúsculas, el layout (archivo .xml) de una Activity deberá comenzar por la cadena “activity_”, mientras que el layout de un Fragment deberá comenzar por la cadena “fragment_” y el layout que funciona como contenedor de otros fragmentos deberá comenzar por la cadena “content_”.
 
