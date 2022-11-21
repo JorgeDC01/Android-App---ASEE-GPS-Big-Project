@@ -2017,7 +2017,45 @@ La integración continua es una práctica moderna que facilita el trabajo a los 
 * Ejecución inmediata de las pruebas unitarias.
 * Monitorización continua de las métricas de calidad del proyecto.
 
-Hay dos tipos de tareas de integración continua: integración de cada subsistema e integración del sistema.
+Esta disciplina consistirá en 2 tareas:
+
+* Integración de cada subsistema o “Integrate each subsystem”
+* Integración del sistema “Integrate the system”
+
+## Definición de disciplinas
+
+En este apartado se explicará el proceso que seguirá en cada disciplina relativa al desarrollo de la aplicación, siendo estas **Implementación** e **Integración y Testeo.**
+
+### Implementación
+
+Esta disciplina se divide en 2 tareas:
+
+* “Implement components”
+* “Test components”
+
+Este proceso consistirá únicamente en la disciplina de **“Implement components” **
+Esta corresponde a la implementación del caso de uso correspondiente utilizando Android Studio a quien tenga asignada dicha implementación según la planificación del Jira. 
+
+Para ello, el rol asignado debe marcar en Jira la tarea correspondiente del estado **TO-DO** al estado **In Progress.** El código debe contener tanto las pantallas (Activitys y Fragments) que muestran el código, como los componentes de la lógica de negocio (clases), así como las posibles interfaces DAO que deban intervenir.
+
+Todo el código deberá funcionar correctamente y contener toda la funcionalidad completa de ese caso de uso.
+
+Una vez finalizada la implementación del código en Android Studio, se deberá marcar el estado de la tarea correspondiente a **DONE.** Confirman los cambios realizados en este desde el inicio de la implementación mediante el lanzamiento de un commit, que guardará los cambios realizados en el repositorio local.
+
+Este commit se deberá enlazar con la tarea correspondiente en el jira, guardando los cambios realizados y relacionándolos con esta.
+
+### Integración y Testeo
+
+La tarea **Integrate each subsystem** consistirá en recuperar el código depositado en el repositorio que está ubicado en la rama Develop a la rama correspondiente del caso de uso, permitiendo mediante la realización de un **Pull** trabajar sobre los cambios ya realizados en la rama Develop.
+
+Este proceso también debe actualizar la tarea del Jira correspondiente marcando su estado según si es **TO-DO** (por realizar), **In Progress** (realizándose) o **DONE** (realizada).
+
+Por otra parte, la tarea **“Integrate the system”** consistirá subir en el repositorio remoto compartido por todos los integrantes el código del caso de uso ya completamente implementado mediante la realización de un **Push,** que lo publicará en la rama del repositorio correspondiente.
+
+Una vez hecho esto en todas las ramas, se deben integrar todos los casos de uso de la ramas correspondientes en la rama Develop mediante la realización de un merge, que unificará todos los casos de uso realizados en la rama Develop, que posteriormente subirá todo el código integrado a la rama master.
+
+Cabe destacar que también se debe relacionar este proceso con la tarea correspondiente en el Jira, modificando su estado como **TO-DO** (por realizar), **In Progress** (realizándose) o **DONE** (realizada).
+
 
 ### Integración de cada subsistema
 
