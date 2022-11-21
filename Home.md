@@ -1735,7 +1735,7 @@ A continuación se muestra el diagrama de casos de uso de la aplicación, todos 
 ### Diagrama de navegación <a name="diagramadeNavegacion"></a>
 A continuación se muestra un posible diagrama de navegación que podría seguir la aplicación:
 
-<img src="https://i.imgur.com/0QdYEjx.png"/>
+<img src="https://imgur.com/MzHCzeg.png"/>
 
 ### Mockup <a name="Mockup"></a>
 A continuación se muestra un Mockup que contiene un conjunto de posibles pantallas del proyecto, a modo de prototipo que muestre las funcionalidades de la aplicación:
