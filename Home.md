@@ -1383,12 +1383,341 @@ Una vez finalizada esta fase, **se integrará este caso de uso en la rama Develo
 
 ## Desarrollo del Equipo 2 (Sr. Marrón) <a name="desarrolloEquipo2"></a>
 
+En este apartado se documentará todo el proceso seguido por el Equipo 2 para realizar los casos de uso, desde la implementación hasta la integración final. Se detalla **qué archivos se han modificado** concretamente y **cómo se ha realizado la integración** de estos casos de uso.
+
+El equipo 2 será el encargado de llevar a cabo los casos de uso CU05, CU06, CU07 y CU08. A continuación se explicarán las tareas de implementación e integración que se han realizado en cada uno de ellos.
+
+### CU05 - Añadir preferencias desde el menú de AppBar (ajustes …)
+
+Este caso de uso estructural consiste en incorporar un apartado de configuración que permite al usuario personalizar su experiencia con la aplicación, así como el modo oscuro, preferencias, etc.
+
+#### Implementación de CU05
+
+Para realizar este caso de uso ha sido necesaria la implementación del caso de uso CU13 - Iniciar sesión, que contiene la clase IniciarSesion (Activity).
+
+Esta disciplina ha sido realizada en conjunto por el **Sr. Naranja** y el **Sr. Blanco.**
+
+La implementación de este caso de uso se ha completado mediante la modificación de las siguientes clases:
+
+* Se ha modificado todos los archivos relativos al panel lateral de navegación, drawer, etc.
+
+Además, se han añadido las siguientes clases:
+
+* AjustesFragment y su correspondiente layout
+
+#### Integración de CU05
+
+La integración de este caso de uso ha necesitado la integración previamente del caso de uso CU13, por lo que se ha realizado una primitiva **Merge** para trabajar sobre el código con este caso de uso realizado.
+
+Posteriormente, una vez que el caso de uso está implementado, **se ha realizado la publicación del código** terminado en la rama del repositorio correspondiente lanzando una primitiva **Push.** Esta tarea la ha realizado el **Sr Azul.**
+
+Una vez finalizada esta fase, se **integrará este caso de uso en la rama Develop** con todos los cambios de la rama correspondiente mediante un Merge, publicando después los cambios correspondientes en la rama Develop mediante la primitiva Push.
+
+### CU06 - Consultar el tiempo detallado de una ubicación
+
+Este caso de uso no estructural permite al usuario visualizar el tiempo meteorológico de una ubicación específica en tiempo real.
+
+#### Implementación de CU06
+
+Para realizar este caso de uso ha sido necesaria la implementación del caso de uso CU04 - Añadir una barra de búsqueda y filtrado de ubicaciones, el cual incluye las clases java necesarias para realizar peticiones a la API. Se ha necesitado crear una nueva actividad que gestione el detalle del tiempo de una ubicación, de la lista de ubicaciones (municipios).
+
+Esta disciplina ha sido realizada en conjunto por el **Sr. Naranja** y el **Sr. Blanco.**
+
+La implementación de este caso de uso se ha completado mediante la modificación de las siguientes clases:
+
+* Clase ListadoLocalizacionesActivity
+
+Además, se han incluido la siguiente clase:
+
+* DetalleLocalizaciónActivity y su layout
+
+#### Integración de CU06
+
+La integración de este caso de uso ha necesitado la integración previamente del caso de uso CU04, por lo que se ha realizado una primitiva **Merge** para trabajar sobre el código con este caso de uso realizado.
+
+Posteriormente, una vez que el caso de uso está implementado, **se ha realizado la publicación del código** terminado en la rama del repositorio correspondiente lanzando una primitiva **Push.**
+
+Esta disciplina ha sido realizada en conjunto por el **Sr. Azul** y el **Sr. Blanco.**
+
+Una vez finalizada esta fase, **se integrará este caso de uso en la rama Develop** con todos los cambios de la rama correspondiente mediante un Merge, publicando después los cambios correspondientes en la rama Develop mediante la primitiva Push.
+
+### CU07 - Modificar un evento
+
+Este caso de uso no estructural permite al usuario modificar los datos de un evento, así como su nombre, descripción, fecha y ubicación.
+
+#### Implementación de CU07
+
+Para realizar este caso de uso ha sido necesaria la implementación del caso de uso CU06 - Consultar el tiempo detallado de una ubicación, el cual incluye los componentes software de Android necesarios para elegir y ver las condiciones meteorológicas de una ubicación específica.
+
+Esta disciplina ha sido realizada por el **Sr. Naranja.**
+
+La implementación de este caso de uso se ha completado mediante la modificación de las siguientes clases:
+
+* La clase DAO de los eventos llamada EventoDAO
+
+Además, se han creado las siguientes clases:
+
+* Los fragmentos ModificarEventoMontanaFragment y ModificarEventoMunicipioFragment y sus respectivos layouts.
+
+#### Integración de CU07
+
+La integración de este caso de uso ha necesitado la integración previamente del caso de uso CU06, por lo que se ha realizado una primitiva **Merge** para trabajar sobre el código con este caso de uso realizado.
+
+Posteriormente, una vez que el caso de uso está implementado, **se ha realizado la publicación del código** terminado en la rama del repositorio correspondiente lanzando una primitiva **Push.**
+
+Esta disciplina ha sido realizada por el **Sr. Azul.**
+
+Una vez finalizada esta fase, **se integrará este caso de uso en la rama Develop** con todos los cambios de la rama correspondiente mediante un Merge, publicando después los cambios correspondientes en la rama Develop mediante la primitiva Push.
+
+### CU08 - Eliminar un evento
+
+Este caso de uso no estructural permite al usuario borrar un evento creado y configurado previamente en la lista de eventos.
+
+#### Implementación de CU08
+
+Para realizar este caso de uso ha sido necesaria la implementación del CU01 - Crear Evento de Municipio y el caso CU02 - Crear Evento de Montaña, que contiene las clases Evento y EventoDAO, utilizando también la clase AppDatabase.
+
+De esta forma se ha trabajado sobre el componente de detalles de un evento sobre el cual se ha añadido la funcionalidad de borrar el mismo. 
+
+Por tanto, en la realización de este caso de uso se han creado la siguiente clase:
+
+* La clase DeleteEventDialog
+
+Esta disciplina ha sido realizada en conjunto por el Sr. Naranja y el Sr. Azul.
+
+#### Integración de CU08
+
+La integración de este caso de uso ha necesitado la integración previamente de los casos de uso  CU06, por lo que se ha realizado una primitiva **Merge** para trabajar sobre el código con este caso de uso realizado.
+
+Posteriormente, una vez que el caso de uso está implementado, **se ha realizado la publicación del código** terminado en la rama del repositorio correspondiente lanzando una primitiva **Push.**
+
+Esta disciplina ha sido realizada por el **Sr. Azul.**
+
+Una vez finalizada esta fase, se **integrará este caso de uso en la rama Develop** con todos los cambios de la rama correspondiente mediante un Merge, publicando después los cambios correspondientes en la rama Develop mediante la primitiva Push.
 
 ## Desarrollo del Equipo 3 (Sr. Naranja) <a name="desarrolloEquipo3"></a>
 
+En este apartado se documentará todo el proceso seguido por el Equipo 3 para realizar los casos de uso, desde la implementación hasta la integración final. Se detalla **qué archivos se han modificado** concretamente y **cómo se ha realizado la integración** de estos casos de uso.
+
+El equipo 3 será el encargado de llevar a cabo los casos de uso CU09, CU10, CU11 y CU12. A continuación se explicarán las tareas de implementación e integración que se han realizado en cada uno de ellos.
+
+### CU09 - Consultar el tiempo meteorológico en la ubicación actual
+
+Este caso de uso no estructural permite al usuario consultar los detalles del tiempo asociado a la localización/municipio más cercano.
+
+#### Implementación de CU09
+
+Para realizar este caso de uso ha sido necesaria la implementación del caso de uso CU08 - Eliminar un evento.
+
+La implementación de este caso de uso se ha llevado a cabo mediante la modificación de los siguientes archivos:
+
+* El fragmento InicioFragment
+
+A su vez se han creado los siguientes nuevos archivos:
+
+* Clase Weather
+* Clase APIManager
+* Clase APIManagerDelegate
+
+Esta disciplina ha sido realizada en conjunto por el **Sr. Blanco** y el **Sr. Azul.**
+
+#### Integración de CU09
+
+La integración de este caso de uso ha necesitado la integración previamente del caso de uso CU08, por lo que se ha realizado una primitiva **Merge** para trabajar sobre el código con este caso de uso realizado.
+
+Posteriormente, una vez que el caso de uso está implementado, **se ha realizado la publicación del código** terminado en la rama del repositorio correspondiente lanzando una primitiva **Push.**
+
+Esta disciplina ha sido realizada por el **Sr. Blanco.**
+
+Una vez finalizada esta fase, se **integrará este caso de uso en la rama Develop** con todos los cambios de la rama correspondiente mediante un Merge, publicando después los cambios correspondientes en la rama Develop mediante la primitiva Push.
+
+### CU10 - Modificar idioma y tema a modo oscuro
+
+Este caso de uso no estructural permite al usuario realizar una serie de modificaciones en la aplicación para configurar esta a su gusto como cambiar el idioma, el tema a modo oscuro, etc.
+
+#### Implementación de CU10
+
+Para la implementación de este caso de uso se han modificado la mayoría de actividades y fragmentos del proyecto.
+
+Cabe mencionar la modificación del fragmento AjustesFragment en el cual se ha añadido la opción de activar el modo oscuro en la aplicación.
+
+Finalmente todo el código referido a las características de ambos modos (oscuro y claro) se encuentra en los dos archivos themes del layout.
+
+Esta disciplina ha sido realizada por el **Sr. Azul.**
+
+#### Integración de CU10
+
+La integración de este caso de uso ha necesitado la integración previamente del caso de uso CU09, por lo que se ha realizado una primitiva **Merge** para trabajar sobre el código con este caso de uso realizado.
+
+Posteriormente, una vez que el caso de uso está implementado, **se ha realizado la publicación del código** terminado en la rama del repositorio correspondiente lanzando una primitiva **Push.**
+
+Esta disciplina ha sido realizada en conjunto por el **Sr. Blanco** y el **Sr. Marrón.**
+
+Una vez finalizada esta fase, **se integrará este caso de uso en la rama Develop** con todos los cambios de la rama correspondiente mediante un Merge, publicando después los cambios correspondientes en la rama Develop mediante la primitiva Push.
+
+### CU11 - Consultar lista de eventos
+
+Este caso de uso no estructural permite al usuario visualizar el listado completo de eventos de municipios y montañas creados por su parte.
+
+#### Implementación de CU11
+
+Para realizar este caso de uso ha sido necesaria la implementación del CU01 - Crear Evento de Municipio y el caso CU02 - Crear Evento de Montaña, que contiene las clases Evento y EventoDAO, utilizando también la clase AppDatabase.
+
+La implementación de este caso de uso se ha completado mediante la creación de las siguientes clases:
+
+* Clase java PlaceholderItem
+* Fragmento ConsultaEventosFragment
+* Fragmento ListaEventosFragment
+
+Esta disciplina ha sido realizada en conjunto por el **Sr. Blanco** y el **Sr. Azul.**
+
+#### Integración de CU11
+
+La integración de este caso de uso ha necesitado la integración previamente del caso de uso CU10, por lo que se ha realizado una primitiva **Merge** para trabajar sobre el código con este caso de uso realizado.
+
+Posteriormente, una vez que el caso de uso está implementado, **se ha realizado la publicación del código** terminado en la rama del repositorio correspondiente lanzando una primitiva **Push.**
+
+Esta disciplina ha sido realizada por el **Sr. Marrón.**
+
+Una vez finalizada esta fase, **se integrará este caso de uso en la rama Develop** con todos los cambios de la rama correspondiente mediante un Merge, publicando después los cambios correspondientes en la rama Develop mediante la primitiva Push.
+
+### CU12 - Consultar un evento
+
+Este caso de uso no estructural permite al usuario visualizar en detalle los datos pertinentes de un evento de municipio o montaña.
+
+#### Implementación de CU12
+
+Para realizar este caso de uso ha sido necesaria la implementación de los casos de uso CU01, CU02 y CU09 correspondientes con la creación de eventos y obtención de los datos metereológicos de una ubicación.
+
+La implementación de este caso de uso se ha completado mediante la creación de las siguientes clases:
+
+* Interfaz fragment_detalles_evento
+* Interfaz activity_detalles_localizaciones
+* Fragmento DetallesEventoFragment
+* Actividad DetallesEventoActivity
+
+Esta disciplina ha sido realizada por el **Sr. Blanco.**
+
+### Integración de CU12
+
+La integración de este caso de uso ha necesitado la integración previamente del caso de uso CU11, por lo que se ha realizado una primitiva **Merge** para trabajar sobre el código con este caso de uso realizado.
+
+Posteriormente, una vez que el caso de uso está implementado, **se ha realizado la publicación del código** terminado en la rama del repositorio correspondiente lanzando una primitiva **Push.**
+
+Esta disciplina ha sido realizada por el **Sr. Marrón.**
+
+Una vez finalizada esta fase, **se integrará este caso de uso en la rama Develop** con todos los cambios de la rama correspondiente mediante un Merge, publicando después los cambios correspondientes en la rama Develop mediante la primitiva Push.
 
 ## Desarrollo del Equipo 4 (Sr. Azul) <a name="desarrolloEquipo4"></a>
 
+En este apartado se documentará todo el proceso seguido por el Equipo 4 para realizar los casos de uso, desde la implementación hasta la integración final. Se detalla **qué archivos se han modificado** concretamente y **cómo se ha realizado la integración** de estos casos de uso.
+
+El equipo 4 será el encargado de llevar a cabo los casos de uso CU13, CU14, CU15 y CU16. A continuación se explicarán las tareas de implementación e integración que se han realizado en cada uno de ellos.
+
+### CU13 - Iniciar sesión
+
+Este caso de uso no estructural permite al usuario iniciar sesión con las credenciales asociadas a su cuenta de usuario.
+
+#### Implementación de CU13
+
+Para realizar este caso de uso ha sido necesaria la implementación del caso de uso CU12 - Consultar un evento, el cual incluye las actividades y fragmentos DetallesEvento.
+
+Esta disciplina ha sido realizada por el **Sr. Naranja.**
+
+La implementación de este caso de uso se ha completado mediante la modificación de la siguiente clase:
+
+* La clase MainActivity
+
+Además, se han creado la siguiente clase:
+
+* La actividad InicioSesion junto con su layout
+
+#### Integración de CU13
+
+La integración de este caso de uso ha necesitado la integración previamente del caso de uso CU12, por lo que se ha realizado una primitiva **Merge** para trabajar sobre el código con este caso de uso realizado.
+
+Posteriormente, una vez que el caso de uso está implementado, **se ha realizado la publicación del código** terminado en la rama del repositorio correspondiente lanzando una primitiva **Push.**
+
+Según la planificación de JIRA, esta disciplina la debe realizar tanto el Sr. Marrón como el Sr. Naranja. Sin embargo, en la realidad sólo la ha realizado el **Sr. Marrón,** y la tarea de integración del **Sr. Naranja** se ha puesto como estado a “Hecho”.
+
+Una vez finalizada esta fase, **se integrará este caso de uso en la rama Develop** con todos los cambios de la rama correspondiente mediante un Merge, publicando después los cambios correspondientes en la rama Develop mediante la primitiva Push.
+
+### CU14 - Cerrar sesión
+
+Este caso de uso no estructural permite al usuario cerrar sesión.
+
+#### Implementación de CU14
+
+Para realizar este caso de uso ha sido necesaria la implementación del caso de uso CU05 - Añadir preferencias desde el menú de AppBar (ajustes …), el cual incluye el código necesario para la implementación de un apartado de Ajustes mediante la clase AjustesFragment.
+
+Esta disciplina ha sido realizada por el **Sr. Marrón.**
+
+La implementación de este caso de uso se ha completado mediante la modificación de la siguiente clase:
+
+* La clase MainActivity
+* El layout main.xml correspondiente al menú
+
+#### Integración de CU14
+
+La integración de este caso de uso ha necesitado la integración previamente del caso de uso CU05, por lo que se ha realizado una primitiva **Merge** para trabajar sobre el código con este caso de uso realizado.
+
+Posteriormente, una vez que el caso de uso está implementado, **se ha realizado la publicación del código** terminado en la rama del repositorio correspondiente lanzando una primitiva **Push.**
+
+Según la planificación de JIRA, esta disciplina la debe realizar tanto el Sr. Marrón como el Sr. Blanco. Sin embargo, en la realidad sólo la ha realizado el  **Sr. Marrón,** y la tarea de integración del **Sr. Blanco** se ha puesto como estado a “Hecho”.
+
+Una vez finalizada esta fase, **se integrará este caso de uso en la rama Develop** con todos los cambios de la rama correspondiente mediante un Merge, publicando después los cambios correspondientes en la rama Develop mediante la primitiva Push.
+
+### CU15 - Modificar usuario
+
+Este caso de uso no estructural permite al usuario modificar su perfil de usuario, así como su nombre de usuario y contraseña.
+
+#### Implementación de CU15
+
+Para realizar este caso de uso ha sido necesaria la implementación del caso de uso CU14 - Cerrar sesión, el cual incluye el código necesario para cerrar la sesión de usuario.
+
+Esta disciplina ha sido realizada por el Sr. Marrón y el Sr. Blanco.
+
+Se ha modificado la clase EventoDAO, implementando la operación de la base de datos de eliminación de cuenta de usuario.
+
+Además, se han creado la siguiente clase:
+
+* El fragmento PerfilFragment y su layout
+
+#### Integración de CU15
+
+La integración de este caso de uso ha necesitado la integración previamente del caso de uso CU14, por lo que se ha realizado una primitiva **Merge** para trabajar sobre el código con este caso de uso realizado.
+
+Posteriormente, una vez que el caso de uso está implementado, **se ha realizado la publicación del código** terminado en la rama del repositorio correspondiente lanzando una primitiva Push.
+
+Esta disciplina la debe realizar el **Sr. Blanco.** 
+
+Una vez finalizada esta fase, **se integrará este caso de uso en la rama Develop** con todos los cambios de la rama correspondiente mediante un Merge, publicando después los cambios correspondientes en la rama Develop mediante la primitiva Push.
+
+### CU16 - Eliminar usuario
+
+Este caso de uso no estructural permite al usuario modificar su perfil de usuario, así como su nombre de usuario y contraseña.
+
+#### Implementación de CU16
+
+Para realizar este caso de uso ha sido necesaria la implementación del caso de uso CU15 - Modificar Usuario, el cual incluye la clase PerfilFragment.
+
+Esta disciplina ha sido realizada por el **Sr. Blanco.**
+
+Se ha modificado la clase EventoDAO, implementando la operación de la base de datos de eliminación de cuenta de usuario.
+
+Además, se han creado la siguiente clase:
+
+* El evento de diálogo DeleteEventDialog
+
+### Integración de CU16
+
+La integración de este caso de uso ha necesitado la integración previamente del caso de uso CU15, por lo que se ha realizado una primitiva **Merge** para trabajar sobre el código con este caso de uso realizado.
+
+Posteriormente, una vez que el caso de uso está implementado, **se ha realizado la publicación del código** terminado en la rama del repositorio correspondiente lanzando una primitiva Push.
+
+Esta disciplina la debe realizar el **Sr. Blanco.** 
+
+Una vez finalizada esta fase, **se integrará este caso de uso en la rama Develop** con todos los cambios de la rama correspondiente mediante un Merge, publicando después los cambios correspondientes en la rama Develop mediante la primitiva Push.
 
 # Diseño de la interfaz de usuario <a name="diseñoInterfazUsuario"></a>
 
