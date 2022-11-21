@@ -1598,7 +1598,7 @@ La implementación de este caso de uso se ha completado mediante la creación de
 
 Esta disciplina ha sido realizada por el **Sr. Blanco.**
 
-### Integración de CU12
+#### Integración de CU12
 
 La integración de este caso de uso ha necesitado la integración previamente del caso de uso CU11, por lo que se ha realizado una primitiva **Merge** para trabajar sobre el código con este caso de uso realizado.
 
