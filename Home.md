@@ -1239,6 +1239,8 @@ Hay que concretar que dentro de este informe no se tienen en cuenta las **subtar
 
 # Desarrollo del progreso del proyecto <a name="desarrolloProgreso"></a>
 
+**Importante**: durante el desarrollo de la práctica de GPS, inicialmente se crearon las ramas referentes a los primeros 4 casos de uso. Seguidamente se implementaron los 4 casos de usos con sus commits (ligados a las tareas de Jira) y se integraron en la rama develop. En este instante, nos percatamos de que se nos había olvidado crear el resto de ramas (cu05-cu16), de manera que estas ramas se crearon a partir de la integracion de los primeros casos de uso en la rama develop.
+
 ## Síntesis de la planificación por roles <a name="sintesisPlanificacion"></a>
 
 En este apartado se documentará la distribución de los casos de uso, realizados teniendo en cuenta el punto de vista de los roles, que participan en cada uno de los equipos, a modo de síntesis del apartado de configuración del seguimiento de planificación. 
@@ -1982,7 +1984,9 @@ Este plugin además nos da todas las opciones que podemos realizar a través de 
 
 #### Ramas utilizadas en el proyecto <a name="ramas"></a>
 
-En concreto, en este proyecto se utilizará una rama master que contendrá el código final de la aplicación, además de una rama develop, que contendrá una rama por cada caso de uso con el código de la implementación de estos. 
+En concreto, en este proyecto se utilizará una rama master que contendrá el código final de la aplicación, además de una rama develop. A partir de la develop, se crean las 16 ramas correspondientes a los 16 casos de uso.
+
+**Importante**: durante el desarrollo de la práctica de GPS, inicialmente se crearon las ramas referentes a los primeros 4 casos de uso. Seguidamente se implementaron los 4 casos de usos con sus commits (ligados a las tareas de Jira) y se integraron en la rama develop. En este instante, nos percatamos de que se nos había olvidado crear el resto de ramas (cu05-cu16), de manera que estas ramas se crearon a partir de la integracion de los primeros casos de uso en la rama develop.
 
 Inicialmente, la estructura de estas ramas era la siguiente:
 
