@@ -74,6 +74,7 @@
       - [Ramas utilizadas en el proyecto <a name="ramas"></a>](#Ramas-utilizadas-en-el-proyecto-)
   - [Integración continua <a name="integracionContinua"></a>](#Integración-continua-)
 - [Implementación <a name="implementacion"></a>](#Implementación-)
+  - [Estructura del proyecto <a name="estructura"></a>](#Estructura)
   - [Modelo de datos <a name="modeloDatos"></a>](#Modelo-de-datos-)
   - [Detalles de implementación <a name="detallesImplementacion"></a>](#Detalles-de-implementación-)
     - [Patrones de Diseño <a name="patronesDiseño"></a>](#Patrones-de-Diseño-)
@@ -2125,6 +2126,31 @@ Se ha mencionado que los eventos tienen asignado una ubicación de montaña o mu
 Para convertir los objetos del JSON en objetos java y cargarlos en nuestra aplicación, se han diseñado dos clases java con la herramienta jsonSchema2Pojo, obteniendo las clases Montana y Municipio.
 
 [https://www.jsonschema2pojo.org](https://www.jsonschema2pojo.org)
+
+## Estructura del proyecto <a name="estructura"></a>
+
+Se ha llevado a cabo una división de la estructura del proyecto en distintos módulos.
+
+Dentro de la carpeta **json **se encuentran aquellos modelos de datos que no se guardan en la base de datos sino que almacenan en tiempo de ejecución los datos extraídos de los archivos con extensión json.
+
+El módulo de **Room **contiene aquellas clases involucradas con la base de datos:
+* **DAO**: Los archivos Dao
+* **Javadb**: Herramientas utilizadas en la conversión de datos de los modelos.
+* **Modelo**: Clases modelo que almacenan la información de cada entidad.
+
+En el módulo **utils **se encuentran las dos clases que trabajan con la API.
+
+En el módulo UI se encuentran aquellas actividades y fragmentos que interactuan con la interfaz de la aplicación:
+* **Ajustes**: Actividad y fragmento de ajustes
+* **Eventos**: Actividades y fragmentos correspondientes a las operaciones CRUD sobre las entidades de Eventos.
+* **Inicio**: Fragmento de inicio de la aplicación
+* **ListaEventos**: Contiene aquellas clases involucradas en mostrar y filtrar los eventos en el caso de uso de la lista.
+* **Localizaciones**: Componentes relacionados con el caso de uso de filtrado y búsqueda de localizaciones
+* **Perfil**: Actividades y fragmentos correspondientes a las operaciones CRUD sobre la entidad de usuario.
+
+<img src="https://i.imgur.com/wROWjBQ.png"/>
+
+
 
 ## Detalles de implementación <a name="detallesImplementacion"></a>
 
