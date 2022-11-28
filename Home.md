@@ -1939,7 +1939,7 @@ Ahora podremos empezar a realizar tareas, para ello deberemos de acceder a la li
 
 <img src="https://i.imgur.com/TJmQFz0.png"/>
 
-Una vez hecho esto podremos seleccionar la tarea de gira que queremos empezar a desarrollar buscándola dentro de la lista que nos aparece.
+Una vez hecho esto podremos seleccionar la tarea de Jira que queremos empezar a desarrollar buscándola dentro de la lista que nos aparece.
 
 <img src="https://i.imgur.com/Xj1PuEE.png"/>
 
