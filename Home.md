@@ -42,12 +42,13 @@
     - [Proporción de Épicas, Tareas y Subtareas <a name="analisisGraficoNaranja"></a>](#proporci%C3%B3n-de-%C3%A9picas-tareas-y-subtareas--1)
     - [Proporción de tareas por caso de uso <a name="analisisGraficoAzul"></a>](#proporci%C3%B3n-de-tareas-por-caso-de-uso-)
     - [Contribución de los líderes de equipo <a name="contribucionBlanco"></a>](#contribuci%C3%B3n-de-los-l%C3%ADderes-de-equipo-)
-  - [Desarrollo del progreso del proyecto <a name="desarrolloProgreso"></a>](#Desarrollo-del-progreso-del-proyecto-)
+  - [Progreso del proyecto <a name="desarrolloProgreso"></a>](#Progreso-del-proyecto-)
     - [Síntesis de la planificación por roles <a name="sintesisPlanificacion"></a>](#Síntesis-de-la-planificación-por-roles-)
-    - [Desarrollo del Equipo 1 (Sr. Blanco) <a name="desarrolloEquipo1"></a>](#Desarrollo-del-Equipo-1-Sr-Blanco-)
-    - [Desarrollo del Equipo 2 (Sr. Marrón) <a name="desarrolloEquipo2"></a>](#Desarrollo-del-Equipo-2-Sr-Marrón-)
-    - [Desarrollo del Equipo 3 (Sr. Naranja) <a name="desarrolloEquipo3"></a>](#Desarrollo-del-Equipo-3-Sr-Naranja-)
-    - [Desarrollo del Equipo 4 (Sr. Azul) <a name="desarrolloEquipo4"></a>](#Desarrollo-del-Equipo-4-Sr-Azul-)
+    - [Proceso seguido del Equipo 1 (Sr. Blanco) <a name="desarrolloEquipo1"></a>](#Proceso-seguido-del-Equipo-1-Sr-Blanco-)
+    - [Proceso seguido del Equipo 2 (Sr. Marrón) <a name="desarrolloEquipo2"></a>](#Proceso-seguido-del-Equipo-2-Sr-Marrón-)
+    - [Proceso seguido del Equipo 3 (Sr. Naranja) <a name="desarrolloEquipo3"></a>](#Proceso-seguido-del-Equipo-3-Sr-Naranja-)
+    - [Proceso seguido del Equipo 4 (Sr. Azul) <a name="desarrolloEquipo4"></a>](#Proceso-seguido-del-Equipo-4-Sr-Azul-)
+    - [Análisis del progreso <a name="analisisProgreso2"></a>](#Análisis-del-progreso--4)
 - [Diseño de la interfaz de usuario <a name="diseñoInterfazUsuario"></a>](#Diseño-de-la-interfaz-de-usuario-)
   - [Mapa de Navegación: pantallas, patrones y diagrama <a name="mapaNavegacion"></a>](#Mapa-de-Navegación-pantallas-patrones-y-diagrama-)
     - [Diagrama de casos de uso <a name="diagramaCasosdeUso"></a>](#Diagrama-de-casos-de-uso-)
@@ -1237,7 +1238,7 @@ Por último, mediante los informas del Jira se va mostrar la **contribución de 
 
 Hay que concretar que dentro de este informe no se tienen en cuenta las **subtareas**, ni el tiempo que estas ocupan en cada usuario, por lo que puede variar entre distintos usuarios.
 
-# Desarrollo del progreso del proyecto <a name="desarrolloProgreso"></a>
+# Progreso del proyecto <a name="desarrolloProgreso"></a>
 
 **Importante**: durante el desarrollo de la práctica de GPS, inicialmente se crearon las ramas referentes a los primeros 4 casos de uso. Seguidamente se implementaron los 4 casos de usos con sus commits (ligados a las tareas de Jira) y se integraron en la rama develop. En este instante, nos percatamos de que se nos había olvidado crear el resto de ramas (cu05-cu16), de manera que estas ramas se crearon a partir de la integracion de los primeros casos de uso en la rama develop.
 
@@ -1272,7 +1273,7 @@ Para comprobar que este reparto de tareas es equitativo entre los distintos role
 | Sr Naranja | CU01, CU02, CU03, CU13             | 4   |
 | Sr Azul    | CU04, CU05, CU06, CU07, CU08       | 4,5 |
 
-## Desarrollo del Equipo 1 (Sr. Blanco) <a name="desarrolloEquipo1"></a>
+## Proceso seguido del Equipo 1 (Sr. Blanco) <a name="desarrolloEquipo1"></a>
 
 En este apartado se documentará todo el proceso seguido por el Equipo 1 para realizar los casos de uso, desde la implementación hasta la integración final. Se detalla **qué archivos se han modificado** concretamente y **cómo se ha realizado la integración** de estos casos de uso.
 
@@ -1387,7 +1388,7 @@ Posteriormente, una vez que el caso de uso está implementado, **se ha realizado
 
 Una vez finalizada esta fase, **se integrará este caso de uso en la rama Develop** con todos los cambios de la rama correspondiente mediante un Merge, publicando después los cambios correspondientes en la rama Develop mediante la primitiva Push.
 
-## Desarrollo del Equipo 2 (Sr. Marrón) <a name="desarrolloEquipo2"></a>
+## Proceso seguido del Equipo 2 (Sr. Marrón) <a name="desarrolloEquipo2"></a>
 
 En este apartado se documentará todo el proceso seguido por el Equipo 2 para realizar los casos de uso, desde la implementación hasta la integración final. Se detalla **qué archivos se han modificado** concretamente y **cómo se ha realizado la integración** de estos casos de uso.
 
@@ -1501,7 +1502,7 @@ Esta disciplina ha sido realizada por el **Sr. Azul.**
 
 Una vez finalizada esta fase, se **integrará este caso de uso en la rama Develop** con todos los cambios de la rama correspondiente mediante un Merge, publicando después los cambios correspondientes en la rama Develop mediante la primitiva Push.
 
-## Desarrollo del Equipo 3 (Sr. Naranja) <a name="desarrolloEquipo3"></a>
+## Proceso seguido del Equipo 3 (Sr. Naranja) <a name="desarrolloEquipo3"></a>
 
 En este apartado se documentará todo el proceso seguido por el Equipo 3 para realizar los casos de uso, desde la implementación hasta la integración final. Se detalla **qué archivos se han modificado** concretamente y **cómo se ha realizado la integración** de estos casos de uso.
 
@@ -1614,7 +1615,7 @@ Esta disciplina ha sido realizada por el **Sr. Marrón.**
 
 Una vez finalizada esta fase, **se integrará este caso de uso en la rama Develop** con todos los cambios de la rama correspondiente mediante un Merge, publicando después los cambios correspondientes en la rama Develop mediante la primitiva Push.
 
-## Desarrollo del Equipo 4 (Sr. Azul) <a name="desarrolloEquipo4"></a>
+## Proceso seguido del Equipo 4 (Sr. Azul) <a name="desarrolloEquipo4"></a>
 
 En este apartado se documentará todo el proceso seguido por el Equipo 4 para realizar los casos de uso, desde la implementación hasta la integración final. Se detalla **qué archivos se han modificado** concretamente y **cómo se ha realizado la integración** de estos casos de uso.
 
@@ -1724,6 +1725,10 @@ Posteriormente, una vez que el caso de uso está implementado, **se ha realizado
 Esta disciplina la debe realizar el **Sr. Blanco.** 
 
 Una vez finalizada esta fase, **se integrará este caso de uso en la rama Develop** con todos los cambios de la rama correspondiente mediante un Merge, publicando después los cambios correspondientes en la rama Develop mediante la primitiva Push.
+
+### Análisis del progreso <a name="analisisProgreso2"></a>
+
+
 
 # Diseño de la interfaz de usuario <a name="diseñoInterfazUsuario"></a>
 
