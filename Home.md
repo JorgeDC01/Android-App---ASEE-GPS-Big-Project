@@ -2133,14 +2133,14 @@ Para convertir los objetos del JSON en objetos java y cargarlos en nuestra aplic
 
 Se ha llevado a cabo una división de la estructura del proyecto en distintos módulos.
 
-Dentro de la carpeta **json ** se encuentran aquellos modelos de datos que no se guardan en la base de datos sino que almacenan en tiempo de ejecución los datos extraídos de los archivos con extensión json.
+Dentro de la carpeta <strong>json</strong> se encuentran aquellos modelos de datos que no se guardan en la base de datos sino que almacenan en tiempo de ejecución los datos extraídos de los archivos con extensión json.
 
-El módulo de **Room ** contiene aquellas clases involucradas con la base de datos:
+El módulo de <strong>Room</strong> contiene aquellas clases involucradas con la base de datos:
 * **DAO**: Los archivos Dao
 * **Javadb**: Herramientas utilizadas en la conversión de datos de los modelos.
 * **Modelo**: Clases modelo que almacenan la información de cada entidad.
 
-En el módulo **utils ** se encuentran las dos clases que trabajan con la API.
+En el módulo <strong>utils</strong> se encuentran las dos clases que trabajan con la API.
 
 En el módulo UI se encuentran aquellas actividades y fragmentos que interactuan con la interfaz de la aplicación:
 * **Ajustes**: Actividad y fragmento de ajustes
