@@ -1728,7 +1728,11 @@ Una vez finalizada esta fase, **se integrará este caso de uso en la rama Develo
 
 ### Análisis del progreso <a name="analisisProgreso2"></a>
 
+Informe de Seguimiento del Tiempo
+<img src="https://imgur.com/SXYFi4i.png"/>
 
+Gráfica de trabajo hecho
+<img src="https://imgur.com/kd2CDeL.png"/>
 
 # Diseño de la interfaz de usuario <a name="diseñoInterfazUsuario"></a>
 
