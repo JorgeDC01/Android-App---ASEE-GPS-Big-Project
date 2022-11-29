@@ -1713,7 +1713,7 @@ Se ha modificado la clase EventoDAO, implementando la operación de la base de d
 
 Además, se han creado la siguiente clase:
 
-* El evento de diálogo DeleteEventDialog
+* El evento de diálogo DeleteDialogFragment
 
 #### Integración de CU16
 
