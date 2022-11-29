@@ -1976,7 +1976,7 @@ Una vez instalado, nos aparecerá en la parte inferior, en la cual si presionamo
 * **Password**: La contraseña asociada a dicho nombre de usuario.
 
 <img src="https://i.imgur.com/pyzTJep.png"/>
-Con esto ya podemos trabajar con Jira seleccionando la tarea que queramos realizar y mediante el botón de **transit**, seleccionando la tarea como en progreso:
+Con esto ya podemos trabajar con Jira seleccionando la tarea que queramos realizar y mediante el botón de <strong>transit</strong>, seleccionando la tarea como en progreso:
 
 <img src="https://i.imgur.com/wAvATbE.png"/>
 
@@ -2036,7 +2036,7 @@ Esta disciplina se divide en 2 tareas:
 * “Implement components”
 * “Test components”
 
-Este proceso consistirá únicamente en la disciplina de **“Implement components” **
+Este proceso consistirá únicamente en la disciplina de <strong>“Implement components”</strong>
 Esta corresponde a la implementación del caso de uso correspondiente utilizando Android Studio a quien tenga asignada dicha implementación según la planificación del Jira. 
 
 Para ello, el rol asignado debe marcar en Jira la tarea correspondiente del estado **TO-DO** al estado **In Progress.** El código debe contener tanto las pantallas (Activitys y Fragments) que muestran el código, como los componentes de la lógica de negocio (clases), así como las posibles interfaces DAO que deban intervenir.
