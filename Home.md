@@ -1730,12 +1730,16 @@ Una vez finalizada esta fase, **se integrará este caso de uso en la rama Develo
 
 Informe de Seguimiento del Tiempo
 <img src="https://imgur.com/SXYFi4i.png"/>
-
-Gráfica de trabajo hecho
-<img src="https://imgur.com/kd2CDeL.png"/>
+En este primer informe podemos ver el progreso que llevamos del proyecto en función del tiempo que tenemos planeado dedicarle, dando como resultado que ya hemos hecho el **35%** de la carga del trabajo del proyecto quedando por tanto un **65% restante**.
 
 Informe de gráfico de tarta en función del estado
 <img src="https://imgur.com/XB5XUe1.png"/>
+El segundo informe nos indica todas las tareas que ya hemos realizado del total, dándonos como que ya hemos realizado el 52% de las tareas y que quedan por hacer el 47%, en contraste con el informe anterior podemos ver que el porcentaje de tareas realizadas es mucho mayor que el de carga de trabajo, esto es porque las últimas tareas son las que más tiempo consumen.
+
+Gráfica de trabajo hecho
+<img src="https://imgur.com/kd2CDeL.png"/>
+En el tercer informe vemos una gráfica del trabajo realizado conforme al tiempo, en este informe podemos ver en qué instante del tiempo se han ido realizando las distintas tareas hasta el día de hoy.
+
 
 # Diseño de la interfaz de usuario <a name="diseñoInterfazUsuario"></a>
 
