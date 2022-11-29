@@ -1734,6 +1734,9 @@ Informe de Seguimiento del Tiempo
 Gráfica de trabajo hecho
 <img src="https://imgur.com/kd2CDeL.png"/>
 
+Informe de gráfico de tarta en función del estado
+<img src="https://imgur.com/XB5XUe1.png"/>
+
 # Diseño de la interfaz de usuario <a name="diseñoInterfazUsuario"></a>
 
 ## Mapa de Navegación: pantallas, patrones y diagrama <a name="mapaNavegacion"></a>
