@@ -93,25 +93,10 @@
 - [Gestión de la calidad del Software <a name="gestionCalidadSoftware"></a>](#Gestión-de-la-calidad-del-Software-)
   - [Pruebas implementadas <a name="pruebasImplementadas"></a>](#Pruebas-implementadas-)
     - [Equipo 1 (Señor Blanco) <a name="testEquipo1"></a>](#Equipo-1-Señor-Blanco-)
-      - [CU01 - Añadir Evento de Municipio <a name="testCU01"></a>](#CU01-Añadir-Evento-de-Municipio-)
-      - [CU02 - Añadir Evento de Montaña <a name="testCU02"></a>](#CU02-Añadir-Evento-de-Montaña-)
-      - [CU03 - Añadir Usuario <a name="testCU03"></a>](#CU03-Añadir-usuario)
-      - [CU04  - Añadir barra de búsqueda y filtrado de ubicaciones <a name="testCU04"></a>](#CU04-Añadir-barra-de-búsqueda-y-filtrado-de-ubicaciones-)
     - [Equipo 2 (Señor Marrón) <a name="testEquipo2"></a>](#Equipo-2-Señor-Marrón-)
-      - [CU05 - Añadir preferencias desde el menú AppBar <a name="testCU05"></a>](#CU13-Añadir-preferencias-desde-el-menú-AppBar-)
-      - [CU06 - Consultar tiempo detallado de una ubicación <a name="testCU06"></a>](#CU14-Consultar-tiempo-detallado-de-una-ubicación-)
-      - [CU07 - Modificar un evento <a name="testCU07"></a>](#CU07-Modificar-un-evento-)
-      - [CU08 - Eliminar un evento <a name="testCU08"></a>](#CU08-Eliminar-un-evento-)
     - [Equipo 3 (Señor Naranja) <a name="testEquipo3"></a>](#Equipo-3-Señor-Naranja-)
-      - [CU09 - Consultar tiempo meteorológico en la ubicación actual <a name="testCU09"></a>](#CU09-Consultar-tiempo-meteorológico-en-la-ubicación-actual-)
-      - [CU10 - Modificar idioma y tema a modo oscuro <a name="testCU10"></a>](#CU10-Modificar-idioma-y-tema-a-modo-oscuro-)
-      - [CU11 - Consultar lista de eventos <a name="testCU11"></a>](#CU11-Consultar-lista-de-eventos-)
-      - [CU12 - Consultar un evento <a name="testCU12"></a>](#CU12-Consultar-un-evento-)
     - [Equipo 4 (Señor Azul) <a name="testEquipo4"></a>](#Equipo-4-Señor-Azul-)
-      - [CU13 - Iniciar sesión <a name="testCU13"></a>](#CU13-Iniciar-sesión-)
-      - [CU14 - Cerrar sesión <a name="testCU14"></a>](#CU14-Cerrar-sesión-)
-      - [CU15 - Modificar usuario <a name="testCU15"></a>](#CU15-Modificar-usuario-)
-      - [CU16 - Eliminar usuario <a name="testCU16"></a>](#CU16-Eliminar-usuario-)
+
 # Introduccion <a name="introduction"></a>
 
 **Motivación**
@@ -2406,6 +2391,8 @@ La grabadora de pruebas <strong>Espresso</strong> te permite crear pruebas de IU
 En primera instancia, cada líder de los equipos de desarrollo han creado las ramas correspondientes a los casos de uso asignados a cada equipo. Estas nuevas ramas tienen como nombre TEST - CU<Número> y han sido creadas a partir de la rama “origin/develop” de la práctica de implementación.
 
 A continuación, se engloba en una tabla la planificación por roles de las tareas de testeo:
+
+<img src="https://imgur.com/tW23VWd" />
 
 Cabe destacar que en esta tabla la tarea **Test Evl.** corresponde a la de la disciplina de test “Test and Evaluate”, mientras que la tarea denominada **AAM** corresponde a “Achieve Acceptable Mission” and Improve Test Assets”.
 
