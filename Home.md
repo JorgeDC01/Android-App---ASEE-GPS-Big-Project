@@ -2321,3 +2321,43 @@ Cuando se activa el **checkbox**, desde el fragmento “AjustesFragment” se mo
 Por otro lado, se incluyen dos archivos en la carpeta de recursos de la aplicación llamados theme (uno con la configuración de la interfaz en modo claro y el otro en modo oscuro). En estos archivos theme, se definen unos estilos que serán intercambiados según la configuración de la aplicación.
 
 En el resto de componentes de la aplicación, se realiza el mismo proceso. En el caso de las actividades sin fragmentos, en el **onResume()** se llama al método que se encarga de leer SharedPreferences y delegar el cambio de tema.
+
+# Gestión de la calidad del Software <a name="gestionCalidadSoftware"></a>
+
+En este apartado se describen las pruebas realizadas a la aplicación Android, así como el análisis del código para solventar problemas.
+Pruebas
+
+En primer lugar, se implementan los test **unitarios**, los cuales son más simples de implementar y suelen identificar un mayor número de bugs o problemas. Estos presentan una serie de características:
+* Deben ser muy pequeños
+* Deben estar centralizados en funcionalidades muy específicas.
+* Se recomienda la realización de test locales
+* Normalmente, no es necesario realizar test instrumentalizados.
+
+Existen multitud de frameworks para implementar test unitarios como JUNIT, Cactus, Mockito, etc. Se ha elegido JUnit, un framework para escribir test unitarios repetibles que pueden ser fácilmente integrados en cualquier proyecto Java. Es uno de los frameworks más importantes para el desarrollo del concepto Test-Driven Development.
+
+Se utiliza la librería JUnit para implementar los test unitarios asociados a las tareas “Test Components” de cada caso de uso. Para ello, en el build.gradle se incluyen las siguientes  librerías:
+
+testImplementation 'junit:junit:4.12'
+testImplementation 'androidx.test:core:1.4.0'
+androidTestImplementation 'androidx.test:core:1.4.0'
+
+androidTestImplementation 'androidx.test:runner:1.4.0'
+androidTestImplementation 'androidx.test:rules:1.4.0'
+androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+Los test unitarios se almacenan en un paquete de pruebas llamado “test”. Los test son clases java con anotaciones de JUnit, que le indican al “Runner” por defecto del framework Android cómo se deben ejecutar las clases test. 
+
+Respecto a los nombres de los test unitarios, estos deben describir el funcionamiento/objetivo del test, qué caso de uso se está testeando y deben incluir el sufijo <_UnitTest>.
+
+Los test <strong>funcionales</strong> conllevan un mayor tiempo de implementación y de ejecución, aunque también proporcionan una mayor fiabilidad.
+* Normalmente, evalúan las funcionalidades de la aplicación.
+* Tests de secciones verticales de la aplicación. Estos test evalúan diferentes interacciones entre las capas.
+* No es recomendado el uso de test locales.
+* Se recomiendan tests instrumentalizados.
+
+Probar las interacciones de usuario dentro de una sola app ayuda a garantizar que los usuarios no tengan resultados inesperados ni una mala experiencia cuando interactúen con la app. Para realizar los test de interfaz o funcionales, se utiliza la librería **Espresso**. 
+
+Espresso está dirigido a desarrolladores, que creen que las pruebas automatizadas son una parte integral del ciclo de vida del desarrollo. Si bien Espresso se puede usar para pruebas de caja negra, quienes están familiarizados con la base de código bajo en modo de prueba pueden aprovecharlo al máximo.
+
+En el build.gradle, se añade las dependencias necesarias de la librería:
+
