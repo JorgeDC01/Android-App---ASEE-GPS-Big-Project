@@ -2337,13 +2337,13 @@ Existen multitud de frameworks para implementar test unitarios como JUNIT, Cactu
 
 Se utiliza la librería JUnit para implementar los test unitarios asociados a las tareas “Test Components” de cada caso de uso. Para ello, en el build.gradle se incluyen las siguientes  librerías:
 
-testImplementation 'junit:junit:4.12'
+<code>testImplementation 'junit:junit:4.12'
 testImplementation 'androidx.test:core:1.4.0'
 androidTestImplementation 'androidx.test:core:1.4.0'
 
 androidTestImplementation 'androidx.test:runner:1.4.0'
 androidTestImplementation 'androidx.test:rules:1.4.0'
-androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'</code>
 
 Los test unitarios se almacenan en un paquete de pruebas llamado “test”. Los test son clases java con anotaciones de JUnit, que le indican al “Runner” por defecto del framework Android cómo se deben ejecutar las clases test. 
 
