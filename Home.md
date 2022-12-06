@@ -2337,13 +2337,13 @@ Existen multitud de frameworks para implementar test unitarios como JUNIT, Cactu
 
 Se utiliza la librería JUnit para implementar los test unitarios asociados a las tareas “Test Components” de cada caso de uso. Para ello, en el build.gradle se incluyen las siguientes  librerías:
 
-<code>testImplementation 'junit:junit:4.12'<br>
-testImplementation 'androidx.test:core:1.4.0'<br>
-androidTestImplementation 'androidx.test:core:1.4.0'<br>
-<br>
-androidTestImplementation 'androidx.test:runner:1.4.0' <br>
-androidTestImplementation 'androidx.test:rules:1.4.0' <br>
-androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'</code>
+<code>testImplementation 'junit:junit:4.12'</code>
+<code>testImplementation 'androidx.test:core:1.4.0'</code>
+<code>androidTestImplementation 'androidx.test:core:1.4.0'</code>
+
+<code>androidTestImplementation 'androidx.test:runner:1.4.0'</code>
+<code>androidTestImplementation 'androidx.test:rules:1.4.0'</code>
+<code>androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'</code>
 
 Los test unitarios se almacenan en un paquete de pruebas llamado “test”. Los test son clases java con anotaciones de JUnit, que le indican al “Runner” por defecto del framework Android cómo se deben ejecutar las clases test. 
 
@@ -2361,9 +2361,9 @@ Espresso está dirigido a desarrolladores, que creen que las pruebas automatizad
 
 En el build.gradle, se añade las dependencias necesarias de la librería:
 
-<code>androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'<br>
-androidTestImplementation 'androidx.test:runner:1.3.0'<br>
-androidTestImplementation 'androidx.test:rules:1.3.0'</code>
+<code>androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'</code>
+<code>androidTestImplementation 'androidx.test:runner:1.3.0'</code>
+<code>androidTestImplementation 'androidx.test:rules:1.3.0'</code>
 
 Además, como Espresso es un test instrumentado, hay que indicar en el build.gradle la clase que nos ayuda con la instrumentalización: AndroidJUnitRunner.
 
@@ -2390,7 +2390,7 @@ Una vez creadas las ramas de caso de uso para el testeo, cada líder liderará a
 
 #### Test unitario <a name="testUnitarioCU01"></a>
 
-Se crea un paquete en los “test” llamado **AnadirEventoMunicipio**. En él, se crean dos clases test unitarias: **EventoUnitTest** y **MunicipioUnitTest**, correspondientes a las clases del modelo de datos **Municipio** y **Evento**.
+Se crea un paquete en los “test” llamado **AñadirEventoMunicipio**. En él, se crean dos clases test unitarias: **EventoUnitTest** y **MunicipioUnitTest**, correspondientes a las clases del modelo de datos **Municipio** y **Evento**.
 
 Respecto el modelo **Municipio**, se testean los métodos getter/setters. De la clase **Evento**, se testean los métodos getter/setters y el método compareTo(). 
 
@@ -2405,3 +2405,297 @@ Esto mostrará la pantalla de creación, donde se piden todos los datos del even
 Se rellenan todos los campos del formulario asociado al nuevo evento y se confirma la creación, apareciendo una pantalla de detalles. En este instante, se aplican <strong>asserts</strong> para enriquecer el test. 
 
 A continuación, se presiona el botón “back” para comprobar que se ha incluido el nuevo evento en la lista de eventos, mediante un nuevo <strong>assert</strong>. Para que el test no dependa de otros, es necesario devolver la aplicación al estado de ejecución inicial (eliminando el evento creado y la cuenta de usuario).
+
+### CU02 - Añadir Evento de Montaña <a name="testCU02"></a>
+
+#### Test unitario <a name="testUnitarioCU02"></a>
+
+Se crea un paquete en los “test” llamado **AñadirEventoMontana**, el cual requiere dos test unitarios: Montana y Evento. Sin embargo, el segundo se incorpora en el CU01. Por tanto, se crea una clase test unitaria: **MontanaUnitTest**, correspondientes a las clases del modelo de datos <strong>Montana</strong>.
+
+Respecto el modelo **Montana**, se testean los métodos getter/setters.
+
+#### Test funcional <a name="testFuncionalCU02"></a>
+
+Se crea una clase <strong>CrearEventoMontanaTest</strong> en el paquete AndroidTest para testear el funcionamiento de la Interfaz de usuario al crear un evento de montaña en la aplicación. Este método se ha creado a partir de la grabadora de Espresso, incorporada en Android Studio. 
+
+Este test consiste en lo siguiente: primero se registra con una credenciales e inicia sesión en la aplicación. En la pantalla principal, se pulsa el floating button para crear un nuevo evento. Aparece una pantalla de elección del tipo de evento a crear, se elige el de tipo de evento llamado Montaña. 
+
+Esto mostrará la pantalla de creación, donde se piden todos los datos del evento, en este caso se introducirá como nombre del evento “Senderismo” y cómo localidad “Sierra nevada”.
+
+Se rellenan todos los campos del formulario asociado al nuevo evento y se confirma la creación, apareciendo una pantalla de detalles. En este instante, se aplican <strong>asserts</strong> para enriquecer el test. 
+
+A continuación, se presiona el botón “back” para comprobar que se ha incluido el nuevo evento en la lista de eventos, mediante un nuevo <strong>assert</strong>. Para que el test no dependa de otros, es necesario devolver la aplicación al estado de ejecución inicial (eliminando el evento creado y la cuenta de usuario).
+
+### CU03 - Añadir Usuario <a name="testCU03"></a>
+
+#### Test unitario <a name="testUnitarioCU03"></a>
+
+Se crea un paquete en los “test” llamado **AñadirUsuario**. En él, se crea una clase test unitaria: <strong>UsuarioUnitTest</strong>, correspondiente a las clases del modelo de datos <strong>Usuario</strong>.
+
+Respecto el modelo <strong>Usuario</strong>, se testean los métodos getter/setters. De la clase Usuario, se testean los métodos getter/setters y el método compareTo(). 
+
+#### Test funcional <a name="testFuncionalCU03"></a>
+
+Se crea una clase **AnadirUsuarioTest** en el paquete AndroidTest para testear el funcionamiento de la Interfaz de usuario al añadir una cuenta de usuario en la aplicación. Este método se ha creado a partir de la grabadora de Espresso, incorporada en Android Studio. 
+
+Este test consiste en lo siguiente: primero se registra un nuevo usuario introduciendo en la pantalla de registro los datos relativos al nuevo usuario (nombre de usuario y contraseña) y confirmando la operación. En este caso, se ha introducido como nombre de usuario “Jorge” y como contraseña “1234”, se incorporan además <strong>asserts</strong> para comprobar que las credenciales son las esperadas. 
+
+Una vez se ha registrado el usuario, se introducen sus credenciales en la pantalla de inicio sesión para acceder a las funcionalidades de la aplicación confirmando el inicio haciendo clic en el botón de “Iniciar sesión”, lo que llevará a la pantalla principal, donde es necesario devolver la aplicación al estado de ejecución inicial (eliminando la cuenta de usuario).
+
+### CU04 - Añadir barra de búsqueda y filtrado de ubicaciones <a name="testCU04"></a>
+
+#### Test unitario <a name="testUnitarioCU04"></a>
+
+Los test unitarios de este caso de uso son Municipio (lo tiene implementado el test CU01) y Montana (lo tiene implementado el test CU02).
+
+#### Test funcional <a name="testFuncionalCU04"></a>
+
+Se crea una clase <strong>AnadirBarraBusquedaTest</strong> en el paquete AndroidTest para testear el funcionamiento de la Interfaz de usuario al realizar una búsqueda de una localización en la aplicación. Este método se ha creado a partir de la grabadora de Espresso, incorporada en Android Studio. 
+
+Para llevar a cabo este test, primero se ha registrado un usuario en la aplicación, introduciendo en la pantalla de registro los datos relativos al nuevo usuario (nombre de usuario y contraseña) y confirmando la operación. En este caso, se ha introducido como nombre de usuario “Luis” y como contraseña “123456”.
+
+Una vez se ha registrado el usuario, se introducen sus credenciales en la pantalla de inicio sesión para acceder a las funcionalidades de la aplicación confirmando el inicio haciendo clic en el botón de “Iniciar sesión”, lo que llevará a la pantalla principal.
+
+Una vez se ha iniciado sesión, se accede a la barra de búsqueda haciendo clic en el icono de la lupa colocado en la parte superior de barra de navegación (appbar) y se coloca una cadena de texto para comprobar que existen ubicaciones con el nombre de la cadena introducida.
+
+En este caso, se escribirá la cadena “Sevilla”, lo que deberá mostrar una lista de ubicaciones en pantalla con al menos una de ellas llamada Sevilla, esto se comprobará con un **assert** que se realizará sobre un item encontrado del recyclerview que deberá contener esta cadena.
+
+Finalmente, tras comprobar esto, se procede a borrar el usuario accediendo a la pantalla de “Perfil” del propio usuario y seleccionar la funcionalidad de eliminar el usuario registrado haciendo clic en el botón, lo que borrará el usuario de la base de datos y cerrará sesión.
+
+## Equipo 2 (Señor Marrón) <a name="testEquipo2"></a>
+
+### CU05 - Añadir preferencias desde el menú AppBar <a name="testCU05"></a>
+
+#### Test unitario <a name="testUnitarioCU05"></a>
+
+En este caso de uso no se requiere ningún test unitario.
+
+#### Test funcional <a name="testFuncionalCU05"></a>
+
+Se crea una clase **MenuTest** en el paquete AndroidTest para testear el funcionamiento del panel lateral de navegación de la aplicación. Este método se ha creado a partir de la grabadora de Espresso, incorporada en Android Studio. 
+
+Para llevar a cabo este test, primero se ha registrado un usuario en la aplicación, introduciendo en la pantalla de registro los datos relativos al nuevo usuario (nombre de usuario y contraseña) y confirmando la operación. En este caso, se ha introducido como nombre de usuario “pepe” y como contraseña “pepe”.
+
+Una vez se ha registrado el usuario, se introducen sus credenciales en la pantalla de inicio sesión para acceder a las funcionalidades de la aplicación confirmando el inicio haciendo clic en el botón de “Iniciar sesión”, lo que llevará a la pantalla principal.
+
+Tras llegar a la pantalla principal, se procede a navegar a través de todas las pantallas que se encuentran en el menú lateral, recorriendo las pantallas de Lista de filtrado de eventos, perfil, ajustes y finalmente de nuevo Inicio.
+
+Finalmente, tras comprobar esto, se procede a borrar el usuario accediendo a la pantalla de “Perfil” del propio usuario y seleccionar la funcionalidad de eliminar el usuario registrado haciendo clic en el botón, lo que borrará el usuario de la base de datos y cerrará sesión.
+
+### CU06 - Consultar tiempo detallado de una ubicación <a name="testCU06"></a>
+
+#### Test unitario <a name="testUnitarioCU06"></a>
+
+Se crea un paquete en los “test” llamado **ConsultarTiempoDetalladoUbicacion**. En él, se crea una clase test unitaria: <strong>WeatherUnitTest</strong>, en referencia a la clase del modelo <strong>Weather</strong>, sobre la cual se testean los métodos getter/setters.
+
+#### Test funcional <a name="testFuncionalCU06"></a>
+
+Se crea una clase **DetallesLocalizacionTest** en el paquete AndroidTest para testear el funcionamiento de la Interfaz de usuario al consultar los detalles (tiempo) de una localización en la aplicación. Este método se ha creado a partir de la grabadora de Espresso, incorporada en Android Studio. 
+
+Para llevar a cabo este test, primero se ha registrado un usuario en la aplicación, introduciendo en la pantalla de registro los datos relativos al nuevo usuario (nombre de usuario y contraseña) y confirmando la operación. En este caso, se ha introducido como nombre de usuario “Luis” y como contraseña “123456”.
+
+Una vez se ha registrado el usuario, se introducen sus credenciales en la pantalla de inicio sesión para acceder a las funcionalidades de la aplicación confirmando el inicio haciendo clic en el botón de “Iniciar sesión”, lo que llevará a la pantalla principal.
+
+Tras iniciar sesión, se accede a la barra de búsqueda haciendo clic en el icono de la lupa colocado en la parte superior de barra de navegación (appbar) y se coloca una cadena de texto para acceder a una ubicación con el nombre de la cadena introducida.
+
+En este caso, se escribirá la cadena “Sevilla”, lo que muestra una lista de ubicaciones que contienen este nombre, y se hace clic en la ubicación que contiene el nombre igual a la cadena “Sevilla”, lo que llevará a la pantalla de detalles de la localización.
+
+Esto deberá mostrar una pantalla con la información de la localidad “Sevilla”, comprobando mediante <strong>assert</strong> que existen cadenas en la pantalla relativas a esta ubicación dado que no son igual a las cadenas determinadas por defecto.
+
+Finalmente, tras comprobar esto, se procede a borrar el usuario accediendo a la pantalla de “Perfil” del propio usuario y seleccionar la funcionalidad de eliminar el usuario registrado haciendo clic en el botón, lo que borrará el usuario de la base de datos y cerrará sesión.
+
+### CU07 - Modificar un evento <a name="testCU07"></a>
+
+#### Test unitario <a name="testUnitarioCU07"></a>
+
+El test unitario de este caso de uso es el del modelo **Evento**, el cual ha sido implementado en el CU01.
+
+#### Test funcional <a name="testFuncionalCU07"></a>
+
+Se crea una clase **ModificarEventoTest** en el paquete AndroidTest para testear el funcionamiento de la Interfaz de usuario al modificar un evento en la aplicación. Este método se ha creado a partir de la grabadora de Espresso, incorporada en Android Studio.
+
+Este test consiste en lo siguiente: primero se registra un nuevo usuario introduciendo en la pantalla de registro los datos relativos al nuevo usuario (nombre de usuario y contraseña) y confirmando la operación. En este caso, se ha introducido como nombre de usuario “a” y como contraseña “a”, se incorporan además <strong>asserts</strong> para comprobar que las credenciales son las esperadas. 
+
+Una vez se ha registrado el usuario, se introducen sus credenciales en la pantalla de inicio sesión para acceder a las funcionalidades de la aplicación confirmando el inicio haciendo clic en el botón de “Iniciar sesión”, lo que llevará a la pantalla principal. En ella, se crea un nuevo evento de municipio pulsando en el floating button situado en la parte inferior derecha. Se rellenan los campos del formulario y se confirma la creación. En la siguiente pantalla de detalles, se pulsa en el botón “Modificar” y se modifican los datos del evento. Se cambia el título “padel” por “padelcomida” y se localiza el evento en Madrid. Se incorporan <strong>asserts</strong> para enriquecer el test y comprobar que los campos se han modificado correctamente. Con el objetivo de que otros test no dependan de éste, se elimina el nuevo evento modificado.
+
+Se sigue el mismo proceso explicado anteriormente para un evento de tipo montaña, incorporando <strong>asserts</strong> correspondientes a los valores del evento modificado. Del mismo modo, al modificar el evento, se elimina de la aplicación.
+
+Finalmente, tras comprobar esto, se procede a borrar el usuario accediendo a la pantalla de “Perfil” del propio usuario y seleccionar la funcionalidad de eliminar el usuario registrado haciendo clic en el botón, lo que borrará el usuario de la base de datos y cerrará sesión.
+
+### CU08 - Eliminar un evento <a name="testCU08"></a>
+
+#### Test unitario <a name="testUnitarioCU08"></a>
+
+El test unitario de este caso de uso es el del modelo **Evento**, el cual ha sido implementado en el CU01.
+
+#### Test funcional <a name="testFuncionalCU08"></a>
+
+Se crea una clase **EliminarEventoTest** en el paquete AndroidTest para testear el funcionamiento de la Interfaz de usuario al eliminar un evento en la aplicación. Este método se ha creado a partir de la grabadora de Espresso, incorporada en Android Studio. 
+
+Este test consiste en lo siguiente: primero se registra un nuevo usuario introduciendo en la pantalla de registro los datos relativos al nuevo usuario (nombre de usuario y contraseña) y confirmando la operación. En este caso, se ha introducido como nombre de usuario “Jorge” y como contraseña “1234”, se incorporan además <strong>asserts</strong> para comprobar que las credenciales son las esperadas. 
+
+Una vez se ha registrado el usuario, se introducen sus credenciales en la pantalla de inicio sesión para acceder a las funcionalidades de la aplicación confirmando el inicio haciendo clic en el botón de “Iniciar sesión”, lo que llevará a la pantalla de inicio.
+
+Tras llegar a la pantalla principal, se pulsa el floating button para crear un nuevo evento. Aparece una pantalla de elección del tipo de evento a crear, se elige el de tipo de evento llamado Municipio. 
+
+Esto mostrará la pantalla de creación, donde se piden todos los datos del evento, en este caso se introducirá como nombre del evento “Futbol”, como localidad “Sevilla” y como descripción “Con amigos”.
+
+Se rellenan todos los campos del formulario asociado al nuevo evento y se confirma la creación, apareciendo una pantalla de detalles. En este instante, se aplican <strong>asserts</strong> para enriquecer el test. 
+
+A continuación, se presiona el botón “back” para comprobar que se ha incluido el nuevo evento en la lista de eventos, mediante un nuevo <strong>assert</strong>. 
+
+Posteriormente, se vuelve a acceder a la pantalla de detalles del evento creado haciendo clic en el item del evento del recycler View.
+
+Esto llevará a la pantalla para consultar este, donde se pulsará el botón para eliminar el evento, comprobando que tras esto lleva a la lista de eventos y que dicha lista está vacía mediante un <strong>assert</strong>.
+
+Posteriormente, se pulsa el floating button para crear un nuevo evento. Aparece una pantalla de elección del tipo de evento a crear, se elige el de tipo de evento llamado Montaña. 
+
+Esto mostrará la pantalla de creación, donde se piden todos los datos del evento, en este caso se introducirá como nombre del evento “Senderismo” y cómo localidad “Sierra nevada”.
+
+Se rellenan todos los campos del formulario asociado al nuevo evento y se confirma la creación, apareciendo una pantalla de detalles. En este instante, se aplican <strong>asserts</strong> para enriquecer el test. 
+
+A continuación, se presiona el botón “back” para comprobar que se ha incluido el nuevo evento en la lista de eventos, mediante un nuevo <strong>assert</strong>.
+
+Más tarde, se vuelve a acceder a la pantalla de detalles del evento creado haciendo clic en el item del evento del recycler View.
+
+Esto llevará a la pantalla para consultar este, donde se pulsará el botón para eliminar el evento, comprobando que tras esto lleva a la lista de eventos y que dicha lista está vacía mediante un <strong>assert</strong>.
+
+Finalmente, tras comprobar esto, se procede a borrar el usuario accediendo a la pantalla de “Perfil” del propio usuario y seleccionar la funcionalidad de eliminar el usuario registrado haciendo clic en el botón, lo que borrará el usuario de la base de datos y cerrará sesión.
+
+## Equipo 3 (Señor Naranja) <a name="testEquipo3"></a>
+
+### CU09 - Consultar tiempo meteorológico en la ubicación actual <a name="testCU09"></a>
+
+#### Test unitario <a name="testUnitarioCU09"></a>
+
+El test unitario de este caso de uso es el del modelo **Weather**, el cual ha sido implementado en el CU06.
+
+#### Test funcional <a name="testFuncionalCU09"></a>
+
+Se crea una clase <strong>TiempoActualTest</strong> en el paquete AndroidTest para testear el funcionamiento de la Interfaz de usuario al mostrar el tiempo de la localización actual en la aplicación. Este método se ha creado a partir de la grabadora de Espresso, incorporada en Android Studio. 
+
+Para llevar a cabo este test, primero se ha registrado un usuario en la aplicación, introduciendo en la pantalla de registro los datos relativos al nuevo usuario (nombre de usuario y contraseña) y confirmando la operación. En este caso, se ha introducido como nombre de usuario “Luis” y como contraseña “123456”.
+
+Una vez se ha registrado el usuario, se introducen sus credenciales en la pantalla de inicio sesión para acceder a las funcionalidades de la aplicación confirmando el inicio haciendo clic en el botón de “Iniciar sesión”, lo que llevará a la pantalla de inicio.
+
+Al llegar a la pantalla principal, se comprueba que el tiempo actual se muestra correctamente en esta (en la parte superior de la pantalla) comprobando mediante **asserts** que los valores que se encuentran en el cuadro del tiempo actual son distintos de los valores por defecto.
+
+Finalmente, tras comprobar esto, se procede a borrar el usuario accediendo a la pantalla de “Perfil” del propio usuario y seleccionar la funcionalidad de eliminar el usuario registrado haciendo clic en el botón, lo que borrará el usuario de la base de datos y cerrará sesión.
+
+### CU10 - Modificar idioma y tema a modo oscuro <a name="testCU10"></a>
+
+#### Test unitario <a name="testUnitarioCU10"></a>
+
+En este caso de uso no se ha implementado ningún test unitario.
+
+#### Test funcional <a name="testFuncionalCU10"></a>
+
+Se crea una clase <strong>ModoOscuroTest</strong> en el paquete AndroidTest para testear el funcionamiento del modo oscuro o claro en la aplicación. Este método se ha creado a partir de la grabadora de Espresso, incorporada en Android Studio. 
+
+Para llevar a cabo este test, primero se ha registrado un usuario en la aplicación, introduciendo en la pantalla de registro los datos relativos al nuevo usuario (nombre de usuario y contraseña) y confirmando la operación. En este caso, se ha introducido como nombre de usuario “pepe” y como contraseña “pepe”.
+
+Una vez se ha registrado el usuario, se introducen sus credenciales en la pantalla de inicio sesión para acceder a las funcionalidades de la aplicación confirmando el inicio haciendo clic en el botón de “Iniciar sesión”, lo que llevará a la pantalla de inicio.
+
+Tras iniciar sesión, se accede a la pestaña de ajustes a través del panel lateral de navegación para cambiar el tema modo claro, navegando posteriormente a la pestaña de Perfil del panel lateral de navegación, regresando después a la pestaña de ajustes para cambiar de nuevo el tema a modo oscuro.
+Finalmente, tras comprobar esto, se procede a borrar el usuario accediendo a la pantalla de “Perfil” del propio usuario y tras comprobar mediante un **assert** que el color del nombre de usuario es el del valor del azul oscuro (R.color.Azul_osc), selecciona la funcionalidad de eliminar el usuario registrado haciendo clic en el botón, lo que borrará el usuario de la base de datos y cerrará sesión.
+
+### CU11 - Consultar lista de eventos <a name="testCU11"></a>
+
+#### Test unitario <a name="testUnitarioCU11"></a>
+
+El test unitario de este caso de uso es el del modelo **Evento**, el cual ha sido implementado en el CU01.
+
+#### Test funcional <a name="testFuncionalCU11"></a>
+
+Se crea una clase **ListarEventosTest** en el paquete AndroidTest para testear el funcionamiento de la Interfaz de usuario al realizar una búsqueda de una localización en la aplicación. Este método se ha creado a partir de la grabadora de Espresso, incorporada en Android Studio. 
+
+Para llevar a cabo este test, en primer lugar se han creado 4 eventos accediendo al eventoDAO de la base de datos, siendo los nombres de estos “cena1”, “cena2”, “cena3” y “cena4”, con “Madrid” como localizaciones y con “Cañas” como descripciones, insertando estos eventos en la base de datos.
+
+Posteriormente se ha registrado un usuario en la aplicación, introduciendo en la pantalla de registro los datos relativos al nuevo usuario (nombre de usuario y contraseña) y confirmando la operación. En este caso, se ha introducido como nombre de usuario “Miguel” y como contraseña “miguel”.
+
+Una vez se ha registrado el usuario, se introducen sus credenciales en la pantalla de inicio sesión para acceder a las funcionalidades de la aplicación confirmando el inicio haciendo clic en el botón de “Iniciar sesión”, lo que llevará a la pantalla de inicio.
+
+Tras llegar a la pantalla principal, se comprueba mediante <strong>asserts</strong> que todos los eventos creados se muestran en la pantalla de inicio, siendo estos 4 eventos de municipio.
+
+Finalmente, tras comprobar esto, se procede a borrar el usuario accediendo a la pantalla de “Perfil” del propio usuario y seleccionar la funcionalidad de eliminar el usuario registrado haciendo clic en el botón, lo que borrará el usuario de la base de datos y cerrará sesión.
+
+### CU12 - Consultar un evento <a name="testCU12"></a>
+
+#### Test unitario <a name="testUnitarioCU12"></a>
+
+El test unitario de este caso de uso es el del modelo **Evento**, el cual ha sido implementado en el CU01.
+
+#### Test funcional <a name="testFuncionalCU12"></a>
+
+Se crea una clase <strong>ConsultarEventoTest</strong> en el paquete AndroidTest para testear el funcionamiento de la Interfaz de usuario al consultar los detalles de un evento en la aplicación. Este método se ha creado a partir de la grabadora de Espresso, incorporada en Android Studio. 
+
+Para llevar a cabo este test, primero se ha registrado un usuario en la aplicación, introduciendo en la pantalla de registro los datos relativos al nuevo usuario (nombre de usuario y contraseña) y confirmando la operación. En este caso, se ha introducido como nombre de usuario “Jorge” y como contraseña “1234”.
+
+Una vez se ha registrado el usuario, se introducen sus credenciales en la pantalla de inicio sesión para acceder a las funcionalidades de la aplicación confirmando el inicio haciendo clic en el botón de “Iniciar sesión”, lo que llevará a la pantalla de inicio.
+
+Se crea un nuevo evento en la aplicación de tipo Municipio, con el título “Futbol” y localizado en Sevilla, siendo la descripción del evento “con amigos”. Al confirmar la creación, se realizan asserts para comprobar que los campos que se han rellenado en el test son correctos. En última instancia de este evento, se elimina para limpiar la aplicación.
+
+A continuación, se realiza el mismo proceso para los eventos de tipo Montaña. Se rellena el formulario asociado al nuevo evento y se comenten **asserts**, para enriquecer el test. En última instancia de este evento, se elimina para limpiar la aplicación.
+
+Finalmente, tras comprobar esto, se procede a borrar el usuario accediendo a la pantalla de “Perfil” del propio usuario y seleccionar la funcionalidad de eliminar el usuario registrado haciendo clic en el botón, lo que borrará el usuario de la base de datos y cerrará sesión.
+
+## Equipo 4 (Señor Azul) <a name="testEquipo4"></a>
+
+### CU13 - Iniciar sesión <a name="testCU13"></a>
+
+#### Test unitario <a name="testUnitarioCU13"></a>
+
+El test unitario de este caso de uso es el del modelo **Usuario**, el cual ha sido implementado en el CU03.
+
+#### Test funcional <a name="testFuncionalCU13"></a>
+
+Se crea una clase **IniciarSesionTest** en el paquete AndroidTest para testear el funcionamiento de la Interfaz de usuario al iniciar sesión en la aplicación. Este método se ha creado a partir de la grabadora de Espresso, incorporada en Android Studio. 
+
+Para llevar a cabo este test, primero se ha registrado un usuario en la aplicación, introduciendo en la pantalla de registro los datos relativos al nuevo usuario (nombre de usuario y contraseña) y confirmando la operación. En este caso, se ha introducido como nombre de usuario “Jorge” y como contraseña “1234”.
+
+Una vez se ha registrado el usuario, se introducen sus credenciales en la pantalla de inicio sesión para acceder a las funcionalidades de la aplicación confirmando el inicio haciendo clic en el botón de “Iniciar sesión”, lo que llevará a la pantalla de inicio.
+Finalmente, tras comprobar esto, se procede a borrar el usuario accediendo a la pantalla de “Perfil” del propio usuario y seleccionar la funcionalidad de eliminar el usuario registrado haciendo clic en el botón, lo que borrará el usuario de la base de datos y cerrará sesión.
+
+### CU14 - Cerrar sesión <a name="testCU14"></a>
+
+#### Test unitario <a name="testUnitarioCU14"></a>
+
+El test unitario de este caso de uso es el del modelo **Usuario**, el cual ha sido implementado en el CU03.
+
+#### Test funcional <a name="testFuncionalCU14"></a>
+
+Se crea una clase **CerrarSesionTest** en el paquete AndroidTest para testear el funcionamiento de la Interfaz de usuario al cerrar la sesión actual en la aplicación. Este método se ha creado a partir de la grabadora de Espresso, incorporada en Android Studio. 
+
+Este test consiste en lo siguiente: primero se registra un nuevo usuario con una credenciales,  y se inicia sesión en la aplicación. En la pantalla principal, en el AppBar (barra de opciones situada en la parte superior de la pantalla) se pulsa en el icono “Cerrar Sesión” situado en la esquina superior derecha, cerrándose la sesión y retornando en la pantalla de inicio de sesión.
+
+Para que el test no dependa de otros, finalmente se procede a borrar el usuario accediendo a la pantalla de “Perfil” del propio usuario y seleccionar la funcionalidad de eliminar el usuario registrado haciendo clic en el botón, lo que borrará el usuario de la base de datos y cerrará sesión.
+
+### CU15 - Modificar usuario <a name="testCU15"></a>
+
+#### Test unitario <a name="testUnitarioCU15"></a>
+
+El test unitario de este caso de uso es el del modelo **Usuario**, el cual ha sido implementado en el CU03.
+
+#### Test funcional <a name="testFuncionalCU15"></a>
+
+Se crea una clase <strong>ModificarUsuarioTest</strong> en el paquete AndroidTest para testear el funcionamiento de la Interfaz de usuario al modificar el usuario en la aplicación. Este método se ha creado a partir de la grabadora de Espresso, incorporada en Android Studio. 
+
+Este test consiste en lo siguiente: primero se registra un nuevo usuario con una credenciales,  y se inicia sesión en la aplicación. 
+
+En la pantalla principal, se navega por el menú de hamburguesa a la opción “Perfil”. Dentro de ella, aparece un formulario con los campos asociados a las credenciales de la cuenta de usuario con la sesión iniciada. Por defecto, el campo asociado al “username” queda cargado por el valor actual que tenga la cuenta y se modifica por el usuario “juan”. A continuación, se añade la contraseña actual “pepe” y se incorpora una nueva contraseña llamada “juan”. Se pulsa en el botón “Modificar” y aparece la pantalla principal. Para comprobar que la modificación se ha realizado correctamente, se vuelve a los ajustes de perfil en el menú hamburguesa y se incorpora un **assert** para comprobar que el usuario se ha modificado correctamente.
+
+Finalmente, tras comprobar esto, se procede a borrar el usuario accediendo a la pantalla de “Perfil” del propio usuario y seleccionar la funcionalidad de eliminar el usuario registrado haciendo clic en el botón, lo que borrará el usuario de la base de datos y cerrará sesión.
+
+### CU16 - Eliminar usuario <a name="testCU16"></a>
+
+#### Test unitario <a name="testUnitarioCU16"></a>
+
+El test unitario de este caso de uso es el del modelo **Usuario**, el cual ha sido implementado en el CU03.
+
+#### Test funcional <a name="testFuncionalCU16"></a>
+
+Se crea una clase **EliminarUsuarioTest** en el paquete AndroidTest para testear el funcionamiento de la Interfaz de usuario al eliminar el usuario en la aplicación. Este método se ha creado a partir de la grabadora de Espresso, incorporada en Android Studio. 
+
+Este test consiste en lo siguiente: primero se registra un nuevo usuario con una credenciales,  y se inicia sesión en la aplicación. En la pantalla principal, se navega por el menú de hamburguesa a la opción “Perfil”. Dentro de ella, se pulsa el botón “Eliminar” para eliminar la cuenta de usuario. 
+
+Para comprobar que la eliminación se ha realizado correctamente, se busca iniciar sesión con las mismas credenciales del usuario borrado, sin tener ningún efecto, comprobando así que el caso de uso funciona correctamente.
