@@ -90,7 +90,28 @@
       - [Implementación de Spinners en diversos campos <a name="spinners"></a>](#Implementación-de-Spinners-en-diversos-campos-)
       - [Filtrado de localizaciones <a name="filtradoLocalizaciones"></a>](#Filtrado-de-localizaciones-)
       - [Modo Oscuro <a name="modoOscuro"></a>](#Modo-Oscuro-)
-
+- [Gestión de la calidad del Software <a name="gestionCalidadSoftware"></a>](#Gestión-de-la-calidad-del-Software-)
+  - [Pruebas implementadas <a name="pruebasImplementadas"></a>](#Pruebas-implementadas-)
+    - [Equipo 1 (Señor Blanco) <a name="testEquipo1"></a>](#Equipo-1-Señor-Blanco-)
+      - [CU01 - Añadir Evento de Municipio <a name="testCU01"></a>](#CU01-Añadir-Evento-de-Municipio-)
+      - [CU02 - Añadir Evento de Montaña <a name="testCU02"></a>](#CU02-Añadir-Evento-de-Montaña-)
+      - [CU03 - Añadir Usuario <a name="testCU03"></a>](#CU03-Añadir-usuario)
+      - [CU04  - Añadir barra de búsqueda y filtrado de ubicaciones <a name="testCU04"></a>](#CU04-Añadir-barra-de-búsqueda-y-filtrado-de-ubicaciones-)
+    - [Equipo 2 (Señor Marrón) <a name="testEquipo2"></a>](#Equipo-2-Señor-Marrón-)
+      - [CU05 - Añadir preferencias desde el menú AppBar <a name="testCU05"></a>](#CU13-Añadir-preferencias-desde-el-menú-AppBar-)
+      - [CU06 - Consultar tiempo detallado de una ubicación <a name="testCU06"></a>](#CU14-Consultar-tiempo-detallado-de-una-ubicación-)
+      - [CU07 - Modificar un evento <a name="testCU07"></a>](#CU07-Modificar-un-evento-)
+      - [CU08 - Eliminar un evento <a name="testCU08"></a>](#CU08-Eliminar-un-evento-)
+    - [Equipo 3 (Señor Naranja) <a name="testEquipo3"></a>](#Equipo-3-Señor-Naranja-)
+      - [CU09 - Consultar tiempo meteorológico en la ubicación actual <a name="testCU09"></a>](#CU09-Consultar-tiempo-meteorológico-en-la-ubicación-actual-)
+      - [CU10 - Modificar idioma y tema a modo oscuro <a name="testCU10"></a>](#CU10-Modificar-idioma-y-tema-a-modo-oscuro-)
+      - [CU11 - Consultar lista de eventos <a name="testCU11"></a>](#CU11-Consultar-lista-de-eventos-)
+      - [CU12 - Consultar un evento <a name="testCU12"></a>](#CU12-Consultar-un-evento-)
+    - [Equipo 4 (Señor Azul) <a name="testEquipo4"></a>](#Equipo-4-Señor-Azul-)
+      - [CU13 - Iniciar sesión <a name="testCU13"></a>](#CU13-Iniciar-sesión-)
+      - [CU14 - Cerrar sesión <a name="testCU14"></a>](#CU14-Cerrar-sesión-)
+      - [CU15 - Modificar usuario <a name="testCU15"></a>](#CU15-Modificar-usuario-)
+      - [CU16 - Eliminar usuario <a name="testCU16"></a>](#CU16-Eliminar-usuario-)
 # Introduccion <a name="introduction"></a>
 
 **Motivación**
@@ -2338,11 +2359,15 @@ Existen multitud de frameworks para implementar test unitarios como JUNIT, Cactu
 Se utiliza la librería JUnit para implementar los test unitarios asociados a las tareas “Test Components” de cada caso de uso. Para ello, en el build.gradle se incluyen las siguientes  librerías:
 
 <code>testImplementation 'junit:junit:4.12'</code>
+<br />
 <code>testImplementation 'androidx.test:core:1.4.0'</code>
+<br />
 <code>androidTestImplementation 'androidx.test:core:1.4.0'</code>
-
+<br /><br />
 <code>androidTestImplementation 'androidx.test:runner:1.4.0'</code>
+<br />
 <code>androidTestImplementation 'androidx.test:rules:1.4.0'</code>
+<br />
 <code>androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'</code>
 
 Los test unitarios se almacenan en un paquete de pruebas llamado “test”. Los test son clases java con anotaciones de JUnit, que le indican al “Runner” por defecto del framework Android cómo se deben ejecutar las clases test. 
@@ -2362,7 +2387,9 @@ Espresso está dirigido a desarrolladores, que creen que las pruebas automatizad
 En el build.gradle, se añade las dependencias necesarias de la librería:
 
 <code>androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'</code>
+<br />
 <code>androidTestImplementation 'androidx.test:runner:1.3.0'</code>
+<br />
 <code>androidTestImplementation 'androidx.test:rules:1.3.0'</code>
 
 Además, como Espresso es un test instrumentado, hay que indicar en el build.gradle la clase que nos ayuda con la instrumentalización: AndroidJUnitRunner.
