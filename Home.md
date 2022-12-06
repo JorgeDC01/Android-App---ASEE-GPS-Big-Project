@@ -2337,12 +2337,12 @@ Existen multitud de frameworks para implementar test unitarios como JUNIT, Cactu
 
 Se utiliza la librería JUnit para implementar los test unitarios asociados a las tareas “Test Components” de cada caso de uso. Para ello, en el build.gradle se incluyen las siguientes  librerías:
 
-<code>testImplementation 'junit:junit:4.12'
-testImplementation 'androidx.test:core:1.4.0'
-androidTestImplementation 'androidx.test:core:1.4.0'
-
-androidTestImplementation 'androidx.test:runner:1.4.0'
-androidTestImplementation 'androidx.test:rules:1.4.0'
+<code>testImplementation 'junit:junit:4.12'<br>
+testImplementation 'androidx.test:core:1.4.0'<br>
+androidTestImplementation 'androidx.test:core:1.4.0'<br>
+<br>
+androidTestImplementation 'androidx.test:runner:1.4.0' <br>
+androidTestImplementation 'androidx.test:rules:1.4.0' <br>
 androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'</code>
 
 Los test unitarios se almacenan en un paquete de pruebas llamado “test”. Los test son clases java con anotaciones de JUnit, que le indican al “Runner” por defecto del framework Android cómo se deben ejecutar las clases test. 
@@ -2361,3 +2361,47 @@ Espresso está dirigido a desarrolladores, que creen que las pruebas automatizad
 
 En el build.gradle, se añade las dependencias necesarias de la librería:
 
+<code>androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'<br>
+androidTestImplementation 'androidx.test:runner:1.3.0'<br>
+androidTestImplementation 'androidx.test:rules:1.3.0'</code>
+
+Además, como Espresso es un test instrumentado, hay que indicar en el build.gradle la clase que nos ayuda con la instrumentalización: AndroidJUnitRunner.
+
+<code>testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"</code>
+
+La grabadora de pruebas <strong>Espresso</strong> te permite crear pruebas de IU para tu app sin la necesidad de escribir código de prueba. Es imprescindible deshabilitar las animaciones de la app, para evitar fallos en la grabadora. Para ello, se accede a <i>Configuración - Opciones para desarrolladores</i> y desactiva todas las siguientes opciones:
+* Escala de animación de ventana
+* Escala de animación de transición
+* Escala de duración de animador
+
+## Pruebas implementadas <a name="pruebasImplementadas"></a>
+
+En primera instancia, cada líder de los equipos de desarrollo han creado las ramas correspondientes a los casos de uso asignados a cada equipo. Estas nuevas ramas tienen como nombre TEST - CU<Número> y han sido creadas a partir de la rama “origin/develop” de la práctica de implementación.
+
+A continuación, se engloba en una tabla la planificación por roles de las tareas de testeo:
+
+Cabe destacar que en esta tabla la tarea **Test Evl.** corresponde a la de la disciplina de test “Test and Evaluate”, mientras que la tarea denominada **AAM** corresponde a “Achieve Acceptable Mission” and Improve Test Assets”.
+
+Una vez creadas las ramas de caso de uso para el testeo, cada líder liderará acerca de las tareas que deben realizar cada uno de los roles, así como las clases y componentes que deben ser evaluados para cada caso de uso.
+
+## Equipo 1 (Señor Blanco) <a name="testEquipo1"></a>
+
+### CU01 - Añadir Evento de Municipio <a name="testCU01"></a>
+
+#### Test unitario <a name="testUnitarioCU01"></a>
+
+Se crea un paquete en los “test” llamado **AnadirEventoMunicipio**. En él, se crean dos clases test unitarias: **EventoUnitTest** y **MunicipioUnitTest**, correspondientes a las clases del modelo de datos **Municipio** y **Evento**.
+
+Respecto el modelo **Municipio**, se testean los métodos getter/setters. De la clase **Evento**, se testean los métodos getter/setters y el método compareTo(). 
+
+#### Test funcional <a name="testFuncionalCU01"></a>
+
+Se crea una clase <strong>CrearEventoMunicipioTest</strong> en el paquete AndroidTest para testear el funcionamiento de la Interfaz de usuario al crear un evento de municipio en la aplicación. Este método se ha creado a partir de la grabadora de Espresso, incorporada en Android Studio. 
+
+Este test consiste en lo siguiente: primero se registra con una credenciales e inicia sesión en la aplicación. En la pantalla principal, se pulsa el floating button para crear un nuevo evento. Aparece una pantalla de elección del tipo de evento a crear, se elige el de tipo de evento llamado Municipio. 
+
+Esto mostrará la pantalla de creación, donde se piden todos los datos del evento, en este caso se introducirá como nombre del evento “Futbol” y como localidad “Sevilla”.
+
+Se rellenan todos los campos del formulario asociado al nuevo evento y se confirma la creación, apareciendo una pantalla de detalles. En este instante, se aplican <strong>asserts</strong> para enriquecer el test. 
+
+A continuación, se presiona el botón “back” para comprobar que se ha incluido el nuevo evento en la lista de eventos, mediante un nuevo <strong>assert</strong>. Para que el test no dependa de otros, es necesario devolver la aplicación al estado de ejecución inicial (eliminando el evento creado y la cuenta de usuario).
