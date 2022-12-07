@@ -2392,7 +2392,7 @@ En primera instancia, cada líder de los equipos de desarrollo han creado las ra
 
 A continuación, se engloba en una tabla la planificación por roles de las tareas de testeo:
 
-<img src="https://imgur.com/tW23VWd" />
+<img src="https://imgur.com/tW23VWd.png" />
 
 Cabe destacar que en esta tabla la tarea **Test Evl.** corresponde a la de la disciplina de test “Test and Evaluate”, mientras que la tarea denominada **AAM** corresponde a “Achieve Acceptable Mission” and Improve Test Assets”.
 
