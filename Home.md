@@ -2715,7 +2715,7 @@ Este test consiste en lo siguiente: primero se registra un nuevo usuario con una
 
 Para comprobar que la eliminación se ha realizado correctamente, se busca iniciar sesión con las mismas credenciales del usuario borrado, sin tener ningún efecto, comprobando así que el caso de uso funciona correctamente.
 
-### Arreglo de errores <a name="arregloErrores"></a>
+## Arreglo de errores <a name="arregloErrores"></a>
 A partir de la implementación y observación de los test, se han cometido los siguientes arreglos:
 * Se ha incluido un constructor por defecto, no parametrizado en la clase Evento, Municipio, Usuario y Montana.
 * Al eliminar una cuenta de usuario, se ha incorporado el borrado de todos sus eventos asociados.
