@@ -96,6 +96,7 @@
     - [Equipo 2 (Señor Marrón) <a name="testEquipo2"></a>](#Equipo-2-Señor-Marrón-)
     - [Equipo 3 (Señor Naranja) <a name="testEquipo3"></a>](#Equipo-3-Señor-Naranja-)
     - [Equipo 4 (Señor Azul) <a name="testEquipo4"></a>](#Equipo-4-Señor-Azul-)
+    - [Arreglo de errores <a name="arregloErrores"></a>](#Arreglo-de-errores-)
 
 # Introduccion <a name="introduction"></a>
 
@@ -2713,3 +2714,11 @@ Se crea una clase **EliminarUsuarioTest** en el paquete AndroidTest para testear
 Este test consiste en lo siguiente: primero se registra un nuevo usuario con una credenciales,  y se inicia sesión en la aplicación. En la pantalla principal, se navega por el menú de hamburguesa a la opción “Perfil”. Dentro de ella, se pulsa el botón “Eliminar” para eliminar la cuenta de usuario. 
 
 Para comprobar que la eliminación se ha realizado correctamente, se busca iniciar sesión con las mismas credenciales del usuario borrado, sin tener ningún efecto, comprobando así que el caso de uso funciona correctamente.
+
+### Arreglo de errores <a name="arregloErrores"></a>
+A partir de la implementación y observación de los test, se han cometido los siguientes arreglos:
+* Se ha incluido un constructor por defecto, no parametrizado en la clase Evento, Municipio, Usuario y Montana.
+* Al eliminar una cuenta de usuario, se ha incorporado el borrado de todos sus eventos asociados.
+* Se ha modificado en el layout fragment_crear_evento_montana.xml un atributo del EditText de la fecha llamado focusable. Incorporaba un fallo puesto que al querer elegir la fecha de un nuevo evento, se tenía que pulsar dos veces en el EditText. Por tanto, se le ha asociado el valor “false” al focusable.
+Se ha arreglado un error del CU Modificar Evento, específicamente en la clase ModificarEventoMunicipioFragment. Se actualiza la vista en un Thread secundario, cuando sólo se puede modificar en el hilo principal. Por tanto, se ha incorporado un requireActivity().runOnUiThread() para solventar el problema.
+* Se ha modificado el acceso público  a los atributos de la clase Weather, restringiendo el acceso a privado. Este arreglo ha supuesto unas pequeñas modificaciones en 4 componentes software (fragmentos y actividades, entre ellos), debido a la incorporación de los getter/setters en la clase Weather.
