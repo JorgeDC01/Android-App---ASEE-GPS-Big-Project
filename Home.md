@@ -2303,7 +2303,7 @@ En esta aplicación hemos implementado el usuario de tal forma que solamente exi
 
 Se han implementado campos con el tipo de Spinners en los **campos de Montaña** de las pantallas destinadas a crear un evento de Montaña (layout del fragmento CrearEventoMontana) y modificar un evento de montaña (layout del fragmento ModificarEventoMontana) con el objetivo de seleccionar una montaña existente del conjunto obtenido del JSON para crear o modificar un evento.
 
-De esta forma, se asegura que tras seleccionar el nombre de la montaña en la creación o modificación de eventos, esta no sea errónea, pues se ha tenido que elegir un nombre existente entre las montañas cargadas.
+De esta forma, se asegura que tras seleccionar el nombre de la montaña en la creación o modificación de eventos, esta no sea errónea, pues se ha tenido que elegir un nombre existente entre las montañas cargadas, ahorrandole al usuario el hecho de probar hasta dar con el nombre exacto de la montaña.
 
 Así mismo, también se ha implementado un campo de Spinner para especificar **el tipo de Ordenación** que se aplicará al filtrar todos los eventos, en la sección **Eventos**. Dicho campo con el tipo de ordenación permitirá organizar los eventos por orden de creación o por fecha.
 
@@ -2319,6 +2319,8 @@ En el código de la actividad **LocalizacionesActivity**, se define un listener 
 
 Por último, al disponer de la nueva colección de municipios filtrados, queda actualizar la lista de items del Adapter y notificar que se ha modificado para actualizar la interfaz con los nuevos municipios coincidentes.
 
+Esto **permite** al usuario buscar una localidad sin necesidad de que este sepa su nombre exacto, el cual es necesario tanto para crear un evento como para ver el tiempo actual en una localidad.
+
 #### Modo Oscuro <a name="modoOscuro"></a>
 
 El modo oscuro es un ajuste de configuración que se encuentra en la sección “Ajustes” del menú hamburguesa. Se ha implementado con las **Preferencias** que nos ofrece la API de Android. Por defecto, el tema de la aplicación es el modo oscuro. 
@@ -2328,6 +2330,13 @@ Cuando se activa el **checkbox**, desde el fragmento “AjustesFragment” se mo
 Por otro lado, se incluyen dos archivos en la carpeta de recursos de la aplicación llamados theme (uno con la configuración de la interfaz en modo claro y el otro en modo oscuro). En estos archivos theme, se definen unos estilos que serán intercambiados según la configuración de la aplicación.
 
 En el resto de componentes de la aplicación, se realiza el mismo proceso. En el caso de las actividades sin fragmentos, en el **onResume()** se llama al método que se encarga de leer SharedPreferences y delegar el cambio de tema.
+
+Entre las ventajas que existen a la hora de que nuestra aplicación tenga modo oscuro destacan las siguientes:
+
+* Es saludable para los ojos: Ahorrándole al usuario molestias visuales.
+* Se visualiza mejor en la oscuridad.
+* Prolonga la vida de la batería: Utilizando menos brillo, o incluso con el apagado de los píxeles de la mayor parte de la pantalla en los paneles OLED.
+* Mejora la accesibilidad: Muchas personas con diferentes problemas de vista pueden encontrar en esta opción una forma de visualizar mejor el contenido.
 
 # Gestión de la calidad del Software <a name="gestionCalidadSoftware"></a>
 
