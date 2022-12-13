@@ -20,7 +20,8 @@ public class InicioSesion extends AppCompatActivity {
 
     EditText username;
     EditText password;
-    Button bInicioSesion, bRegistrarse;
+    Button bInicioSesion;
+    Button bRegistrarse;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
