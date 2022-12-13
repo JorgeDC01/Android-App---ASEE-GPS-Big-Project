@@ -1,7 +1,5 @@
 package com.example.proyecto.Json;
 
-import com.example.proyecto.Room.Modelo.Evento;
-
 import java.util.Map;
 import java.util.Objects;
 import java.util.TreeMap;
