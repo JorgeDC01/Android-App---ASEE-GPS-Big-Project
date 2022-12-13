@@ -18,7 +18,8 @@ import com.example.proyecto.Room.Modelo.Usuario;
 
 public class InicioSesion extends AppCompatActivity {
 
-    EditText username, password;
+    EditText username;
+    EditText password;
     Button bInicioSesion, bRegistrarse;
 
     @Override
