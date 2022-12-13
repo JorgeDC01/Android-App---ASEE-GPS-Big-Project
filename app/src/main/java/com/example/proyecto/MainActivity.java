@@ -3,7 +3,6 @@ package com.example.proyecto;
 import android.content.Intent;
 import static java.lang.Thread.sleep;
 
-import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
