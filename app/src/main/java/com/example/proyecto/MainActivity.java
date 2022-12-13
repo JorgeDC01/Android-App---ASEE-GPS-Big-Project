@@ -3,7 +3,6 @@ package com.example.proyecto;
 import android.content.Intent;
 import static java.lang.Thread.sleep;
 
-import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.location.Address;
