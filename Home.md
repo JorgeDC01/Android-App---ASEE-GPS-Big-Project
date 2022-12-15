@@ -2218,6 +2218,13 @@ Se ha utilizado el Patrón singleton en la creación de la clase AppDatabase, qu
 
 Así mismo, también se ha utilizado en la creación de la clase JsonSingleton, que permite obtener todos los datos relativos al clima de las montañas y municipios cargándose de la API. De, esta forma, se pueda acceder a todos los municipios y montañas existentes junto con la información sobre su clima en cualquier parte del programa, permitiendo más facilmente la consulta de los datos de estos por el usuario o su asignación a eventos.
 
+Ventajas del patrón Singleton
+* La propia clase es responsable de crear la única instancia. Por medio de su método constructor.
+* Permite el acceso global a dicha instancia mediante un método de clase.
+* Declara el constructor de clase como privado para que no sea instanciable directamente.
+* Al estar internamente autoreferenciada, en lenguajes como Java, el recolector de basura no actúa.
+* Se puede ejercer un control preciso sobre cuándo y cómo se accede a él.
+
 #### Patrón DAO
 
 El patrón de diseño Data Access Object (DAO) es un patrón de diseño Arquitectónico que permite gestionar el desarrollo de una aplicación que utiliza bases de datos (persistencias de datos) al separar todos los componentes del sistema en 3 tipos bien definidos:
@@ -2239,6 +2246,76 @@ Esta clase **AppDatabase**, que deberá ser abstracta, se utilizará para recupe
 A su vez, **las interfaces DAO** modificarán y accederán los valores de los componentes del modelo de datos a través de los métodos getters y setters definidos de estos. Así mismo, estos componentes DAO contarán con métodos que según como se marquen realizan distintas operaciones en la base de datos, siendo la inserción (Insert), modificación (Update), borrado (Delete) y consulta (Query).
 
 Por otra parte, **los componentes de la lógica de negocio** serán las clases marcadas como Entity, que compondrán la estructura de la base de datos y almacenarán la información recuperada de esta.
+
+Ventajas de utilizar el patrón DAO:
+* Es fácil de implementar
+* Permite separar por completo la lógica de acceso a datos en una capa separada y así solo trabajar con la lógica de negocio sin preocuparnos de donde viene los datos o los detalles técnicos para consultarlos o actualizarlos.
+* Puede funcionar en conjunto con el patrón Repository.
+
+### Refactorización
+
+#### Patrón Repository
+Se ha optado por unificar todas las fuentes de datos creando una sola instancia que permita acceder a todos los datos.
+
+<img src="https://imgur.com/XH3atJm.png"/>
+
+Para ello, se han creado una serie de Repositorios asociados a los objetos del modelo de datos que son almacenados en la base de datos y accedidos desde la app. 
+
+La clase **EventRepository** permitirá acceder tanto a los datos procedentes de la api (APIManager) como a la información que se encuentra en la base de datos de Room (AppDatabase).  La clase de repositorio aísla las fuentes de datos del resto de la app, una capa intermedia entre la capa de dominio y la capa de acceso de datos. Usar una clase de repositorio garantiza que este código sea independiente de la clase ViewModel y es una práctica recomendada para la separación del código y su arquitectura.
+
+Por demás,  un evento tiene asociado datos relacionados con el tiempo meteorológico proporcionados por la API. Si el usuario desea consultar los detalles de un evento consultado recientemente, **EventRepository** se encarga de cargar los datos de la Room (o caché). En el caso de consultar los detalles de un evento en un periodo de tiempo superior al umbral establecido, entonces se realiza una petición a la API OpenWeather y se actualiza la caché con los datos retornados de la API.
+
+Así mismo, también se ha creado una clase **LocationRepository** la cual permitirá acceder a los datos de la API (APIManager) como fuente de datos externa y al modelo de Room (LocationDAO), en el que se manejan las localizaciones alojadas (municipios). De esta manera, el repositorio hará de capa intermedia entre la app (los ViewModels) y estas fuentes de datos.
+
+Del mismo modo, se ha creado una clase **UserRepository** la cual permitirá acceder a los usuarios de Room. 
+
+En el proceso de implementación de este patrón, se consideraron una serie de cambios relativos al modelo de datos de la aplicación propuesto en una versión temprana, con el objetivo de implementar la memoria caché.
+* Para comprobar si se requiere una actualización del tiempo meteorológico de un evento, es conveniente almacenar la información del tiempo dentro del propio objeto Evento. Por ello, se ha modificado la entidad Evento incluyendo los atributos relativos al tiempo meteorológico, que anteriormente se encontraba en la clase Weather. 
+* Por ende, al consultar los detalles de un evento, se comprueba si es necesario recuperar los datos asociados al tiempo de dicho evento desde la caché o actualizar la base de datos con los datos devueltos de la API.
+* Creación de una clase Location, que almacena toda la información (tiempo) relativa a una ubicación concreta. Esta clase sustituye a la anterior Weather, que se introducirá dentro de la clase Evento.
+* Creación de una interfaz dao LocationDAO relativa a la gestión de objetos Location en la base de datos. 
+
+Tras todas estas modificaciones, el modelo de datos resultante utilizado en la base de datos sería el siguiente:
+
+<img src="https://imgur.com/uMSEZGA.png"/>
+
+**Ventajas de usar un repositorio**
+Un módulo de repositorio controla operaciones de datos y te permite usar varios backends. En una app real típica, el repositorio implementa la lógica para decidir si debe recuperar datos de una red o usar resultados almacenados en caché de una base de datos local. 
+
+Con un repositorio, puedes intercambiar los detalles de la implementación, como la migración a una biblioteca de persistencia diferente, sin afectar el código de llamada, como los modelos de vista. Esto también permite que tu código sea modular y se pueda probar. Puedes simular con facilidad el repositorio y probar el resto del código.
+
+Un repositorio debe funcionar como una única fuente de verdad para una parte específica de los datos de tu app. Cuando se trabaja con varias fuentes de datos, como un recurso conectado en red y una caché sin conexión, el repositorio garantiza que los datos de la app sean lo más precisos y actualizados, lo que proporcionará la mejor experiencia posible incluso cuando la app esté sin conexión.
+
+#### Patrón Model - View - ViewModel (MVVM)
+Con el objetivo de incrementar la seguridad de la aplicación y gestionar los datos de forma más rápida y eficiente se ha implementado el patrón Model - View - ViewModel (MVVM).
+ 
+Se han implementado los siguientes viewmodels:
+
+* ListaEventosViewModel: Viewmodel que permite gestionar los datos de la lista de eventos del fragmento ListaEventosFragment.
+* DetallesEventoViewModel: Viewmodel que gestiona los datos al mostrar los detalles de un evento en el fragmento DetallesEventoFragment.
+* TiempoActualViewModel: Viewmodel que gestiona el tiempo actual mostrado en el fragmento de inicio InicioFragment.
+* DetallesLocalizacionViewModel: Viewmodel que gestiona el tiempo de una ubicación concreta en la actividad DetalleLocalizacionActivity.
+* IniciarSesionViewModel: Viewmodel que gestiona el inicio de sesión en la actividad InicioSesion.
+* RegistrarseViewModel: Viewmodel que gestiona la pantalla de registro de usuario en la actividad Registrarse.
+* PerfilViewModel: Viewmodel que gestiona la consulta y modificación del usuario en el fragmento PerfilFragment.
+* BorrarPerfilViewModel: Viewmodel que permite eliminar el usuario en el fragmento DeleteDialogFragment.
+* ModificarEventoViewModel: Viewmodel que gestiona los detalles relativos a la pantalla de modificar un evento del fragmento ModificarEventoFragment.
+* mainUsuarioViewModel: Viewmodel que permite comprobar y cerrar la sesión del usuario en MainActivity.
+
+Cabe mencionar que los ViewModels tienen una dependencia relacionada con un Repository específico. Para solventar la escalabilidad de código de nuestra aplicación respecto la adicción de nuevas dependencias a los ViewModel, se ha implementado el patrón de diseño Factory para crear instancias ViewModel de manera sencilla. Además, ante el crecimiento de dependencias de la app como los repositorios, AppDataBase y factories, entre otros; se han agrupado como atributos en una clase Singleton llamada AppContainer, la cual es instanciada por primera vez en una nueva clase llamada MyApplication que extiende Application. Para iniciar esta clase, se ha modificado el AndroidManifest incrustando un atributo android:name=”.MyApplication”.
+
+El recurso de ViewModel destaca como el componente que se encargará de servir como puente entre la interacción de la Vista (View) y el Modelo (Model).
+
+Entre sus ventajas encontramos:
+
+* Su capacidad para separar de forma limpia la presentación de una aplicación determinada y la lógica del negocio de su interfaz de usuario. Lo que contribuye a abordar múltiples tipos de inconvenientes de desarrollo, prueba, mantenimiento y evolución del sistema.
+* Permite que los desarrolladores creen pruebas unitarias para el Model View y el modelo, sin que sea necesario el uso de la vista.
+* Los encargados del diseño y desarrollo de aplicaciones pueden ser capaces de trabajar de manera simultánea e independiente, cada uno en sus componentes durante los procesos de la app.
+* ViewModel permite la conservación tanto en el estado que contiene un ViewModel como en las operaciones que esté activa. Este almacenamiento en caché significa que no necesitas recuperar datos mediante cambios de configuración comunes, como una rotación de pantalla.
+* SaveStateHandle te permite conservar datos no solo a través de cambios de configuración, sino también durante la recreación de procesos. Es decir, te permite mantener el estado de la IU intacto, incluso cuando el usuario cierra la app y la abre más adelante.
+* Reducción de la complejidad: al separar la lógica de presentación de la lógica de negocio en componentes distintos, el código de la aplicación se vuelve más fácil de entender y mantener.
+* Mayor reutilización de código: debido a que la lógica de presentación y la lógica de negocio están separadas, se pueden reutilizar fácilmente en diferentes vistas y contextos.
+* Mejora del rendimiento: el patrón MVVM permite que la vista se actualice automáticamente cuando los datos cambien en el modelo, lo que reduce la cantidad de código que se debe escribir y mejora el rendimiento de la aplicación.
 
 
 ### Aspectos novedosos y decisiones tomadas <a name="aspectosNovedosos"></a>
