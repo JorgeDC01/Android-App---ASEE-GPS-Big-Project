@@ -105,8 +105,9 @@
     - [Problemas solventados <a name="problemasSolventados"></a>](#Problemas-solventados-)
       - [Análisis del Sr. Blanco <a name="calidadSrBlanco"></a>](#Análisis-del-Sr-Blanco-)
       - [Análisis del Sr. Marrón <a name="calidadSrMarron"></a>](#Análisis-del-Sr-Marrón-)
-      - [Análisis del Sr. Naranja <a name="calidadSrNaranja"></a>](#Análisis-del-Sr-Naranja-)
       - [Análisis del Sr. Azul <a name="calidadSrAzul"></a>](#Análisis-del-Sr-Azul-)
+      - [Análisis del Sr. Naranja <a name="calidadSrNaranja"></a>](#Análisis-del-Sr-Naranja-)
+      
 
 # Introduccion <a name="introduction"></a>
 
@@ -2818,22 +2819,6 @@ Análisis Posterior a la resolución de las incidencias:
 
 Se observa que hay dos incidencias menos de Mantenibilidad.
 
-### Análisis del Sr. Naranja <a name="calidadSrNaranja"></a>
-
-El análisis base sobre el que se parte para resolver las dos incidencias del **Sr. Naranja** es el siguiente:
-
-<img src="https://i.imgur.com/LZMvmB7.png" />
-
-Se puede observar cómo existen 578 Code Smells o incidencias de mantenibilidad. Las dos incidencias resueltas por el Sr. Blanco son las siguientes:
-
-<img src="https://i.imgur.com/ekn2bDg.png" />
-
-Tras esto, una vez incorporados los dos commits de las dos incidencias a la rama develop y hecha la integración a la rama main, se lanzan las github actions para enviar el análisis a SonarCloud con las dos incidencias resueltas. El análisis resultante al resolver las dos incidencias son las siguientes:
-
-<img src="https://i.imgur.com/62naat1.png" />
-
-Se puede observar que el análisis de calidad muestra 576 Code Smells o incidencias de mantenibilidad, indicando que se han podido resolver correctamente las anteriores.
-
 ### Análisis del Sr. Azul <a name="calidadSrAzul"></a>
 
 El análisis base sobre el que se parte para resolver las dos incidencias del <strong>Sr. Azul</strong> es el siguiente:
@@ -2854,3 +2839,19 @@ El análisis resultante al resolver las dos incidencias son las siguientes:
 <img src="https://imgur.com/qdZptfO.png" /> 
 
 Se puede observar que el análisis de calidad muestra 574 Code Smells o incidencias de mantenibilidad, indicando que se han podido resolver correctamente las dos anteriores.
+
+### Análisis del Sr. Naranja <a name="calidadSrNaranja"></a>
+
+El análisis base sobre el que se parte para resolver las dos incidencias del **Sr. Naranja** es el siguiente:
+
+<img src="https://i.imgur.com/LZMvmB7.png" />
+
+Se puede observar cómo existen 578 Code Smells o incidencias de mantenibilidad. Las dos incidencias resueltas por el Sr. Blanco son las siguientes:
+
+<img src="https://i.imgur.com/ekn2bDg.png" />
+
+Tras esto, una vez incorporados los dos commits de las dos incidencias a la rama develop y hecha la integración a la rama main, se lanzan las github actions para enviar el análisis a SonarCloud con las dos incidencias resueltas. El análisis resultante al resolver las dos incidencias son las siguientes:
+
+<img src="https://i.imgur.com/62naat1.png" />
+
+Se puede observar que el análisis de calidad muestra 576 Code Smells o incidencias de mantenibilidad, indicando que se han podido resolver correctamente las anteriores.
