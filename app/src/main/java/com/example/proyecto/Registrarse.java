@@ -1,5 +1,6 @@
 package com.example.proyecto;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -11,15 +12,25 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.lifecycle.ViewModelStoreOwner;
 
-import com.example.proyecto.Room.AppDatabase;
-import com.example.proyecto.Room.DAO.UsuarioDAO;
-import com.example.proyecto.Room.Modelo.Usuario;
+import com.example.proyecto.repository.UserRepository;
+import com.example.proyecto.repository.room.AppDatabase;
+import com.example.proyecto.repository.room.DAO.UsuarioDAO;
+import com.example.proyecto.models.Usuario;
+import com.example.proyecto.viewmodels.IniciarSesionViewModel;
+import com.example.proyecto.viewmodels.RegistrarseViewModel;
 
 public class Registrarse extends AppCompatActivity {
 
     EditText username, password;
     Button bRegistrarse;
+
+    private Context mContext;
+    private String TAG = "RegistrarseActivity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +38,12 @@ public class Registrarse extends AppCompatActivity {
 
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
+
+        mContext = getApplicationContext();
+        AppContainer appContainer = ((MyApplication) mContext.getApplicationContext()).appContainer;
+
+        RegistrarseViewModel mViewModel = new ViewModelProvider((ViewModelStoreOwner) this, (ViewModelProvider.Factory) appContainer.registrarseViewModelFactory).get(RegistrarseViewModel.class);
+
         bRegistrarse = findViewById(R.id.bRegistrarse);
 
         // Se encarga del registro de usuario.
@@ -43,13 +60,12 @@ public class Registrarse extends AppCompatActivity {
                 }
                 else{
                     // Obtenemos la base de datos
-                    AppDatabase appDatabase = AppDatabase.getInstance(getApplicationContext());
-                    final UsuarioDAO usuarioDAO = appDatabase.usuarioDAO();
                     new Thread(new Runnable() {
                         @Override
                         public void run() {
                             // Creamos un nuevo hilo y registramos en la base de datos el usuario
-                            usuarioDAO.registerUser(usuario);
+
+                            mViewModel.registerUser(usuario);
                             runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
@@ -60,6 +76,7 @@ public class Registrarse extends AppCompatActivity {
 
                         }
                     }).start();
+
                 }
             }
         });

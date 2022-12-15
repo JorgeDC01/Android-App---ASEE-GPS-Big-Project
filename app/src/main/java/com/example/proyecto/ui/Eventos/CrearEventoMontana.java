@@ -3,12 +3,12 @@ package com.example.proyecto.ui.Eventos;
 import android.app.DatePickerDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -21,55 +21,42 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
 
-import com.example.proyecto.Json.JsonSingleton;
+
+import com.example.proyecto.repository.EventRepository;
+import com.example.proyecto.utils.JsonSingleton;
 import com.example.proyecto.R;
-import com.example.proyecto.Room.AppDatabase;
-import com.example.proyecto.Room.DAO.EventoDAO;
-import com.example.proyecto.Room.Modelo.Evento;
-import com.example.proyecto.Room.javadb.DateConverter;
+import com.example.proyecto.repository.room.AppDatabase;
+import com.example.proyecto.models.Evento;
+import com.example.proyecto.utils.DateConverter;
 import com.example.proyecto.databinding.FragmentCrearEventoMontanaBinding;
 import com.example.proyecto.ui.DatePickerFragment;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
 
-public class CrearEventoMontana extends Fragment implements AdapterView.OnItemSelectedListener{
+public class CrearEventoMontana extends Fragment implements AdapterView.OnItemSelectedListener {
     private CrearEventoActivity main;
 
     private EditText nombreEvento, fechaEvento, descripcionEvento;
     private Spinner localidadEvento;
     private Button botonCrear;
     private Context mContext;
-    private Evento evento;
     int idEvento;
     int diaEvento;
     String localidad;
+    private Evento e;
 
-    private String nombreM, localidadM, fechaM, descripcionM;
 
     FragmentCrearEventoMontanaBinding binding;
 
     public CrearEventoMontana() {
     }
 
-    public static CrearEventoMontana newInstance(String NombreEvento, String DescripcionEvento) {
-        CrearEventoMontana fragment = new CrearEventoMontana();
-        Bundle args = new Bundle();
-        args.putString("NombreEvento", NombreEvento);
-        args.putString("DescripcionEvento", DescripcionEvento);
-        fragment.setArguments(args);
-        return fragment;
-    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            nombreM = getArguments().getString("NombreEvento");
-            descripcionM = getArguments().getString("DescripcionEvento");
-        }
     }
 
     @Override
@@ -136,36 +123,25 @@ public class CrearEventoMontana extends Fragment implements AdapterView.OnItemSe
                 }
 
                 if (error == true) {
-                    snackbar = Snackbar.make(view, textoError, Snackbar.LENGTH_LONG);
+                    snackbar = Snackbar.make(view, textoError, Snackbar.LENGTH_LONG)
+                            .setTextColor(Color.WHITE);
+                    snackbar.setBackgroundTint(Color.BLACK);
                     snackbar.show();
                 } else {
+                    e = new Evento(nombre, localidad, descripcion, fecha, false);
+                    new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+                            idEvento = EventRepository.getInstance(AppDatabase.getInstance(mContext).eventoDAO()).insertEvent(e);
 
-                    evento = new Evento(nombre, localidad, descripcion, fecha, false);
-                    EventoDAO eventoDAO = AppDatabase.getInstance(getContext()).eventoDAO();
-                    try {
-                        new Thread(new Runnable() {
-                            @Override
-                            public void run() {
-                                idEvento = (int)eventoDAO.insertEvent(evento);
-                                Calendar cal = Calendar.getInstance();
-                                int diaActual = cal.get(Calendar.DAY_OF_MONTH);
+                            Intent intent = new Intent(mContext, DetallesEventoActivity.class);
+                            intent.putExtra("idEvento", idEvento);
+                            intent.putExtra("esMunicipio", false);
 
-                                Intent intent = new Intent(mContext, DetallesEventoActivity.class);
-                                intent.putExtra("idEvento", idEvento);
-                                intent.putExtra("ubicacionEvento", localidad);
-                                intent.putExtra("esMunicipio", false);
-                                if(diaActual == diaEvento) { // Si el evento es en el día actual....
-                                    intent.putExtra("diaEvento", -1);
-                                } else {
-                                    intent.putExtra("diaEvento", diaEvento - diaActual);
-                                }
-                                startActivity(intent);
-                            }
-                        }).start();
+                            startActivity(intent);
+                        }
+                    }).start();
 
-                    } catch (Exception exception) {
-                        exception.printStackTrace();
-                    }
                 }
             }
         });

@@ -1,5 +1,6 @@
 package com.example.proyecto;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -11,17 +12,23 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.lifecycle.ViewModelStoreOwner;
 
-import com.example.proyecto.Room.AppDatabase;
-import com.example.proyecto.Room.DAO.UsuarioDAO;
-import com.example.proyecto.Room.Modelo.Usuario;
+import com.example.proyecto.repository.UserRepository;
+import com.example.proyecto.repository.room.AppDatabase;
+import com.example.proyecto.repository.room.DAO.UsuarioDAO;
+import com.example.proyecto.models.Usuario;
+import com.example.proyecto.viewmodels.DetallesEventoViewModel;
+import com.example.proyecto.viewmodels.IniciarSesionViewModel;
 
 public class InicioSesion extends AppCompatActivity {
 
-    EditText username;
-    EditText password;
-    Button bInicioSesion;
-    Button bRegistrarse;
+    EditText username, password;
+
+    private Context mContext;
+
+    Button bInicioSesion, bRegistrarse;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +39,11 @@ public class InicioSesion extends AppCompatActivity {
         password = findViewById(R.id.password);
         bInicioSesion = findViewById(R.id.bIniciarSesion);
         bRegistrarse = findViewById(R.id.bRegistrarse);
+
+        mContext = getApplicationContext();
+        AppContainer appContainer = ((MyApplication) mContext.getApplicationContext()).appContainer;
+
+        IniciarSesionViewModel mViewModel = new ViewModelProvider((ViewModelStoreOwner) this, (ViewModelProvider.Factory) appContainer.iniciarSesionViewModelFactory).get(IniciarSesionViewModel.class);
 
         // Se encarga de iniciar sesión en la aplicación con unos credenciales
         bInicioSesion.setOnClickListener(new View.OnClickListener() {
@@ -44,13 +56,11 @@ public class InicioSesion extends AppCompatActivity {
                     Toast.makeText(InicioSesion.this, "Rellena todos los campos de las credenciales", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    // Obtenemos la base de datos
-                    AppDatabase appDatabase = AppDatabase.getInstance(getApplicationContext());
-                    final UsuarioDAO usuarioDAO = appDatabase.usuarioDAO();
+
                     new Thread(new Runnable() {
                         @Override
                         public void run() {
-                            Usuario usuario = usuarioDAO.login(usernameText, passwordText);
+                            Usuario usuario = mViewModel.login(usernameText, passwordText);
                             // Comprobamos si está logueado en la aplicación
                             if (usuario == null){
                                 runOnUiThread(new Runnable() {
@@ -61,16 +71,11 @@ public class InicioSesion extends AppCompatActivity {
                                 });
                             }
                             else{
-                                // Insertamos una instancia de usuario en el Singleton de AppDatabase
-                                usuario.setConectado(true);
-                                appDatabase.setUsuario(usuario);
-
                                 // Modificamos el estado 'conectado' del usuario en la base de datos a 'true' para controlar cuando se mantiene iniciada la sesión
-                                usuarioDAO.activarEstadoConexion(true, usuario.getIdu());
+                                mViewModel.activarEstadoConection(true, usuario.getIdu());
 
                                 // Iniciamos la actividad principal Main
                                 runOnUiThread(() -> startActivity(new Intent(InicioSesion.this, MainActivity.class)));
-
                             }
                         }
                     }).start();

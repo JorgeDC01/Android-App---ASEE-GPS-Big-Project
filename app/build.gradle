@@ -1,14 +1,5 @@
 plugins {
     id 'com.android.application'
-    id "org.sonarqube" version "3.5.0.2730"
-}
-
-sonarqube {
-    properties {
-        property "sonar.projectKey", "UniExtremadura_proyecto-gps-asee-2022-23-ga04"
-        property "sonar.organization", "uniextremadura"
-        property "sonar.host.url", "https://sonarcloud.io/"
-    }
 }
 
 android {
@@ -17,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.proyecto"
-        minSdk 22
+        minSdk 26
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -50,10 +41,9 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
     testImplementation 'junit:junit:4.+'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation 'android.arch.persistence.room:runtime:1.0.0-alpha1'
-    androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.5.0'
     annotationProcessor 'android.arch.persistence.room:compiler:1.0.0-alpha1'
     implementation 'org.jsoup:jsoup:1.14.3'
     implementation 'com.google.android.gms:play-services-location:21.0.0'
@@ -62,25 +52,4 @@ dependencies {
     implementation group: 'pl.droidsonroids.gif', name: 'android-gif-drawable', version: '1.2.25'
     implementation 'androidx.preference:preference:1.2.0'
 
-    // Dependencias de TEST
-
-    testImplementation "androidx.arch.core:core-testing:2.1.0"
-    testImplementation 'junit:junit:4.12'
-    testImplementation 'androidx.test.ext:junit:1.1.1'
-    testImplementation "org.robolectric:robolectric:4.3.1"
-
-    testImplementation 'androidx.test:core:1.4.0'
-    androidTestImplementation 'androidx.test:core:1.4.0'
-
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
-
-    // Expresso
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
-    androidTestImplementation 'androidx.test:runner:1.3.0'
-    androidTestImplementation 'androidx.test:rules:1.5.0'
-
-    //Mockito
-    implementation 'org.mockito:mockito-inline:4.9.0'
-
-    // FIN de dependencias de TEST
 }

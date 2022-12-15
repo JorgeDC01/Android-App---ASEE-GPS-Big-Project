@@ -1,5 +1,6 @@
 package com.example.proyecto.ui.Localizaciones;
 
+
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -7,32 +8,38 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.lifecycle.ViewModelStoreOwner;
 
+import com.example.proyecto.AppContainer;
+import com.example.proyecto.MyApplication;
 import com.example.proyecto.R;
-import com.example.proyecto.Room.Modelo.Weather;
+import com.example.proyecto.models.Location;
 import com.example.proyecto.databinding.ActivityDetalleLocalizacionBinding;
-import com.example.proyecto.utils.APIManager;
-import com.example.proyecto.utils.APIManagerDelegate;
+import com.example.proyecto.repository.LocationRepository;
+import com.example.proyecto.repository.room.AppDatabase;
+import com.example.proyecto.viewmodels.DetallesLocalizacionViewModel;
 
-public class DetalleLocalizacionActivity extends AppCompatActivity implements APIManagerDelegate {
+public class DetalleLocalizacionActivity extends AppCompatActivity {
+
+    private String TAG = "DetallesLocationActivity";
 
     private ActivityDetalleLocalizacionBinding binding;
     private Context mContext;
-    private APIManager apiManager;
     private TextView textViewTemp, temperaturaMaxMin, localidadTiempo, descripcionTiempo, viento, humedad, sensTermica;
-    ImageView iconoTiempo;
+    private ImageView iconoTiempo;
+    private LocationRepository locationRepository;
+    private String ubicacion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalle_localizacion);
 
-
-        // Se establece el contexto
         mContext = getApplicationContext();
 
         // Se establece la toolbar y el comportamiento del back
@@ -42,10 +49,10 @@ public class DetalleLocalizacionActivity extends AppCompatActivity implements AP
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         Intent intent = getIntent();
-        getSupportActionBar().setTitle("Tiempo en " + intent.getStringExtra("ubicacion"));
+        ubicacion = intent.getStringExtra("ubicacion");
+        getSupportActionBar().setTitle("Tiempo en " + ubicacion);
 
         setContentView(binding.getRoot());
-
         textViewTemp = binding.textViewTemperatura;
         temperaturaMaxMin = binding.textViewTemperaturas;
         localidadTiempo = binding.textViewUbicacion;
@@ -55,21 +62,34 @@ public class DetalleLocalizacionActivity extends AppCompatActivity implements AP
         sensTermica = binding.textViewSensTermP;
         iconoTiempo = binding.image2;
 
-        apiManager = new APIManager(this);
-        apiManager.getEventWeather(getIntent().getStringExtra("ubicacion"));
+        AppContainer appContainer = ((MyApplication) mContext.getApplicationContext()).appContainer;
+        final Observer<Location> observer = new Observer<Location>() {
+            @Override
+            public void onChanged(final Location location) {
+                Log.d(TAG, "Data changed on observer...");
+                if(location != null) {
+                    updateUI(location);
+                }
+            }
+        };
+
+        DetallesLocalizacionViewModel mViewModel = new ViewModelProvider((ViewModelStoreOwner) this, (ViewModelProvider.Factory) appContainer.detallesLocalizacionViewModelFactory).get(DetallesLocalizacionViewModel.class);
+        this.locationRepository = LocationRepository.getInstance(AppDatabase.getInstance(mContext).locationDAO());
+
+        mViewModel.getLocation(ubicacion).observeForever(observer);
     }
 
-
-    @Override
-    public boolean onSupportNavigateUp() {
-        onBackPressed();
-        return true;
-    }
-
-    @Override
-    public void onGetWeatherSuccess(Weather weather) {
+    public void updateUI (Location location) {
         runOnUiThread(() -> {
-            switch (weather.getGifResource()){
+            textViewTemp.setText(String.valueOf(location.getTemperatura()));
+            temperaturaMaxMin.setText(location.getTempMinima() +"º / "+ location.getTempMaxima() +"º");
+            localidadTiempo.setText(location.getUbicacion());
+            descripcionTiempo.setText(location.getDescEstadoTiempo());
+            viento.setText(String.valueOf(location.getVelocidadViento()));
+            humedad.setText(String.valueOf(location.getHumedad()));
+            sensTermica.setText(location.getSensTermica() + "º");
+
+            switch (location.getGifResource()){
                 case 0://Error
                     Log.e("Error Weather", "onGetWeatherSuccess: No se ha obtenido el estado del tiempo correctamente");
                     break;
@@ -91,27 +111,18 @@ public class DetalleLocalizacionActivity extends AppCompatActivity implements AP
                 case 6://Nubes
                     iconoTiempo.setImageResource(R.drawable.inubes);
                     break;
-                case 7://Sol
-                    iconoTiempo.setImageResource(R.drawable.isol);
-                    break;
+                //Sol
                 default:
                     iconoTiempo.setImageResource(R.drawable.isol);
                     break;
             }
-            textViewTemp.setText(String.valueOf(weather.getTemperatura()));
-            temperaturaMaxMin.setText(weather.getTempMinima() +"º / "+ weather.getTempMaxima() +"º");
-            localidadTiempo.setText(weather.ciudad);
-            descripcionTiempo.setText(weather.getDescEstadoTiempo());
-            viento.setText(String.valueOf(weather.getVelocidadViento()));
-            humedad.setText(String.valueOf(weather.getHumedad()));
-            sensTermica.setText(weather.getSensTermica() + "º");
         });
     }
 
     @Override
-    public void onGetWeatherFailure() {
-        String noPerms = "No se ha podido acceder a la API. Revisa tu conexión a internet.";
-        Toast.makeText(mContext, noPerms, Toast.LENGTH_LONG).show();
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 
     public void setDayLight(){

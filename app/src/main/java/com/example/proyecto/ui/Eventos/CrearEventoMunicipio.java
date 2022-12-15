@@ -3,12 +3,13 @@ package com.example.proyecto.ui.Eventos;
 import android.app.DatePickerDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 
+import androidx.annotation.ColorRes;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,17 +17,18 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 
-import com.example.proyecto.Json.JsonSingleton;
 import com.example.proyecto.R;
-import com.example.proyecto.Room.AppDatabase;
-import com.example.proyecto.Room.DAO.EventoDAO;
-import com.example.proyecto.Room.Modelo.Evento;
-import com.example.proyecto.Room.javadb.DateConverter;
 import com.example.proyecto.databinding.FragmentCrearEventoMunicipioBinding;
+import com.example.proyecto.utils.AppExecutors;
+import com.example.proyecto.repository.EventRepository;
+import com.example.proyecto.utils.JsonSingleton;
+
+import com.example.proyecto.repository.room.AppDatabase;
+import com.example.proyecto.models.Evento;
+import com.example.proyecto.utils.DateConverter;
 import com.example.proyecto.ui.DatePickerFragment;
 import com.google.android.material.snackbar.Snackbar;
 
-import java.util.Calendar;
 import java.util.Date;
 
 public class CrearEventoMunicipio extends Fragment{
@@ -38,33 +40,14 @@ public class CrearEventoMunicipio extends Fragment{
     private EditText nombreEvento, fechaEvento, descripcionEvento, localidadEvento;
     private Button botonCrear;
 
+    private Evento e;
     int idEvento, diaEvento;
-    String localidad;
-
-    private String nombreM, localidadM, fechaM, descripcionM;
 
     FragmentCrearEventoMunicipioBinding binding;
-
-    public CrearEventoMunicipio() {
-
-    }
-
-    public static CrearEventoMunicipio newInstance(String NombreEvento, String DescripcionEvento) {
-        CrearEventoMunicipio fragment = new CrearEventoMunicipio();
-        Bundle args = new Bundle();
-        args.putString("NombreEvento", NombreEvento);
-        args.putString("DescripcionEvento", DescripcionEvento);
-        fragment.setArguments(args);
-        return fragment;
-    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            nombreM = getArguments().getString("NombreEvento");
-            descripcionM = getArguments().getString("DescripcionEvento");
-        }
     }
 
     @Override
@@ -93,6 +76,7 @@ public class CrearEventoMunicipio extends Fragment{
 
         descripcionEvento = binding.InputDescripcionEvento;
         botonCrear = binding.BotonModificar;
+
         botonCrear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -127,31 +111,23 @@ public class CrearEventoMunicipio extends Fragment{
                 }
 
                 if (error == true) {
-                    snackbar = Snackbar.make(view, textoError, Snackbar.LENGTH_LONG);
+                    snackbar = Snackbar.make(view, textoError, Snackbar.LENGTH_LONG)
+                            .setTextColor(Color.WHITE);
+                    snackbar.setBackgroundTint(Color.BLACK);
                     snackbar.show();
                 } else {
-                    Evento evento = new Evento(nombre, localidad, descripcion, fecha, true);
-                    EventoDAO eventoDAO = AppDatabase.getInstance(mContext).eventoDAO();
-                        new Thread(new Runnable() {
-                            @Override
-                            public void run() {
-                                idEvento = (int)eventoDAO.insertEvent(evento);
-                                Calendar cal = Calendar.getInstance();
-                                int diaActual = cal.get(Calendar.DAY_OF_MONTH);
+                    // Ya tenemos los datos del formulario
+                    e = new Evento(nombre, localidad, descripcion, fecha, true);
+                    AppExecutors.getInstance().diskIO().execute(() -> {
+                        idEvento = EventRepository.getInstance(AppDatabase.getInstance(mContext).eventoDAO()).insertEvent(e);
 
-                                Intent intent = new Intent(mContext, DetallesEventoActivity.class);
-                                intent.putExtra("idEvento", idEvento);
-                                intent.putExtra("ubicacionEvento", localidad);
-                                intent.putExtra("esMunicipio", true);
-                                if(diaActual == diaEvento) { // Si el evento es en el día actual....
-                                    intent.putExtra("diaEvento", -1);
-                                } else {
-                                    intent.putExtra("diaEvento", diaEvento - diaActual);
-                                }
-                                startActivity(intent);
-                            }
+                        Intent intent = new Intent(mContext, DetallesEventoActivity.class);
+                        intent.putExtra("idEvento", idEvento);
+                        intent.putExtra("esMunicipio", true);
 
-                        }).start();
+                        startActivity(intent);
+                    });
+
                 }
             }
         });

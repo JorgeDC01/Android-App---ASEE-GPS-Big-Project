@@ -37,7 +37,7 @@ public class DetallesEventoActivity extends AppCompatActivity {
         toolbar = binding.toolbar;
         setSupportActionBar(toolbar);
 
-        toolbar.setNavigationIcon(R.drawable.ic_baseline_arrow_back_24);
+        toolbar.setNavigationIcon(R.drawable.ic_backarrow_foreground);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -61,11 +61,6 @@ public class DetallesEventoActivity extends AppCompatActivity {
         return getIntent().getIntExtra("idEvento", 0);
     }
 
-    public String getUbicacion() {return getIntent().getStringExtra("ubicacionEvento");}
-
-    public boolean esMunicipio() {return  getIntent().getBooleanExtra("esMunicipio", true);}
-
-    public int getDiaEvento() {return getIntent().getIntExtra("diaEvento", -1);}
 
     public void setDayLight(){
         // Para obtener la configuracion que el usuario ha introducido previamente en la app, se obtiene el objeto SharedPreferences

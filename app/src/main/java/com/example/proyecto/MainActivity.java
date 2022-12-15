@@ -1,22 +1,26 @@
 package com.example.proyecto;
 
+import android.content.Context;
 import android.content.Intent;
-import static java.lang.Thread.sleep;
+
 
 import android.content.SharedPreferences;
-import android.location.Geocoder;
-import android.location.Location;
-import android.location.LocationManager;
 import android.os.Bundle;
 
-import com.example.proyecto.Json.JsonSingleton;
-import com.example.proyecto.Json.Montana;
-import com.example.proyecto.Json.Municipio;
-import com.example.proyecto.Room.DAO.UsuarioDAO;
-import com.example.proyecto.Room.Modelo.Usuario;
+
+import com.example.proyecto.repository.UserRepository;
+import com.example.proyecto.utils.AppExecutors;
+import com.example.proyecto.utils.JsonSingleton;
+import com.example.proyecto.models.Montana;
+import com.example.proyecto.models.Municipio;
+import com.example.proyecto.repository.room.DAO.UsuarioDAO;
+import com.example.proyecto.models.Usuario;
 import com.example.proyecto.databinding.ActivityMainBinding;
 import com.example.proyecto.ui.Eventos.CrearEventoActivity;
 import com.example.proyecto.ui.Localizaciones.LocalizacionesActivity;
+
+import com.example.proyecto.viewmodels.BorrarPerfilViewModel;
+import com.example.proyecto.viewmodels.MainUsuarioViewModel;
 import com.google.gson.stream.JsonReader;
 
 import android.util.Log;
@@ -25,58 +29,68 @@ import android.view.View;
 import android.view.Menu;
 import android.widget.Toast;
 
-import com.example.proyecto.Room.AppDatabase;
+import com.example.proyecto.repository.room.AppDatabase;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.appcompat.app.AppCompatDelegate;
+
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.lifecycle.ViewModelStoreOwner;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.room.Room;
 
 import com.google.gson.Gson;
 
 import java.io.InputStreamReader;
-import java.sql.Timestamp;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
 
 public class MainActivity extends AppCompatActivity {
+    private String TAG = "MainActivity";
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
+    private Context mContext;
+
+    private MainUsuarioViewModel mViewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        validarConexion();
+        mContext = getApplicationContext();
+
+        AppContainer appContainer = ((MyApplication) mContext.getApplicationContext()).appContainer;
+        mViewModel = new ViewModelProvider((ViewModelStoreOwner) this, (ViewModelProvider.Factory) appContainer.mainUsuarioViewModelFactory).get(MainUsuarioViewModel.class);
+
+        final Observer<Usuario> observer = new Observer<Usuario>() {
+            @Override
+            public void onChanged(final Usuario user) {
+                Log.d(TAG, "Data changed on observer...");
+                if(user == null) {
+                    startActivity(new Intent(MainActivity.this, InicioSesion.class));
+                }
+            }
+        };
+
+        mViewModel.getUser().observeForever(observer);
+
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         setSupportActionBar(binding.appBarMain.toolbar);
 
-        // Cargamos la base de datos (en la primera vez, se crea)
-        AppDatabase db = Room.databaseBuilder(getApplicationContext(), AppDatabase.class, "database.db").build();
-
         // Cargamos los JSON en la base de datos
         cargarJSON_en_Singleton();
 
-        binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
+        // Passing each menu ID as a set of Ids because each menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_inicio,R.id.nav_eventos, R.id.nav_perfil, R.id.nav_ajustes)
                 .setOpenableLayout(drawer)
@@ -106,27 +120,13 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
         else if (id == R.id.cerrarSesion) {
-            // Se invoca un metodo del DAO usuario que se encarga de modificar el estadoConectado a false del usuario. De esta forma, al
-            UsuarioDAO usuarioDAO = AppDatabase.getInstance(getApplicationContext()).usuarioDAO();
-
-            new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    AppDatabase.getInstance(getApplicationContext()).usuarioDAO().activarEstadoConexion(false, AppDatabase.getUsuario().getIdu());
-                    // Se pone a null el usuario del singleton AppDataBase
-                    AppDatabase.setUsuario(null);
-
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            Toast.makeText(getApplicationContext(), "Se ha cerrado sesión", Toast.LENGTH_SHORT).show();
-                            // Se inicia la actividad Main para comprobar que, efectivamente, el usuario ha cerrado sesión
-                            startActivity(new Intent(getApplicationContext(), InicioSesion.class));
-                        }
-                    });
-
-                }
-            }).start();
+            AppExecutors.getInstance().diskIO().execute(() -> {
+                mViewModel.activarEstadoConection(false, mViewModel.getUsuarioConectado().getIdu());
+                // Se inicia la actividad Main para comprobar que, efectivamente, el usuario ha cerrado sesión
+                Intent intent = new Intent(getApplicationContext(), InicioSesion.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+            });
         }
         return super.onOptionsItemSelected(item);
     }
@@ -161,27 +161,6 @@ public class MainActivity extends AppCompatActivity {
         for (Municipio m: municipioList) {
             JsonSingleton.getInstance().municipioMap.put(m.getMunicipio(), new Municipio(m.getCodigo(), m.getMunicipio(), m.getProvincia()));
         }
-    }
-
-    public void validarConexion(){
-        AppDatabase appDatabase = AppDatabase.getInstance(getApplicationContext());
-        final UsuarioDAO usuarioDAO = appDatabase.usuarioDAO();
-
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                Usuario usuario = usuarioDAO.usuarioConectado(true);
-                // Si no hay ningun usuario con el campo 'conectado' a true, entonces nos dirigimos al iniciar sesion
-                if(usuario == null){
-                    startActivity(new Intent(MainActivity.this, InicioSesion.class));
-                }
-                else{
-                    // Si existe un usuario conectado a la aplicacion, entonces se añade en el Singleton
-                    runOnUiThread(() -> AppDatabase.getInstance(getApplicationContext()).setUsuario(usuario));
-
-                }
-            }
-        }).start();
     }
 
     public void setDayLight(){

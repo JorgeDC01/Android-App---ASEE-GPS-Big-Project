@@ -1,5 +1,6 @@
 package com.example.proyecto.ui.Eventos;
 
+
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
@@ -12,18 +13,12 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.ContextThemeWrapper;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.example.proyecto.utils.AppExecutors;
 import com.example.proyecto.MainActivity;
-import com.example.proyecto.R;
-import com.example.proyecto.Room.AppDatabase;
-import com.example.proyecto.Room.DAO.EventoDAO;
-import com.example.proyecto.Room.Modelo.Evento;
-
-import java.util.Date;
+import com.example.proyecto.repository.EventRepository;
+import com.example.proyecto.repository.room.AppDatabase;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -43,21 +38,11 @@ public class DeleteEventDialog extends androidx.fragment.app.DialogFragment {
                 .setPositiveButton("Confirmar", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        // Se debe eliminar el usuario en la BD y en el Singleton de AppDataBase. Redirigir a MainActivity
-
-                        new Thread(new Runnable() {
-                            @Override
-                            public void run() {
-                                int ide = getArguments().getInt("idEvento", 0);
-                                Evento e;
-                                EventoDAO eventoDao = AppDatabase.getInstance(mContext).eventoDAO();
-                                e = eventoDao.getEvent(ide).get(0);
-
-                                eventoDao.deleteEvent(e);
-
-                                startActivity(new Intent(mContext, MainActivity.class));
-                            }
-                        }).start();
+                        AppExecutors.getInstance().diskIO().execute(() -> {
+                            int ide = getArguments().getInt("idEvento", 0);
+                            EventRepository.getInstance(AppDatabase.getInstance(mContext).eventoDAO()).deleteEvent(ide);
+                            startActivity(new Intent(mContext, MainActivity.class));
+                        });
                     }
                 })
                 .setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {

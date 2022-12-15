@@ -11,11 +11,15 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.lifecycle.ViewModelStoreOwner;
 
+import com.example.proyecto.AppContainer;
 import com.example.proyecto.MainActivity;
-import com.example.proyecto.Room.AppDatabase;
-import com.example.proyecto.Room.DAO.UsuarioDAO;
-import com.example.proyecto.Room.Modelo.Usuario;
+import com.example.proyecto.MyApplication;
+import com.example.proyecto.viewmodels.BorrarPerfilViewModel;
+import com.example.proyecto.viewmodels.RegistrarseViewModel;
+
 
 public class DeleteDialogFragment extends androidx.fragment.app.DialogFragment {
 
@@ -24,7 +28,10 @@ public class DeleteDialogFragment extends androidx.fragment.app.DialogFragment {
     @NonNull
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(new ContextThemeWrapper(getContext(), android.R.style.Theme_DeviceDefault_Dialog));
+        AlertDialog.Builder builder = new AlertDialog.Builder(new ContextThemeWrapper(getActivity(), android.R.style.Theme_DeviceDefault_Dialog));
+
+        AppContainer appContainer = ((MyApplication) mContext.getApplicationContext()).appContainer;
+        BorrarPerfilViewModel mViewModel = new ViewModelProvider((ViewModelStoreOwner) this, (ViewModelProvider.Factory) appContainer.borrarPerfilViewModelFactory).get(BorrarPerfilViewModel.class);
 
         builder.setMessage("¿Deseas eliminar la cuenta?")
                 .setPositiveButton("Confirmar", new DialogInterface.OnClickListener() {
@@ -35,11 +42,8 @@ public class DeleteDialogFragment extends androidx.fragment.app.DialogFragment {
                         new Thread(new Runnable() {
                             @Override
                             public void run() {
-                                Usuario usuario = AppDatabase.getUsuario();
-                                UsuarioDAO usuarioDAO = AppDatabase.getInstance(getContext()).usuarioDAO();
-                                usuarioDAO.deleteUser(usuario);
+                                mViewModel.deleteUsuario();
 
-                                AppDatabase.setUsuario(null);
                                 getActivity().runOnUiThread(() -> startActivity(new Intent(mContext, MainActivity.class)));
                             }
                         }).start();
@@ -59,5 +63,4 @@ public class DeleteDialogFragment extends androidx.fragment.app.DialogFragment {
         super.onAttach(context);
         mContext = context;
     }
-
 }
