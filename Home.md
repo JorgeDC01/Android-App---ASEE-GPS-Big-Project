@@ -2745,17 +2745,23 @@ De esta forma, se demuestra que la herramienta permite realizar correctamente un
 
 En este caso, se empleará la herramienta de SonarCloud, utilizándola de forma online a través de las Github Actions.
 
+## Características de SonarCloud <a name="caracteristicasSonarCloud"></a>
+
+SonarCloud es una plataforma en línea creada por SonarSource que ofrece análisis de código y herramientas de colaboración para desarrolladores de software. 
+
+Ayuda a los equipos de desarrollo a mejorar la calidad del código y a identificar problemas de seguridad y de cumplimiento normativo, entre otras cosas. También ofrece integraciones con diferentes herramientas de desarrollo y sistemas de control de versiones para facilitar su uso en el flujo de trabajo de un equipo.
+
 ## Pasos para gestionar la calidad <a name="pasosGestionCalidad"></a>
 
 Para realizar esta práctica, se seguirán los siguientes pasos:
 * Compilar la rama actual sobre la que se encuentra la última versión del proyecto desde github (utilizando github Actions), para analizar la calidad del proyecto y comprobar si tiene errores.
-* Tras el análisis, seleccionar 2 puntos de mejora de calidad indicados por SonarCloud para cada integrante del grupo y tratar de mejorarlos, implementando dichas mejoras en una rapa por cada corrección.
+* Tras el análisis, seleccionar 2 puntos de mejora de calidad indicados por SonarCloud para cada integrante del grupo y tratar de mejorarlos, implementando dichas mejoras en una rama por cada corrección.
 * Integrar las ramas correspondientes a develop, y a su vez develop en la rama main.
 * Tras aplicar las correcciones implementadas al proyecto, comprobar si estas han solucionado los fallos de calidad que presentaba este compilando de nuevo la rama del proyecto utilizando SonarCloud.
 
 De esta forma, se espera que las correcciones implementadas solucionen los fallos detectados por SonarCloud y que el nuevo análisis realizado refleje esto.
 
-## Repositorios utilizado <a name="repositoriosUtilizados"></a>
+## Repositorios utilizados <a name="repositoriosUtilizados"></a>
 Para llevar a cabo el análisis de calidad, se ha utilizado el repositorio con el código del proyecto (ubicado en Github) cuyo enlace es el siguiente: <a href="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04">https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04</a>.
 
 Este se ha añadido al repositorio de SonarCloud con el nombre de “app”, que se puede encontrar en el siguiente enlace: <a href="https://sonarcloud.io/project/overview?id=UniExtremadura_proyecto-gps-asee-2022-23-ga04">https://sonarcloud.io/project/overview?id=UniExtremadura_proyecto-gps-asee-2022-23-ga04</a> 
@@ -2770,3 +2776,20 @@ Para ello, en primer lugar es necesario añadir el proyecto a SonarCloud para po
 
 <img src="https://i.imgur.com/kGiPfuw.png" />
 
+## Problemas solventados <a name="problemasSolventados"></a>
+
+Cada miembro del equipo se ha encargado de resolver dos incidencias en base al análisis de calidad de código completado mediante las Github Actions, las cuales utilizan gradle y java para enviar los resultados del análisis a SonarCloud.
+
+### Análisis del Sr. Blanco <a name="calidadSrBlanco"></a>
+
+El análisis base sobre el que se parte para resolver las dos incidencias del Sr. Blanco es el siguiente:
+
+<img src="https://i.imgur.com/oXWyfx4.png" />
+
+Se puede observar cómo existen 580 Code Smells o incidencias de mantenibilidad. Las dos incidencias resueltas por el Sr. Blanco son las siguientes:
+
+<img src="https://i.imgur.com/I02kTea.png" />
+
+Una vez incorporados los dos commits de las dos incidencias a la rama develop y hecha la integración a la rama main, se lanzan las github actions para enviar el análisis a SonarCloud con las dos incidencias resueltas. El análisis resultante al resolver las dos incidencias son las siguientes:
+
+<img src="https://i.imgur.com/JlzhG8T.png" />
