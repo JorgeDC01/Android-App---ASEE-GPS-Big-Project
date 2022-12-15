@@ -2731,3 +2731,33 @@ A partir de la implementación y observación de los test, se han cometido los s
 * Se ha modificado en el layout fragment_crear_evento_montana.xml un atributo del EditText de la fecha llamado focusable. Incorporaba un fallo puesto que al querer elegir la fecha de un nuevo evento, se tenía que pulsar dos veces en el EditText. Por tanto, se le ha asociado el valor “false” al focusable.
 Se ha arreglado un error del CU Modificar Evento, específicamente en la clase ModificarEventoMunicipioFragment. Se actualiza la vista en un Thread secundario, cuando sólo se puede modificar en el hilo principal. Por tanto, se ha incorporado un requireActivity().runOnUiThread() para solventar el problema.
 * Se ha modificado el acceso público  a los atributos de la clase Weather, restringiendo el acceso a privado. Este arreglo ha supuesto unas pequeñas modificaciones en 4 componentes software (fragmentos y actividades, entre ellos), debido a la incorporación de los getter/setters en la clase Weather.
+
+# Gestión de calidad <a name="gestionCalidad"></a>
+En este apartado se ha realizado un proceso de análisis y gestión de calidad del proyecto desarrollado a lo largo de todas estas entregas, de manera que se compruebe si la calidad de este proyecto es aceptable, así como corregir el proyecto para mejorarla en caso contrario.
+
+Para ello se utilizará la herramienta <strong>SonarQube</strong>, que permite detectar e identificar posibles fallos para mejorar la calidad de un proyecto, así como si esta es aceptable o no, o en su defecto <strong>SonarCloud</strong>, que consiste en su versión online.
+
+En concreto, se debe utilizar esa herramienta para realizar un análisis de la calidad de la versión actual del proyecto e identificar los posibles fallos que pueda presentar esta, tratando de mejorar la calidad corrigiendo 2 de los fallos indicados por cada uno de los integrantes del grupo.
+
+Posteriormente, se publicarán las versiones con fallos corregidos en nuevas ramas (una por cada incidencia) y se integrarán estas, de manera que se compilar de nuevo el repositorio y comprobar que los los fallos se han solucionado.
+
+De esta forma, se demuestra que la herramienta permite realizar correctamente un análisis de calidad del proyecto para identificar correctamente los fallos de calidad y corregirlos.
+
+En este caso, se empleará la herramienta de SonarCloud, utilizándola de forma online a través de las Github Actions.
+
+## Pasos para gestionar la calidad <a name="pasosGestionCalidad"></a>
+
+Para realizar esta práctica, se seguirán los siguientes pasos:
+* Compilar la rama actual sobre la que se encuentra la última versión del proyecto desde github (utilizando github Actions), para analizar la calidad del proyecto y comprobar si tiene errores.
+* Tras el análisis, seleccionar 2 puntos de mejora de calidad indicados por SonarCloud para cada integrante del grupo y tratar de mejorarlos, implementando dichas mejoras en una rapa por cada corrección.
+* Integrar las ramas correspondientes a develop, y a su vez develop en la rama main.
+* Tras aplicar las correcciones implementadas al proyecto, comprobar si estas han solucionado los fallos de calidad que presentaba este compilando de nuevo la rama del proyecto utilizando SonarCloud.
+
+De esta forma, se espera que las correcciones implementadas solucionen los fallos detectados por SonarCloud y que el nuevo análisis realizado refleje esto.
+
+## Detección de fallos <a name="calidadGestionFallos"></a>
+
+En esta primera fase se llevará a cabo un análisis inicial de la calidad del proyecto, realizando un proceso de compilación del proyecto en la página oficial de SonarCloud (<a href="https://sonarcloud.io/">https://sonarcloud.io/</a>).
+
+
+Para ello, en primer lugar es necesario añadir el proyecto a SonarCloud para poder hacer el análisis. Cabe destacar que para que se pueda importar el proyecto es necesario que el repositorio sea público y ser el administrador del mismo, sincronizando SonarCloud con la cuenta correspondiente de GitHub del administrador. 
