@@ -2755,9 +2755,18 @@ Para realizar esta práctica, se seguirán los siguientes pasos:
 
 De esta forma, se espera que las correcciones implementadas solucionen los fallos detectados por SonarCloud y que el nuevo análisis realizado refleje esto.
 
+## Repositorios utilizado <a name="repositoriosUtilizados"></a>
+Para llevar a cabo el análisis de calidad, se ha utilizado el repositorio con el código del proyecto (ubicado en Github) cuyo enlace es el siguiente: <a href="https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04">https://github.com/UniExtremadura/proyecto-gps-asee-2022-23-ga04</a>.
+
+Este se ha añadido al repositorio de SonarCloud con el nombre de “app”, que se puede encontrar en el siguiente enlace: <a href="https://sonarcloud.io/project/overview?id=UniExtremadura_proyecto-gps-asee-2022-23-ga04">https://sonarcloud.io/project/overview?id=UniExtremadura_proyecto-gps-asee-2022-23-ga04</a> 
+
 ## Detección de fallos <a name="calidadGestionFallos"></a>
 
 En esta primera fase se llevará a cabo un análisis inicial de la calidad del proyecto, realizando un proceso de compilación del proyecto en la página oficial de SonarCloud (<a href="https://sonarcloud.io/">https://sonarcloud.io/</a>).
 
+<img src="https://i.imgur.com/0mwXLC8.png" />
 
 Para ello, en primer lugar es necesario añadir el proyecto a SonarCloud para poder hacer el análisis. Cabe destacar que para que se pueda importar el proyecto es necesario que el repositorio sea público y ser el administrador del mismo, sincronizando SonarCloud con la cuenta correspondiente de GitHub del administrador. 
+
+<img src="https://i.imgur.com/kGiPfuw.png" />
+
