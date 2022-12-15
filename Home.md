@@ -97,6 +97,16 @@
     - [Equipo 3 (Señor Naranja) <a name="testEquipo3"></a>](#Equipo-3-Señor-Naranja-)
     - [Equipo 4 (Señor Azul) <a name="testEquipo4"></a>](#Equipo-4-Señor-Azul-)
     - [Arreglo de errores <a name="arregloErrores"></a>](#Arreglo-de-errores-)
+  - [Análisis de la calidad <a name="gestionCalidad"></a>](#Análisis-de-la-calidad-)
+    - [Características de SonarCloud <a name="caracteristicasSonarCloud"></a>](#Características-de-SonarCloud-)
+    - [Pasos para gestionar la calidad <a name="pasosGestionCalidad"></a>](#Pasos-para-gestionar-la-calidad-)
+    - [Repositorios utilizados <a name="repositoriosUtilizados"></a>](#Repositorios-utilizados-)
+    - [Detección de fallos <a name="calidadGestionFallos"></a>](#Detección-de-fallos-)
+    - [Problemas solventados <a name="problemasSolventados"></a>](#Problemas-solventados-)
+      - [Análisis del Sr. Blanco <a name="calidadSrBlanco"></a>](#Análisis-del-Sr.-Blanco-)
+      - [Análisis del Sr. Marrón <a name="calidadSrMarron"></a>](#Análisis-del-Sr.-Marrón-)
+      - [Análisis del Sr. Naranja <a name="calidadSrNaranja"></a>](#Análisis-del-Sr.-Naranja-)
+      - [Análisis del Sr. Azul <a name="calidadSrAzul"></a>](#Análisis-del-Sr.-Azul-)
 
 # Introduccion <a name="introduction"></a>
 
@@ -2732,7 +2742,7 @@ A partir de la implementación y observación de los test, se han cometido los s
 Se ha arreglado un error del CU Modificar Evento, específicamente en la clase ModificarEventoMunicipioFragment. Se actualiza la vista en un Thread secundario, cuando sólo se puede modificar en el hilo principal. Por tanto, se ha incorporado un requireActivity().runOnUiThread() para solventar el problema.
 * Se ha modificado el acceso público  a los atributos de la clase Weather, restringiendo el acceso a privado. Este arreglo ha supuesto unas pequeñas modificaciones en 4 componentes software (fragmentos y actividades, entre ellos), debido a la incorporación de los getter/setters en la clase Weather.
 
-# Gestión de calidad <a name="gestionCalidad"></a>
+# Análisis de la calidad <a name="gestionCalidad"></a>
 En este apartado se ha realizado un proceso de análisis y gestión de calidad del proyecto desarrollado a lo largo de todas estas entregas, de manera que se compruebe si la calidad de este proyecto es aceptable, así como corregir el proyecto para mejorarla en caso contrario.
 
 Para ello se utilizará la herramienta <strong>SonarQube</strong>, que permite detectar e identificar posibles fallos para mejorar la calidad de un proyecto, así como si esta es aceptable o no, o en su defecto <strong>SonarCloud</strong>, que consiste en su versión online.
