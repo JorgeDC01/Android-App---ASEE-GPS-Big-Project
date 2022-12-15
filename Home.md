@@ -2782,7 +2782,7 @@ Cada miembro del equipo se ha encargado de resolver dos incidencias en base al a
 
 ### Análisis del Sr. Blanco <a name="calidadSrBlanco"></a>
 
-El análisis base sobre el que se parte para resolver las dos incidencias del Sr. Blanco es el siguiente:
+El análisis base sobre el que se parte para resolver las dos incidencias del <strong>Sr. Blanco</strong> es el siguiente:
 
 <img src="https://i.imgur.com/oXWyfx4.png" />
 
@@ -2793,3 +2793,52 @@ Se puede observar cómo existen 580 Code Smells o incidencias de mantenibilidad.
 Una vez incorporados los dos commits de las dos incidencias a la rama develop y hecha la integración a la rama main, se lanzan las github actions para enviar el análisis a SonarCloud con las dos incidencias resueltas. El análisis resultante al resolver las dos incidencias son las siguientes:
 
 <img src="https://i.imgur.com/JlzhG8T.png" />
+
+### Análisis del Sr. Marrón <a name="calidadSrMarron"></a>
+
+Análisis Previo a resolver las incidencias:
+<img src="https://i.imgur.com/GCHi0Az.png" />
+
+Mi integración de las dos incidencias resueltas se realizó en dos fases (<strong>push</strong>) a main, pues fui el primero del equipo en aprender a utilizar Sonar. Por eso aparecen dos análisis, en los cuales se observa que se ha resuelto una incidencia en cada uno.
+
+<img src="https://i.imgur.com/p7OlZM0.png" />
+
+Análisis Posterior a la resolución de las incidencias:
+<img src="https://i.imgur.com/NkK83MN.png" />
+
+Se observa que hay dos incidencias menos de Mantenibilidad.
+
+### Análisis del Sr. Naranja <a name="calidadSrNaranja"></a>
+
+El análisis base sobre el que se parte para resolver las dos incidencias del **Sr. Naranja** es el siguiente:
+
+<img src="https://i.imgur.com/62naat1.png" />
+
+Se puede observar cómo existen 578 Code Smells o incidencias de mantenibilidad. Las dos incidencias resueltas por el Sr. Blanco son las siguientes:
+
+<img src="https://i.imgur.com/ekn2bDg.png" />
+
+Tras esto, una vez incorporados los dos commits de las dos incidencias a la rama develop y hecha la integración a la rama main, se lanzan las github actions para enviar el análisis a SonarCloud con las dos incidencias resueltas. El análisis resultante al resolver las dos incidencias son las siguientes:
+
+<img src="https://i.imgur.com/LZMvmB7.png" />
+
+Se puede observar que el análisis de calidad muestra 576 Code Smells o incidencias de mantenibilidad, indicando que se han podido resolver correctamente las anteriores.
+
+### Análisis del Sr. Azul <a name="calidadSrAzul"></a>
+
+El análisis base sobre el que se parte para resolver las dos incidencias del <strong>Sr. Azul</strong> es el siguiente:
+
+<img src="https://imgur.com/KHZnYpV.png" />
+
+Se puede observar cómo existen 576 Code Smells o incidencias de mantenibilidad. Las dos incidencias resueltas por el **Sr. Azul** son las siguientes: 
+
+<img src="https://imgur.com/h7Fc8CL.png" />
+
+Una vez incorporados los dos commits de las dos incidencias a la rama develop y hecha la integración a la rama main, se lanzan las github actions para enviar el análisis a SonarCloud con las dos incidencias resueltas.
+
+<img src="https://imgur.com/vkSGeFZ.png" /> 
+<img src="https://imgur.com/LViIRvI.png" /> 
+
+El análisis resultante al resolver las dos incidencias son las siguientes:
+
+<img src="https://imgur.com/qdZptfO.png" /> 
