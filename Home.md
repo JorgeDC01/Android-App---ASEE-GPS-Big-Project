@@ -2852,3 +2852,5 @@ Una vez incorporados los dos commits de las dos incidencias a la rama develop y 
 El análisis resultante al resolver las dos incidencias son las siguientes:
 
 <img src="https://imgur.com/qdZptfO.png" /> 
+
+Se puede observar que el análisis de calidad muestra 574 Code Smells o incidencias de mantenibilidad, indicando que se han podido resolver correctamente las dos anteriores.
