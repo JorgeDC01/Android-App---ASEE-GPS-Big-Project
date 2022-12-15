@@ -103,10 +103,10 @@
     - [Repositorios utilizados <a name="repositoriosUtilizados"></a>](#Repositorios-utilizados-)
     - [Detección de fallos <a name="calidadGestionFallos"></a>](#Detección-de-fallos-)
     - [Problemas solventados <a name="problemasSolventados"></a>](#Problemas-solventados-)
-      - [Análisis del Sr. Blanco <a name="calidadSrBlanco"></a>](#Análisis-del-Sr.-Blanco-)
-      - [Análisis del Sr. Marrón <a name="calidadSrMarron"></a>](#Análisis-del-Sr.-Marrón-)
-      - [Análisis del Sr. Naranja <a name="calidadSrNaranja"></a>](#Análisis-del-Sr.-Naranja-)
-      - [Análisis del Sr. Azul <a name="calidadSrAzul"></a>](#Análisis-del-Sr.-Azul-)
+      - [Análisis del Sr. Blanco <a name="calidadSrBlanco"></a>](#Análisis-del-Sr-Blanco-)
+      - [Análisis del Sr. Marrón <a name="calidadSrMarron"></a>](#Análisis-del-Sr-Marrón-)
+      - [Análisis del Sr. Naranja <a name="calidadSrNaranja"></a>](#Análisis-del-Sr-Naranja-)
+      - [Análisis del Sr. Azul <a name="calidadSrAzul"></a>](#Análisis-del-Sr-Azul-)
 
 # Introduccion <a name="introduction"></a>
 
