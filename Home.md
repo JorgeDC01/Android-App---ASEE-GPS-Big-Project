@@ -2822,7 +2822,7 @@ Se observa que hay dos incidencias menos de Mantenibilidad.
 
 El análisis base sobre el que se parte para resolver las dos incidencias del **Sr. Naranja** es el siguiente:
 
-<img src="https://i.imgur.com/62naat1.png" />
+<img src="https://i.imgur.com/LZMvmB7.png" />
 
 Se puede observar cómo existen 578 Code Smells o incidencias de mantenibilidad. Las dos incidencias resueltas por el Sr. Blanco son las siguientes:
 
@@ -2830,7 +2830,7 @@ Se puede observar cómo existen 578 Code Smells o incidencias de mantenibilidad.
 
 Tras esto, una vez incorporados los dos commits de las dos incidencias a la rama develop y hecha la integración a la rama main, se lanzan las github actions para enviar el análisis a SonarCloud con las dos incidencias resueltas. El análisis resultante al resolver las dos incidencias son las siguientes:
 
-<img src="https://i.imgur.com/LZMvmB7.png" />
+<img src="https://i.imgur.com/62naat1.png" />
 
 Se puede observar que el análisis de calidad muestra 576 Code Smells o incidencias de mantenibilidad, indicando que se han podido resolver correctamente las anteriores.
 
