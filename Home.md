@@ -1842,10 +1842,10 @@ Finalmente, se ha aplicado el patrón de botones y objetivos sencillos mostrando
 
 ## Diagrama e interacción de componentes <a name="diagramaComponentes"></a>
 
-
 A continuación se muestra un diagrama con todos los principales componentes que conforman el sistema:
 
 <img src="https://i.imgur.com/0RFY7NO.jpg"/>
+
 Estos componentes pueden clasificarse en 3 tipos:
 
 * **Componentes de interfaz de usuario**: Son aquellos que interactúan directamente con el usuario, ofreciéndoles las diversas funcionalidades (crear un evento, consultar la lista de eventos, modificar estos, etc).
@@ -1853,6 +1853,19 @@ Estos componentes pueden clasificarse en 3 tipos:
 * **Repositorios**: Consisten en los componentes que hacen la función de repositorios, utilizados en el patrón Repository para obtener los datos de fuentes externas y son utilizados en otros componentes a través de los viewmodel. Se trata de los componentes EventRepository, UserRepository y LocationRepository.
 
 * **Componentes que enlazan fuentes externas**: Se trata de los componentes que permiten acceder a  datos de fuentes externas, como la base de datos de Room (AppDatabase), los ficheros Json con municipios y montañas (JsonSingleton) o la api que obtiene la información del clima (ApiManager).
+
+Así mismo, entre los componentes presentados en el diagrama anterior existen las siguientes interacciones:
+
+* El **usuario interactúa con la aplicación** utilizando la interfaz de usuario (UI) definida por los componentes Android y sus layouts, agrupados en el paquete “Interfaz de usuario”. Esto se representa con la relación entre el actor usuario y la interfaz “operaciones IU”.
+
+* El componente **JsonSingleton** ofrece la interfaz “obtenerMunicipiosMontañas”, requerida por el componente CrearEvento.
+
+* Los **componentes de la interfaz del usuario acceden**, a través de los distintos viewmodels, **a los diferentes repositorios** que existen dentro de AppContainer (UserRepository, LocationRepository y EventRepository) para almacenar y obtener datos de fuentes externas. Por ello, cada componente del patrón repository ofrece interfaces “viewmodel” que son utilizadas por los componentes de la interfaz de usuario.
+
+* La agrupación de componentes de tipo **Repository** (UserRepository, LocationRepository y EventRepository) hacen uso de las operaciones de la Room, a través de las interfaces DAO ofrecidas por el componente AppDataBase, para realizar operaciones en la base de datos.
+
+* El componente **APIManager** proporciona las peticiones pertinentes a la API OpenWeather mediante la interfaz “obtenerTiempo”,  requerida por los repositorios EventRepository, donde cada evento tiene asociado el tiempo meteorológico según la ubicación; LocationRepository, donde cada localización (municipio) tiene asignado unas condiciones meteorológicas.
+
 ## Patrones arquitectónicos <a name="patronesArquitectonicos"></a>
 
 #### Patrón Repository
