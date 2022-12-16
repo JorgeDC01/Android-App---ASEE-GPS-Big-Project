@@ -106,7 +106,7 @@
       - [Análisis del Sr. Marrón <a name="calidadSrMarron"></a>](#Análisis-del-Sr-Marrón-)
       - [Análisis del Sr. Azul <a name="calidadSrAzul"></a>](#Análisis-del-Sr-Azul-)
       - [Análisis del Sr. Naranja <a name="calidadSrNaranja"></a>](#Análisis-del-Sr-Naranja-)
-      
+- [Reflexión <a name="reflexion"></a>](#Reflexión-)      
 
 # Introduccion <a name="introduction"></a>
 
@@ -1842,6 +1842,15 @@ Finalmente, se ha aplicado el patrón de botones y objetivos sencillos mostrando
 
 ## Diagrama e interacción de componentes <a name="diagramaComponentes"></a>
 
+A continuación se muestra un diagrama con todos los principales componentes que conforman el sistema:
+
+Estos componentes pueden clasificarse en 3 tipos:
+
+* **Componentes de interfaz de usuario**: Son aquellos que interactúan directamente con el usuario, ofreciéndoles las diversas funcionalidades (crear un evento, consultar la lista de eventos, modificar estos, etc).
+
+* **Repositorios**: Consisten en los componentes que hacen la función de repositorios, utilizados en el patrón Repository para obtener los datos de fuentes externas y son utilizados en otros componentes a través de los viewmodel. Se trata de los componentes EventRepository, UserRepository y LocationRepository.
+
+* **Componentes que enlazan fuentes externas**: Se trata de los componentes que permiten acceder a  datos de fuentes externas, como la base de datos de Room (AppDatabase), los ficheros Json con municipios y montañas (JsonSingleton) o la api que obtiene la información del clima (ApiManager).
 ## Patrones arquitectónicos <a name="patronesArquitectonicos"></a>
 
 #### Patrón Repository
@@ -2989,3 +2998,6 @@ Tras esto, una vez incorporados los dos commits de las dos incidencias a la rama
 <img src="https://i.imgur.com/62naat1.png" />
 
 Se puede observar que el análisis de calidad muestra 576 Code Smells o incidencias de mantenibilidad, indicando que se han podido resolver correctamente las anteriores.
+
+# Reflexión <a name="reflexion"></a>    
+
