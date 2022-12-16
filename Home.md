@@ -3000,4 +3000,10 @@ Tras esto, una vez incorporados los dos commits de las dos incidencias a la rama
 Se puede observar que el análisis de calidad muestra 576 Code Smells o incidencias de mantenibilidad, indicando que se han podido resolver correctamente las anteriores.
 
 # Reflexión <a name="reflexion"></a>    
+Desarrollar una aplicación Android es un proyecto muy interesante y desafiante que puede proporcionar gran satisfacción al ver tu trabajo en uso en dispositivos móviles. Consideramos que tanto la asignatura de ASEE como GPS son las primeras de la carrera que nos han proporcionado un método realista para nuestro futuro laboral en el desarrollo de aplicaciones Android y gestión de proyectos.
 
+ASEE nos ha brindado una nueva perspectiva de programación diferente a la que veníamos acostumbrados. Android Studio es un framework con infinidad de configuraciones y es muy flexible a las necesidades del programador. Además, nos hemos visto empapados de la tecnología Git durante el desarrollo de la app. A pesar de conocer el controlador de versiones de cursos anteriores, es recomendable recordar y afianzar conceptos de Git asiduamente. 
+
+No nos podemos olvidar de GPS, un conjunto de conocimientos que hemos adquirido sobre la gestión y metodología de desarrollo de un proyecto. Junto con Android Studio, se suman herramientas populares como JIRA, Slack, Github Actions, SonarCloud, JUnit, Espresso, Mosquito, etc. Aun cuando las asignaturas han significado una de las más intensas y extensas cargas de trabajo en todo el grado de ingeniería informática, estamos en lo cierto que todo el esfuerzo dedicado ha merecido la pena, aunque siempre se puede dedicar un poco más de tiempo a perfeccionar las ideas de la aplicación (en referencia a la interfaz).
+
+En resumen, desarrollar una aplicación Android es un proyecto que requiere de mucho esfuerzo, tiempo y dedicación, pero puede ser muy gratificante echar la vista atrás y ver el proceso seguido para crear la versión final.
