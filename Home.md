@@ -1842,8 +1842,10 @@ Finalmente, se ha aplicado el patrón de botones y objetivos sencillos mostrando
 
 ## Diagrama e interacción de componentes <a name="diagramaComponentes"></a>
 
+
 A continuación se muestra un diagrama con todos los principales componentes que conforman el sistema:
 
+<img src="https://i.imgur.com/0RFY7NO.jpg"/>
 Estos componentes pueden clasificarse en 3 tipos:
 
 * **Componentes de interfaz de usuario**: Son aquellos que interactúan directamente con el usuario, ofreciéndoles las diversas funcionalidades (crear un evento, consultar la lista de eventos, modificar estos, etc).
@@ -3004,6 +3006,6 @@ Desarrollar una aplicación Android es un proyecto muy interesante y desafiante 
 
 ASEE nos ha brindado una nueva perspectiva de programación diferente a la que veníamos acostumbrados. Android Studio es un framework con infinidad de configuraciones y es muy flexible a las necesidades del programador. Además, nos hemos visto empapados de la tecnología Git durante el desarrollo de la app. A pesar de conocer el controlador de versiones de cursos anteriores, es recomendable recordar y afianzar conceptos de Git asiduamente. 
 
-No nos podemos olvidar de GPS, un conjunto de conocimientos que hemos adquirido sobre la gestión y metodología de desarrollo de un proyecto. Junto con Android Studio, se suman herramientas populares como JIRA, Slack, Github Actions, SonarCloud, JUnit, Espresso, Mosquito, etc. Aun cuando las asignaturas han significado una de las más intensas y extensas cargas de trabajo en todo el grado de ingeniería informática, estamos en lo cierto que todo el esfuerzo dedicado ha merecido la pena, aunque siempre se puede dedicar un poco más de tiempo a perfeccionar las ideas de la aplicación (en referencia a la interfaz).
+No nos podemos olvidar de GPS, un conjunto de conocimientos que hemos adquirido sobre la gestión y metodología de desarrollo de un proyecto. Junto con Android Studio, se suman herramientas populares como JIRA, Slack, Github Actions, SonarCloud, JUnit, Espresso, Mokito, etc. Aun cuando las asignaturas han significado una de las más intensas y extensas cargas de trabajo en todo el grado de ingeniería informática, estamos en lo cierto que todo el esfuerzo dedicado ha merecido la pena, aunque siempre se puede dedicar un poco más de tiempo a perfeccionar las ideas de la aplicación (en referencia a la interfaz).
 
 En resumen, desarrollar una aplicación Android es un proyecto que requiere de mucho esfuerzo, tiempo y dedicación, pero puede ser muy gratificante echar la vista atrás y ver el proceso seguido para crear la versión final.
