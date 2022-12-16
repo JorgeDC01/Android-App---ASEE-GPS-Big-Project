@@ -148,7 +148,7 @@ En los siguientes apartados, hablaremos de la propuesta inicial del proyecto con
 
 ## Descripción de la idea <a name="descripcionDeLaIdea"></a>
 <p>
-El objetivo principal de este trabajo es el desarrollo de una aplicación móvil Android llamada <b>ClimApp</b> centrada en la visualización del tiempo meteorológico de una localización en España, dicha información proporcionada por la API de AEMET. 
+El objetivo principal de este trabajo es el desarrollo de una aplicación móvil Android llamada <b>KikoGaku (en japones, Climatología)</b> centrada en la visualización del tiempo meteorológico de una localización en España, dicha información proporcionada por la API de AEMET. 
 </p>
 </p>El usuario puede crear eventos personalizados ligados a una ubicación, los cuales tendrán asignado las condiciones meteorológicas a tiempo real en dicha localización. De igual importancia, se favorece la interacción de los usuarios con el medio ambiente, permitiéndoles crear eventos tanto en municipios como en montañas.
 <p>
