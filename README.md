@@ -45,9 +45,6 @@ The development team plans to expand the functionality of ClimApp by introducing
 - **Social Sharing**: Allow users to share weather reports and event details with friends and family.
 - **Expanded Location Support**: Include more regions beyond Spain, allowing for broader weather tracking.
 
-## Contribution
-
-ClimApp is an open-source project. Contributions are welcome, and developers are encouraged to submit pull requests to improve the app or suggest new features.
 
 ## Interface
 ![Screenshot of the application](images/img1_android.png)
