@@ -50,4 +50,4 @@ The development team plans to expand the functionality of ClimApp by introducing
 ClimApp is an open-source project. Contributions are welcome, and developers are encouraged to submit pull requests to improve the app or suggest new features.
 
 ## Interface
-![Screenshot of the application](images/screenshot.png)
+![Screenshot of the application](images/img1_android.png)
